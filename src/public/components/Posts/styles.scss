@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+
+.posts_list_component {
+  text-align: center;
+}
+
+.posts_list-item {
+  text-align: left;
+  margin: 0 0 24px;
+  padding: 0 24px;
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  max-width: 100%;
+}
+
+.posts_list_quote {
+  font-size: 14px;
+  font-weight: light;
+  text-align: justify;
+}
+
+.posts_list-item.strong {
+  border-left: solid 3px $lightGray;
+  padding-left: 30px;
+  width: 100%;
+  margin-bottom: 60px;
+  display: block;
+  max-width: 100%;
+
+  img {
+    float: left;
+    border-radius: 100px;
+    margin: 0 12px 12px 0;
+  }
+
+  .posts_list_quote {
+    font-size: 16px;
+  }
+}

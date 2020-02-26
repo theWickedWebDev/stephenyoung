@@ -1,0 +1,23 @@
+$black: #000;
+$white: #fff;
+$red: #f00;
+$green: #2c7d1e;
+$blue: #2fa4f7;
+$teal: #1e7d78;
+$lightBrown: #a27749;
+$lightGray: #e7e7e7;
+$darkGray: #5d5d5d;
+
+$primaryColor: $blue;
+$secondaryColor: $darkGray;
+$linkColor: $lightBrown;
+$linkColorText: lighten($linkColor, 60);
+
+$primaryColor_light: lighten($primaryColor, 40);
+$secondaryColor_light: lighten($secondaryColor, 50);
+
+
+$primaryFont: 'Spartan';
+$secondaryFont: 'Roboto';
+
+$top_max: 999;

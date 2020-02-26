@@ -1,30 +1,7 @@
-# Stephen Young
+# StephenYoung
 
-## Contact Information
-stephenyoung7267@gmail.com
+https://www.thewickedweb.dev/
+https://blog.thewickedweb.dev/
 
-## Bio/About
-
-## Relevant Experience
-
-## Context
-
-## Relevant Skills
-
-## Personal Projects
-
-## Documented source code
-
-## Education
-
-## Relevant social media profiles
-
-## Photo
-
-## Downloadable resume
-
-## Conclusion
-
----
-#### Resources
-https://www.codementor.io/learn-programming/12-important-things-to-include-in-web-dev-portfolios
+## Resources
+https://medium.com/@nishankjaintdk/setting-up-a-node-js-app-on-a-linux-ami-on-an-aws-ec2-instance-with-nginx-59cbc1bcc68c

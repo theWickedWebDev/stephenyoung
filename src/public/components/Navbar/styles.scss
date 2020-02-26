@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+
+.navbar__component {
+  padding: 6px;
+
+  .fa-github-alt {
+    color: $black;
+  }
+
+  .fa-linkedin {
+    color: #0077b5;
+  }
+}
+
+.navbar_right {
+  margin: 12px 24px 0 0;
+  float: right;
+  font-size: 24px;
+
+  li {
+    display: inline-block;
+    margin-left: 12px;
+  }
+}
+
+.navbar__component-logo,
+.navbar__component-list,
+.navbar__title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar__title {
+  font-family: $secondaryFont;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
+  color: $black;
+}
+
+.navbar__component-logo {
+  height: 40px;
+  width: 40px;
+  background-color: $darkGray;
+  margin-right: 12px;
+}
+
+.navbar__component-list {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .navbar__link {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

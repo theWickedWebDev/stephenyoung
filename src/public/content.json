@@ -1,0 +1,37 @@
+{
+  "navbar": {
+    "links": [
+      {
+        "name": "Résumé",
+        "internal": true,
+        "href": "/"
+      },
+      {
+        "name": "Work",
+        "internal": true,
+        "href": "/work"
+      },
+      {
+        "name": "Maker Blog",
+        "internal": false,
+        "href": "https://blog.thewickedweb.dev/"
+      }
+    ]
+  },
+  "homepage": {
+    "meta": {
+      "title": "Senior Software Developer - Stephen Young",
+      "description": "I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard."
+    },
+    "title": "Senior Software Engineer",
+    "description": "I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard.",
+    "introduction": [
+      "<span class='dropcap'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href=\"https://blog.thewickedweb.dev/?p=33\">link to blog post</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>",
+      "<span>stephen@thewickedweb.dev <small>Southern NH</small> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href=\"https://blog.thewickedweb.dev/?p=33\">link to blog post</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>"
+    ]
+  },
+  
+  "downloadResume": "Download Résumé",
+  "project": "project",
+  "general": "general"
+}

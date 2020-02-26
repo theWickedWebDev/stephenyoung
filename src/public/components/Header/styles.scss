@@ -1,0 +1,44 @@
+@import '../../variables.scss';
+
+.header__component {
+  background-color: $primaryColor;
+  padding: 100px 24px 80px;
+  position: relative;
+  background-position: -45px calc(100% + 90px);
+  background-repeat: no-repeat;
+  background-size: 450px;
+
+  &.with-avatar {
+    .header__body {
+      padding-left: 400px;
+      width: 100%;
+    }
+  }
+}
+
+.header__body {
+  max-width: 100%;
+  width: 800px;
+  padding-right: 40px;
+}
+
+.header__component-h1 {
+  color: $white;
+  margin: 0 0 24px;
+  line-height: 42px;
+
+}
+
+.header__component-p {
+  color: $white;
+  font-size: 16px;
+  opacity: .9;
+}
+
+.header__bling {
+  color: $white;
+  font-size: 200px;
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+}
