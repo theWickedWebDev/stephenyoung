@@ -49,6 +49,13 @@ app.get('/*', (req, res) => {
       <meta name="msapplication-TileColor" content="#ffffff">
       <meta name="msapplication-TileImage" content="/static/assets/favicon/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
+
+      <meta property="og:title" content="Senior Software Developer - Stephen Young">
+      <meta property="og:site_name" content="The Wicked Web Dev">
+      <meta property="og:url" content="https://www.thewickedweb.dev">
+      <meta property="og:description" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="http://ec2-3-80-206-59.compute-1.amazonaws.com/static/assets/old-time-image.jpg">
     </head>
     <body>
       <div id="root">${component}</div>
