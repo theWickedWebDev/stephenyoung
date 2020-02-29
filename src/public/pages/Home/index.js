@@ -38,7 +38,7 @@ const Home = () => {
       <Helmet>
         <title>{CONTENT.homepage.meta.title}</title>
         <link rel="canonical" href="https://www.thewickedweb.dev/" />
-        <meta name="description" content={CONTENT.homepage.description} />
+        <meta name="description" content={CONTENT.homepage.meta.description.substring(0, 160)} />
       </Helmet>
       <Header
         title={CONTENT.homepage.title}
@@ -58,7 +58,7 @@ const Home = () => {
         ))}
         <br/>
         <a className="btn-link-full" href="#">
-          <i class="fas fa-download margin-right-lg"></i>
+          <i className="fas fa-download margin-right-lg"></i>
           {CONTENT.downloadResume}
         </a>
         <br/>

@@ -5,6 +5,7 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { StaticRouter as Router } from 'react-router-dom'
 import App from '../public/App'
+import Helmet from 'react-helmet';
 
 const app = express()
 
@@ -21,9 +22,11 @@ app.get('/*', (req, res) => {
     </Router>
   )
 
+  const helmet = Helmet.renderStatic();
+
   const html = `
   <!doctype html>
-    <html>
+    <html ${helmet.htmlAttributes.toString()}>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -70,9 +73,11 @@ app.get('/*', (req, res) => {
       <meta property="al:android:app_name" content="YouTube">
       <meta property="al:android:package" content="com.google.android.youtube">
       <meta property="al:web:url" content="https://www.youtube.com/watch?v=r_oxHVlr9aI&amp;feature=applinks">
-
+      ${helmet.title.toString()}
+      ${helmet.meta.toString()}
+      ${helmet.link.toString()}
     </head>
-    <body>
+    <body ${helmet.bodyAttributes.toString()}>
       <div id="root">${component}</div>
       <script src="/static/vendors~index.js.bundle.js"></script>
       <script src="/static/index.js.bundle.js"></script>
