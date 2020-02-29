@@ -56,6 +56,21 @@ app.get('/*', (req, res) => {
       <meta property="og:description" content="">
       <meta property="og:type" content="website">
       <meta property="og:image" content="http://ec2-3-80-206-59.compute-1.amazonaws.com/static/assets/old-time-image.jpg">
+      <meta property="og:type" content="video">
+        <meta property="og:video:url" content="https://www.youtube.com/embed/r_oxHVlr9aI">
+        <meta property="og:video:secure_url" content="https://www.youtube.com/embed/r_oxHVlr9aI">
+        <meta property="og:video:type" content="text/html">
+        <meta property='og:video' content='https://www.youtube.com/v/r_oxHVlr9aI?version=3&amp;autohide=1' />
+        <meta property='og:video:secure_url' content='https://www.youtube.com/v/r_oxHVlr9aI?version=3&amp;autohide=1' />
+        <meta property="og:video:type" content="application/x-shockwave-flash">
+
+      <meta property="al:ios:app_name" content="YouTube">
+      <meta property="al:ios:url" content="vnd.youtube://www.youtube.com/watch?v=r_oxHVlr9aI&amp;feature=applinks">
+      <meta property="al:android:url" content="vnd.youtube://www.youtube.com/watch?v=r_oxHVlr9aI&amp;feature=applinks">
+      <meta property="al:android:app_name" content="YouTube">
+      <meta property="al:android:package" content="com.google.android.youtube">
+      <meta property="al:web:url" content="https://www.youtube.com/watch?v=r_oxHVlr9aI&amp;feature=applinks">
+
     </head>
     <body>
       <div id="root">${component}</div>
