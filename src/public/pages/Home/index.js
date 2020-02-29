@@ -37,6 +37,8 @@ const Home = () => {
     <div>
       <Helmet>
         <title>{CONTENT.homepage.meta.title}</title>
+        <link rel="canonical" href="https://www.thewickedweb.dev/" />
+        <meta name="description" content={CONTENT.homepage.description} />
       </Helmet>
       <Header
         title={CONTENT.homepage.title}
