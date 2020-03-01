@@ -15,15 +15,12 @@ import Gallery from 'components/Gallery';
 import TagList from 'components/TagList';
 
 /**
- * Resume Data
- */
-import RESUME from '../../resume.json';
-import CONTENT from '../../content.json';
-
-/**
  * Main Homepage Function
  */
-const Home = () => {
+
+const Home = props => {
+  const { content } = props;
+
   const {
     skills,
     additionalExperience,
@@ -31,24 +28,24 @@ const Home = () => {
     conclusion,
     gallery,
     highlight,
-   } = RESUME;
+  } = content.resume;
 
   return (
     <div>
       <Helmet>
-        <title>{CONTENT.homepage.meta.title}</title>
+        <title> {content.homepage.meta.title}</title>
         <link rel="canonical" href="https://www.thewickedweb.dev/" />
-        <meta name="description" content={CONTENT.homepage.meta.description.substring(0, 160)} />
+        <meta name="description" content={content.homepage.meta.description.substring(0, 160)} />
       </Helmet>
       <Header
-        title={CONTENT.homepage.title}
-        intro={CONTENT.homepage.description}
+        title={content.homepage.title}
+        intro={content.homepage.description}
         withAvatar={true}
       />
       <Section>
         <br/>
         <br/>
-        { CONTENT.homepage.introduction.map((text, index) => (
+        { content.homepage.introduction.map((text, index) => (
           <p
             key={index}
             data-aod="fade-in"
@@ -57,10 +54,6 @@ const Home = () => {
           />
         ))}
         <br/>
-        <a className="btn-link-full" href="#">
-          <i className="fas fa-download margin-right-lg"></i>
-          {CONTENT.downloadResume}
-        </a>
         <br/>
         <br/>
         <Article title={skills.title}>
@@ -112,12 +105,12 @@ const Home = () => {
                 { h.title }
                 { h.project &&
                   <span className="project">
-                    {CONTENT.project}
+                    {content.general.project}
                   </span>
                 }
                 { h.general &&
                   <span className="general">
-                    {CONTENT.general}
+                    {content.general.general}
                   </span>
                 }
               </summary>
@@ -158,8 +151,8 @@ const Home = () => {
           <Posts references={references.content} />
         </Article>
 
-        <Article title={conclusion.title}>
-        { conclusion.content.map((text, index) => (
+        <Article title={content.homepage.conclusion.title}>
+        { content.homepage.conclusion.content.map((text, index) => (
           <p
             key={index}
             data-aod="fade-in"
@@ -173,6 +166,10 @@ const Home = () => {
       </Section>
     </div>
   );
+};
+
+Home.defaultProps = {
+  content: require('../../assets/copy/').en_us,
 };
 
 export default Home;

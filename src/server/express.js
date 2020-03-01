@@ -6,19 +6,44 @@ import ReactDOMServer from 'react-dom/server'
 import { StaticRouter as Router } from 'react-router-dom'
 import App from '../public/App'
 import Helmet from 'react-helmet';
+import fs from 'fs';
+import resumeBuilder from './resume-builder';
 
+/**
+* Start Server
+*/
 const app = express()
 
 app.use(compression())
 
 app.use('/static', express.static(path.resolve(__dirname, 'public/')))
 
+// Generates and compiles a PDF of my resume
+// based on the JSON data in this repo
+const getTranslations = locale => {
+  let translations;
+
+  if (locale && locale === 'es_es') {
+    translations = require('../public/assets/copy/es_es.json');
+  } else {
+    translations = require('../public/assets/copy/en_us.json');
+  }
+
+  return translations;
+}
+
+app.get('/resume.pdf', (req, res) => {
+  // /resume.pdf?locale=es_es
+  const content = getTranslations(req.query.locale);
+  resumeBuilder(req, res, content);
+});
+
 app.get('/*', (req, res) => {
-  const context = {}
+  const context = {};
 
   const component = ReactDOMServer.renderToString(
     <Router location={req.url} context={context}>
-      <App />
+      <App/>
     </Router>
   )
 
@@ -81,9 +106,15 @@ app.get('/*', (req, res) => {
       <div id="root">${component}</div>
       <script src="/static/vendors~index.js.bundle.js"></script>
       <script src="/static/index.js.bundle.js"></script>
-      <script>
-        AOS.init();
-      </script>
+      <div style="text-align: center; padding: 12px;">
+        <script type="text/javascript"> //<![CDATA[
+          var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+          document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+        //]]></script>
+        <script language="JavaScript" type="text/javascript">
+          TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_sm_124x32.png", "POSDV", "none");
+        </script>
+      </div>
     </body>
     </html>
   `

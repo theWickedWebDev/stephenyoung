@@ -1,0 +1,438 @@
+{
+  "navbar": {
+    "links": [
+      {
+        "name": "<i class='fas fa-download margin-right-lg'></i>Download My Résumé",
+        "internal": false,
+        "href": "resume.pdf"
+      }
+    ]
+  },
+  "homepage": {
+    "meta": {
+      "title": "Senior Software Developer - Stephen Young",
+      "description": "I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard."
+    },
+    "title": "Senior Software Engineer",
+    "description": "I’m an experienced web developer, <strong><a href='https://blog.thewickedweb.dev/woodworking-bench/60/' target='_blank'>woodworker</a></strong> and <strong><a href='https://blog.thewickedweb.dev/tilling-new-garden-beds/64/' target='_blank'>green-thumbed</a></strong> creative with a passion for creating beautiful websites, projects and <strong><a href='' target='_blank'>lawns</a></strong>. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard.",
+    "introduction": [
+      "<span class='dropcap'>Hello, my name is Stephen Young and I ___________. I have been coding since middle school when I first learned QBasic which sparked my creative power and I couldn’t stop. I found it thrilling that with this simple program, I could create something out of what seemed like nothing. After a while, I found Visual Basic which brought UI into my world. I just couldnt stop. I later learned HTML and CSS and from there, I grew into what I am today. Backed by all the art classes (painting, Photoshop, cartooning, etc..) I was able to use what I learned from art, and incorporate that into front end coding and design. None of this seemed like it was a skill that I could do as a career until one day someone asked me to make them a website. From there, I started thinking “Can I actually make money coding?” - I made more and more micro sites for small businesses and then attended a bootcamp to learn more of the “product” aspects to apps. From there I got larger contracts and then finally landed my first internship which developed into a full time position.</span>",
+      "<span>Today, I am a few jobs in and passionate as ever! I want to find a company whose product resonates with me, not just a job. (etc.)</span>",
+      "<span>When I am not working on the computer, learning new skills or making fun web-apps, I am usually found outside. Some of my favorite activities are woodworking in the shop, maintaining a beautiful lawn, being a father of two kids, and taking care of my chickens.</span>",
+      "[TODO] I am looking for a tech team to work with that does things 'by the book' - not willy nilly. I want to learn from a well oiled team, one that doest constantly worry about deployments and regressions. One that has well functioning inter-departament communiation and functions."
+    ],
+    "conclusion": {
+      "title": "Conclusion",
+      "content": [
+        "<span>stephen@thewickedweb.dev <small>Southern NH</small> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href=\"https://blog.thewickedweb.dev/?p=33\">link to blog post</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>",
+        "<span>stephen@thewickedweb.dev <small>Southern NH</small> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href=\"https://blog.thewickedweb.dev/?p=33\">link to blog post</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>"
+      ]
+    }
+  },
+  "general": {
+    "myName": "Stephen Young",
+    "resume": "Résumé",
+    "downloadResume": "Download Résumé",
+    "project": "project",
+    "general": "general",
+    "generated": "Generated",
+    "from": "From"
+  },
+  "resume": {
+    "additionalExperience": {
+      "title": "Additional Experience",
+      "content": [
+        {
+          "name": "Freelance Web Developer",
+          "title": "Web Developer",
+          "location": null,
+          "from": "Aug 2011",
+          "until": "Jan 2017",
+          "description": "Wordpress, EJS, jQuery, CreateJS, Static HTML, Email Templates, Heroku, GA",
+          "link": null
+        },
+        {
+          "name": "Acidotic Racing",
+          "title": "Web Developer",
+          "location": "Seacoast NH",
+          "from": "Nov 2013",
+          "until": "Dec 2015",
+          "description": "Angular, Firebase, Custom CMS",
+          "link": "http://www.acidoticracing.com/"
+        },
+        {
+          "name": "PICA Manufacturing Solutions ",
+          "title": "Web Developer",
+          "location": "Derry, NH",
+          "from": "Dec 2012",
+          "until": "Dec 2014",
+          "description": "Static HTML, Angular, Firebase",
+          "link": "https://picamfg.com/"
+        },
+        {
+          "name": "Central Midori",
+          "title": "Web Developer",
+          "location": null,
+          "from": "Sept 2017",
+          "until": "Jan 2018",
+          "description": "S3, CloudFront, EC2. Static HTML with Gulp and hosted Wordpress for Blog.",
+          "link": "https://www.centralmidori.com/"
+        },
+        {
+          "name": "Marilinda Garcia for Congress",
+          "title": "Web Developer",
+          "location": "New Hampshire",
+          "from": "Nov 2013",
+          "until": "April 2014",
+          "description": "My primary role with this campaign is to create a website where voters have access to latest news, social media links and general campaign information. Other responsibilities include: graphic design, photo editing and logo design.",
+          "link": "https://en.wikipedia.org/wiki/Marilinda_Garcia"
+        },
+        {
+          "name": "Startup Institute",
+          "title": "Product & Design",
+          "location": "Boston, MA",
+          "from": "Mar 2014",
+          "until": "Apr 2014",
+          "description": "Selected by Startup Institute in a highly competitive process to attend an intensive training program focused on developing the core skills in product & design to have a meaningful and positive influence on a startup's objectives. - HTML, CSS, jQuery and Javascript - Product Management - Responsive Design - Organizing a Design Project - User Centered Design & Whiteboarding - Wireframing & Rapid Prototyping - Typography",
+          "link": null
+        }
+      ]
+    },
+    "references": {
+      "title": "Nice things people had to say",
+      "content": [
+        {
+          "name": "Winfield Trail",
+          "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGypiSJAZ4tHw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=NSMwHjf3v4ZURo5dWKfJ1jHSotPGI8EKGVl1p-TTYDE",
+          "link": "https://www.linkedin.com/in/winfield-trail-a9799329/",
+          "title": "Lead Programmer, Paint Nite d/b/a Yaymaker, worked with Stephen at Paint Nite",
+          "content": "Stephen is one of my most valued colleagues, and nobody can bang out CSS faster or better than him. In his time with PaintNite, Stephen has successfully evangelized technologies like Less, Gulp, and Angular, which alongside his spectacular problem-solving ability have radically improved every aspect of our product. It is my privilege to work with Mr. Young, so much that I can overlook his barbaric preference for soft tab indentation when editing HTML. He is a consummate team player: even though in terms of capability, he is an army of one.",
+          "relevant": true
+        },
+        {
+          "name": "Katelyn Friedson",
+          "image": "https://media-exp1.licdn.com/dms/image/C4E03AQF5wL91d9VdDw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=NUMUJnbShrleFsMsJE2s2JT26c962vudRN3j-7TqT9A",
+          "link": "https://www.linkedin.com/in/kfriedson/",
+          "title": "Product Manager, worked with Stephen at Paint Nite d/b/a Yaymaker",
+          "content": "I have worked with few developers who are as knowledgeable, passionate and effective at creating beautiful and engaging user experiences as Stephen has at Paint Nite. Stephen is not only highly skilled and agile, but he also has excellent people, communication and leadership skills which make him a pleasure to work with, and an invaluable part of any web team. As lead developer at Paint Nite, Stephen not only demonstrates a mastery of web technologies, but also a commanding grasp and deep understanding of business goals and cross-functional initiatives. Stephen has been a key contributor to the success of Paint Nite's 'Next Gen' product launch, and has been a valued and respected member of the organization. On a personal level, Stephen has a great sense of humor, contagious creative energy, and has lots of hidden artistic talents. :)",
+          "relevant": true
+        },
+        {
+          "name": "Ryan McDonald",
+          "image": "https://media-exp1.licdn.com/dms/image/C4E03AQGl8srY1KmJdQ/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=c1H7YEH9Hdw2Izrj6-8ne2xhe3CN8i5ELpLGkQRcQos",
+          "link": "https://www.linkedin.com/in/rpmcdonald/",
+          "title": "Full Stack Developer, Vsnap, worked directly with Stephen at Vsnap",
+          "content": "Stephen is a passionate, driven and talented developer. His love for programming is clearly visible in his tireless dedication to a project and his artistic abilities and creativity only add to his effectiveness as a front end web developer. Stephen and I first worked together when he was brought on as an interim-developer at Vsnap while he planned a move from Boston, MA to Austin, TX. He quickly picked up AngularJS (a front end framework that was new to him) and demonstrated so much ambition that he was hired as a full time front end dev despite the fact that he would be moving and have to work remotely. As a member of the Vsnap dev team Stephen was always happy to pick up any task that needed doing and never shy about working on things that were outside of his comfort zone. He as always very helpful if I ever had a question and very open to discussion when deciding the best way to tackle a problem. I would highly recommend Stephen and would love to work with again if the opportunity presented itself.",
+          "relevant": true
+        },
+        {
+          "name": "Dave McLaughlin",
+          "image": "https://media-exp1.licdn.com/dms/image/C4E03AQElcXREaOzWXw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=3zUvQSOG-tWwkTFdPjWMjPJXD9e6cuqvL4gjgdjQ_I0",
+          "link": "https://www.linkedin.com/in/davemacboston/",
+          "title": "CEO & Co-Founder, Vsnap, managed Stephen indirectly at Vsnap",
+          "content": "Stephen is super talented and hard working, and he's also just a wonderful guy and an amazing team member. He has the creative spirit of an artist and the work ethic of a coal miner. Absolutely a guy who amplifies the energy and brings great things to any team. He brought so much to our product at Vsnap, and it's a true pleasure to recommend him.",
+          "relevant": true
+        },
+        {
+          "name": "Niksa Janjic",
+          "title": "Developer, Vsnap, worked directly with Stephen at Vsnap",
+          "content": "Stephen is a talented Frontend developer who also has a keen eye for design. As a developer at Vsnap he worked on a frontend part of the app developing in Angular. He is very fast at delivering new features and rewrote whole HTML/CSS part of the app to optimize it and improve it noticeably. He is capable of making pages from scratch, creating beautiful designs straight from the head. He also wrote lots and refactored most of unit-tests with a coverage over 90%, created bunch of directives to reduce boilerplate code and made sure all pages are responsive and work cross-browser. He usually reviewed my code and gave me ideas and advices how to improve it and made sure it is optimized and minimal as possible."
+        },
+        {
+          "name": "Nathan Levesque",
+          "title": "Lead Software Developer, Vsnap, managed Stephen indirectly at Vsnap",
+          "content": "Stephen is a strong front end developer who doesn't hesitate to dive in and learn backend services for feature implementation and bug fixes. Recently, Stephen put in a great deal of effort to identify and fix some deficiencies with our Jasmine-based front end tests which enabled the tests to be much more stable. Stephen is very talented in taking web designs from a designer and implementing them in a page with responsive design. In particular he has greatly refactored the Vsnap application's CSS to eliminate duplication and improve page load times."
+        },
+        {
+          "name": "Guillaume Delloue",
+          "title": "Director of Marketing, Vsnap, worked directly with Stephen at Vsnap",
+          "content": "Stephen is a talented front-end developer with an immense appetite for learning and improving his skills. I can guarantee he'll be in the top 10% of the most productive developers in any organization. He's also a team player who's sensitive to the needs of other departments (marketing, sales, support etc.). Combined with his friendly demeanor and positive attitude Stephen is that rare dev talent any tech company would want to have. I highly recommend him."
+        },
+        {
+          "name": "Christopher Swenor",
+          "content": "It was amazing watch Stephen grow into what he is today. He started off as a Junior Developer and has grown into a developer that I can truly trust to make the right decisions. He has passion for JavaScript, and shows it in his work ethic. Vsnap is a better product because we found Stephen. He is extremely creative, and a pleasure to work with. I would do it again any chance I get.",
+          "title": "CTO, Vsnap, managed Stephen at Vsnap"
+        },
+        {
+          "name": "Brad Stevens",
+          "content": "Stephen did a tremendous job detailing the essential components of the campaign's website and putting it together in a way that was visually stunning and easy to navigate. Stephen is great to work with and very responsive. I would highly recommend Stephen to any candidate, business or organization looking to make their digital mark.",
+          "title": "worked directly with Stephen at Marilinda Garcia for Congress"
+        }
+      ]
+    },
+    "skills": {
+      "title": "What I'm Great At",
+      "tech": {
+        "title": "Technologies/Languages/Frameworks",
+        "content": [
+          {"name": "Node", "favorite": true, "strong": true },
+          {"name": "ReactJs", "favorite": true, "strong": true },
+          {"name": "Redux", "favorite": false, "strong": true },
+          {"name": "GraphQl", "favorite": true, "strong": true },
+          {"name": "AWS", "favorite": false, "strong": false },
+          {"name": "Docker", "favorite": true, "strong": false },
+          {"name": "Keycloak", "favorite": false, "strong": false },
+          {"name": "Auth0", "favorite": true, "strong": false },
+          {"name": "Apollo", "favorite": false, "strong": false },
+          {"name": "Flow", "favorite": false, "strong": false },
+          {"name": "Webpack", "favorite": true, "strong": true },
+          {"name": "Gulp", "favorite": false, "strong": false },
+          {"name": "Storybook", "favorite": true, "strong": true },
+          {"name": "NPM", "favorite": false, "strong": false },
+          {"name": "MySql", "favorite": false, "strong": false },
+          {"name": "Angular", "favorite": false, "strong": false },
+          {"name": "jQuery", "favorite": false, "strong": false },
+          {"name": "HTML5", "favorite": true, "strong": true },
+          {"name": "CSS3", "favorite": true, "strong": true },
+          {"name": "SCSS/LESS", "favorite": true, "strong": true },
+          {"name": "Karma", "favorite": false, "strong": false },
+          {"name": "Enzyme", "favorite": false, "strong": false }
+        ]
+      },
+      "other": {
+        "title": "Other things I've learned or used",
+        "content": [
+          {"name": "SEO", "favorite": true, "strong": false },
+          {"name": "Site performance", "favorite": true, "strong": false },
+          {"name": "A/B testing", "favorite": true, "strong": false },
+          {"name": "Jest", "favorite": false, "strong": false },
+          {"name": "Lambda", "favorite": false, "strong": false },
+          {"name": "Git", "favorite": false, "strong": true },
+          {"name": "Firebase", "favorite": false, "strong": false },
+          {"name": "Tealium", "favorite": false, "strong": false },
+          {"name": "GA", "favorite": false, "strong": false },
+          {"name": "KISSmetrics", "favorite": false, "strong": false },
+          {"name": "Optimizely", "favorite": false, "strong": false },
+          {"name": "FileStack", "favorite": false, "strong": false },
+          {"name": "Balsamiq", "favorite": false, "strong": false },
+          {"name": "InvisionApp", "favorite": true, "strong": false },
+          {"name": "Photoshop", "favorite": true, "strong": true },
+          {"name": "Illustrator", "favorite": true, "strong": true },
+          {"name": "Jira", "favorite": false, "strong": false },
+          {"name": "Confluence", "favorite": false, "strong": false },
+          {"name": "GtMetrix", "favorite": false, "strong": false }
+        ]
+      }
+    },
+    "gallery": {
+      "title": "Me in my zone",
+      "content": [
+        { "src": "static/assets/bowling.jpg", "alt": "Me taking a turn at bowling" },
+        { "src": "static/assets/woodworking.jpg", "alt": "Standing over a workbench using a biscuit joiner" },
+        { "src": "static/assets/skiing.jpg", "alt": "A friend and I on a chairlift headed up Sugarloaf Mountain to ski." },
+        { "src": "static/assets/painting-coop.jpg", "alt": "Painting a DIY Chicken Coop project" },
+        { "src": "static/assets/planting-tree.jpg", "alt": "Planting apple trees with my son" },
+        { "src": "static/assets/grass-close.jpg", "alt": "Up close photo of my lawn" },
+        { "src": "static/assets/laying-pavers.jpg", "alt": "Making a paver entry way" },
+        { "src": "static/assets/picking-potatoes.jpg", "alt": "Adding more soil to our potatoe mounds." },
+        { "src": "static/assets/planting-grass.jpg", "alt": "Planting grass with my two kids" },
+        { "src": "static/assets/radishes.jpg", "alt": "Fresh picked radishes from the garden" }
+      ]
+    },
+    "highlight": {
+      "title": "Employment Highlight",
+      "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA — May 2015 - Feb 2020",
+      "link": "https://www.yaymaker.com/",
+      "logo": "static/assets/yaymaker-logo.svg",
+      "roles": [
+        "Senior Software Engineer — May 2016 - Feb 2020",
+        "Software Engineer, Front End — May 2015 - May 2016"
+      ],
+      "rolesHeader": "Roles",
+      "focusHeader": "Focus",
+      "focus": "React, Flow, Redux, Apollo, GraphQl, Storybook, Webpack, Enzyme, A/B testing, HTML, SCSS",
+      "contentHeader": "Projects and General Duties",
+      "content": [
+        {
+          "title": "Rewrite of main web app from Java/AngularJS to NodeJS/ReactJS/GraphQL",
+          "project": true,
+          "content": [
+            "Releasing <strong>incremental</strong> changes - page by page. This allowed for a safer and smoother transition",
+            "<strong>Localized</strong> content for three separate locales",
+            "More extensive Google Analytics tracking, powered through Tealium",
+            "Executed an innovative search design which highlights both landscape and portrait paintings in a natural way",
+            "Implemented “Quick-View” to allow users to see more details without leaving the page",
+            "Added a “map-view” with custom pins and info windows",
+            "Used a pinterest-style grid layout"
+          ]
+        },
+        {
+          "title": "Developed an in-house, server-side rendered, A/B Testing platform",
+          "project": true,
+          "content": [
+            "No flicker due to server-side rendering, or custom any CSS needed",
+            "Connected to Google Analytics Reporting",
+            "<strong>$600k annualized lift</strong> with one of our first tests. (New filter design)"
+          ]
+        },
+        {
+          "title": "Created an ability to switch between Paint Nite and Plant Nite brands",
+          "project": true,
+          "content": [
+            "At one point we had two different sister-brands and didn't want to create two separate apps. Instead we made our main Paint Nite app deployable as either 'Paint' or 'Plant'",
+            "Used/Created a shared Components <strong>NPM</strong> repo",
+            "Custom copy/translations, assets and styling for each brand"
+          ]
+        },
+        {
+          "title": "Worked with the Project Manager to define the development process",
+          "general": true,
+          "content": [
+            "Used Kanban as the core (and then later switched to Scrum for some projects)",
+            "Helped to create new ticket types",
+            "Improved our swimlanes and our meetings effectivness"
+          ]
+        },
+        {
+          "title": "Implemented Storybook to showcase our component library allowing developers and designers easy access for use.",
+          "project": true,
+          "content": [
+            "Publish the components to private NPM repo and build them with Rollup.",
+            "4 separate apps use these shared components",
+            "<strong class='alt' title='Well, at least at ONE point it was ;)'>100% code coverage</strong> with Jest and Enzyme"
+          ]
+        },
+        {
+          "title": "TODO: _Cross speciality learning_ (need better phrasing but Im forgetting it)",
+          "general": true,
+          "content": [
+            "Unblocked myself by picking up various server side work: <strong>GraphQl, Sequelize, and DB migrations</strong> for example.",
+            "Which after a short while, I ended up being just as valuable as the rest of the team across all areas.",
+            "I was fortunate enough to be given that opportunity."
+          ]
+        },
+        {
+          "title": "Helped build our team",
+          "general": true,
+          "content": [
+            "Phone screens",
+            "Interviews",
+            "Code challenges",
+            "Resume reviews"
+          ]
+        },
+        {
+          "title": "Backstage Reskin (Our user facing admin application)",
+          "project": true,
+          "content": [
+            "Upgraded to latest packages for dependencies such as React and Apollo.",
+            "Used Flow type checks",
+            "Faster to spin out new pages since we decided to go with <strong><a href='https://ant.design/' target='_blank'>Ant Design</a></strong> for our component library."
+          ]
+        },
+        {
+          "title": "Brought unit testing to our client projects",
+          "project": true,
+          "content": [
+            "Unit & Integration: Enzyme/Jest/Chai",
+            "E2E: Nightwatch",
+            "Static: Flow",
+            "Part of the git flow using prepush/precommit hooks",
+            "Started the process of deploying these tests as soon as code was merged to staging"
+          ]
+        },
+        {
+          "title": "Part of a large rebrand of the company: Paint Nite ==> Yaymaker",
+          "project": true,
+          "content": [
+            "Incremental release of Yaymaker branded pages. Kept Paint Nite logo",
+            "After many/most pages were deployed we pulled the plug and made the switch over one early morning",
+            "This project sparked many smaller projects, such as SEO, site performance, new features like searching updates and landing pages.",
+            "Used a more concise and streamlined styleguide that allowed for faster development"
+          ]
+        },
+        {
+          "title": "Dev Coop - Internal tool for developers",
+          "project": true,
+          "content": [
+            "<a href='https://github.com/pallets/flask' target='_blank'>Flask</a> (Python), Express, <a href='https://github.com/pugjs/pug' target='_blank'>Pug</a> templates",
+            "Only meant to run locally - simple Flask app I wrote to help the team with problems that always seem to arose.",
+            "For deployments, I added a slack integration to keep everyone up to date on its status",
+            "Listed out code Coverage from out js apps in one place.",
+            "We had issues/worries when it came time for deploying new releases (Perhaps, this is most likely like everyone else?) - and this app was built to help alleviate some of that stress.",
+            "- Releases -",
+            "JIRA, Bitbucket and Slack APIs",
+            "Automatically grab upcoming releases, match them with jira tickets, link them to BB prs for merging",
+            "With a button clicks, we could send messages and questions to dedicated slack channels that explains the steps needed to release a given change.",
+            "Made a small Slack app/bot that posted a message, requesting QA and developer approval (Based on what is being released - matched devs with repos to pick who is needed for approval)",
+            "Posts status updates during deployment",
+            "Posts next deployment plans and steps",
+            "Provides an <strong>automatic rollback plan</strong>",
+            "The DevCoop lists all our previous, staged and upcoming releases, statuses, steps"
+          ]
+        },
+        {
+          "title": "Mandrill Email App(s)",
+          "project": true,
+          "content": [
+            "Basically we were stuck using Mandrill, and it didn't have all the features we wanted. So I devised a solution to integrate it on our team!",
+            "Before we had zero source control and only disorganized and often broken html files",
+            "Gulp / Flask (Python) / Mandrill API (Later cleaned up and used Bootstrap)",
+            "Ability to spin up emails visible on all clients very quickly",
+            "Shared partial files like headers, footers, images",
+            "Imported the styleguide from the main website via npm",
+            "Template previewer with mock data (vs random templating strings)",
+            "Keycloak with roles and then later, <strong>Auth0</strong>!",
+            "Source controlled emails",
+            "Deployable with docker, hosted app that allows developers and QA to view and test with custom variables on any environment. Ability to publish a draft or live on any env. develop/staging/prod",
+            "Integrated with deployments which was now safer and easier - with the ability to roll back changes if needed."
+          ]
+        },
+        {
+          "title": "Tealium (Powered by Google Analytics)",
+          "project": true,
+          "content": [
+            "Created a shared library of tracking function, constants and other helpers to ensure we dont have regressions with our tracking",
+            "100% Unit and integration tested",
+            "Graphql partials ensured that all data needed was retrieved",
+            "Shared among many apps",
+            "Great configuration makes it simple to update how the data is transposed",
+            "Created custom React components to make it simple to add new tracking events"
+          ]
+        },
+        {
+          "title": "Elastic Search",
+          "project": true,
+          "content": [
+            "Brought more use to our search page as well as other pages",
+            "<strong>Fuzzy matching and autocomplete</strong>. Able to search against many different resource types in one search box",
+            "Setup tools for the team to easily update/copy/remove/etc our indices and migrate data up/down environments",
+            "Worked to replace Google Maps Places API with in-house ES version which <strong>decreased API costs by approximately $87,000 yearly</strong>"
+          ]
+        },
+        {
+          "title": "SEO",
+          "project": true,
+          "content": [
+            "Worked closely with a consultant to help identify and address issues.",
+            "Site cleanup with easier quick fixes like <strong>meta tags, alt tags, Hx’s</strong>, etc.",
+            "Generated sitemap helped with our event detail pages. They have an 'expire' date, so we wanted to make sure we werent still indexing them.",
+            "Created a <strong>shared URLs package</strong> with graphql partials that ensure our urls were always canonical, and this was shared amongst many clients",
+            "Middleware for inactive landing pages (artists, events, etc..) so that we could properly redirect <strong>(avoiding 404)</strong>",
+            "<strong><a href='https://www.screamingfrog.co.uk/seo-spider/' target='_blank'>Screaming Frog</a></strong>: Minimized redirects / Identified broken links / Identified use of Hx’S / Robots.txt / Identified missing meta tags - built a component to handle this dynamically. Used NPM package to handle UGC links rel=”ugc nofollow”"
+          ]
+        },
+        {
+          "title": "Site Performance",
+          "project": true,
+          "content": [
+            "Image size / Image rendering tool",
+            "Alt tags / all needed sizes / optimized all the images on our site.",
+            "GraphQL endpoints to automate this.",
+            "Was able to use this for all images on our site, not just ones with paths stored in the DB (events, hosts, projects)",
+            "<strong>Code Splitting</strong> - significantly reduced bundle size.",
+            "Critical CSS - Used Webpack to render all the critical css needed in the head, and then the rest of the CSS in the body. This reduced time needed to load blocking CSS and in turn made the page load faster.",
+            "HTTP Requests - identified 5xx's, 4xx's and 3xx's and addressed any that could be.",
+            "HTTP Requests - significantly reduces the number of requests made (Before: Approximately 150 requests per page, and After: Approximately 60-80)",
+            "<strong>S3/Cloudfront caching</strong>",
+            "GtMetrix",
+            "Lambda function to assist with SEO objectives / Minifying / Self-hosting / Slack integration / 3rd party vendor scripts",
+            "Audit of code for bundle bloat / Webpack / Removing duplicate or bloated node modules",
+            "Nightwatch E2E tests to ensure basic SEO regressions didn't happen",
+            "<strong><a href='https://blog.thewickedweb.dev/site-performance-yaymaker-paint-nite-case-study/101/' target='_blank'>Lazy Loading</a></strong> - Created an <img/> React component wrapper that only requested the image when the image was in view on the browser (or about to be!). Since our site is so image heavy, this helped to reduce a lot of page load size."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,13 +1,12 @@
 import React from 'react';
 import './styles.scss';
-import RESUME from '../../resume.json';
 
 const Gallery = props => {
-  const { references } = props;
+  const { references, content } = props;
 
   return (
     <ul className="image-list">
-    { RESUME.gallery.content.map((image, index) => (
+    { content.resume.gallery.content.map((image, index) => (
       <li className="image-list-item" key={index}>
         <img
           src={image.src}
@@ -22,5 +21,9 @@ const Gallery = props => {
     </ul>
   );
 };
+
+Gallery.defaultProps = {
+  content: require('../../assets/copy/').en_us,
+}
 
 export default Gallery;

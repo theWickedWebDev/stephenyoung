@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
 const path = require('path')
 const MiniCssExtractPlugin =  require("mini-css-extract-plugin");
+const ReplacePlugin = require('webpack-plugin-replace');
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 
@@ -62,6 +63,19 @@ const baseConfig = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
+    new ReplacePlugin({
+      exclude: [
+        /node_modules/,
+        filepath => filepath.includes('ignore')
+      ],
+      patterns: [{
+        regex: /throw\s+(new\s+)?(Type|Reference)?Error\s*\(/g,
+        value: 'return;('
+      }],
+      values: {
+        'FOO': JSON.stringify('bar'),
+      }
+    })
   ]
 };
 

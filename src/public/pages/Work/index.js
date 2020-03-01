@@ -23,6 +23,9 @@ const Works = ({ match }) => (
           <Link to={`${match.url}/coin-collecting`}>Coin Collecting App</Link>
         </li>
         <li>
+          <Link to={`${match.url}/raspberry-pi-arcade`}>Raspberry PI - Arcade Cabinet</Link>
+        </li>
+        <li>
           <Link to={`${match.url}/risk-game`}>Risk Game</Link>
         </li>
         <li>

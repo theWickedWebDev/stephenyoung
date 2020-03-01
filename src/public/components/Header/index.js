@@ -22,7 +22,12 @@ const Header = props => {
             {title.charAt(title.length - 1)}
           </span>
         </h1>
-        <p className="header__component-p" data-aos="fade-right" data-aos-duration="1000">{intro}</p>
+        <p
+          className="header__component-p"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          dangerouslySetInnerHTML={{ __html: intro }}
+          />
       </div>
       { bling && <div className="header__bling" data-aos="fade-up">{bling}</div> }
     </header>
