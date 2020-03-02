@@ -38,6 +38,21 @@
     "generated": "Generated",
     "from": "From"
   },
+  "gallery": {
+    "title": "Me in my zone",
+    "content": [
+      { "src": "static/assets/bowling.jpg", "alt": "Me taking a turn at bowling" },
+      { "src": "static/assets/woodworking.jpg", "alt": "Standing over a workbench using a biscuit joiner" },
+      { "src": "static/assets/skiing.jpg", "alt": "A friend and I on a chairlift headed up Sugarloaf Mountain to ski." },
+      { "src": "static/assets/painting-coop.jpg", "alt": "Painting a DIY Chicken Coop project" },
+      { "src": "static/assets/planting-tree.jpg", "alt": "Planting apple trees with my son" },
+      { "src": "static/assets/grass-close.jpg", "alt": "Up close photo of my lawn" },
+      { "src": "static/assets/laying-pavers.jpg", "alt": "Making a paver entry way" },
+      { "src": "static/assets/picking-potatoes.jpg", "alt": "Adding more soil to our potatoe mounds." },
+      { "src": "static/assets/planting-grass.jpg", "alt": "Planting grass with my two kids" },
+      { "src": "static/assets/radishes.jpg", "alt": "Fresh picked radishes from the garden" }
+    ]
+  },
   "resume": {
     "additionalExperience": {
       "title": "Additional Experience",
@@ -213,21 +228,6 @@
           {"name": "GtMetrix", "favorite": false, "strong": false }
         ]
       }
-    },
-    "gallery": {
-      "title": "Me in my zone",
-      "content": [
-        { "src": "static/assets/bowling.jpg", "alt": "Me taking a turn at bowling" },
-        { "src": "static/assets/woodworking.jpg", "alt": "Standing over a workbench using a biscuit joiner" },
-        { "src": "static/assets/skiing.jpg", "alt": "A friend and I on a chairlift headed up Sugarloaf Mountain to ski." },
-        { "src": "static/assets/painting-coop.jpg", "alt": "Painting a DIY Chicken Coop project" },
-        { "src": "static/assets/planting-tree.jpg", "alt": "Planting apple trees with my son" },
-        { "src": "static/assets/grass-close.jpg", "alt": "Up close photo of my lawn" },
-        { "src": "static/assets/laying-pavers.jpg", "alt": "Making a paver entry way" },
-        { "src": "static/assets/picking-potatoes.jpg", "alt": "Adding more soil to our potatoe mounds." },
-        { "src": "static/assets/planting-grass.jpg", "alt": "Planting grass with my two kids" },
-        { "src": "static/assets/radishes.jpg", "alt": "Fresh picked radishes from the garden" }
-      ]
     },
     "highlight": {
       "title": "Employment Highlight",

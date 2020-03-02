@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 import './styles.scss';
 
-const Navbar = props => {
-  const { content } = props;
+const Navbar = () => {
+  const { t, i18n } = useTranslation();
 
   return (
     <nav className="navbar__component">
@@ -12,7 +14,7 @@ const Navbar = props => {
         <span className="navbar__title">TheWickedWebDev</span>
       </Link>
       <ul className="navbar__component-list">
-      {content.navbar.links.map((l, key) => {
+      {t('navbar:links', { returnObjects: true }).map((l, key) => {
         if (l.internal) {
           return (
             <li key={key}>
@@ -51,10 +53,6 @@ const Navbar = props => {
       </ul>
     </nav>
   );
-}
-
-Navbar.defaultProps = {
-  content: require('../../assets/copy/').en_us,
 }
 
 export default Navbar;

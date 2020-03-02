@@ -3,6 +3,7 @@
  */
 import React from 'react'
 import { Helmet } from "react-helmet";
+import { useTranslation } from 'react-i18next';
 
 /**
  * Components
@@ -18,34 +19,25 @@ import TagList from 'components/TagList';
  * Main Homepage Function
  */
 
-const Home = props => {
-  const { content } = props;
-
-  const {
-    skills,
-    additionalExperience,
-    references,
-    conclusion,
-    gallery,
-    highlight,
-  } = content.resume;
+const Home = () => {
+  const { t, i18n } = useTranslation();
 
   return (
     <div>
       <Helmet>
-        <title> {content.homepage.meta.title}</title>
+        <title>{t('homepage:meta:title')}</title>
         <link rel="canonical" href="https://www.thewickedweb.dev/" />
-        <meta name="description" content={content.homepage.meta.description.substring(0, 160)} />
+        <meta name="description" content={t('homepage:meta:description').substring(0, 160)} />
       </Helmet>
       <Header
-        title={content.homepage.title}
-        intro={content.homepage.description}
+        title={t('homepage:title')}
+        intro={t('homepage:description')}
         withAvatar={true}
       />
       <Section>
         <br/>
         <br/>
-        { content.homepage.introduction.map((text, index) => (
+        { t('homepage:introduction', { returnObjects: true }).map((text, index) => (
           <p
             key={index}
             data-aod="fade-in"
@@ -56,7 +48,7 @@ const Home = props => {
         <br/>
         <br/>
         <br/>
-        <Article title={skills.title}>
+        <Article title={t('resume:skills:title')}>
           <ul className="icon-list icon-list-light">
             <li className="icon-list-item"><i className="fab fa-node-js"/></li>
             <li className="icon-list-item"><i className="fab fa-react"/></li>
@@ -65,52 +57,60 @@ const Home = props => {
             <li className="icon-list-item"><i className="fab fa-node"/></li>
           </ul>
           <br/>
-          <p>{skills.tech.title}</p>
-          <TagList list={skills.tech.content}/>
+          <p>{t('resume:skills:tech:title')}</p>
+          <TagList
+            list={t('resume:skills:tech:content', { returnObjects: true })}/>
           <br/>
-            <p>{skills.other.title}</p>
-          <TagList list={skills.other.content}/>
+            <p>{t('resume:skills:other:title')}</p>
+          <TagList
+            list={t('resume:skills:other:content', { returnObjects: true })}/>
         </Article>
 
-        <Article title={highlight.title}>
+        <Article title={t('resume:highlight:title')}>
           <h3>
-            <a href={highlight.link} rel="nofollow" target="_blank">
-              {highlight.header}
+            <a href={t('resume:highlight:link')} rel="nofollow" target="_blank">
+              {t('resume:highlight:header')}
               <i className="fas fa-link"/>
             </a>
           </h3>
           <div>
             <img
-              src={highlight.logo}
+              src={t('resume:highlight:logo')}
               className="vertical-align-middle margin-right-lg"
               width="90px"
               alt="Logo"
             />
             <div className="vertical-align-middle">
-            { highlight.roles.map((role, index) => {
-              if (index === 0) {
-                return (<p key={index}><strong>{role}</strong></p>);
-              } else {
-                return (<p key={index}>{role}</p>);
-              }
-            })}
+            { t('resume:highlight:roles', { returnObjects: true })
+              .map((role, index) => {
+                if (index === 0) {
+                  return (<p key={index}><strong>{role}</strong></p>);
+                } else {
+                  return (<p key={index}>{role}</p>);
+                }
+              })
+            }
             </div>
           </div>
           <br/>
-          <p><strong>{highlight.focusHeader}</strong>: {highlight.focus}</p>
+          <p>
+            <strong>
+            {t('resume:highlight:focusHeader')}
+            </strong>: {t('resume:highlight:focus')}
+          </p>
           <br/>
-          {highlight.content.map((h, index) => (
+          {t('resume:highlight:content', { returnObjects: true }).map((h, index) => (
             <details key={index}>
               <summary data-aos="zoom-in-up">
                 { h.title }
                 { h.project &&
                   <span className="project">
-                    {content.general.project}
+                    {t('general:project')}
                   </span>
                 }
                 { h.general &&
                   <span className="general">
-                    {content.general.general}
+                    {t('general:general')}
                   </span>
                 }
               </summary>
@@ -128,48 +128,49 @@ const Home = props => {
           ))}
         </Article>
 
-        <Article title={additionalExperience.title}>
-        { additionalExperience.content.map((exp, index) => {
-          return (
-            <div key={index}>
-              <h5>
-                <a href={ exp.link } className={!exp.link ? 'disabled' : ''}>
-                  <strong>
-                    { exp.name }
-                    { exp.link && <i className="fas fa-link padding-left-sm"/> }
-                  </strong>
-                </a>, { exp.location } — { exp.from } - { exp.until }
-              </h5>
-              <p>{ exp.description }</p>
-              <br/>
-            </div>
-          );
-        })}
+        <Article title={t('resume:additionalExperience:title')}>
+        { t('resume:additionalExperience:content', { returnObjects: true })
+          .map((exp, index) => {
+            return (
+              <div key={index}>
+                <h5>
+                  <a href={ exp.link } className={!exp.link ? 'disabled' : ''}>
+                    <strong>
+                      { exp.name }
+                      { exp.link && <i className="fas fa-link padding-left-sm"/> }
+                    </strong>
+                  </a>, { exp.location } — { exp.from } - { exp.until }
+                </h5>
+                <p>{ exp.description }</p>
+                <br/>
+              </div>
+            );
+          })
+        }
         </Article>
 
-        <Article title={references.title}>
-          <Posts references={references.content} />
-        </Article>
-
-        <Article title={content.homepage.conclusion.title}>
-        { content.homepage.conclusion.content.map((text, index) => (
-          <p
-            key={index}
-            data-aod="fade-in"
-            className="margin-bottom-lg"
-            dangerouslySetInnerHTML={{__html: text }}
+        <Article title={t('resume:references:title')}>
+          <Posts
+            references={t('resume:references:content', { returnObjects: true })}
           />
-        ))}
         </Article>
 
-        <Article title={gallery.title}><Gallery/></Article>
+        <Article title={t('homepage:title')}>
+        { t('homepage:conclusion:content', { returnObjects: true })
+          .map((text, index) => (
+            <p
+              key={index}
+              data-aod="fade-in"
+              className="margin-bottom-lg"
+              dangerouslySetInnerHTML={{__html: text }}
+            />
+          ))}
+        </Article>
+
+        <Article title={t('gallery:title')}><Gallery/></Article>
       </Section>
     </div>
   );
-};
-
-Home.defaultProps = {
-  content: require('../../assets/copy/').en_us,
 };
 
 export default Home;

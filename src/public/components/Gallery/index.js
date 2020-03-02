@@ -1,12 +1,14 @@
 import React from 'react';
 import './styles.scss';
+import { useTranslation } from 'react-i18next';
 
 const Gallery = props => {
-  const { references, content } = props;
+  const { references } = props;
+  const { t, i18n } = useTranslation();
 
   return (
     <ul className="image-list">
-    { content.resume.gallery.content.map((image, index) => (
+    { t('gallery:content', { returnObjects: true }).map((image, index) => (
       <li className="image-list-item" key={index}>
         <img
           src={image.src}
@@ -21,9 +23,5 @@ const Gallery = props => {
     </ul>
   );
 };
-
-Gallery.defaultProps = {
-  content: require('../../assets/copy/').en_us,
-}
 
 export default Gallery;

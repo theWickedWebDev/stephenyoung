@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link, Route, Switch } from 'react-router-dom'
+import { Link, Route, Switch } from 'react-router-dom';
+import './translations';
 
 import DefaultLayout from 'layouts/default';
-
 import Home from 'pages/Home';
 import About from 'pages/About';
 import Work from 'pages/Work';
