@@ -1,0 +1,592 @@
+{
+  "navbar": {
+    "links": [
+      {
+        "name": "<i class='fas fa-download margin-right-lg'></i>Download My Résumé",
+        "internal": false,
+        "href": "resume.pdf?locale=fr_fr"
+      }
+    ]
+  },
+  "homepage": {
+    "meta": {
+      "title": "Developpeur de logiciel confirmé - Stephen Young",
+      "description": "Je suis un développeur Web expérimenté, un menuisier et un créatif au pouce vert, passionné par la création de sites Web, de projets et de pelouses magnifiques. Je travaille rapidement, efficacement et si je ne sais pas quelque chose, je l'apprends. Je suis extrêmement motivé et je m'efforce de travailler dur."
+    },
+    "title": "Developpeur de logiciel confirmé",
+    "description": "Je suis un développeur Web expérimenté, un menuisier et un créatif au pouce vert, passionné par la création de sites Web, de projets et de pelouses magnifiques. Je travaille rapidement, efficacement et si je ne sais pas quelque chose, je l'apprends. Je suis extrêmement motivé et je m'efforce de travailler dur.",
+    "introduction": [],
+    "conclusion": {
+      "title": "Conclusion",
+      "content": []
+    }
+  },
+  "general": {
+    "myName": "Stephen Young",
+    "resume": "Résumé",
+    "downloadResume": "Download Résumé",
+    "project": "projet",
+    "general": "général",
+    "generated": "Généré",
+    "from": "De"
+  },
+  "gallery": {
+    "title": "Moi dans ma zone",
+    "content": [
+      {
+        "src": "bowling.jpg",
+        "alt": "Me taking a turn at bowling"
+      },
+      {
+        "src": "woodworking.jpg",
+        "alt": "Standing over a workbench using a biscuit joiner"
+      },
+      {
+        "src": "skiing.jpg",
+        "alt": "A friend and I on a chairlift headed up Sugarloaf Mountain to ski."
+      },
+      {
+        "src": "painting-coop.jpg",
+        "alt": "Painting a DIY Chicken Coop project"
+      },
+      {
+        "src": "planting-tree.jpg",
+        "alt": "Planting apple trees with my son"
+      },
+      {
+        "src": "grass-close.jpg",
+        "alt": "Up close photo of my lawn"
+      },
+      {
+        "src": "laying-pavers.jpg",
+        "alt": "Making a paver entry way"
+      },
+      {
+        "src": "picking-potatoes.jpg",
+        "alt": "Adding more soil to our potatoe mounds."
+      },
+      {
+        "src": "planting-grass.jpg",
+        "alt": "Planting grass with my two kids"
+      },
+      {
+        "src": "radishes.jpg",
+        "alt": "Fresh picked radishes from the garden"
+      }
+    ]
+  },
+  "resume": {
+    "additionalExperience": {
+      "title": "Expérience supplémentaire",
+      "content": [
+        {
+          "name": "Vsnap",
+          "title": "Développeur de logiciels",
+          "location": "Boston, MA",
+          "from": "May 2014",
+          "until": "Apr 2015",
+          "description": "Node.js / Angular.js / NPM / Gulp / Karma / Lint / Bower - Agile Development - Jira / Slack - Test-Driven Development - HTML5 / CSS3 - Minor backend/API bug fixes (Node.js) - Responsive across all modern devices and browsers - Wireframed in Balsamiq - User tested for UX/UI - Designed HI-Res mockups in Photoshop (side project) I was also very lucky to have built a life-size Doctor Who TARDIS to be a quiet space for recording vsnaps and to take phone calls. www.vsnap.com",
+          "link": null
+        },
+        {
+          "name": "Freelance Web Developer",
+          "title": "Développeur de logiciels",
+          "location": null,
+          "from": "Aug 2011",
+          "until": "Jan 2017",
+          "description": "Wordpress, EJS, jQuery, CreateJS, Static HTML, Email Templates, Heroku, GA",
+          "link": null
+        },
+        {
+          "name": "Acidotic Racing",
+          "title": "Développeur de logiciels",
+          "location": "Seacoast NH",
+          "from": "Nov 2013",
+          "until": "Dec 2015",
+          "description": "Angular, Firebase, Custom CMS",
+          "link": null
+        },
+        {
+          "name": "PICA Manufacturing Solutions ",
+          "title": "Développeur de logiciels",
+          "location": "Derry, NH",
+          "from": "Dec 2012",
+          "until": "Dec 2014",
+          "description": "Conçu et développé le site Web de PICA Manufacturing pour permettre aux visiteurs un accès clair et facile à la marque de l'entreprise, aux propositions de valeur et aux informations générales. A également créé de nouvelles pages de destination, des conceptions de stands commerciaux et la génération de nouveaux clients potentiels via le marketing par e-mail, Google Ads / Analytics et des pages de destination personnalisées. - Conception et développement de sites Web - Test utilisateur - Conception de stand d'exposition - Conception de brochure - Reconception de logo - Conception de dossier - Conception de bannière pop-up - Modèle de livre blanc - PICA À propos de la vidéo - Vidéo PicaKit - Mailchimp - WuFoo",
+          "link": null
+        },
+        {
+          "name": "Central Midori",
+          "title": "Développeur de logiciels",
+          "location": null,
+          "from": "Sept 2017",
+          "until": "Jan 2018",
+          "description": "S3, CloudFront, EC2. Static HTML with Gulp and hosted Wordpress for Blog.",
+          "link": null
+        },
+        {
+          "name": "Marilinda Garcia for Congress",
+          "title": "Développeur de logiciels",
+          "location": "New Hampshire",
+          "from": "Nov 2013",
+          "until": "April 2014",
+          "description": "Mon rôle principal dans cette campagne est de créer un site Web où les électeurs ont accès aux dernières nouvelles, aux liens des médias sociaux et aux informations générales sur la campagne. Les autres responsabilités incluent: conception graphique, retouche photo et conception de logo.",
+          "link": null
+        },
+        {
+          "name": "Startup Institute",
+          "title": "Produit et Conception",
+          "location": "Boston, MA",
+          "from": "Mar 2014",
+          "until": "Apr 2014",
+          "description": "Sélectionné par le Startup Institute dans un processus hautement compétitif pour assister à un programme de formation intensif axé sur le développement des compétences de base en produit et conception afin d'avoir une influence significative et positive sur les objectifs d'une startup. - HTML, CSS, jQuery et Javascript - Gestion de produits - Conception réactive - Organisation d'un projet de conception - Conception et tableau blanc centrés sur l'utilisateur - Filaire et prototypage rapide - Typographie",
+          "link": null
+        }
+      ]
+    },
+    "references": {
+      "title": "Des choses merveilleuses que les gens avaient à dire",
+      "content": [
+        {
+          "name": "Konrad Zalewski",
+          "image": "https://media-exp1.licdn.com/dms/image/C4D03AQFmHDIgBG7O_Q/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=og-ZuCN_nMbRmcjev_JN2jk8qTmqyXj_mgY3bDI6oIU",
+          "link": "https://www.linkedin.com/in/konrad-zalewski-605b9112/",
+          "title": "Technologue passionné, a travaillé directement avec Stephen chez Paint Nite",
+          "content": "Stephen est un grand développeur qui excelle dans de nombreuses qualités souvent négligées chez les développeurs. Il possède un esprit d'entreprise et une attitude \"go get it \" qui lui permettent de faire face à n'importe quel défi de front. Il va au-delà pour prendre l'initiative de rechercher des problèmes et des solutions non seulement à ses propres projets et tâches, mais aussi aux problèmes de l'entreprise dans son ensemble. Ayant travaillé à distance avec Stephen, je peux attester qu'il est un excellent communicateur. Les équipes à distance présentent de nombreux défis, mais Stephen a le don de garder les lignes de communication ouvertes et de faire circuler les informations au sein de l'équipe. Peut-être plus important encore, Stephen est un grand apprenant. Il est à la fois excellent pour recevoir des critiques et redonner des critiques constructives. Il ne prend jamais les choses personnellement et voit plutôt les choses objectivement comme des opportunités de croissance personnelle ou de faire ce qui est le mieux pour l'équipe dans son ensemble.",
+          "relevant": true
+        },
+        {
+          "name": "Winfield Trail",
+          "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGypiSJAZ4tHw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=NSMwHjf3v4ZURo5dWKfJ1jHSotPGI8EKGVl1p-TTYDE",
+          "link": "https://www.linkedin.com/in/winfield-trail-a9799329/",
+          "title": "Programmeur principal, Paint Nite d / b / a Yaymaker, a travaillé avec Stephen chez Paint Nite",
+          "content": "Stephen est l'un de mes collègues les plus précieux, et personne ne peut frapper CSS plus rapidement ou mieux que lui. Dans son temps avec PaintNite, Stephen a réussi à évangéliser des technologies comme Less, Gulp et Angular, qui, parallèlement à sa capacité spectaculaire de résolution de problèmes, ont radicalement amélioré tous les aspects de notre produit. J'ai le privilège de travailler avec M. Young, à tel point que je peux ignorer sa préférence barbare pour l'indentation par tabulation douce lors de l'édition HTML. Il est un joueur d'équipe consommé: même si en termes de capacité, il est une armée d'un.",
+          "relevant": true
+        },
+        {
+          "name": "Katelyn Friedson",
+          "image": "https://media-exp1.licdn.com/dms/image/C4E03AQF5wL91d9VdDw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=NUMUJnbShrleFsMsJE2s2JT26c962vudRN3j-7TqT9A",
+          "link": "https://www.linkedin.com/in/kfriedson/",
+          "title": "Chef de produit, a travaillé avec Stephen chez Paint Nite d / b / a Yaymaker",
+          "content": "J'ai travaillé avec quelques développeurs qui sont aussi compétents, passionnés et efficaces pour créer des expériences utilisateur belles et engageantes que Stephen a à Paint Nite. Stephen est non seulement hautement qualifié et agile, mais il possède également d'excellentes personnes, des compétences en communication et en leadership qui font de lui un plaisir de travailler et une partie inestimable de toute équipe Web. En tant que développeur principal chez Paint Nite, Stephen démontre non seulement une maîtrise des technologies Web, mais également une maîtrise et une compréhension approfondies des objectifs commerciaux et des initiatives interfonctionnelles. Stephen a été un contributeur clé au succès du lancement du produit «Next Gen» de Paint Nite et a été un membre apprécié et respecté de l'organisation. Sur le plan personnel, Stephen a un grand sens de l'humour, une énergie créative contagieuse et beaucoup de talents artistiques cachés. :)",
+          "relevant": true
+        },
+        {
+          "name": "Ryan McDonald",
+          "image": "https://media-exp1.licdn.com/dms/image/C4E03AQGl8srY1KmJdQ/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=c1H7YEH9Hdw2Izrj6-8ne2xhe3CN8i5ELpLGkQRcQos",
+          "link": "https://www.linkedin.com/in/rpmcdonald/",
+          "title": "Full Stack Developer, Vsnap, worked directly with Stephen at Vsnap",
+          "content": "Stephen is a passionate, driven and talented developer. His love for programming is clearly visible in his tireless dedication to a project and his artistic abilities and creativity only add to his effectiveness as a front end web developer. Stephen and I first worked together when he was brought on as an interim-developer at Vsnap while he planned a move from Boston, MA to Austin, TX. He quickly picked up AngularJS (a front end framework that was new to him) and demonstrated so much ambition that he was hired as a full time front end dev despite the fact that he would be moving and have to work remotely. As a member of the Vsnap dev team Stephen was always happy to pick up any task that needed doing and never shy about working on things that were outside of his comfort zone. He as always very helpful if I ever had a question and very open to discussion when deciding the best way to tackle a problem. I would highly recommend Stephen and would love to work with again if the opportunity presented itself.",
+          "relevant": true
+        },
+        {
+          "name": "Dave McLaughlin",
+          "image": "https://media-exp1.licdn.com/dms/image/C4E03AQElcXREaOzWXw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=3zUvQSOG-tWwkTFdPjWMjPJXD9e6cuqvL4gjgdjQ_I0",
+          "link": "https://www.linkedin.com/in/davemacboston/",
+          "title": "PDG et cofondateur, Vsnap, a géré Stephen indirectement chez Vsnap",
+          "content": "Stephen est super talentueux et travaille dur, et il est aussi juste un gars merveilleux et un membre formidable de l'équipe. Il a l'esprit créatif d'un artiste et l'éthique de travail d'un mineur de charbon. Absolument un gars qui amplifie l'énergie et apporte de grandes choses à n'importe quelle équipe. Il a tellement apporté à notre produit chez Vsnap, et c'est un vrai plaisir de le recommander.",
+          "relevant": true
+        },
+        {
+          "name": "Niksa Janjic",
+          "title": "Developer, Vsnap, worked directly with Stephen at Vsnap",
+          "content": "Le développeur, Vsnap, a travaillé directement avec Stephen chez Vsnap"
+        },
+        {
+          "name": "Nathan Levesque",
+          "title": "Développeur logiciel en chef, Vsnap, a géré Stephen indirectement chez Vsnap",
+          "content": "Stephen est un développeur front-end fort qui n'hésite pas à plonger et à apprendre les services backend pour l'implémentation des fonctionnalités et les corrections de bugs. Récemment, Stephen a déployé beaucoup d'efforts pour identifier et corriger certaines lacunes avec nos tests frontaux basés sur Jasmine qui ont permis aux tests d'être beaucoup plus stables. Stephen est très doué pour prendre les conceptions Web d'un concepteur et les implémenter dans une page avec un design réactif. En particulier, il a considérablement remanié le CSS de l'application Vsnap pour éliminer la duplication et améliorer les temps de chargement des pages."
+        },
+        {
+          "name": "Guillaume Delloue",
+          "title": "Le directeur du marketing, Vsnap, a travaillé directement avec Stephen chez Vsnap",
+          "content": "Stephen est un développeur front-end talentueux avec un immense appétit pour apprendre et améliorer ses compétences. Je peux garantir qu'il sera dans le top 10% des développeurs les plus productifs de toute organisation. Il est également un joueur d'équipe qui est sensible aux besoins des autres départements (marketing, ventes, support, etc.). Combiné à son attitude amicale et à son attitude positive, Stephen est que le talent de développeur rare que toute entreprise de technologie voudrait avoir. Je le recommande fortement."
+        },
+        {
+          "name": "Christopher Swenor",
+          "content": "C'était incroyable de voir Stephen devenir ce qu'il est aujourd'hui. Il a commencé comme développeur junior et est devenu un développeur en qui je peux vraiment faire confiance pour prendre les bonnes décisions. Il a une passion pour JavaScript et le montre dans son éthique de travail. Vsnap est un meilleur produit parce que nous avons trouvé Stephen. Il est extrêmement créatif et c'est un plaisir de travailler avec. Je le referais chaque fois que j'en aurais l'occasion. ",
+          "title": "CTO, Vsnap, a dirigé Stephen chez Vsnap"
+        },
+        {
+          "name": "Brad Stevens",
+          "content": "Stephen a fait un travail formidable en détaillant les éléments essentiels du site Web de la campagne et en les assemblant d'une manière qui était visuellement époustouflante et facile à naviguer. Stephen est très agréable à travailler et très réactif. Je recommanderais vivement Stephen de tout candidat, entreprise ou organisation cherchant à faire sa marque numérique. ",
+          "title": "a travaillé directement avec Stephen à Marilinda Garcia pour le Congrès"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Soutenez les autres. Reste positif. Embrasser le changement. Prendre des risques.",
+      "tech": {
+        "title": "Technologies / Langues / Cadres",
+        "content": [
+          {
+            "name": "Node",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "ReactJs",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "Redux",
+            "favorite": false,
+            "strong": true
+          },
+          {
+            "name": "GraphQl",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "AWS",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Docker",
+            "favorite": true,
+            "strong": false
+          },
+          {
+            "name": "Keycloak",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Auth0",
+            "favorite": true,
+            "strong": false
+          },
+          {
+            "name": "Apollo",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Flow",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Webpack",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "Gulp",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Storybook",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "NPM",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "MySql",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Angular",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "jQuery",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "HTML5",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "CSS3",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "SCSS/LESS",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "Karma",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Enzyme",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Drupal",
+            "favorite": false,
+            "strong": false
+          }
+        ]
+      },
+      "other": {
+        "title": "Autres choses que j'ai apprises ou utilisées",
+        "content": [
+          {
+            "name": "SEO",
+            "favorite": true,
+            "strong": false
+          },
+          {
+            "name": "Site performance",
+            "favorite": true,
+            "strong": false
+          },
+          {
+            "name": "A/B testing",
+            "favorite": true,
+            "strong": false
+          },
+          {
+            "name": "Jest",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Lambda",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Git",
+            "favorite": false,
+            "strong": true
+          },
+          {
+            "name": "Firebase",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Tealium",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "GA",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "KISSmetrics",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Optimizely",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "FileStack",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Balsamiq",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "InvisionApp",
+            "favorite": true,
+            "strong": false
+          },
+          {
+            "name": "Photoshop",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "Illustrator",
+            "favorite": true,
+            "strong": true
+          },
+          {
+            "name": "Jira",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "Confluence",
+            "favorite": false,
+            "strong": false
+          },
+          {
+            "name": "GtMetrix",
+            "favorite": false,
+            "strong": false
+          }
+        ]
+      }
+    },
+    "highlight": {
+      "title": "Points saillants sur l'emploi (besoin de condenser et de réécrire)",
+      "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA — May 2015 - Feb 2020",
+      "link": "https://www.yaymaker.com/",
+      "logo": "yaymaker-logo.svg",
+      "roles": [
+        "Senior Software Engineer — May 2016 - Feb 2020",
+        "Software Engineer, Front End — May 2015 - May 2016"
+      ],
+      "rolesHeader": "Rôles",
+      "focusHeader": "Concentrer",
+      "focus": "React, Flow, Redux, Apollo, GraphQl, Storybook, Webpack, Enzyme, A/B testing, HTML, SCSS",
+      "contentHeader": "Projets et fonctions générales",
+      "content": [
+        {
+          "title": "Général",
+          "general": true,
+          "content": [
+            "A travaillé avec le chef de projet pour définir le processus de développement",
+            "J'ai utilisé Kanban comme noyau (puis je suis ensuite passé à Scrum pour certains projets)",
+            "Aide à la création de nouveaux types de tickets",
+            "Amélioration de nos couloirs et de l'efficacité de nos réunions",
+            "--------",
+            "Je me suis débloqué en récupérant divers travaux côté serveur: <strong> Migrations GraphQl, Sequelize et DB </strong> par exemple.",
+            "Ce qui après un court laps de temps, j'ai fini par être tout aussi précieux que le reste de l'équipe dans tous les domaines.",
+            "J'ai eu la chance d'avoir cette opportunité.",
+            "--------",
+            "A aidé à constituer une équipe",
+            "Écrans de téléphone",
+            "Interviews",
+            "Défis de code",
+            "Reprendre les avis",
+            "--------",
+            "Apporter des tests unitaires à nos projets clients",
+            "Unité & Intégration: Enzyme / Jest / Chai",
+            "E2E: Nightwatch",
+            "Statique: Flux",
+            "Une partie du flux git utilisant des crochets pré-poussés / pré-engagés",
+            "A commencé le processus de déploiement de ces tests dès que le code a été fusionné avec le transfert",
+            "--------",
+            "Outillage interne: DevCoop"
+          ]
+        },
+        {
+          "title": "Réécriture de l'application Web principale de Java / AngularJS vers NodeJS / ReactJS / GraphQL",
+          "project": true,
+          "content": [
+            "Publier des modifications <strong> incrémentielles </strong> - page par page. Cela a permis une transition plus sûre et plus fluide",
+            "Contenu <strong> localisé </strong> pour trois paramètres régionaux distincts",
+            "Suivi Google Analytics plus étendu, optimisé via Tealium",
+            "Réalisation d'un design de recherche innovant qui met en évidence les peintures de paysage et de portrait de manière naturelle",
+            "Implémentation de \"Quick-View\" pour permettre aux utilisateurs de voir plus de détails sans quitter la page",
+            "Ajout d'une \"carte-vue\" avec des épingles personnalisées et des fenêtres d'information",
+            "A utilisé une disposition de grille de style pinterest",
+            "-----",
+            "À un moment donné, nous avions deux marques sœurs différentes et nous ne voulions pas créer deux applications distinctes. Au lieu de cela, nous avons rendu notre application Paint Nite principale déployable en tant que 'Paint' ou 'Plant'",
+            "Utilisation / création d'un référentiel de composants <strong> NPM </strong> partagé",
+            "Copie / traductions personnalisées, ressources et style pour chaque marque",
+            "-----",
+            "Backstage Reskin (Notre application d'administration face à l'utilisateur)",
+            "Mise à niveau vers les derniers packages pour les dépendances telles que React et Apollo.",
+            "Vérifications du type de flux utilisé",
+            "Plus rapide pour créer de nouvelles pages depuis que nous avons décidé d'utiliser <strong> <a href='https://ant.design/' target='_blank'> Ant Design </a> </strong> pour notre bibliothèque de composants . ",
+            "-----",
+            "Partie d'une grande image de marque de l'entreprise: Paint Nite ==> Yaymaker",
+            "Publication incrémentielle des pages de marque Yaymaker. Logo Paint Nite conservé",
+            "Après que beaucoup / la plupart des pages ont été déployées, nous avons débranché la prise et effectué le basculement plus tôt le matin",
+            "Ce projet a déclenché de nombreux petits projets, tels que le référencement, les performances du site, de nouvelles fonctionnalités comme la recherche de mises à jour et de pages de destination.",
+            "A utilisé un guide de style plus concis et rationalisé qui a permis un développement plus rapide"
+          ]
+        },
+        {
+          "title": "Développement d'une plate-forme de test A / B en interne côté serveur",
+          "project": true,
+          "content": [
+            "Pas de scintillement en raison du rendu côté serveur ou de la personnalisation de tout CSS nécessaire",
+            "Connecté à Google Analytics Reporting",
+            "<strong> Ascenseur annualisé de 600 000 $ </strong> avec l'un de nos premiers tests. (Nouveau design de filtre)"
+          ]
+        },
+        {
+          "title": "Implémentation de Storybook pour présenter notre bibliothèque de composants permettant aux développeurs et aux concepteurs d'accéder facilement à l'utilisation.",
+          "project": true,
+          "content": [
+            "Publiez les composants dans un référentiel NPM privé et générez-les avec Rollup.",
+            "4 applications distinctes utilisent ces composants partagés",
+            "<strong class = 'alt' title = 'Eh bien, au moins à UN moment c'était;)'> Couverture de code à 100% </strong> avec Jest et Enzyme"
+          ]
+        },
+        {
+          "title": "Mandrill Email App(s)",
+          "project": true,
+          "content": [
+            "Fondamentalement, nous étions bloqués avec Mandrill, et il n'avait pas toutes les fonctionnalités que nous voulions. J'ai donc imaginé une solution pour l'intégrer dans notre équipe!",
+            "Avant, nous n'avions aucun contrôle de code source et seulement des fichiers html désorganisés et souvent cassés",
+            "Gulp / Flask (Python) / Mandrill API (plus tard nettoyé et utilisé Bootstrap)",
+            "Possibilité de générer très rapidement des e-mails visibles sur tous les clients",
+            "Fichiers partiels partagés comme les en-têtes, pieds de page, images",
+            "Importation du guide de style depuis le site Web principal via npm",
+            "Aperçu du modèle avec des données factices (par rapport aux chaînes de modèles aléatoires)",
+            "Keycloak avec des rôles, puis plus tard, <strong> Auth0 </strong>!",
+            "E-mails contrôlés par la source",
+            "Déployable avec docker, application hébergée qui permet aux développeurs et au QA de visualiser et de tester avec des variables personnalisées sur n'importe quel environnement. Possibilité de publier un brouillon ou de vivre sur n'importe quel environnement. Develop / staging / prod",
+            "Intégré aux déploiements qui étaient désormais plus sûrs et plus faciles - avec la possibilité d'annuler les modifications si nécessaire."
+          ]
+        },
+        {
+          "title": "Performance / optimisation / suivi du site",
+          "project": true,
+          "content": [
+            "PERFORMANCE DU SITE",
+            "Taille d'image / outil de rendu d'image",
+            "Alt tags / toutes les tailles nécessaires / optimisé toutes les images sur notre site.",
+            "Points de terminaison GraphQL pour automatiser cela.",
+            "A pu l'utiliser pour toutes les images de notre site, pas seulement celles avec des chemins stockés dans la base de données (événements, hôtes, projets)",
+            "<strong> Fractionnement de code </strong> - taille de l'offre considérablement réduite.",
+            "Critical CSS - Webpack utilisé pour afficher tous les CSS critiques nécessaires dans la tête, puis le reste du CSS dans le corps. Cela a réduit le temps nécessaire pour charger le CSS bloquant et à son tour a accéléré le chargement de la page.",
+            "Requêtes HTTP - ont identifié les 5xx, 4xx et 3xx et ont répondu à celles qui pourraient l'être.",
+            "Demandes HTTP - réduit considérablement le nombre de demandes effectuées (avant: environ 150 demandes par page et après: environ 60 à 80)",
+            "<strong> Mise en cache S3 / Cloudfront </strong>",
+            "GtMetrix",
+            "Fonction Lambda pour aider avec les objectifs SEO / Minifying / Auto-hébergement / Intégration Slack / Scripts de fournisseurs tiers",
+            "Audit du code pour le ballonnement de paquets / Webpack / Suppression de modules de nœuds en double ou gonflés",
+            "Tests Nightwatch E2E pour garantir que les régressions SEO de base ne se produisent pas",
+            "<strong> <a href='https://blog.thewickedweb.dev/site-performance-yaymaker-paint-nite-case-study/101/' target='_blank'> Chargement paresseux </a> </ strong> - Création d'un wrapper de composant <img /> React qui ne demandait l'image que lorsque l'image était en vue sur le navigateur (ou sur le point de l'être!). Puisque notre site est si lourd en images, cela a permis de réduire beaucoup de page taille du chargement.",
+            "----------",
+            "SEO",
+            "Travaillé en étroite collaboration avec un consultant pour aider à identifier et résoudre les problèmes.",
+            "Nettoyage du site avec des correctifs rapides plus faciles tels que les <strong> balises META, les balises alt, les Hx </strong>, etc.",
+            "Le plan du site généré a aidé à nos pages de détails sur les événements. Ils ont une date d'expiration, nous voulions donc nous assurer de ne pas les indexer.",
+            "Création d'un <strong> package d'URL partagées </strong> avec des partiels graphql qui garantissent que nos URL sont toujours canoniques, et cela est partagé entre de nombreux clients",
+            "Middleware pour les pages de destination inactives (artistes, événements, etc.) afin que nous puissions rediriger correctement <strong> (en évitant 404) </strong>",
+            "<strong> <a href='https://www.screamingfrog.co.uk/seo-spider/' target='_blank'> Screaming Frog </a> </strong>: redirections réduites / Liens brisés identifiés / Utilisation identifiée de Hx'S / Robots.txt / Identifié les balises META manquantes - construit un composant pour gérer cela dynamiquement. Paquet NPM utilisé pour gérer les liens UGC rel = \"ugc nofollow\" ",
+            "----------",
+            "RECHERCHE ELASTIQUE",
+            "Apporte plus d'utilisation à notre page de recherche ainsi qu'à d'autres pages",
+            "<strong> Correspondance floue et saisie semi-automatique </strong>. Possibilité de rechercher par rapport à de nombreux types de ressources différents dans un seul champ de recherche",
+            "Des outils de configuration pour l'équipe pour mettre à jour / copier / supprimer / etc facilement nos index et migrer les données vers le haut / le bas",
+            "A travaillé à remplacer l'API Google Maps Places par une version ES interne qui <strong> a réduit les coûts de l'API d'environ 87 000 $ par an </strong>",
+            "-------",
+            "TEALIUM (optimisé par Google Analytics)",
+            "Création d'une bibliothèque partagée de fonctions de suivi, de constantes et d'autres aides pour nous assurer que nous n'avons pas de régressions avec notre suivi",
+            "Testé à 100% en unité et en intégration",
+            "Les partiels Graphql ont permis de récupérer toutes les données nécessaires",
+            "Partagé entre de nombreuses applications",
+            "Une excellente configuration facilite la mise à jour de la façon dont les données sont transposées",
+            "Création de composants React personnalisés pour faciliter l'ajout de nouveaux événements de suivi"
+          ]
+        }
+      ]
+    }
+  }
+}

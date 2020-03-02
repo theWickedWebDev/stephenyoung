@@ -1,4 +1,6 @@
 import React from 'react';
+import LazyLoad from 'components/LazyLoad/LazyLoad';
+
 import './styles.scss';
 
 const Posts = props => {
@@ -13,7 +15,11 @@ const Posts = props => {
           data-aos={index % 2 ? "fade-left" : "fade-right"}
         >
           <div className="posts_list_content clearfix">
-            { ref.image && <img src={ref.image} width="70px"/> }
+            { ref.image &&
+              <LazyLoad>
+                <img src={ref.image} width="70px"/>
+              </LazyLoad>
+            }
             <quote className="posts_list_quote">"{ref.content}"</quote>
           </div>
 

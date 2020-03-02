@@ -9,6 +9,7 @@ i18n
     resources: {
       en: require('./assets/copy/en_us.json'),
       es: require('./assets/copy/es_es.json'),
+      fr: require('./assets/copy/fr_fr.json'),
     },
     lng: "en",
     fallbackLng: "en",

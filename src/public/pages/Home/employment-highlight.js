@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import Article from 'components/Article';
+import LazyLoad from 'components/LazyLoad/LazyLoad';
 
 const EmploymentHighlight = () => {
   const { t, i18n } = useTranslation();
@@ -14,12 +15,14 @@ const EmploymentHighlight = () => {
         </a>
       </h3>
       <div>
-        <img
-          src={`${S3_URL}${S3_IMAGES_PATH}${S3_RESUME_PATH}/${t('resume:highlight:logo')}`}
-          className="vertical-align-middle margin-right-lg"
-          width="90px"
-          alt="Logo"
-        />
+        <LazyLoad>
+          <img
+            src={`${S3_URL}${S3_IMAGES_PATH}${S3_RESUME_PATH}/${t('resume:highlight:logo')}`}
+            className="vertical-align-middle margin-right-lg"
+            width="90px"
+            alt="Logo"
+          />
+        </LazyLoad>
         <div className="vertical-align-middle">
         { t('resume:highlight:roles', { returnObjects: true })
           .map((role, index) => {

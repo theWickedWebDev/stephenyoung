@@ -23,7 +23,9 @@ app.use('/static', express.static(path.resolve(__dirname, 'public/')))
 const getTranslations = locale => {
   let translations;
 
-  if (locale && locale === 'es_es') {
+  if (locale && locale === 'fr_fr') {
+    translations = require('../public/assets/copy/fr_fr.json');
+  } else if (locale && locale === 'es_es') {
     translations = require('../public/assets/copy/es_es.json');
   } else {
     translations = require('../public/assets/copy/en_us.json');

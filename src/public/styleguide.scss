@@ -81,6 +81,14 @@ h3 {
   }
 }
 
+.skeleton {
+  display: block;
+
+  .bg-light {
+    background-color: $lightGray;
+  }
+}
+
 .vertical-align-middle {
   display: inline-block;
   vertical-align: middle;

@@ -15,15 +15,10 @@
     },
     "title": "Desarrollador de software",
     "description": "Soy un desarrollador web experimentado, un carpintero, un creativo y un jardinero, con un pasión por crear sitios web, proyectos y jardines hermosos. Trabajo de manera rápida, eficiente y, si no sé algo, lo aprendo. Estoy motivado y prospero trabajando duro.",
-    "introduction": [
-      "Hola. Me llamo Stephen. He estado codificando desde la escuela secundaria cuando aprendí QBasic por primera vez, lo que provocó mi poder creativo y no pude parar. Me pareció emocionante que con este simple programa, pudiera crear algo de lo que parecía nada. Después de un tiempo, encontré Visual Basic que trajo la interfaz de usuario a mi mundo. No pude parar. Más tarde aprendí HTML y CSS y a partir de ahí, me convertí en lo que soy hoy. Respaldado por todas las clases de arte (pintura, Photoshop, dibujos animados, etc.) pude usar lo que aprendí del arte e incorporarlo en la codificación y el diseño de front-end. Nada de esto parecía una habilidad que podía hacer como carrera hasta que un día alguien me pidió que les hiciera un sitio web. A partir de ahí, comencé a pensar \"¿Puedo realmente hacer dinero codificando?\" - Creé más y más micrositios para pequeñas empresas y luego asistí a un bootcamp para conocer más sobre los aspectos del \"producto\" de las aplicaciones. A partir de ahí obtuve contratos más grandes y finalmente conseguí mi primera pasantía que se convirtió en un puesto de tiempo completo."
-    ],
+    "introduction": [],
     "conclusion": {
       "title": "Conclusión",
-      "content": [
-        "<span>stephen@thewickedweb.dev <small>Southern NH</small> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href=\"https://blog.thewickedweb.dev/?p=33\">link to blog post</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>",
-        "<span>stephen@thewickedweb.dev <small>Southern NH</small> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href=\"https://blog.thewickedweb.dev/?p=33\">link to blog post</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>"
-      ]
+      "content": []
     }
   },
   "general": {
