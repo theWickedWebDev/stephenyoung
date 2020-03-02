@@ -14,14 +14,14 @@ const Footer = props => {
           <li className="footer__flags-item">
             <img
               className="footer__flag"
-              src="static/assets/flag_en.svg"
+              src={`${S3_URL}${S3_IMAGES_PATH}${S3_FLAGS_PATH}/flag_en.svg`}
               onClick={() => i18n.changeLanguage('en')}
             />
           </li>
           <li className="footer__flags-item">
             <img
               className="footer__flag"
-              src="static/assets/flag_es.svg"
+              src={`${S3_URL}${S3_IMAGES_PATH}${S3_FLAGS_PATH}/flag_es.svg`}
               onClick={() => i18n.changeLanguage('es')}
             />
           </li>

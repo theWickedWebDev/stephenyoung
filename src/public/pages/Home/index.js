@@ -35,19 +35,6 @@ const Home = () => {
         withAvatar={true}
       />
       <Section>
-        <br/>
-        <br/>
-        { t('homepage:introduction', { returnObjects: true }).map((text, index) => (
-          <p
-            key={index}
-            data-aod="fade-in"
-            className="margin-bottom-lg"
-            dangerouslySetInnerHTML={{__html: text }}
-          />
-        ))}
-        <br/>
-        <br/>
-        <br/>
         <Article title={t('resume:skills:title')}>
           <ul className="icon-list icon-list-light">
             <li className="icon-list-item"><i className="fab fa-node-js"/></li>
@@ -75,7 +62,7 @@ const Home = () => {
           </h3>
           <div>
             <img
-              src={t('resume:highlight:logo')}
+              src={`${S3_URL}${S3_IMAGES_PATH}${S3_RESUME_PATH}/${t('resume:highlight:logo')}`}
               className="vertical-align-middle margin-right-lg"
               width="90px"
               alt="Logo"
@@ -153,18 +140,6 @@ const Home = () => {
           <Posts
             references={t('resume:references:content', { returnObjects: true })}
           />
-        </Article>
-
-        <Article title={t('homepage:title')}>
-        { t('homepage:conclusion:content', { returnObjects: true })
-          .map((text, index) => (
-            <p
-              key={index}
-              data-aod="fade-in"
-              className="margin-bottom-lg"
-              dangerouslySetInnerHTML={{__html: text }}
-            />
-          ))}
         </Article>
 
         <Article title={t('gallery:title')}><Gallery/></Article>

@@ -38,16 +38,16 @@
   "gallery": {
     "title": "Yo en mi zona",
     "content": [
-      { "src": "static/assets/bowling.jpg", "alt": "Me taking a turn at bowling" },
-      { "src": "static/assets/woodworking.jpg", "alt": "Standing over a workbench using a biscuit joiner" },
-      { "src": "static/assets/skiing.jpg", "alt": "A friend and I on a chairlift headed up Sugarloaf Mountain to ski." },
-      { "src": "static/assets/painting-coop.jpg", "alt": "Painting a DIY Chicken Coop project" },
-      { "src": "static/assets/planting-tree.jpg", "alt": "Planting apple trees with my son" },
-      { "src": "static/assets/grass-close.jpg", "alt": "Up close photo of my lawn" },
-      { "src": "static/assets/laying-pavers.jpg", "alt": "Making a paver entry way" },
-      { "src": "static/assets/picking-potatoes.jpg", "alt": "Adding more soil to our potatoe mounds." },
-      { "src": "static/assets/planting-grass.jpg", "alt": "Planting grass with my two kids" },
-      { "src": "static/assets/radishes.jpg", "alt": "Fresh picked radishes from the garden" }
+      { "src": "bowling.jpg", "alt": "Me taking a turn at bowling" },
+      { "src": "woodworking.jpg", "alt": "Standing over a workbench using a biscuit joiner" },
+      { "src": "skiing.jpg", "alt": "A friend and I on a chairlift headed up Sugarloaf Mountain to ski." },
+      { "src": "painting-coop.jpg", "alt": "Painting a DIY Chicken Coop project" },
+      { "src": "planting-tree.jpg", "alt": "Planting apple trees with my son" },
+      { "src": "grass-close.jpg", "alt": "Up close photo of my lawn" },
+      { "src": "laying-pavers.jpg", "alt": "Making a paver entry way" },
+      { "src": "picking-potatoes.jpg", "alt": "Adding more soil to our potatoe mounds." },
+      { "src": "planting-grass.jpg", "alt": "Planting grass with my two kids" },
+      { "src": "radishes.jpg", "alt": "Fresh picked radishes from the garden" }
     ]
   },
   "resume": {
@@ -238,7 +238,7 @@
       "title": "Destacado laboral",
       "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA — Mayo 2015 - Febrero 2020",
       "link": "https://www.yaymaker.com/",
-      "logo": "static/assets/yaymaker-logo.svg",
+      "logo": "yaymaker-logo.svg",
       "roles": [
         "Ingeniero de software senior — Mayo 2016 - Febrero 2020",
         "Ingeniero de software — Mayo 2015 - Mayo 2016"

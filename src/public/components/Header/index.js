@@ -8,7 +8,7 @@ const Header = props => {
   const classNames = ["header__component"];
 
   if (withAvatar) {
-    style.backgroundImage = `url('/static/assets/avatar.svg')`;
+    style.backgroundImage = `url('${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar.svg')`;
     classNames.push('with-avatar');
   }
   return (

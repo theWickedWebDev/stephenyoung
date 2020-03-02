@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="navbar__component">
       <Link to="/">
-        <img src="static/assets/logo.jpg" className="navbar__component-logo"/>
+        <img src={`${S3_URL}${S3_IMAGES_PATH}${S3_LOGOS_PATH}/logo.jpg`} className="navbar__component-logo"/>
         <span className="navbar__title">TheWickedWebDev</span>
       </Link>
       <ul className="navbar__component-list">

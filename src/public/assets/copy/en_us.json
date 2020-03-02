@@ -41,16 +41,16 @@
   "gallery": {
     "title": "Me in my zone",
     "content": [
-      { "src": "static/assets/bowling.jpg", "alt": "Me taking a turn at bowling" },
-      { "src": "static/assets/woodworking.jpg", "alt": "Standing over a workbench using a biscuit joiner" },
-      { "src": "static/assets/skiing.jpg", "alt": "A friend and I on a chairlift headed up Sugarloaf Mountain to ski." },
-      { "src": "static/assets/painting-coop.jpg", "alt": "Painting a DIY Chicken Coop project" },
-      { "src": "static/assets/planting-tree.jpg", "alt": "Planting apple trees with my son" },
-      { "src": "static/assets/grass-close.jpg", "alt": "Up close photo of my lawn" },
-      { "src": "static/assets/laying-pavers.jpg", "alt": "Making a paver entry way" },
-      { "src": "static/assets/picking-potatoes.jpg", "alt": "Adding more soil to our potatoe mounds." },
-      { "src": "static/assets/planting-grass.jpg", "alt": "Planting grass with my two kids" },
-      { "src": "static/assets/radishes.jpg", "alt": "Fresh picked radishes from the garden" }
+      { "src": "bowling.jpg", "alt": "Me taking a turn at bowling" },
+      { "src": "woodworking.jpg", "alt": "Standing over a workbench using a biscuit joiner" },
+      { "src": "skiing.jpg", "alt": "A friend and I on a chairlift headed up Sugarloaf Mountain to ski." },
+      { "src": "painting-coop.jpg", "alt": "Painting a DIY Chicken Coop project" },
+      { "src": "planting-tree.jpg", "alt": "Planting apple trees with my son" },
+      { "src": "grass-close.jpg", "alt": "Up close photo of my lawn" },
+      { "src": "laying-pavers.jpg", "alt": "Making a paver entry way" },
+      { "src": "picking-potatoes.jpg", "alt": "Adding more soil to our potatoe mounds." },
+      { "src": "planting-grass.jpg", "alt": "Planting grass with my two kids" },
+      { "src": "radishes.jpg", "alt": "Fresh picked radishes from the garden" }
     ]
   },
   "resume": {
@@ -116,6 +116,14 @@
     "references": {
       "title": "Nice things people had to say",
       "content": [
+        {
+          "name": "Konrad Zalewski",
+          "image": "https://media-exp1.licdn.com/dms/image/C4D03AQFmHDIgBG7O_Q/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=og-ZuCN_nMbRmcjev_JN2jk8qTmqyXj_mgY3bDI6oIU",
+          "link": "https://www.linkedin.com/in/konrad-zalewski-605b9112/",
+          "title": "Impassioned front end technologist, worked directly with Stephen at Paint Nite",
+          "content": "Stephen is a great developer that excels in many qualities often overlooked in developers.He possesses an entrepreneurial spirit and \"go get it\" attitude that allows him to confront any challenge head on. He goes above and beyond to take initiative to research problems and solutions to not only his own projects and tasks but to problems in the business overall. Having worked remotely with Stephen I can attest that he is a great communicator. Remote teams present many challenges but Stephen has a knack for keeping communication lines open and keeping information flowing among the team. Maybe most importantly, Stephen is a great learner. He is both great at receiving criticism and giving back constructive criticism. He never takes things personally and instead sees things objectively as opportunities for personal growth or of doing what's best for the team as a whole.",
+          "relevant": true
+        },
         {
           "name": "Winfield Trail",
           "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGypiSJAZ4tHw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=NSMwHjf3v4ZURo5dWKfJ1jHSotPGI8EKGVl1p-TTYDE",
@@ -233,7 +241,7 @@
       "title": "Employment Highlight",
       "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA — May 2015 - Feb 2020",
       "link": "https://www.yaymaker.com/",
-      "logo": "static/assets/yaymaker-logo.svg",
+      "logo": "yaymaker-logo.svg",
       "roles": [
         "Senior Software Engineer — May 2016 - Feb 2020",
         "Software Engineer, Front End — May 2015 - May 2016"

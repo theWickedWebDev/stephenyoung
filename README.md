@@ -4,6 +4,9 @@ https://www.thewickedweb.dev/
 https://blog.thewickedweb.dev/
 
 ## Resources
+### SSL certificate
+https://www.namecheap.com/support/knowledgebase/article.aspx/9592/14/generating-a-csr-on-amazon-web-services-aws/
+
 #### DevOps
 https://medium.com/@nishankjaintdk/setting-up-a-node-js-app-on-a-linux-ami-on-an-aws-ec2-instance-with-nginx-59cbc1bcc68c
 

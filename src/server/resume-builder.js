@@ -4,10 +4,6 @@ import PDFDocument from 'pdfkit';
 import moment from 'moment';
 import stripHtml from "string-strip-html";
 
-// CONSTANTS
-const LOGO_PATH = path.resolve(__dirname) + "/public/assets/avatar.png";
-const LOGO_WIDTH = 50;
-
 // STYLEGUIDE
 const COLORS = {
   link: '#a27749',
@@ -86,30 +82,23 @@ const resumeBuilder = (req, res, CONTENT) => {
 
   doc
     .fillColor(COLORS.body)
-    .image(
-      LOGO_PATH,
-      PAGE_OPTIONS.margins.left,
-      PAGE_OPTIONS.margins.top + 5, { width: LOGO_WIDTH }
-    )
-    .font(FONT_TECH)
-    .fillColor(COLORS.body)
     .fontSize(FONT_SIZE.subtitle)
     .text(
       CONTENT.general.myName,
-      LOGO_WIDTH + PAGE_OPTIONS.margins.left + 10,
+      PAGE_OPTIONS.margins.left + 10,
       PAGE_OPTIONS.margins.top + 20
     )
     .fontSize(FONT_SIZE.small)
     .font(FONT_TECH_BOLD)
     .text(
       CONTENT.homepage.title,
-      LOGO_WIDTH + PAGE_OPTIONS.margins.left + 10,
+      PAGE_OPTIONS.margins.left + 10,
       PAGE_OPTIONS.margins.top + 40
     )
     .fillColor(COLORS.link)
     .text(
       'https://www.thewickedweb.dev/',
-      LOGO_WIDTH + PAGE_OPTIONS.margins.left + 10,
+      PAGE_OPTIONS.margins.left + 10,
       PAGE_OPTIONS.margins.top + 50,
       { link: 'https://www.thewickedweb.dev/' }
     )

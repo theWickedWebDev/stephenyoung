@@ -73,7 +73,14 @@ const baseConfig = {
         value: 'return;('
       }],
       values: {
-        'FOO': JSON.stringify('bar'),
+        S3_URL: JSON.stringify('https://s3.amazonaws.com/s3.thewickedweb.dev'),
+        S3_IMAGES_PATH: JSON.stringify('/images'),
+        S3_IMAGES_GALLERY_PATH: JSON.stringify('/gallery'),
+        S3_RESUME_PATH: JSON.stringify('/resume'),
+        S3_FLAGS_PATH: JSON.stringify('/flags'),
+        S3_AVATAR_PATH: JSON.stringify('/avatar'),
+        S3_LOGOS_PATH: JSON.stringify('/logo'),
+        // S3_URL: JSON.stringify('https://s3.thewickedweb.dev'),
       }
     })
   ]

@@ -67,22 +67,22 @@ app.get('/*', (req, res) => {
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Spartan:400,500,700&display=swap" rel="stylesheet">
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      <link rel="apple-touch-icon" sizes="57x57" href="/static/assets/favicon/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="/static/assets/favicon/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="/static/assets/favicon/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/favicon/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="/static/assets/favicon/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="/static/assets/favicon/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="/static/assets/favicon/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="/static/assets/favicon/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/favicon/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="/static/assets/favicon/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="/static/assets/favicon/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/favicon/favicon-16x16.png">
-      <link rel="manifest" href="/static/assets/favicon/manifest.json">
+      <link rel="apple-touch-icon" sizes="57x57" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="${S3_URL}${S3_IMAGES_PATH}/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="${S3_URL}${S3_IMAGES_PATH}/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="${S3_URL}${S3_IMAGES_PATH}/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="${S3_URL}${S3_IMAGES_PATH}/favicon/favicon-16x16.png">
+      <link rel="manifest" href="${S3_URL}${S3_IMAGES_PATH}/favicon/manifest.json">
       <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="/static/assets/favicon/ms-icon-144x144.png">
+      <meta name="msapplication-TileImage" content="${S3_URL}${S3_IMAGES_PATH}/favicon/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
 
       <meta property="og:title" content="Senior Software Developer - Stephen Young">
@@ -90,7 +90,7 @@ app.get('/*', (req, res) => {
       <meta property="og:url" content="https://www.thewickedweb.dev">
       <meta property="og:description" content="">
       <meta property="og:type" content="website">
-      <meta property="og:image" content="http://ec2-3-80-206-59.compute-1.amazonaws.com/static/assets/avatar-square-blue.jpg">
+      <meta property="og:image" content="https://www.thewickedweb.dev/static/assets/avatar-square-blue.jpg">
       <meta property="og:type" content="video">
         <meta property="og:video:url" content="https://www.youtube.com/embed/r_oxHVlr9aI">
         <meta property="og:video:secure_url" content="https://www.youtube.com/embed/r_oxHVlr9aI">
