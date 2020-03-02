@@ -129,20 +129,17 @@ const resumeBuilder = (req, res, CONTENT) => {
     .moveDown();
 
 // INTRODUCTION
-  CONTENT.homepage.introduction.forEach(i => {
+  /*CONTENT.homepage.introduction.forEach(i => {
     doc
       .fillColor(COLORS.body)
       .font(FONT_PRIMARY)
       .fontSize(FONT_SIZE.body)
       .text(stripHtml(i))
       .moveDown();
-  });
-
-
-
+  });*/
+//  addPage();
 
 // WHAT IM GREAT AT
-  addPage();
 
   doc
     .fillColor(COLORS.primary)
@@ -299,6 +296,7 @@ hr();
 
 
 // CONCLUSION
+/*
   addPage();
   doc
     .fillColor(COLORS.primary)
@@ -318,6 +316,7 @@ hr();
       .moveDown()
       .moveDown();
   });
+*/
 
 /**
  * GLOBAL EDITS TO ALL PAGES

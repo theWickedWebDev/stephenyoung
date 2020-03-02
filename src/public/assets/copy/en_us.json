@@ -58,6 +58,15 @@
       "title": "Additional Experience",
       "content": [
         {
+          "name": "Vsnap",
+          "title": "Software Developer",
+          "location": "Boston, MA",
+          "from": "May 2014",
+          "until": "Apr 2015",
+          "description": "Node.js / Angular.js / NPM / Gulp / Karma / Lint / Bower - Agile Development - Jira / Slack - Test-Driven Development - HTML5 / CSS3 - Minor backend/API bug fixes (Node.js) - Responsive across all modern devices and browsers - Wireframed in Balsamiq - User tested for UX/UI - Designed HI-Res mockups in Photoshop (side project) I was also very lucky to have built a life-size Doctor Who TARDIS to be a quiet space for recording vsnaps and to take phone calls. www.vsnap.com",
+          "link": null
+        },
+        {
           "name": "Freelance Web Developer",
           "title": "Web Developer",
           "location": null,
@@ -73,7 +82,7 @@
           "from": "Nov 2013",
           "until": "Dec 2015",
           "description": "Angular, Firebase, Custom CMS",
-          "link": "http://www.acidoticracing.com/"
+          "link": null
         },
         {
           "name": "PICA Manufacturing Solutions ",
@@ -81,8 +90,8 @@
           "location": "Derry, NH",
           "from": "Dec 2012",
           "until": "Dec 2014",
-          "description": "Static HTML, Angular, Firebase",
-          "link": "https://picamfg.com/"
+          "description": "Designed and developed PICA Manufacturing's website to allow visitors clear and easy access to the company's brand, value propositions and general information. Also created new landing pages, trade booth designs and generating new customer leads through email marketing, Google Ads/Analytics, and custom landing pages. - Website Design & Development - User Testing - Tradeshow Booth Design - Brochure Design - Logo re-design - Folder Design - Pop-Up Banner design - White Paper Template - PICA About Video - PicaKit Video - Mailchimp - WuFoo",
+          "link": null
         },
         {
           "name": "Central Midori",
@@ -91,7 +100,7 @@
           "from": "Sept 2017",
           "until": "Jan 2018",
           "description": "S3, CloudFront, EC2. Static HTML with Gulp and hosted Wordpress for Blog.",
-          "link": "https://www.centralmidori.com/"
+          "link": null
         },
         {
           "name": "Marilinda Garcia for Congress",
@@ -100,7 +109,7 @@
           "from": "Nov 2013",
           "until": "April 2014",
           "description": "My primary role with this campaign is to create a website where voters have access to latest news, social media links and general campaign information. Other responsibilities include: graphic design, photo editing and logo design.",
-          "link": "https://en.wikipedia.org/wiki/Marilinda_Garcia"
+          "link": null
         },
         {
           "name": "Startup Institute",
@@ -114,7 +123,7 @@
       ]
     },
     "references": {
-      "title": "Nice things people had to say",
+      "title": "Wonderful things people had to say",
       "content": [
         {
           "name": "Konrad Zalewski",
@@ -184,7 +193,7 @@
       ]
     },
     "skills": {
-      "title": "What I'm Great At",
+      "title": "Support others. Stay positive. Embrace Change. Take Risks.",
       "tech": {
         "title": "Technologies/Languages/Frameworks",
         "content": [
@@ -209,7 +218,8 @@
           {"name": "CSS3", "favorite": true, "strong": true },
           {"name": "SCSS/LESS", "favorite": true, "strong": true },
           {"name": "Karma", "favorite": false, "strong": false },
-          {"name": "Enzyme", "favorite": false, "strong": false }
+          {"name": "Enzyme", "favorite": false, "strong": false },
+          {"name": "Drupal", "favorite": false, "strong": false }
         ]
       },
       "other": {
@@ -238,7 +248,7 @@
       }
     },
     "highlight": {
-      "title": "Employment Highlight",
+      "title": "Employment Highlight (Needs condensing and rewriting)",
       "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA — May 2015 - Feb 2020",
       "link": "https://www.yaymaker.com/",
       "logo": "yaymaker-logo.svg",
@@ -252,6 +262,35 @@
       "contentHeader": "Projects and General Duties",
       "content": [
         {
+          "title": "General",
+          "general": true,
+          "content": [
+            "Worked with the Project Manager to define the development process",
+            "Used Kanban as the core (and then later switched to Scrum for some projects)",
+            "Helped to create new ticket types",
+            "Improved our swimlanes and our meetings effectivness",
+            "--------",
+            "Unblocked myself by picking up various server side work: <strong>GraphQl, Sequelize, and DB migrations</strong> for example.",
+            "Which after a short while, I ended up being just as valuable as the rest of the team across all areas.",
+            "I was fortunate enough to be given that opportunity.",
+            "--------",
+            "Helped to Build Team",
+            "Phone screens",
+            "Interviews",
+            "Code challenges",
+            "Resume reviews",
+            "--------",
+            "Brought unit testing to our client projects",
+            "Unit & Integration: Enzyme/Jest/Chai",
+            "E2E: Nightwatch",
+            "Static: Flow",
+            "Part of the git flow using prepush/precommit hooks",
+            "Started the process of deploying these tests as soon as code was merged to staging",
+            "--------",
+            "In-house Tooling: DevCoop"
+          ]
+        },
+        {
           "title": "Rewrite of main web app from Java/AngularJS to NodeJS/ReactJS/GraphQL",
           "project": true,
           "content": [
@@ -261,7 +300,22 @@
             "Executed an innovative search design which highlights both landscape and portrait paintings in a natural way",
             "Implemented “Quick-View” to allow users to see more details without leaving the page",
             "Added a “map-view” with custom pins and info windows",
-            "Used a pinterest-style grid layout"
+            "Used a pinterest-style grid layout",
+            "-----",
+            "At one point we had two different sister-brands and didn't want to create two separate apps. Instead we made our main Paint Nite app deployable as either 'Paint' or 'Plant'",
+            "Used/Created a shared Components <strong>NPM</strong> repo",
+            "Custom copy/translations, assets and styling for each brand",
+            "-----",
+            "Backstage Reskin (Our user facing admin application)",
+            "Upgraded to latest packages for dependencies such as React and Apollo.",
+            "Used Flow type checks",
+            "Faster to spin out new pages since we decided to go with <strong><a href='https://ant.design/' target='_blank'>Ant Design</a></strong> for our component library.",
+            "-----",
+            "Part of a large rebrand of the company: Paint Nite ==> Yaymaker",
+            "Incremental release of Yaymaker branded pages. Kept Paint Nite logo",
+            "After many/most pages were deployed we pulled the plug and made the switch over one early morning",
+            "This project sparked many smaller projects, such as SEO, site performance, new features like searching updates and landing pages.",
+            "Used a more concise and streamlined styleguide that allowed for faster development"
           ]
         },
         {
@@ -274,99 +328,12 @@
           ]
         },
         {
-          "title": "Created an ability to switch between Paint Nite and Plant Nite brands",
-          "project": true,
-          "content": [
-            "At one point we had two different sister-brands and didn't want to create two separate apps. Instead we made our main Paint Nite app deployable as either 'Paint' or 'Plant'",
-            "Used/Created a shared Components <strong>NPM</strong> repo",
-            "Custom copy/translations, assets and styling for each brand"
-          ]
-        },
-        {
-          "title": "Worked with the Project Manager to define the development process",
-          "general": true,
-          "content": [
-            "Used Kanban as the core (and then later switched to Scrum for some projects)",
-            "Helped to create new ticket types",
-            "Improved our swimlanes and our meetings effectivness"
-          ]
-        },
-        {
           "title": "Implemented Storybook to showcase our component library allowing developers and designers easy access for use.",
           "project": true,
           "content": [
             "Publish the components to private NPM repo and build them with Rollup.",
             "4 separate apps use these shared components",
             "<strong class='alt' title='Well, at least at ONE point it was ;)'>100% code coverage</strong> with Jest and Enzyme"
-          ]
-        },
-        {
-          "title": "TODO: _Cross speciality learning_ (need better phrasing but Im forgetting it)",
-          "general": true,
-          "content": [
-            "Unblocked myself by picking up various server side work: <strong>GraphQl, Sequelize, and DB migrations</strong> for example.",
-            "Which after a short while, I ended up being just as valuable as the rest of the team across all areas.",
-            "I was fortunate enough to be given that opportunity."
-          ]
-        },
-        {
-          "title": "Helped build our team",
-          "general": true,
-          "content": [
-            "Phone screens",
-            "Interviews",
-            "Code challenges",
-            "Resume reviews"
-          ]
-        },
-        {
-          "title": "Backstage Reskin (Our user facing admin application)",
-          "project": true,
-          "content": [
-            "Upgraded to latest packages for dependencies such as React and Apollo.",
-            "Used Flow type checks",
-            "Faster to spin out new pages since we decided to go with <strong><a href='https://ant.design/' target='_blank'>Ant Design</a></strong> for our component library."
-          ]
-        },
-        {
-          "title": "Brought unit testing to our client projects",
-          "project": true,
-          "content": [
-            "Unit & Integration: Enzyme/Jest/Chai",
-            "E2E: Nightwatch",
-            "Static: Flow",
-            "Part of the git flow using prepush/precommit hooks",
-            "Started the process of deploying these tests as soon as code was merged to staging"
-          ]
-        },
-        {
-          "title": "Part of a large rebrand of the company: Paint Nite ==> Yaymaker",
-          "project": true,
-          "content": [
-            "Incremental release of Yaymaker branded pages. Kept Paint Nite logo",
-            "After many/most pages were deployed we pulled the plug and made the switch over one early morning",
-            "This project sparked many smaller projects, such as SEO, site performance, new features like searching updates and landing pages.",
-            "Used a more concise and streamlined styleguide that allowed for faster development"
-          ]
-        },
-        {
-          "title": "Dev Coop - Internal tool for developers",
-          "project": true,
-          "content": [
-            "<a href='https://github.com/pallets/flask' target='_blank'>Flask</a> (Python), Express, <a href='https://github.com/pugjs/pug' target='_blank'>Pug</a> templates",
-            "Only meant to run locally - simple Flask app I wrote to help the team with problems that always seem to arose.",
-            "For deployments, I added a slack integration to keep everyone up to date on its status",
-            "Listed out code Coverage from out js apps in one place.",
-            "We had issues/worries when it came time for deploying new releases (Perhaps, this is most likely like everyone else?) - and this app was built to help alleviate some of that stress.",
-            "- Releases -",
-            "JIRA, Bitbucket and Slack APIs",
-            "Automatically grab upcoming releases, match them with jira tickets, link them to BB prs for merging",
-            "With a button clicks, we could send messages and questions to dedicated slack channels that explains the steps needed to release a given change.",
-            "Made a small Slack app/bot that posted a message, requesting QA and developer approval (Based on what is being released - matched devs with repos to pick who is needed for approval)",
-            "Posts status updates during deployment",
-            "Posts next deployment plans and steps",
-            "Provides an <strong>automatic rollback plan</strong>",
-            "The DevCoop lists all our previous, staged and upcoming releases, statuses, steps"
           ]
         },
         {
@@ -387,43 +354,10 @@
           ]
         },
         {
-          "title": "Tealium (Powered by Google Analytics)",
+          "title": "Site Performance / Optimization / Tracking",
           "project": true,
           "content": [
-            "Created a shared library of tracking function, constants and other helpers to ensure we dont have regressions with our tracking",
-            "100% Unit and integration tested",
-            "Graphql partials ensured that all data needed was retrieved",
-            "Shared among many apps",
-            "Great configuration makes it simple to update how the data is transposed",
-            "Created custom React components to make it simple to add new tracking events"
-          ]
-        },
-        {
-          "title": "Elastic Search",
-          "project": true,
-          "content": [
-            "Brought more use to our search page as well as other pages",
-            "<strong>Fuzzy matching and autocomplete</strong>. Able to search against many different resource types in one search box",
-            "Setup tools for the team to easily update/copy/remove/etc our indices and migrate data up/down environments",
-            "Worked to replace Google Maps Places API with in-house ES version which <strong>decreased API costs by approximately $87,000 yearly</strong>"
-          ]
-        },
-        {
-          "title": "SEO",
-          "project": true,
-          "content": [
-            "Worked closely with a consultant to help identify and address issues.",
-            "Site cleanup with easier quick fixes like <strong>meta tags, alt tags, Hx’s</strong>, etc.",
-            "Generated sitemap helped with our event detail pages. They have an 'expire' date, so we wanted to make sure we werent still indexing them.",
-            "Created a <strong>shared URLs package</strong> with graphql partials that ensure our urls were always canonical, and this was shared amongst many clients",
-            "Middleware for inactive landing pages (artists, events, etc..) so that we could properly redirect <strong>(avoiding 404)</strong>",
-            "<strong><a href='https://www.screamingfrog.co.uk/seo-spider/' target='_blank'>Screaming Frog</a></strong>: Minimized redirects / Identified broken links / Identified use of Hx’S / Robots.txt / Identified missing meta tags - built a component to handle this dynamically. Used NPM package to handle UGC links rel=”ugc nofollow”"
-          ]
-        },
-        {
-          "title": "Site Performance",
-          "project": true,
-          "content": [
+            "SITE PERFORMANCE",
             "Image size / Image rendering tool",
             "Alt tags / all needed sizes / optimized all the images on our site.",
             "GraphQL endpoints to automate this.",
@@ -437,7 +371,29 @@
             "Lambda function to assist with SEO objectives / Minifying / Self-hosting / Slack integration / 3rd party vendor scripts",
             "Audit of code for bundle bloat / Webpack / Removing duplicate or bloated node modules",
             "Nightwatch E2E tests to ensure basic SEO regressions didn't happen",
-            "<strong><a href='https://blog.thewickedweb.dev/site-performance-yaymaker-paint-nite-case-study/101/' target='_blank'>Lazy Loading</a></strong> - Created an <img/> React component wrapper that only requested the image when the image was in view on the browser (or about to be!). Since our site is so image heavy, this helped to reduce a lot of page load size."
+            "<strong><a href='https://blog.thewickedweb.dev/site-performance-yaymaker-paint-nite-case-study/101/' target='_blank'>Lazy Loading</a></strong> - Created an <img/> React component wrapper that only requested the image when the image was in view on the browser (or about to be!). Since our site is so image heavy, this helped to reduce a lot of page load size.",
+            "----------",
+            "SEO",
+            "Worked closely with a consultant to help identify and address issues.",
+            "Site cleanup with easier quick fixes like <strong>meta tags, alt tags, Hx’s</strong>, etc.",
+            "Generated sitemap helped with our event detail pages. They have an 'expire' date, so we wanted to make sure we werent still indexing them.",
+            "Created a <strong>shared URLs package</strong> with graphql partials that ensure our urls were always canonical, and this was shared amongst many clients",
+            "Middleware for inactive landing pages (artists, events, etc..) so that we could properly redirect <strong>(avoiding 404)</strong>",
+            "<strong><a href='https://www.screamingfrog.co.uk/seo-spider/' target='_blank'>Screaming Frog</a></strong>: Minimized redirects / Identified broken links / Identified use of Hx’S / Robots.txt / Identified missing meta tags - built a component to handle this dynamically. Used NPM package to handle UGC links rel=”ugc nofollow”",
+            "----------",
+            "ELASTIC SEARCH",
+            "Brought more use to our search page as well as other pages",
+            "<strong>Fuzzy matching and autocomplete</strong>. Able to search against many different resource types in one search box",
+            "Setup tools for the team to easily update/copy/remove/etc our indices and migrate data up/down environments",
+            "Worked to replace Google Maps Places API with in-house ES version which <strong>decreased API costs by approximately $87,000 yearly</strong>",
+            "-------",
+            "TEALIUM (Powered by Google Analytics)",
+            "Created a shared library of tracking function, constants and other helpers to ensure we dont have regressions with our tracking",
+            "100% Unit and integration tested",
+            "Graphql partials ensured that all data needed was retrieved",
+            "Shared among many apps",
+            "Great configuration makes it simple to update how the data is transposed",
+            "Created custom React components to make it simple to add new tracking events"
           ]
         }
       ]

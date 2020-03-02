@@ -176,12 +176,12 @@
         {
           "name": "Brad Stevens",
           "title": "Trabajó directamente con Stephen en Marilinda García para el Congreso",
-          "content": "Stephen hizo un gran trabajo al detallar los componentes esenciales del sitio web de la campaña y armarlo de una manera visualmente impresionante y fácil de navegar. Es genial trabajar con Stephen y es muy receptivo. Recomiendo encarecidamente a Stephen a cualquier candidato, empresa u organización que busque hacer su marca digital."
+          "content": "(Traducido) Stephen hizo un gran trabajo al detallar los componentes esenciales del sitio web de la campaña y armarlo de una manera visualmente impresionante y fácil de navegar. Es genial trabajar con Stephen y es muy receptivo. Recomiendo encarecidamente a Stephen a cualquier candidato, empresa u organización que busque hacer su marca digital."
         }
       ]
     },
     "skills": {
-      "title": "Cosas en las que soy genial",
+      "title": "Apoya a otros. Mantente positivo. Aceptar el cambio. Toma riesgos.",
       "tech": {
         "title": "Technologies/Languages/Frameworks",
         "content": [
@@ -249,6 +249,35 @@
       "contentHeader": "Proyectos y deberes generales",
       "content": [
         {
+          "title": "General",
+          "project": true,
+          "content": [
+            "Trabajé con el Project Manager para definir el proceso de desarrollo",
+            "Usé Kanban como núcleo (y luego cambié a Scrum para algunos proyectos)",
+            "Ayudó a crear nuevos tipos de tickets",
+            "Mejoramos nuestros carriles y la efectividad de nuestras reuniones",
+            "--------",
+            "Me desbloqueé seleccionando varios trabajos del lado del servidor: <strong> GraphQl, Sequelize y migraciones de bases de datos </strong>, por ejemplo",
+            "Lo cual, después de un corto tiempo, terminé siendo tan valioso como el resto del equipo en todas las áreas",
+            "Tuve la suerte de tener esa oportunidad",
+            "--------",
+            "Ayudó a construir equipo",
+            "Pantallas del teléfono",
+            "Entrevistas",
+            "Desafíos del código",
+            "Reanudar opiniones",
+            "--------",
+            "Trajo pruebas unitarias a los proyectos de nuestros clientes",
+            "Unidad e Integración: Enzyme / Jest / Chai",
+            "E2E: Nightwatch",
+            "Estático: flujo",
+            "Parte del flujo de git usando ganchos de prepush / precommit",
+            "Comenzó el proceso de implementación de estas pruebas tan pronto como el código se fusionó con la puesta en escena",
+            "--------",
+            "Herramientas internas: DevCoop"
+          ]
+        },
+        {
           "title": "Reescribir la aplicación web principal de Java / AngularJS a NodeJS / ReactJS / GraphQL",
           "project": true,
           "content": [
@@ -258,7 +287,22 @@
             "Ejecuté un diseño de búsqueda innovador que destaca las pinturas de paisajes y retratos de forma natural",
             "Implementado \"Vista rápida\" para permitir a los usuarios ver más detalles sin salir de la página",
             "Se agregó una \"vista de mapa\" con pines personalizados y ventanas de información",
-            "Se utilizó un diseño de cuadrícula de estilo pinterest"
+            "Usó un diseño de cuadrícula de estilo pinterest",
+            "-----",
+            "En un momento teníamos dos marcas hermanas diferentes y no queríamos crear dos aplicaciones separadas. En su lugar, hicimos que nuestra aplicación principal Paint Nite fuera desplegable como 'Paint' o 'Plant'",
+            "Usó / creó un componente compartido <strong> NPM </strong> repo",
+            "Copias / traducciones personalizadas, activos y estilo para cada marca",
+            "-----",
+            "Backstage Reskin (Nuestra aplicación de administrador para usuarios)",
+            "Actualizado a los últimos paquetes para dependencias como React y Apollo",
+            "Verificaciones de tipo de flujo usado",
+            "Más rápido para desplegar nuevas páginas ya que decidimos utilizar <strong> <a href='https://ant.design/' target='_blank'> Ant Design </a> </strong> para nuestra biblioteca de componentes ",
+            "-----",
+            "Parte de un gran cambio de marca de la empresa: Paint Nite ==> Yaymaker",
+            "Lanzamiento incremental de las páginas de la marca Yaymaker. Logotipo de Paint Nite mantenido",
+            "Después de desplegar muchas / la mayoría de las páginas, desconectamos e hicimos el cambio una mañana temprano",
+            "Este proyecto provocó muchos proyectos más pequeños, como SEO, rendimiento del sitio, nuevas características como búsquedas de actualizaciones y páginas de destino",
+            "Se utilizó una guía de estilo más concisa y simplificada que permitió un desarrollo más rápido"
           ]
         },
         {
@@ -271,25 +315,7 @@
           ]
         },
         {
-          "title": "Creé la capacidad de cambiar entre las marcas Paint Nite y Plant Nite",
-          "project": true,
-          "content": [
-            "En un momento teníamos dos marcas hermanas diferentes y no queríamos crear dos aplicaciones separadas. En su lugar, hicimos que nuestra aplicación principal Paint Nite fuera desplegable como 'Paint' o 'Plant'",
-            "Usó / creó un componente compartido <strong> NPM </strong> repo",
-            "Copias / traducciones personalizadas, activos y estilo para cada marca"
-          ]
-        },
-        {
-          "title": "Trabajé con el Project Manager para definir el proceso de desarrollo",
-          "general": true,
-          "content": [
-            "Usé Kanban como núcleo (y luego cambié a Scrum para algunos proyectos)",
-            "Ayudó a crear nuevos tipos de tickets",
-            "Mejoramos nuestros carriles y la efectividad de nuestras reuniones"
-          ]
-        },
-        {
-          "title": "Se implementó Storybook para mostrar nuestra biblioteca de componentes que permite a los desarrolladores y diseñadores acceder fácilmente para su uso",
+          "title": "Storybook implementado para mostrar nuestra biblioteca de componentes que permite a los desarrolladores y diseñadores un fácil acceso para su uso.",
           "project": true,
           "content": [
             "Publique los componentes en un repositorio privado de NPM y compílelos con Rollup",
@@ -298,67 +324,7 @@
           ]
         },
         {
-          "title": "Ayudó a construir nuestro equipo",
-          "general": true,
-          "content": [
-            "Pantallas del teléfono",
-            "Entrevistas",
-            "Desafíos del código",
-            "Reanudar opiniones"
-          ]
-        },
-        {
-          "title": "Backstage Reskin (Nuestra aplicación de administrador para usuarios)",
-          "project": true,
-          "content": [
-            "Actualizado a los últimos paquetes para dependencias como React y Apollo",
-            "Verificaciones de tipo de flujo usado",
-            "Es más rápido desplegar nuevas páginas ya que decidimos utilizar <strong> <a href='https://ant.design/' target='_blank'> Ant Design </a> </strong> para nuestra biblioteca de componentes "
-          ]
-        },
-        {
-          "title": "Trajo pruebas unitarias a los proyectos de nuestros clientes",
-          "project": true,
-          "content": [
-            "Unidad e Integración: Enzyme / Jest / Chai",
-            "E2E: Nightwatch",
-            "Estático: flujo",
-            "Parte del flujo de git usando ganchos de prepush / precommit",
-            "Comenzó el proceso de implementación de estas pruebas tan pronto como el código se fusionó con la puesta en escena"
-          ]
-        },
-        {
-          "title": "Parte de un gran cambio de marca de la empresa: Paint Nite ==> Yaymaker",
-          "project": true,
-          "content": [
-            "Lanzamiento incremental de las páginas de la marca Yaymaker. Logotipo de Paint Nite mantenido",
-            "Después de desplegar muchas / la mayoría de las páginas, desconectamos e hicimos el cambio una mañana temprano",
-            "Este proyecto provocó muchos proyectos más pequeños, como SEO, rendimiento del sitio, nuevas características como búsquedas de actualizaciones y páginas de destino",
-            "Se utilizó una guía de estilo más concisa y simplificada que permitió un desarrollo más rápido"
-          ]
-        },
-        {
-          "title": "Dev Coop - Herramienta interna para desarrolladores",
-          "project": true,
-          "content": [
-            "<a href='https://github.com/pallets/flask' target='_blank'> Frasco </a> (Python), Express, <a href = 'https: //github.com/pugjs/ pug 'target =' _ blank '> plantillas Pug </a> ",
-            "Solo tenía la intención de ejecutarse localmente: una sencilla aplicación de Flask que escribí para ayudar al equipo con problemas que siempre parecen surgir",
-            "Para las implementaciones, agregué una integración floja para mantener a todos actualizados sobre su estado",
-            "Listado de Cobertura de código de nuestras aplicaciones js en un solo lugar",
-            "Tuvimos problemas / preocupaciones cuando llegó el momento de implementar nuevas versiones (Quizás, ¿esto es más probable que todos los demás?), Y esta aplicación se creó para ayudar a aliviar algo de ese estrés",
-            "- Lanzamientos -",
-            "API JIRA, Bitbucket y Slack",
-            "Obtenga automáticamente los próximos lanzamientos, combínelos con entradas de jira, enlácelos a BB prs para fusionarlos",
-            "Con un clic de botón, podríamos enviar mensajes y preguntas a canales de holgura dedicados que explican los pasos necesarios para liberar un cambio dado",
-            "Hizo una pequeña aplicación / bot de Slack que publicó un mensaje, solicitando el control de calidad y la aprobación del desarrollador (Basado en lo que se está lanzando: desarrolladores emparejados con repositorios para elegir quién se necesita para la aprobación)",
-            "Publica actualizaciones de estado durante la implementación",
-            "Publica los próximos planes y pasos de implementación",
-            "Proporciona un <strong> plan de reversión automática </strong>",
-            "El DevCoop enumera todos nuestros lanzamientos, estados y pasos anteriores, por etapas y próximos"
-          ]
-        },
-        {
-          "title": "Aplicación (es) de correo electrónico de Mandrill",
+          "title": "Mandrill Email App(s)",
           "project": true,
           "content": [
             "Básicamente nos quedamos atrapados usando Mandrill, y no tenía todas las características que queríamos. ¡Así que ideé una solución para integrarlo en nuestro equipo!",
@@ -375,43 +341,10 @@
           ]
         },
         {
-          "title": "Tealium (Desarrollado por Google Analytics)",
+          "title": "Rendimiento del sitio / Optimización / Seguimiento",
           "project": true,
           "content": [
-            "Creé una biblioteca compartida de funciones de seguimiento, constantes y otros ayudantes para garantizar que no tengamos regresiones con nuestro seguimiento",
-            "100% Unidad e integración probadas",
-            "Los parciales Graphql aseguraron que se recuperaran todos los datos necesarios",
-            "Compartido entre muchas aplicaciones",
-            "La excelente configuración facilita la actualización de cómo se transponen los datos",
-            "Se crearon componentes de React personalizados para que sea sencillo agregar nuevos eventos de seguimiento"
-          ]
-        },
-        {
-          "title": "Elastic Search",
-          "project": true,
-          "content": [
-            "Le dio más uso a nuestra página de búsqueda, así como a otras páginas",
-            "<strong> Coincidencia difusa y autocompletar </strong>. Capaz de buscar en muchos tipos de recursos diferentes en un cuadro de búsqueda",
-            "Herramientas de configuración para que el equipo actualice / copie / elimine / etc fácilmente nuestros índices y migre los datos hacia arriba / hacia abajo",
-            "Se trabajó para reemplazar la API de Google Maps Places con la versión ES interna que <strong> redujo los costos de la API en aproximadamente $ 87,000 anuales </strong>"
-          ]
-        },
-        {
-          "title": "Posicionamiento en Buscadores",
-          "project": true,
-          "content": [
-            "Trabajó en estrecha colaboración con un consultor para ayudar a identificar y abordar problemas",
-            "Limpieza del sitio con soluciones rápidas más sencillas como <strong> metaetiquetas, alt tags, Hx’s </strong>, etc.",
-            "El mapa del sitio generado ayudó con nuestras páginas de detalles del evento. Tienen una fecha de 'caducidad', por lo que queríamos asegurarnos de que aún no las indexábamos",
-            "Creé un <strong> paquete de URL compartidas </strong> con parciales graphql que aseguran que nuestras URL sean siempre canónicas, y esto fue compartido entre muchos clientes",
-            "Middleware para páginas de destino inactivas (artistas, eventos, etc.) para que podamos redirigir correctamente <strong> (evitando 404) </strong>",
-            "<strong> <a href='https://www.screamingfrog.co.uk/seo-spider/' target='_blank'> Screaming Frog </a> </strong>: redirecciones minimizadas / enlaces rotos identificados / Uso identificado de Hx'S / Robots.txt / Metaetiquetas faltantes identificadas: se creó un componente para manejar esto dinámicamente. Se utilizó el paquete NPM para manejar enlaces UGC rel = ”ugc nofollow” "
-          ]
-        },
-        {
-          "title": "Rendimiento del sitio",
-          "project": true,
-          "content": [
+            "RENDIMIENTO DEL SITIO",
             "Tamaño de imagen / herramienta de representación de imágenes",
             "Etiquetas Alt / todos los tamaños necesarios / optimizado todas las imágenes en nuestro sitio",
             "Puntos finales GraphQL para automatizar esto",
@@ -425,7 +358,29 @@
             "Función Lambda para ayudar con los objetivos de SEO / Minificar / Autohospedaje / Integración de Slack / Scripts de proveedores de terceros",
             "Auditoría de código para paquetes hinchados / Webpack / Eliminación de módulos de nodo duplicados o hinchados",
             "Pruebas de Nightwatch E2E para asegurar que no ocurrieron regresiones SEO básicas",
-            "<strong> <a href='https://blog.thewickedweb.dev/site-performance-yaymaker-paint-nite-case-study/101/' target='_blank'> Carga diferida </a> </ strong>: creó un contenedor de componentes <img /> React que solo solicitó la imagen cuando la imagen estaba a la vista en el navegador (¡o está por verse!). Dado que nuestro sitio es tan pesado en imágenes, esto ayudó a reducir mucha página Tamaño de la carga."
+            "<strong> <a href='https://blog.thewickedweb.dev/site-performance-yaymaker-paint-nite-case-study/101/' target='_blank'> Carga diferida </a> </ strong>: creó un contenedor de componentes <img /> React que solo solicitó la imagen cuando la imagen estaba a la vista en el navegador (¡o está por verse!). Dado que nuestro sitio es tan pesado en imágenes, esto ayudó a reducir mucha página Tamaño de la carga.",
+            "----------",
+            "SEO",
+            "Trabajó en estrecha colaboración con un consultor para ayudar a identificar y abordar problemas",
+            "Limpieza del sitio con soluciones rápidas más sencillas como <strong> metaetiquetas, alt tags, Hx’s </strong>, etc.",
+            "El mapa del sitio generado ayudó con nuestras páginas de detalles del evento. Tienen una fecha de 'caducidad', por lo que queríamos asegurarnos de que aún no las indexábamos",
+            "Creé un <strong> paquete de URL compartidas </strong> con parciales graphql que aseguran que nuestras URL sean siempre canónicas, y esto fue compartido entre muchos clientes",
+            "Middleware para páginas de destino inactivas (artistas, eventos, etc.) para que podamos redirigir correctamente <strong> (evitando 404) </strong>",
+            "<strong> <a href='https://www.screamingfrog.co.uk/seo-spider/' target='_blank'> Screaming Frog </a> </strong>: redireccionamientos minimizados / enlaces rotos identificados / Uso identificado de Hx'S / Robots.txt / Metaetiquetas faltantes identificadas: se creó un componente para manejar esto dinámicamente. Se utilizó el paquete NPM para manejar enlaces UGC rel = ”ugc nofollow” ",
+            "----------",
+            "BÚSQUEDA ELÁSTICA",
+            "Le dio más uso a nuestra página de búsqueda, así como a otras páginas",
+            "<strong> Coincidencia difusa y autocompletar </strong>. Capaz de buscar en muchos tipos de recursos diferentes en un cuadro de búsqueda",
+            "Herramientas de configuración para que el equipo actualice / copie / elimine / etc fácilmente nuestros índices y migre los datos hacia arriba / hacia abajo",
+            "Se trabajó para reemplazar la API de Google Maps Places con la versión ES interna que <strong> redujo los costos de la API en aproximadamente $ 87,000 anuales </strong>",
+            "-------",
+            "TEALIUM (Desarrollado por Google Analytics)",
+            "Creé una biblioteca compartida de funciones de seguimiento, constantes y otros ayudantes para garantizar que no tengamos regresiones con nuestro seguimiento",
+            "100% Unidad e integración probadas",
+            "Los parciales Graphql aseguraron que se recuperaran todos los datos necesarios",
+            "Compartido entre muchas aplicaciones",
+            "La excelente configuración facilita la actualización de cómo se transponen los datos",
+            "Se crearon componentes de React personalizados para que sea sencillo agregar nuevos eventos de seguimiento"
           ]
         }
       ]
