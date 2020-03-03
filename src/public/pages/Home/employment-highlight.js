@@ -7,7 +7,7 @@ const EmploymentHighlight = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="employment-highlight__component">
+    <div className="employment-highlight__component" id="employmentHighlight">
       <Article title={t('resume:highlight:title')}>
         <h3>
           <a href={t('resume:highlight:link')} rel="nofollow" target="_blank">
@@ -51,27 +51,19 @@ const EmploymentHighlight = () => {
           </strong>: {t('resume:highlight:focus')}
         </p>
         <br/>
+
+        <p
+          dangerouslySetInnerHTML={{__html: t('resume:highlight:description')}}
+        />
+
+        <br/>
+
         {t('resume:highlight:content', { returnObjects: true }).map((h, index) => (
           <details key={index}>
-            <summary data-aos="zoom-in-up">
-              { h.title }
-              { h.project &&
-                <span className="project">
-                  {t('general:project')}
-                </span>
-              }
-              { h.general &&
-                <span className="general">
-                  {t('general:general')}
-                </span>
-              }
-            </summary>
-            <ul className="bulleted-list">
+            <summary data-aos="zoom-in-up">{ h.title }</summary>
+            <ul>
               { h.content.map((content, index) => (
-                <li
-                  className="bulleted-list-item"
-                  key={index}
-                >
+                <li key={index}>
                   <div dangerouslySetInnerHTML={{__html: content }} />
                 </li>
               )) }

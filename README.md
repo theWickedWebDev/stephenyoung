@@ -65,9 +65,43 @@ is like ptsd trigger for me
 
 
 # JOBS
-### 100% Remote
-Zapier
-InvisionApp
+Lookin' good
+https://jobs.lever.co/kensho/57f45d5e-88d5-4a39-b65c-083883a318a1
 
-### Leads
-Hubspot
+# Hubspot
+senior https://www.hubspot.com/careers/jobs/2102162?hubs_signup-cta=careers-apply
+standard https://www.hubspot.com/careers/jobs/86940
+
+# InvisionApp
+https://boards.greenhouse.io/invision/jobs/1995129
+
+-----------
+### 100% Remote
+# Zapier
+
+# InvisionApp
+https://boards.greenhouse.io/invision/jobs/1995129
+https://boards.greenhouse.io/invision/jobs/1558354
+
+# Github
+https://boards.greenhouse.io/github/jobs/2113148
+https://boards.greenhouse.io/github/jobs/2054985
+
+# Skylight
+https://apply.workable.com/skylight/j/14B28B14C7/
+
+MAYBE
+
+https://boards.greenhouse.io/edx/jobs/1712078
+https://www.pega.com/about/careers/8628/senior-front-end-developer
+
+EH
+https://boards.greenhouse.io/cargurus/jobs/2075490?gh_jid=2075490
+
+
+RECRUITERS
+https://www.linkedin.com/in/ACoAABB7NaUBUZTTFQz4cB70MrVf5m0PL1yyAlE/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B1rhme5UaQi%2B2Fqvq%2FUDGiQ%3D%3D
+
+https://www.linkedin.com/in/ACoAAABhmuYByMxbIyyzamdq8wqFF69C1AUX7-0/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B1rhme5UaQi%2B2Fqvq%2FUDGiQ%3D%3D
+
+https://www.linkedin.com/in/ACoAAA1M538BVl6-dbY2P1Il7pnk-eLWSz2MlIQ/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B1rhme5UaQi%2B2Fqvq%2FUDGiQ%3D%3D

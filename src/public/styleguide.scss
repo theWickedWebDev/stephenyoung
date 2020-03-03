@@ -24,6 +24,16 @@ strong {
   }
 }
 
+button {
+  border: 0;
+}
+
+em {
+  &.alt {
+    border-bottom: dotted 2px $primaryColor;
+  }
+}
+
 em {
   font-style: italic;
 }

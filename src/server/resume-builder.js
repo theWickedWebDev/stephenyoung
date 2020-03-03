@@ -173,17 +173,13 @@ const resumeBuilder = (req, res, CONTENT) => {
     .fillColor(COLORS.body)
     .moveDown()
     .font(FONT_PRIMARY_BOLD)
-    .fontSize(FONT_SIZE.subtitle)
+    .fontSize(FONT_SIZE.body)
     .fillColor(COLORS.link)
     .text(
       stripHtml(CONTENT.resume.highlight.header),
       { link: CONTENT.resume.highlight.link, underline: true }
     )
     .fillColor(COLORS.body)
-    .moveDown()
-    .font(FONT_PRIMARY_BOLD)
-    .fontSize(FONT_SIZE.body)
-    .text(CONTENT.resume.highlight.rolesHeader, { indent: 15 })
     .moveDown()
 
   CONTENT.resume.highlight.roles.forEach(r => {
@@ -197,36 +193,23 @@ const resumeBuilder = (req, res, CONTENT) => {
   doc
     .fillColor(COLORS.body)
     .moveDown()
-    .font(FONT_PRIMARY_BOLD)
-    .text(CONTENT.resume.highlight.focusHeader, { indent: 15 })
-    .fillColor(COLORS.body)
+    .font(FONT_PRIMARY)
+    .fontSize(FONT_SIZE.small)
+    .text(stripHtml(CONTENT.resume.highlight.focus))
     .moveDown()
     .font(FONT_PRIMARY)
+    .fontSize(FONT_SIZE.small)
+    .text(stripHtml(CONTENT.resume.highlight.description))
+    .moveDown()
+    .font(FONT_PRIMARY)
+    .fontSize(FONT_SIZE.small)
+    .text(CONTENT.resume.highlight.moreInfo)
+    .moveDown()
+    .fillColor(COLORS.link)
     .fontSize(FONT_SIZE.body)
-    .text(stripHtml(CONTENT.resume.highlight.focus), { indent: 25 })
+    .text(CONTENT.resume.highlight.cta, { link: 'https://www.thewickedweb.dev/'})
     .moveDown()
     .moveDown()
-    .font(FONT_PRIMARY_BOLD)
-    .text(CONTENT.resume.highlight.contentHeader, { indent: 15 })
-    .moveDown();
-
-  CONTENT.resume.highlight.content.forEach(c => {
-    doc
-      .fillColor(COLORS.body)
-      .font(FONT_PRIMARY)
-      .fontSize(FONT_SIZE.small)
-      .text(c.title, { indent: 25, paragraphGap: 1, lineGap: 1 })
-      .moveDown();
-    /* Add in more details
-      c.content.map(i => {
-        doc
-          .font(FONT_PRIMARY)
-          .fontSize(FONT_SIZE.tiny)
-          .text(stripHtml(i), { indent: 25 })
-          .moveDown();
-      });
-    */
-  });
 
   hr();
 
@@ -293,30 +276,6 @@ hr();
       .moveDown()
       .moveDown();
   });
-
-
-// CONCLUSION
-/*
-  addPage();
-  doc
-    .fillColor(COLORS.primary)
-    .font(FONT_PRIMARY)
-    .fontSize(FONT_SIZE.title)
-    .text(CONTENT.homepage.conclusion.title, { align: 'left' })
-    .fillColor(COLORS.body)
-    .moveDown();
-
-  CONTENT.homepage.conclusion.content.forEach(c => {
-    doc
-      .fillColor(COLORS.body)
-      .font(FONT_PRIMARY)
-      .fontSize(FONT_SIZE.body)
-      .fillColor(COLORS.body)
-      .text(c)
-      .moveDown()
-      .moveDown();
-  });
-*/
 
 /**
  * GLOBAL EDITS TO ALL PAGES

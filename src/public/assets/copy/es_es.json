@@ -4,6 +4,7 @@
       {
         "name": "<i class='fas fa-download margin-right-lg'></i>Descargar Mi Currículum",
         "internal": false,
+        "slug": "resume",
         "href": "resume.pdf?locale=es_es"
       }
     ]
@@ -233,6 +234,8 @@
     "highlight": {
       "title": "Destacado laboral",
       "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA — Mayo 2015 - Febrero 2020",
+      "moreInfo": "Para una descripción más detallada de los principales proyectos. Por favor visite mi sitio de currículum en https://www.thewickedweb.dev/",
+      "cta": "Haga clic para más detalles",
       "link": "https://www.yaymaker.com/",
       "logo": "yaymaker-logo.svg",
       "roles": [
