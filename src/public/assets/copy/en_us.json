@@ -6,8 +6,28 @@
         "internal": false,
         "slug": "resume",
         "href": "resume.pdf"
+      },
+
+      {
+        "name": "About this site",
+        "internal": true,
+        "slug": "about",
+        "href": "/about/"
       }
     ]
+  },
+  "about": {
+    "meta": {
+      "title": "About my resume site - Stephen Young",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "title": "About this Site",
+    "description": "I wanted to make a résumé site that could showcase some of the concepts I am passionate about (even if its total overkill). This site demonstrates a lot of things I have learned in the past. Hope you enjoy!",
+    "techHeader": "Whats it made with?",
+    "clientHeader": "Client",
+    "serverHeader": "Server",
+    "detailsHeader": "Server",
+    "comingSoonHeader": "Server"
   },
   "homepage": {
     "meta": {

@@ -34,10 +34,17 @@ const getTranslations = locale => {
   return translations;
 }
 
+app.get('/robots.txt', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'public/assets/robots.txt'));
+});
+
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'public/assets/sitemap.xml'));
+});
+
+// resume.pdf?locale=es_es
 app.get('/resume.pdf', (req, res) => {
-  // /resume.pdf?locale=es_es
-  const content = getTranslations(req.query.locale);
-  resumeBuilder(req, res, content);
+  resumeBuilder(req, res, getTranslations(req.query.locale));
 });
 
 app.get('/*', (req, res) => {
@@ -114,6 +121,7 @@ app.get('/*', (req, res) => {
     </head>
     <body ${helmet.bodyAttributes.toString()}>
       <div id="root">${component}</div>
+
       <script src="/static/vendors~index.js.bundle.js"></script>
       <script src="/static/index.js.bundle.js"></script>
     </body>
