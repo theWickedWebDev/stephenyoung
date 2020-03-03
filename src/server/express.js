@@ -68,7 +68,6 @@ app.get('/*', (req, res) => {
       <script src="https://kit.fontawesome.com/4042efa8d7.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="/static/index.js.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Spartan:400,500,700&display=swap" rel="stylesheet">
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
       <link rel="apple-touch-icon" sizes="57x57" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="60x60" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-60x60.png">

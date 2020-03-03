@@ -1,0 +1,16 @@
+.footer__component {
+  padding: 24px;
+  text-align: center;
+}
+
+.footer__flags {
+  .footer__flags-item {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  .footer__flag {
+    height: 20px;
+    cursor: pointer;
+  }
+}
