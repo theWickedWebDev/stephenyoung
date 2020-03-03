@@ -41,6 +41,7 @@ app.get('/resume.pdf', (req, res) => {
 });
 
 app.get('/*', (req, res) => {
+
   const context = {};
 
   const component = ReactDOMServer.renderToString(

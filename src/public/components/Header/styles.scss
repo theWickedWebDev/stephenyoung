@@ -42,3 +42,34 @@
   right: 30px;
   bottom: -20px;
 }
+
+.tablet,
+.mobile {
+  .header__component {
+    background-position: 44% 15px;
+    background-size: 300px;
+    padding: 0;
+  }
+
+  .header__component .header__body {
+    padding: 305px 12px 24px;
+    text-align: center;
+  }
+  .header__component-h1 {
+    font-size: 26px;
+    background-color: $white;
+    color: $darkBlue;
+    padding: 0;
+
+    .cursor { background-color: $white; }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  .header__component-p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

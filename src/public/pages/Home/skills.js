@@ -8,11 +8,11 @@ const Skills = () => {
 
   return (
     <Article title={t('resume:skills:title')}>
-      <p>{t('resume:skills:tech:title')}</p>
+      <p className="text-center-mobile">{t('resume:skills:tech:title')}</p>
       <TagList
         list={t('resume:skills:tech:content', { returnObjects: true })}/>
       <br/>
-        <p>{t('resume:skills:other:title')}</p>
+      <p className="text-center-mobile">{t('resume:skills:other:title')}</p>
       <TagList
         list={t('resume:skills:other:content', { returnObjects: true })}/>
     </Article>

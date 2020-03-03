@@ -16,8 +16,6 @@ const Gallery = props => {
             src={`${S3_URL}${S3_IMAGES_PATH}${S3_IMAGES_GALLERY_PATH}/${image.src}`}
             alt={image.alt}
             title={image.alt}
-            width="200px"
-            height="133px"
             className="image-list-item__image"
           />
         </LazyLoad>

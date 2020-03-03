@@ -80,6 +80,11 @@ const baseConfig = {
         S3_FLAGS_PATH: JSON.stringify('/flags'),
         S3_AVATAR_PATH: JSON.stringify('/avatar'),
         S3_LOGOS_PATH: JSON.stringify('/logo'),
+        BREAKPOINTS: JSON.stringify({
+          mobile: 500,
+          tablet: 800,
+          desktop: 1100,
+        }),
         // S3_URL: JSON.stringify('https://s3.thewickedweb.dev'),
       }
     })

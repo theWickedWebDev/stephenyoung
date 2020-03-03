@@ -48,7 +48,7 @@
 .navbar__component-list {
   list-style: none;
   margin-left: 20px;
-  
+
   li {
     display: inline-block;
     padding: 12px;
@@ -61,5 +61,11 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.mobile {
+  .navbar__component .navbar__component-list {
+    display: none;
   }
 }

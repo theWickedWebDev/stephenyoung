@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.scss';
 
 const TagList = props => (
   <ul className="tag-list">

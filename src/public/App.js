@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom';
+
 import './translations';
 
 import DefaultLayout from 'layouts/default';

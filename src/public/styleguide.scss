@@ -62,7 +62,7 @@ h3 {
   font-weight: bold;
   padding-bottom: 8px;
   margin: 24px 0 12px;
-  border-bottom: solid 1px $lightGray;
+  //border-bottom: solid 1px $lightGray;
 }
 
 .dropcap {
@@ -314,5 +314,47 @@ summary  {
     display: inline-block;
     margin: 24px;
     font-size: 60px;
+  }
+}
+
+.mobile,
+.tablet {
+  .highlight-logo {
+    display: block;
+    margin: 30px auto 12px;
+    width: 150px;
+  }
+
+  .icon-list {
+    padding: 20px 0;
+
+    .icon-list-item {
+      font-size: 30px;
+      margin: 12px 20px;
+    }
+  }
+
+  summary  {
+    .project,
+    .general {
+      display: none;
+    }
+  }
+}
+
+
+.mobile {
+  .text-center-mobile {
+    text-align: center;
+  }
+
+  .tag-list {
+    text-align: center;
+  }
+
+  .employment-highlight__component {
+      .vertical-align-middle {
+        display: block;
+      }
   }
 }
