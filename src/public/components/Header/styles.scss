@@ -4,9 +4,9 @@
   background-color: $primaryColor;
   padding: 100px 24px 80px;
   position: relative;
-  background-position: -45px calc(100% + 90px);
   background-repeat: no-repeat;
-  background-size: 450px;
+  background-position: 36px calc(100% + 84px);
+  background-size: 336px;
 
   &.with-avatar {
     .header__body {
@@ -46,7 +46,7 @@
 .tablet,
 .mobile {
   .header__component {
-    background-position: 44% 15px;
+    background-position: 114px calc(100% - 164px);
     background-size: 300px;
     padding: 0;
   }

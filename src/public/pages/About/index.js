@@ -1,9 +1,9 @@
 // Dependencies
-import React from 'react'
-import { Helmet } from "react-helmet";
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Components
+import Meta from 'components/Meta';
 import Section from 'components/Section';
 import Article from 'components/Article';
 import Header from 'components/Header';
@@ -14,17 +14,18 @@ const About = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>{t('about:meta:title')}</title>
-        <link rel="canonical" href="https://www.thewickedweb.dev/about/" />
-        <meta name="description" content={t('about:meta:description').substring(0, 160)} />
-      </Helmet>
       <Header
         title={t('about:title')}
         intro={t('about:description')}
-        withAvatar={true}
+        avatar={`${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-2.svg`}
       />
-
+      <Meta
+        robots="index"
+        keywords="HTML,CSS,XML,JavaScript"
+        title={t('about:meta:title')}
+        description={t('about:meta:description')}
+        canonical="https://www.thewickedweb.dev/about/"
+      />
       <Section>
         <Article title={t('about:techHeader')}>
           <ul className="test-list">

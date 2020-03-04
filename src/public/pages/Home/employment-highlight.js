@@ -9,13 +9,6 @@ const EmploymentHighlight = () => {
   return (
     <div className="employment-highlight__component" id="employmentHighlight">
       <Article title={t('resume:highlight:title')}>
-        <h3 className="employment-highlight__h3">
-          <a href={t('resume:highlight:link')} rel="nofollow" target="_blank">
-            {t('resume:highlight:header')}
-            &nbsp;
-            <i className="fas fa-link"/>
-          </a>
-        </h3>
         <div>
           <LazyLoad>
             <img
@@ -26,6 +19,13 @@ const EmploymentHighlight = () => {
               title="Logo"
             />
           </LazyLoad>
+          <h3 className="employment-highlight__h3">
+            <a href={t('resume:highlight:link')} rel="nofollow" target="_blank">
+              {t('resume:highlight:header')}
+              &nbsp;
+              <i className="fas fa-link"/>
+            </a>
+          </h3>
           <div className="vertical-align-middle">
           { t('resume:highlight:roles', { returnObjects: true })
             .map((role, index) => {

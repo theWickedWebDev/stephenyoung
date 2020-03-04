@@ -3,15 +3,14 @@ import './styles.scss';
 import { useTranslation } from 'react-i18next';
 
 const Header = props => {
-  const { title, intro, bling, withAvatar } = props;
+  const { title, intro, bling, avatar } = props;
   const { t, i18n } = useTranslation();
 
   const style = {};
   const classNames = ["header__component"];
 
-  if (withAvatar) {
-    style.backgroundImage =
-      `url('${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar.svg')`;
+  if (avatar) {
+    style.backgroundImage = `url('${avatar}')`;
     classNames.push('with-avatar');
   }
 

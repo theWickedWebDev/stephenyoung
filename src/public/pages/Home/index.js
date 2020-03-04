@@ -1,9 +1,9 @@
 // Dependencies
 import React from 'react'
-import { Helmet } from "react-helmet";
 import { useTranslation } from 'react-i18next';
 
 // Components
+import Meta from 'components/Meta';
 import Section from 'components/Section';
 import Article from 'components/Article';
 import Header from 'components/Header';
@@ -14,6 +14,7 @@ import Skills from './skills';
 import EmploymentHighlight from './employment-highlight';
 import AdditionalExperience from './additional-experience';
 import References from './references';
+import TechIcons from './tech-icons';
 
 // <Home/> Component
 const Home = () => {
@@ -21,27 +22,19 @@ const Home = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>{t('homepage:meta:title')}</title>
-        <link rel="canonical" href="https://www.thewickedweb.dev/" />
-        <meta name="description" content={t('homepage:meta:description').substring(0, 160)} />
-        <meta name="robots" content="index"/>
-        <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
-      </Helmet>
       <Header
         title={t('homepage:title')}
         intro={t('homepage:description')}
-        withAvatar={true}
+        avatar={`${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-2.svg`}
       />
-
-      <ul className="icon-list icon-list-light">
-        <li className="icon-list-item"><i className="fab fa-node-js"/></li>
-        <li className="icon-list-item"><i className="fab fa-react"/></li>
-        <li className="icon-list-item"><i className="fab fa-html5"/></li>
-        <li className="icon-list-item"><i className="fab fa-css3-alt"/></li>
-        <li className="icon-list-item"><i className="fab fa-node"/></li>
-      </ul>
-
+      <Meta
+        robots="index"
+        keywords="HTML,CSS,XML,JavaScript"
+        title={t('homepage:meta:title')}
+        description={t('homepage:meta:description')}
+        canonical="https://www.thewickedweb.dev/"
+      />
+      <TechIcons/>
       <Section>
         <Skills/>
         <EmploymentHighlight/>

@@ -13,7 +13,7 @@ import structuredData from './structured-data';
 /**
 * Start Server
 */
-const app = express()
+const app = express(({ strict: true }))
 
 app.use(compression())
 
@@ -50,6 +50,14 @@ app.get('/resume.pdf', (req, res) => {
 
 app.get('/*', (req, res) => {
 
+  // Redirects trailing slashes
+  const noTrailingSlash = !req.url.endsWith('/');
+  const notHomepage = !req.url !== '/';
+  const notAFile = !req.url.includes('.');
+  if (noTrailingSlash &&  notHomepage && notAFile) {
+    res.redirect(301, req.url + '/')
+  }
+
   const context = {};
 
   const component = ReactDOMServer.renderToString(
@@ -77,45 +85,6 @@ app.get('/*', (req, res) => {
       <script src="https://kit.fontawesome.com/4042efa8d7.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="/static/index.js.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Spartan:400,500,700&display=swap" rel="stylesheet">
-
-      <link rel="apple-touch-icon" sizes="57x57" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="${S3_URL}${S3_IMAGES_PATH}/favicon/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="${S3_URL}${S3_IMAGES_PATH}/favicon/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="${S3_URL}${S3_IMAGES_PATH}/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="${S3_URL}${S3_IMAGES_PATH}/favicon/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="${S3_URL}${S3_IMAGES_PATH}/favicon/favicon-16x16.png">
-      <link rel="manifest" href="${S3_URL}${S3_IMAGES_PATH}/favicon/manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="${S3_URL}${S3_IMAGES_PATH}/favicon/ms-icon-144x144.png">
-      <meta name="theme-color" content="#ffffff">
-
-      <meta property="og:title" content="Senior Software Developer - Stephen Young">
-      <meta property="og:site_name" content="The Wicked Web Dev">
-      <meta property="og:url" content="https://www.thewickedweb.dev">
-      <meta property="og:description" content="">
-      <meta property="og:type" content="website">
-      <meta property="og:image" content="https://www.thewickedweb.dev/static/assets/avatar-square-blue.jpg">
-      <meta property="og:type" content="video">
-        <meta property="og:video:url" content="https://www.youtube.com/embed/r_oxHVlr9aI">
-        <meta property="og:video:secure_url" content="https://www.youtube.com/embed/r_oxHVlr9aI">
-        <meta property="og:video:type" content="text/html">
-        <meta property='og:video' content='https://www.youtube.com/v/r_oxHVlr9aI?version=3&amp;autohide=1'>
-        <meta property='og:video:secure_url' content='https://www.youtube.com/v/r_oxHVlr9aI?version=3&amp;autohide=1'>
-        <meta property="og:video:type" content="application/x-shockwave-flash">
-
-      <meta property="al:ios:app_name" content="YouTube">
-      <meta property="al:ios:url" content="vnd.youtube://www.youtube.com/watch?v=r_oxHVlr9aI&amp;feature=applinks">
-      <meta property="al:android:url" content="vnd.youtube://www.youtube.com/watch?v=r_oxHVlr9aI&amp;feature=applinks">
-      <meta property="al:android:app_name" content="YouTube">
-      <meta property="al:android:package" content="com.google.android.youtube">
-      <meta property="al:web:url" content="https://www.youtube.com/watch?v=r_oxHVlr9aI&amp;feature=applinks">
       ${helmet.title.toString()}
       ${helmet.meta.toString()}
       ${helmet.link.toString()}

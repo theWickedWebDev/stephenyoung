@@ -46,7 +46,7 @@ const Navbar = () => {
       <ul className="navbar_component navbar_right">
         <li>
           <a href="https://www.linkedin.com/in/thewickedwebdev/" target="_blank">
-            <i class="fab fa-linkedin"/>
+            <i className="fab fa-linkedin"/>
           </a>
         </li>
 

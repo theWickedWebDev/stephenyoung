@@ -1,6 +1,7 @@
 import React from 'react'
 import AOS from 'aos';
 
+import { Favicon } from 'components/Meta';
 import Viewport from 'components/Viewport';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
