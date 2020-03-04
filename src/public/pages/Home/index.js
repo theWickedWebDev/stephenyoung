@@ -25,6 +25,8 @@ const Home = () => {
         <title>{t('homepage:meta:title')}</title>
         <link rel="canonical" href="https://www.thewickedweb.dev/" />
         <meta name="description" content={t('homepage:meta:description').substring(0, 160)} />
+        <meta name="robots" content="index"/>
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
       </Helmet>
       <Header
         title={t('homepage:title')}
@@ -45,7 +47,10 @@ const Home = () => {
         <EmploymentHighlight/>
         <AdditionalExperience/>
         <References/>
-        <Article title={t('gallery:title')}><Gallery/></Article>
+        <Article title={t('gallery:title')}>
+          <h3 className="body-font">{t('gallery:copy')}</h3>
+          <Gallery/>
+        </Article>
       </Section>
     </div>
   );

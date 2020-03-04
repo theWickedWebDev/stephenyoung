@@ -9,6 +9,19 @@
       }
     ]
   },
+  "about": {
+    "meta": {
+      "title": "About my resume site - Stephen Young",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "title": "About this Site",
+    "description": "I wanted to make a résumé site that could showcase some of the concepts I am passionate about (even if its total overkill). This site demonstrates a lot of things I have learned in the past. Hope you enjoy!",
+    "techHeader": "Whats it made with?",
+    "clientHeader": "Client",
+    "serverHeader": "Server",
+    "detailsHeader": "Other Details",
+    "comingSoonHeader": "On its way!"
+  },
   "homepage": {
     "meta": {
       "title": "Developpeur de logiciel confirmé - Stephen Young",
@@ -33,6 +46,7 @@
   },
   "gallery": {
     "title": "Moi dans ma zone",
+    "copy": "Here are some photographs of the times when Im the best version of myself. Places and activities where I shine.",
     "content": [
       {
         "src": "bowling.jpg",
@@ -442,6 +456,7 @@
     "highlight": {
       "title": "Points saillants sur l'emploi (besoin de condenser et de réécrire)",
       "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA — May 2015 - Feb 2020",
+      "description": "J'ai travaillé quotidiennement avec React, Graphql et de nombreux autres packages Javascript. En plus de cela, le travail Elastic Search et MySql était également quelque chose que je faisais régulièrement. En utilisant Jenkins, Docker et d'autres outils pour nous aider à déployer notre travail, je fourni d'innombrables nouvelles fonctionnalités et améliorations à toutes nos bases de code. <br/> <br/> J'ai apporté des tests unitaires à nos projets clients en profitant de packages tels que Enzyme, Jest, Cha, Nightwatch ainsi que Flow pour nos tests statiques. Ces modifications ont été intégrées à notre git-flow à l'aide de crochets de pré-push et de pré-validation. <br/> <br/> J'ai travaillé en étroite collaboration avec le chef de projet pour définir le processus de développement en utilisant Kanban comme noyau. J'ai aidé à créer de nouveaux types de billets, améliorer nos couloirs et l'efficacité de nos réunions. <br/> Nous avons aidé à constituer notre équipe de développement en participant et en dirigeant des écrans de téléphone, des interviews, des défis de code et des critiques de CV. ",
       "moreInfo": "Pour une description plus détaillée des grands projets. Veuillez visiter mon site de CV à https://www.thewickedweb.dev/",
       "cta": "Cliquer pour les détails",
       "link": "https://www.yaymaker.com/",

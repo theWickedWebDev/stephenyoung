@@ -22,6 +22,7 @@ const EmploymentHighlight = () => {
               className="vertical-align-middle margin-right-lg highlight-logo"
               width="90px"
               alt="Logo"
+              title="Logo"
             />
           </LazyLoad>
           <div className="vertical-align-middle">

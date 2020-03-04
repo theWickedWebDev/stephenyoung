@@ -6,6 +6,14 @@ import './styles.scss';
 const Posts = props => {
   const { references } = props;
 
+  const getPostHeader = ref => {
+    return `${ref.content.split('.')[0]}.`;
+  };
+
+  const getPostBody = ref => {
+    return `${ref.content.split('.').slice(1, ref.content.split('.').length - 1).join('. ')}`;
+  };
+
   return (
     <ul className="posts_list_component">
       { references.map((ref, index) => (
@@ -17,10 +25,18 @@ const Posts = props => {
           <div className="posts_list_content clearfix">
             { ref.image &&
               <LazyLoad>
-                <img src={ref.image} width="70px"/>
+                <img
+                  src={ref.image}
+                  width="70px"
+                  alt={"Photo of coworker " + ref.name}
+                  title={getPostHeader(ref)}
+                />
               </LazyLoad>
             }
-            <quote className="posts_list_quote">"{ref.content}"</quote>
+            <quote className="posts_list_quote">
+              <h3>{getPostHeader(ref)}</h3>
+              <p>{getPostBody(ref)}</p>
+            </quote>
           </div>
 
           { ref.link

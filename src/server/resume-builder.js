@@ -7,7 +7,7 @@ import stripHtml from "string-strip-html";
 // STYLEGUIDE
 const COLORS = {
   link: '#a27749',
-  primary: '#2ea4f7',
+  primary: '#131e20',
   body: '#131e20'
 };
 
@@ -21,7 +21,7 @@ const PAGE_OPTIONS = {
 };
 
 const FONT_SIZE = {
-  title: 22,
+  title: 18,
   subtitle: 14,
   body: 12,
   small: 10,
@@ -100,7 +100,7 @@ const resumeBuilder = (req, res, CONTENT) => {
       'https://www.thewickedweb.dev/',
       PAGE_OPTIONS.margins.left + 10,
       PAGE_OPTIONS.margins.top + 50,
-      { link: 'https://www.thewickedweb.dev/' }
+      { link: 'https://www.thewickedweb.dev/?resume=header' }
     )
     .font(FONT_TECH)
     .fontSize(FONT_SIZE.small)
@@ -120,7 +120,7 @@ const resumeBuilder = (req, res, CONTENT) => {
     .fontSize(FONT_SIZE.small)
     .font(FONT_PRIMARY_ITALIC)
     .text(
-      stripHtml(CONTENT.homepage.description),
+      '',
       PAGE_OPTIONS.margins.left, 150,
       { align: 'left' }
     )
@@ -207,12 +207,13 @@ const resumeBuilder = (req, res, CONTENT) => {
     .moveDown()
     .fillColor(COLORS.link)
     .fontSize(FONT_SIZE.body)
-    .text(CONTENT.resume.highlight.cta, { link: 'https://www.thewickedweb.dev/'})
+    .text(CONTENT.resume.highlight.cta, { link: 'https://www.thewickedweb.dev/?resume=employmentHighlight'})
     .moveDown()
     .moveDown()
 
   hr();
 
+addPage();
 // ADDITIONAL EXPERIENCE
   doc
     .fillColor(COLORS.primary)
@@ -223,7 +224,7 @@ const resumeBuilder = (req, res, CONTENT) => {
 
   doc
     .fontSize(FONT_SIZE.small)
-    .text("Showing 3 of " + CONTENT.resume.additionalExperience.content.length + " additional experiences. If you would like to see more, please visit my resume website.")
+    .text("Showing 3 of " + CONTENT.resume.additionalExperience.content.length + " additional experiences.")
     .moveDown()
     .moveDown();
 
@@ -232,7 +233,7 @@ const resumeBuilder = (req, res, CONTENT) => {
       .fillColor(COLORS.body)
       .font(FONT_PRIMARY_BOLD)
       .fontSize(FONT_SIZE.body)
-      .fillColor(COLORS.link)
+      .fillColor(COLORS.body)
       .text(c.name ? c.name + ' - ' + c.title : c.title, { link: c.link })
       .fillColor(COLORS.body)
       .font(FONT_PRIMARY_ITALIC)
@@ -254,11 +255,11 @@ hr();
 
   doc
     .fontSize(FONT_SIZE.small)
-    .text("Showing 2 of " + CONTENT.resume.references.content.length + " references. If you would like to see more, please visit my resume website.")
+    .text("Showing 3 of " + CONTENT.resume.references.content.length + " references.")
     .moveDown()
     .moveDown();
 
-  CONTENT.resume.references.content.filter(c => c.relevant).slice(0, 2).forEach(c => {
+  CONTENT.resume.references.content.filter(c => c.relevant).slice(0, 3).forEach(c => {
     doc
       .fillColor(COLORS.body)
       .font(FONT_PRIMARY_BOLD)

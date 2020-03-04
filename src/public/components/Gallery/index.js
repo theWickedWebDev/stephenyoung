@@ -18,6 +18,7 @@ const Gallery = props => {
             title={image.alt}
             className="image-list-item__image"
           />
+          <h4>{image.alt}</h4>
         </LazyLoad>
       </li>
     ))}

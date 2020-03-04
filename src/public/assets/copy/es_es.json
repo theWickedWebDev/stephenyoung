@@ -9,6 +9,19 @@
       }
     ]
   },
+  "about": {
+    "meta": {
+      "title": "About my resume site - Stephen Young",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "title": "About this Site",
+    "description": "I wanted to make a résumé site that could showcase some of the concepts I am passionate about (even if its total overkill). This site demonstrates a lot of things I have learned in the past. Hope you enjoy!",
+    "techHeader": "Whats it made with?",
+    "clientHeader": "Client",
+    "serverHeader": "Server",
+    "detailsHeader": "Other Details",
+    "comingSoonHeader": "On its way!"
+  },
   "homepage": {
     "meta": {
       "title": "Desarrollador de software - Stephen Young",
@@ -234,6 +247,7 @@
     "highlight": {
       "title": "Destacado laboral",
       "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA — Mayo 2015 - Febrero 2020",
+      "description": "Trabajé diariamente con React, Graphql y muchos otros paquetes de Javascript. Además de eso, Elastic Search y MySql también fueron algo que hice regularmente. Utilizando Jenkins, Docker y otras herramientas para ayudarnos a implementar nuestro trabajo, yo entregué innumerables nuevas funciones y mejoras a todas nuestras bases de código. <br/> <br/> Traje pruebas unitarias a nuestros proyectos de clientes aprovechando paquetes como Enzyme, Jest, Cha, Nightwatch y Flow para nuestras pruebas estáticas. Estos cambios se integraron en nuestro flujo de git utilizando ganchos de pre-inserción y pre-confirmación. <br/> <br/> Trabajé estrechamente con el Gerente de Proyecto para definir el proceso de desarrollo usando Kanban como núcleo. Ayudé a crear nuevos tipos de entradas, mejorar nuestros carriles de natación y la efectividad de nuestra reunión. <br/> Ayudé a construir nuestro equipo de desarrollo participando y liderando pantallas telefónicas, entrevistas, desafíos de código y revisiones de currículums ",
       "moreInfo": "Para una descripción más detallada de los principales proyectos. Por favor visite mi sitio de currículum en https://www.thewickedweb.dev/",
       "cta": "Haga clic para más detalles",
       "link": "https://www.yaymaker.com/",

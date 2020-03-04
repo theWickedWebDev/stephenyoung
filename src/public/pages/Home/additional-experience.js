@@ -11,14 +11,14 @@ const AdditionalExperience = () => {
       .map((exp, index) => {
         return (
           <div key={index}>
-            <h5>
+            <h3>
               <a href={ exp.link } className={!exp.link ? 'disabled' : ''}>
                 <strong>
                   { exp.name }
                   { exp.link && <i className="fas fa-link padding-left-sm"/> }
                 </strong>
               </a>, { exp.location } — { exp.from } - { exp.until }
-            </h5>
+            </h3>
             <p>{ exp.description }</p>
             <br/>
           </div>

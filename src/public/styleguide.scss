@@ -91,6 +91,12 @@ h3 {
   }
 }
 
+.body-font {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: $primaryFont;
+}
+
 .skeleton {
   display: block;
 
@@ -328,6 +334,27 @@ summary  {
     display: inline-block;
     margin: 24px;
     font-size: 60px;
+  }
+}
+
+.test-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  li {
+    padding: 50px;
+    border: solid 1px #000;
+    background-color: $secondaryColor;
+    color: $secondaryColor_light;
+    text-align: center;
+
+    i {
+      display: block;
+      font-size: 70px;
+      margin-bottom: 12px;
+    }
   }
 }
 

@@ -8,6 +8,7 @@ import App from '../public/App'
 import Helmet from 'react-helmet';
 import fs from 'fs';
 import resumeBuilder from './resume-builder';
+import structuredData from './structured-data';
 
 /**
 * Start Server
@@ -72,6 +73,7 @@ app.get('/*', (req, res) => {
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="Stephen Young">
       <script src="https://kit.fontawesome.com/4042efa8d7.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="/static/index.js.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Spartan:400,500,700&display=swap" rel="stylesheet">
@@ -117,7 +119,7 @@ app.get('/*', (req, res) => {
       ${helmet.title.toString()}
       ${helmet.meta.toString()}
       ${helmet.link.toString()}
-
+      ${structuredData[req.url] ? structuredData[req.url] : ''}
     </head>
     <body ${helmet.bodyAttributes.toString()}>
       <div id="root">${component}</div>
