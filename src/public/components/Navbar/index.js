@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar__component">
       <Link to="/" title="Home">
         <img
-          src={`${S3_URL}${S3_IMAGES_PATH}${S3_LOGOS_PATH}/logo.jpg`}
+          src={`${S3_URL}${S3_IMAGES_PATH}${S3_LOGOS_PATH}/logo.jpg?g=2`}
           className="navbar__component-logo"
           alt="Logo for TheWickedWebDev"
           title="Logo for TheWickedWebDev"

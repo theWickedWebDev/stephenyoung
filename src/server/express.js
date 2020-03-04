@@ -71,11 +71,16 @@ app.get('/*', (req, res) => {
 
   const renderedHtml = html({ helmet, component, req });
 
+  var minify = require('html-minifier').minify;
+  var minifiedHtml = minify(renderedHtml, {
+    removeAttributeQuotes: true
+  });
+
   if (context.url) {
     res.writeHead(301, { Location: context.url })
     res.end()
   } else {
-    res.send(renderedHtml)
+    res.send(minifiedHtml)
   }
 })
 

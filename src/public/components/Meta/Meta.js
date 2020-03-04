@@ -5,7 +5,7 @@ import * as og from './og';
 
 const defaultTitle = 'Stephen Young - TheWickedWebDev';
 const defaultDescription = 'Support others. Stay positive. Embrace Change. Take Risks.';
-const defaultImage = 'https://www.thewickedweb.dev/static/assets/avatar-square-blue.jpg';
+const defaultImage = `${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-square-blue.jpg`;
 
 const Meta = (props) => {
   const {
@@ -38,9 +38,9 @@ const Meta = (props) => {
 
   return (
     <Helmet>
-      <html lang="en" />
       <title>{ title }</title>
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta http-equiv="content-language" content="en-us" />
       <meta name="author" content="Stephen Young" />
       { links.map((l, index) => <link key={index} {...l} />)}
       { metas.map((m, index) => <meta key={index} {...m} />)}

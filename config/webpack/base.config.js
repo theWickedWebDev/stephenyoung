@@ -67,10 +67,6 @@ const baseConfig = {
     }
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
     new ReplacePlugin({
       exclude: [
         /node_modules/,
@@ -93,9 +89,9 @@ const baseConfig = {
           tablet: 800,
           desktop: 1100,
         }),
-        // S3_URL: JSON.stringify('https://s3.thewickedweb.dev'),
       }
-    })
+    }),
+    new MiniCssExtractPlugin(),
   ]
 };
 

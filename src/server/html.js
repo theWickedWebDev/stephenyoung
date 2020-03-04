@@ -29,16 +29,17 @@ const INTERNAL_SCRIPTS = `
 `;
 
 const html = ({ helmet, component, req }) => `
-  <html ${helmet.htmlAttributes.toString()}>
+  <!DOCTYPE html>
+  <html ${helmet.htmlAttributes.toString()} lang="en" xml:lang="en">
   <head>
+    ${INTERNAL_CSS}
+    ${GOOGLE_FONTS}
     ${GA}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    ${GOOGLE_FONTS}
     ${helmet.title.toString()}
     ${helmet.meta.toString()}
     ${helmet.link.toString()}
     ${structuredData[req.url] ? structuredData[req.url] : ''}
-    ${INTERNAL_CSS}
   </head>
   <body ${helmet.bodyAttributes.toString()}>
     <div id="root">${component}</div>
