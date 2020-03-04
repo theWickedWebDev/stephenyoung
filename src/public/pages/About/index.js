@@ -64,6 +64,7 @@ const About = () => {
           <ul>
             <li>Server Side Rendered</li>
             <li>Automatic Resume Builder</li>
+            <li>CDN - S3 cached, compressed, custom domain</li>
           </ul>
         </Article>
 
@@ -73,7 +74,6 @@ const About = () => {
 
         <Article title={t('about:comingSoonHeader')}>
           <ul>
-            <li><i className="fas fa-truck-pickup" /> (SOON) HTTPS for S3 and custom domain</li>
             <li><i className="fas fa-truck-pickup" /> (SOON) Better Code Splitting!</li>
             <li><i className="fas fa-truck-pickup" /> (SOON) Storybook!</li>
             <li><i className="fas fa-truck-pickup" /> (SOON) Tree Shaking!</li>
