@@ -38,10 +38,7 @@
     ],
     "conclusion": {
       "title": "Conclusion",
-      "content": [
-        "<span>stephen@thewickedweb.dev <small>Southern NH</small> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href=\"https://blog.thewickedweb.dev/?p=33\">link to blog post</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>",
-        "<span>stephen@thewickedweb.dev <small>Southern NH</small> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href=\"https://blog.thewickedweb.dev/?p=33\">link to blog post</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>"
-      ]
+      "content": []
     }
   },
   "general": {
@@ -307,8 +304,8 @@
             "<em>Later during this project:</em>",
             "We had two different sister-brands either with their own technologies. We needed to bring Plant Nite into React world, but didn't want to create two separate apps. Instead, we made our main Paint Nite app deployable as either 'Paint' or 'Plant'.  Each app (using configuration) had its own custom copy, assets, and styling for each brand. This saved us a lot of time.",
             "<br/>",
-            "<i class='fas fa-palette'></i> <strong><a href='https://storybook.js.org/' target='_blank'>Storybook</a> for our React Components</strong>",
-            "Worked with design to develop components based off of <a href='https://www.sketch.com/' target='_blank'>Sketch</a> symbols",
+            "<i class='fas fa-palette'></i> <strong><a href='https://storybook.js.org/' title='Storybook Website' target='_blank'>Storybook</a> for our React Components</strong>",
+            "Worked with design to develop components based off of <a href='https://www.sketch.com/' title='Sketch Website' target='_blank'>Sketch</a> symbols",
             "Bundled up with <em class='alt'>Webpack</em> and <em class='alt'>Rollup</em> and published to NPM",
             "Fully unit tested.",
             "4 separate apps use these shared components",
@@ -358,8 +355,8 @@
             "Created a <em class='alt'>shared URLs package</em> with graphql partials that ensure our urls were always canonical, and this was shared amongst many clients",
             "Middleware for inactive landing pages (artists, events, etc..) so that we could properly redirect <em>(avoiding 404)</em>",
             "Nightwatch E2E tests to ensure basic SEO regressions didn't happen",
-            "Used <em class='alt'><a href='https://gtmetrix.com/' target='_blank'>GtMetrix</a></em> as an additional montoring tool.",
-            "<em class='alt'><a href='https://www.screamingfrog.co.uk/seo-spider/' target='_blank'>Screaming Frog</a></em> helped us minimize redirects, identify broken links, fix missing H1's, identify issues with our Robots.txt and sitemap, and much more.",
+            "Used <em class='alt'><a href='https://gtmetrix.com/' title='GtMetrix Website' target='_blank'>GtMetrix</a></em> as an additional montoring tool.",
+            "<em class='alt'><a href='https://www.screamingfrog.co.uk/seo-spider/' title='Screaming Frog Website' target='_blank'>Screaming Frog</a></em> helped us minimize redirects, identify broken links, fix missing H1's, identify issues with our Robots.txt and sitemap, and much more.",
             "Identified missing meta tags. Built a component to handle this dynamically.",
             "Used NPM package to handle UGC links rel=”ugc nofollow”",
             "<br/>",

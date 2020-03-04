@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import Article from 'components/Article';
 import LazyLoad from 'components/LazyLoad/LazyLoad';
+import stripHtml from 'string-strip-html';
 
 const EmploymentHighlight = () => {
   const { t, i18n } = useTranslation();
@@ -20,7 +21,12 @@ const EmploymentHighlight = () => {
             />
           </LazyLoad>
           <h3 className="employment-highlight__h3">
-            <a href={t('resume:highlight:link')} rel="nofollow" target="_blank">
+            <a
+              href={t('resume:highlight:link')}
+              rel="nofollow"
+              target="_blank"
+              title={stripHtml(t('resume:highlight:header'))}
+            >
               {t('resume:highlight:header')}
               &nbsp;
               <i className="fas fa-link"/>

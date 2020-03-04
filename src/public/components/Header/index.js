@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import { useTranslation } from 'react-i18next';
+import stripHtml from 'string-strip-html';
 
 const Header = props => {
   const { title, intro, bling, avatar } = props;
@@ -39,7 +40,7 @@ const Header = props => {
           dangerouslySetInnerHTML={{ __html: intro }}
           />
           <br/>
-          <a href={download.href} target="_blank">
+          <a href={download.href} target="_blank" title={stripHtml(download.name)}>
             <button
               className="btn-link-full"
               dangerouslySetInnerHTML={{__html: download.name }}

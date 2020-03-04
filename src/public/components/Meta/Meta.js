@@ -43,6 +43,8 @@ const Meta = (props) => {
     <Helmet>
       <html lang={t('lang') || 'en'} />
       <title>{ title }</title>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="author" content="Stephen Young" />
       { links.map((l, index) => <link key={index} {...l} />)}
       { metas.map((m, index) => <meta key={index} {...m} />)}
     </Helmet>

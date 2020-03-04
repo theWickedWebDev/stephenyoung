@@ -1,5 +1,6 @@
 import React from 'react';
 import LazyLoad from 'components/LazyLoad/LazyLoad';
+import stripHtml from 'string-strip-html';
 
 import './styles.scss';
 
@@ -41,7 +42,7 @@ const Posts = props => {
 
           { ref.link
             ? <p className="posts_list_name">
-                — <a href={ref.link} target="_blank">
+                — <a href={ref.link} target="_blank" title={stripHtml(ref.title)}>
                     <strong>{ref.name}</strong>, <em>{ref.title}</em>
                   </a>
               </p>
