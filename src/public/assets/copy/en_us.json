@@ -3,7 +3,7 @@
   "navbar": {
     "links": [
       {
-        "name": "<i class='fas fa-download margin-right-lg'></i>Download My Résumé",
+        "name": "<em class='fas fa-download margin-right-lg'></em>Download My Résumé",
         "internal": false,
         "slug": "resume",
         "href": "/resume.pdf"
@@ -293,7 +293,7 @@
           "title": "Major Project Highlights",
           "content": [
             "<br/>",
-            "<i class='fas fa-tasks'></i> <strong>Rewrite of main web app from Java/AngularJS ==> NodeJS/ReactJS</strong>",
+            "<em class='fas fa-tasks'></em> <strong>Rewrite of main web app from Java/AngularJS ==> NodeJS/ReactJS</strong>",
             "Releasing incremental changes - page by page. This allowed for a safer and smoother transition",
             "More extensive Google Analytics tracking, powered through Tealium",
             "<em class='alt'>Localized</em> content for three separate locales",
@@ -304,26 +304,26 @@
             "<em>Later during this project:</em>",
             "We had two different sister-brands either with their own technologies. We needed to bring Plant Nite into React world, but didn't want to create two separate apps. Instead, we made our main Paint Nite app deployable as either 'Paint' or 'Plant'.  Each app (using configuration) had its own custom copy, assets, and styling for each brand. This saved us a lot of time.",
             "<br/>",
-            "<i class='fas fa-palette'></i> <strong><a href='https://storybook.js.org/' title='Storybook Website' target='_blank'>Storybook</a> for our React Components</strong>",
+            "<em class='fas fa-palette'></em> <strong><a href='https://storybook.js.org/' title='Storybook Website' target='_blank'>Storybook</a> for our React Components</strong>",
             "Worked with design to develop components based off of <a href='https://www.sketch.com/' title='Sketch Website' target='_blank'>Sketch</a> symbols",
             "Bundled up with <em class='alt'>Webpack</em> and <em class='alt'>Rollup</em> and published to NPM",
             "Fully unit tested.",
             "4 separate apps use these shared components",
             "100% code coverage with <em class='alt'>Jest</em> and <em class='alt'>Enzyme</em>",
             "<br/>",
-            "<i class='far fa-grin-stars'></i> <strong>Reskin and refactor of our user-facing admin portal app (Backstage)</strong>",
+            "<em class='far fa-grin-stars'></em> <strong>Reskin and refactor of our user-facing admin portal app (Backstage)</strong>",
             "Upgraded to the latest packages for dependencies such as <em class='alt'>React</em> and <em class='alt'>Apollo</em>.",
             "Faster to spin out new pages since we decided to go with <em class='alt'>Ant Design</em> for our component library.",
             "Used <em class='alt'>Flow</em> type checks",
             "Implemented <em class='alt'>Keycloak</em>, and later on, <em class='alt'>Auth0</em>",
             "<br/>",
-            "<i class='fas fa-store-alt'></i> <strong>Part of a large rebrand of the company: Paint Nite ==> Yaymaker</strong>",
+            "<em class='fas fa-store-alt'></em> <strong>Part of a large rebrand of the company: Paint Nite ==> Yaymaker</strong>",
             "Releasing incremental changes - page by page. This allowed for a safer and smoother transition",
             "After many/most pages were deployed we pulled the plug and made the switch over one early morning",
             "This project sparked many smaller projects, such as <em class='alt'>SEO</em>, <em class='alt'>Site Performance</em>, new features like searching updates and landing pages.",
             "Used a more concise and streamlined style guide that allowed for faster development",
             "<br/>",
-            "<i class='fas fa-hand-holding-usd'></i> <strong>Developed an in-house, server-side rendered, A/B Testing platform</strong>",
+            "<em class='fas fa-hand-holding-usd'></em> <strong>Developed an in-house, server-side rendered, A/B Testing platform</strong>",
             "No flicker due to <em class='alt'>server-side rendering</em>, or custom any CSS needed",
             "Connected to Google Analytics Reporting",
             "<em>$600k annualized lift</em> with one of our first tests. (New filter design)"
@@ -333,11 +333,11 @@
           "title": "Site Performance / Optimization / Tracking",
           "content": [
             "<br/>",
-            "<i class='far fa-image'></i> <strong>Images and other static assets</strong>",
+            "<em class='far fa-image'></em> <strong>Images and other static assets</strong>",
             "Image size / Image rendering tool - Alt tags / all needed sizes / optimized all the images on our site. - GraphQL endpoints to automate this. - Was able to use this for all images on our site, not just ones with paths stored in the DB (events, hosts, projects)",
             "<br/>",
 
-            "<i class='fas fa-code'></i> <strong>Code Splitting and more</strong>",
+            "<em class='fas fa-code'></em> <strong>Code Splitting and more</strong>",
             "Significantly reduced <em class='alt'>bundle size</em> by conducting an audit of our code for bundle-bloat using <em class='alt'>Webpack</em>. I then removed duplicate or bloated node modules, unused code, and tied the audit into our development process",
             "Used Webpack to render all the <em class='alt'>Critical CSS</em> needed in the head, and then the rest of the CSS in the body. This reduced time needed to load blocking CSS and in turn made the page load faster.",
             "Identified 5xx's, 4xx's and 3xx's and addressed any that could be.",
@@ -345,10 +345,10 @@
             "Implemented <em class='alt'>Lazy Loading</em> by creating an <em>RenderOnVisible</em> React component wrapper that only requested the image when the image was in view on the browser (or about to be!). Since our site is so image heavy, this helped to reduce a lot of page load size.",
             "<br/>",
 
-            "<i class='fab fa-aws'></i> <strong>S3/Cloudfront caching and compression</strong>",
+            "<em class='fab fa-aws'></em> <strong>S3/Cloudfront caching and compression</strong>",
             "<br/>",
 
-            "<i class='fas fa-th-list'></i> <strong>SEO</strong>",
+            "<em class='fas fa-th-list'></em> <strong>SEO</strong>",
             "Worked closely with a consultant to help identify and address issues.",
             "Site cleanup with easier quick fixes like <em class='alt'>meta tags</em>, <em class='alt'>alt tags</em>, <em class='alt'>Hx’s</em>, etc.",
             "Generated sitemap helped with our event detail pages. They have an 'expire' date, so we wanted to make sure we werent still indexing them.",
@@ -361,18 +361,18 @@
             "Used NPM package to handle UGC links rel=”ugc nofollow”",
             "<br/>",
 
-            "<i class='fas fa-toolbox'></i> <strong>3rd party scripts</strong>",
+            "<em class='fas fa-toolbox'></em> <strong>3rd party scripts</strong>",
             "Lambda function to assist with our SEO objectives. 3rd Party Scripts were minified, cloned, cached and served from our own S3 bucket. A Slack integration alerted us whenever this function ran.",
             "<br/>",
 
-            "<i class='fab fa-searchengin'></i> <strong>Elastic Search</strong>",
+            "<em class='fab fa-searchengin'></em> <strong>Elastic Search</strong>",
             "Brought more use to our search page as well as other pages",
             "<em class='alt'>Fuzzy matching</em> and <em class='alt'>auto-complete</em>. Able to search against many different resource types in one search box",
             "Setup tools for the team to easily update/copy/remove/etc our indices and migrate data up/down environments",
             "Worked to replace Google Maps Places API with in-house ES version which <em>decreased API costs by approximately $87,000 yearly</em>",
             "<br/>",
 
-            "<i class='fas fa-chart-line'></i> <strong>Tealium (Powered by Google Analytics)</strong>",
+            "<em class='fas fa-chart-line'></em> <strong>Tealium (Powered by Google Analytics)</strong>",
             "Created a shared library of tracking function, constants and other helpers to ensure we dont have regressions with our tracking",
             "100% Unit and integration tested",
             "Graphql partials ensured that all data needed was retrieved",

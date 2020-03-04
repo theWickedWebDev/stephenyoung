@@ -14,7 +14,7 @@ const TagList = props => (
       >
         { item.name }
         { item.favorite &&
-          <i className="fas fa-heart tag-list-icon"></i>
+          <em className="fas fa-heart tag-list-icon"></em>
         }
       </li>
     ))}

@@ -17,7 +17,7 @@ const app = express(({ strict: true }))
 
 app.use(compression())
 
-app.use('/static', express.static(path.resolve(__dirname, 'public/')))
+app.use('/static', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }))
 
 // Generates and compiles a PDF of my resume
 // based on the JSON data in this repo
@@ -55,7 +55,8 @@ app.get('/*', (req, res) => {
   const notHomepage = !req.url !== '/';
   const notAFile = !req.url.includes('.');
   if (noTrailingSlash &&  notHomepage && notAFile) {
-    res.redirect(301, req.url + '/')
+    res.redirect(301, req.url + '/');
+    res.end();
   }
 
   const context = {};
@@ -67,7 +68,7 @@ app.get('/*', (req, res) => {
   )
 
   const helmet = Helmet.renderStatic();
-  
+
   const renderedHtml = html({ helmet, component, req });
 
   if (context.url) {

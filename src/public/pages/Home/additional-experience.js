@@ -15,7 +15,7 @@ const AdditionalExperience = () => {
               <a href={ exp.link } className={!exp.link ? 'disabled' : ''}>
                 <strong>
                   { exp.name }
-                  { exp.link && <i className="fas fa-link padding-left-sm"/> }
+                  { exp.link && <em className="fas fa-link padding-left-sm"/> }
                 </strong>
               </a>, { exp.location } — { exp.from } - { exp.until }
             </h3>

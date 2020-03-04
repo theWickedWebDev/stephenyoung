@@ -53,7 +53,7 @@ const Navbar = () => {
             target="_blank"
             title="LinkedIn"
           >
-            <i className="fab fa-linkedin"/>
+            <em className="fab fa-linkedin"/>
           </a>
         </li>
 
@@ -63,7 +63,7 @@ const Navbar = () => {
             target="_blank"
             title="Github"
           >
-            <i className="fab fa-github-alt"/>
+            <em className="fab fa-github-alt"/>
           </a>
         </li>
       </ul>

@@ -42,6 +42,13 @@ const scss = {
   ],
 };
 
+const svg = {
+  test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+  use: [
+    { loader: 'file-loader' },
+  ],
+};
+
 const baseConfig = {
   mode: isDevelopment ? 'development' : 'production',
   module: {
@@ -49,6 +56,7 @@ const baseConfig = {
       js,
       css,
       scss,
+      svg,
     ],
   },
   resolve: {
@@ -74,7 +82,6 @@ const baseConfig = {
       }],
       values: {
         S3_URL: JSON.stringify('https://cdn.thewickedweb.dev'),
-        //S3_URL: JSON.stringify('http://s3.thewickedweb.dev.s3.amazonaws.com'),
         S3_IMAGES_PATH: JSON.stringify('/images'),
         S3_IMAGES_GALLERY_PATH: JSON.stringify('/gallery'),
         S3_RESUME_PATH: JSON.stringify('/resume'),

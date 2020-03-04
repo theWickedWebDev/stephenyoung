@@ -29,7 +29,7 @@ const EmploymentHighlight = () => {
             >
               {t('resume:highlight:header')}
               &nbsp;
-              <i className="fas fa-link"/>
+              <em className="fas fa-link"/>
             </a>
           </h3>
           <div className="vertical-align-middle">

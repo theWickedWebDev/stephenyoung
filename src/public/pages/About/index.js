@@ -29,10 +29,10 @@ const About = () => {
       <Section>
         <Article title={t('about:techHeader')}>
           <ul className="test-list">
-            <li><i className="fab fa-node" /> Node, Express</li>
-            <li><i className="fab fa-react" /> React, Webpack, SCSS</li>
-            <li><i className="fab fa-aws" /> EC2, Load Balancer, S3, CloudFront</li>
-            <li><i className="fab fa-expeditedssl" /> SSL HTTPS</li>
+            <li><em className="fab fa-node" /> Node, Express</li>
+            <li><em className="fab fa-react" /> React, Webpack, SCSS</li>
+            <li><em className="fab fa-aws" /> EC2, Load Balancer, S3, CloudFront</li>
+            <li><em className="fab fa-expeditedssl" /> SSL HTTPS</li>
           </ul>
         </Article>
 
@@ -74,14 +74,14 @@ const About = () => {
 
         <Article title={t('about:comingSoonHeader')}>
           <ul>
-            <li><i className="fas fa-truck-pickup" /> (SOON) Better Code Splitting!</li>
-            <li><i className="fas fa-truck-pickup" /> (SOON) Storybook!</li>
-            <li><i className="fas fa-truck-pickup" /> (SOON) Tree Shaking!</li>
-            <li><i className="fas fa-truck-pickup" /> (SOON) GraphQL Api!</li>
-            <li><i className="fas fa-truck-pickup" /> (SOON) Elastic Search!</li>
-            <li><i className="fas fa-truck-pickup" /> (SOON) Unit Testing!</li>
-            <li><i className="fas fa-truck-pickup" /> (SOON) Integration Testing!</li>
-            <li><i className="fas fa-truck-pickup" /> (SOON) Flow!</li>
+            <li><em className="fas fa-truck-pickup" /> (SOON) Better Code Splitting!</li>
+            <li><em className="fas fa-truck-pickup" /> (SOON) Storybook!</li>
+            <li><em className="fas fa-truck-pickup" /> (SOON) Tree Shaking!</li>
+            <li><em className="fas fa-truck-pickup" /> (SOON) GraphQL Api!</li>
+            <li><em className="fas fa-truck-pickup" /> (SOON) Elastic Search!</li>
+            <li><em className="fas fa-truck-pickup" /> (SOON) Unit Testing!</li>
+            <li><em className="fas fa-truck-pickup" /> (SOON) Integration Testing!</li>
+            <li><em className="fas fa-truck-pickup" /> (SOON) Flow!</li>
           </ul>
         </Article>
 

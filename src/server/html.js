@@ -12,13 +12,6 @@ const GA = `
   </script>
 `;
 
-const FONT_AWESOME = `
-  <script
-    src="https://kit.fontawesome.com/4042efa8d7.js"
-    crossorigin="anonymous">
-  </script>
-`;
-
 const GOOGLE_FONTS = `
   <link
     href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Spartan:400,500,700&display=swap"
@@ -40,7 +33,6 @@ const html = ({ helmet, component, req }) => `
   <head>
     ${GA}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    ${FONT_AWESOME}
     ${GOOGLE_FONTS}
     ${helmet.title.toString()}
     ${helmet.meta.toString()}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/js/all.min.js';
 
 import './translations';
 

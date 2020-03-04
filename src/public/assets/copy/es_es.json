@@ -3,7 +3,7 @@
   "navbar": {
     "links": [
       {
-        "name": "<i class='fas fa-download margin-right-lg'></i>Descargar Mi Currículum",
+        "name": "<em class='fas fa-download margin-right-lg'></em>Descargar Mi Currículum",
         "internal": false,
         "slug": "resume",
         "href": "resume.pdf?locale=es_es"

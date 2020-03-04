@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { useTranslation } from 'react-i18next';
 import * as favicon from './favicon';
 import * as og from './og';
 
@@ -18,8 +17,6 @@ const Meta = (props) => {
     siteName = 'TheWickedWebDev',
     image = defaultImage,
   } = props;
-
-  const { t, i18n } = useTranslation();
 
   const canonicalLink = canonical
     ? { rel: 'canonical', href: canonical } : null;
@@ -41,7 +38,7 @@ const Meta = (props) => {
 
   return (
     <Helmet>
-      <html lang={t('lang') || 'en'} />
+      <html lang="en" />
       <title>{ title }</title>
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <meta name="author" content="Stephen Young" />
