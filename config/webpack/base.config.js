@@ -84,6 +84,7 @@ const baseConfig = {
         S3_FLAGS_PATH: JSON.stringify('/flags'),
         S3_AVATAR_PATH: JSON.stringify('/avatar'),
         S3_LOGOS_PATH: JSON.stringify('/logo'),
+        S3_SOCIAL_PATH: JSON.stringify('/social'),
         BREAKPOINTS: JSON.stringify({
           mobile: 500,
           tablet: 800,

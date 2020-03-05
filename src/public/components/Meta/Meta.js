@@ -5,7 +5,7 @@ import * as og from './og';
 
 const defaultTitle = 'Stephen Young - TheWickedWebDev';
 const defaultDescription = 'Support others. Stay positive. Embrace Change. Take Risks.';
-const defaultImage = `${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-square-blue.jpg`;
+const defaultImage = `${S3_URL}${S3_IMAGES_PATH}${S3_SOCIAL_PATH}/social-card-image.jpg`;
 
 const Meta = (props) => {
   const {
