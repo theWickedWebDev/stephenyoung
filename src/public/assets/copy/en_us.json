@@ -23,10 +23,11 @@
   },
   "homepage": {
     "meta": {
-      "title": "Senior Software Developer - Stephen Young",
+      "title": "Seasoned Javascript Geek - Stephen Young",
       "description": "I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard."
     },
-    "title": "Senior Software Engineer",
+    "title": "Seasoned Javascript Geek",
+    "subtitle": "Breaking things since 2000",
     "description": "I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard.",
     "introduction": [
       "<span class='dropcap'>Hello, my name is Stephen Young and I ___________. I have been coding since middle school when I first learned QBasic which sparked my creative power and I couldn’t stop. I found it thrilling that with this simple program, I could create something out of what seemed like nothing. After a while, I found Visual Basic which brought UI into my world. I just couldnt stop. I later learned HTML and CSS and from there, I grew into what I am today. Backed by all the art classes (painting, Photoshop, cartooning, etc..) I was able to use what I learned from art, and incorporate that into front end coding and design. None of this seemed like it was a skill that I could do as a career until one day someone asked me to make them a website. From there, I started thinking “Can I actually make money coding?” - I made more and more micro sites for small businesses and then attended a bootcamp to learn more of the “product” aspects to apps. From there I got larger contracts and then finally landed my first internship which developed into a full time position.</span>",
@@ -59,7 +60,7 @@
       { "src": "planting-tree.jpg", "alt": "Planting apple trees with my son" },
       { "src": "grass-close.jpg", "alt": "Up close photo of my lawn" },
       { "src": "laying-pavers.jpg", "alt": "Making a paver entry way" },
-      { "src": "picking-potatoes.jpg", "alt": "Adding more soil to our potatoe mounds." },
+      { "src": "picking-potatoes.jpg", "alt": "Adding more soil to our potato mounds" },
       { "src": "planting-grass.jpg", "alt": "Planting grass with my two kids" },
       { "src": "radishes.jpg", "alt": "Fresh picked radishes from the garden" },
       { "src": "chickens.jpg", "alt": "Some of our chickens walking around the lawn" },
@@ -220,6 +221,7 @@
       "tech": {
         "title": "Technologies/Languages/Frameworks",
         "content": [
+          {"name": "Javascript", "favorite": true, "strong": true },
           {"name": "Node", "favorite": true, "strong": true },
           {"name": "React", "favorite": true, "strong": true },
           {"name": "Redux", "favorite": false, "strong": true },
@@ -263,8 +265,9 @@
           {"name": "FileStack", "favorite": false, "strong": false },
           {"name": "Balsamiq", "favorite": false, "strong": false },
           {"name": "InvisionApp", "favorite": true, "strong": false },
-          {"name": "Photoshop", "favorite": true, "strong": true },
-          {"name": "Illustrator", "favorite": true, "strong": true },
+          {"name": "Adobe Photoshop", "favorite": true, "strong": true },
+          {"name": "Adobe Illustrator", "favorite": true, "strong": true },
+          {"name": "Adobe After Effects", "favorite": true, "strong": false },
           {"name": "Jira", "favorite": false, "strong": false },
           {"name": "Confluence", "favorite": false, "strong": false },
           {"name": "GtMetrix", "favorite": false, "strong": false }
@@ -282,7 +285,7 @@
         "Senior Software Engineer — May 2016 - Feb 2020",
         "Software Engineer, Front End — May 2015 - May 2016"
       ],
-      "description": "I worked daily with React, Graphql and many other Javascript packages. In addition to that, Elastic Search and MySql work was also something I did regularly. Using Jenkins, Docker and other tools to help us deploy our work, I delivered countless new features and improvements to all of our codebases.<br/><br/>I brought unit testing to our client projects taking advantage of packages such as Enzyme, Jest, Cha, Nightwatch as well as Flow for our static tests. These changes were baked into our git-flow using pre-push and pre-commit hooks.<br/><br/>I worked closely with the Project Manager to define the development process using Kanban as the core. I helped to create new ticket types, improve our swimlanes and our meeting effectiveness.<br/>Helped to build our development team by participating and leading phone screens, interviews, code challenges, and resume reviews.",
+      "description": "Worked with React, Graphql, Elastic Search, MySql and many other Javascript packages daily. Using Jenkins, Docker and other tools to help our team with deployments, I delivered countless new features and improvements to all of our codebases.<br/><br/>Brought unit testing to our client projects taking advantage of packages such as Enzyme, Jest, Cha, Nightwatch as well as Flow for our static tests. These changes were baked into our git-flow using pre-push and pre-commit hooks.<br/><br/>Collaborated with the Project Manager to define the development process using Kanban as the core. Created new ticket types, improved our swimlanes, and increased the efficiency of our meetings.<br/><br/>Participated in phone screens, interviews, code challenges, and resume reviews in order to help build our technology department.",
       "rolesHeader": "Roles",
       "focusHeader": "Focus",
       "focus": "Node, React, Express, Flow, Redux, Apollo, GraphQl, MySql, Sequelize, Elastic Search, Storybook, Webpack, Enzyme, Nightwatch, SEO, A/B Testing, HTML, SCSS",

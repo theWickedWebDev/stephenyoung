@@ -24,6 +24,7 @@ const Home = () => {
     <div>
       <Header
         title={t('homepage:title')}
+        subtitle={t('homepage:subtitle')}
         intro={t('homepage:description')}
         avatar={`${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-2.svg`}
       />

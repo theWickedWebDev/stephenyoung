@@ -24,9 +24,16 @@
 
 .header__component-h1 {
   color: $white;
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   line-height: 42px;
+  padding-bottom: 0;
+}
 
+.header__component-h2 {
+    color: $white;
+    margin: 0 0 24px;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 .header__component-p {
