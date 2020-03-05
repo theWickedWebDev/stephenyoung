@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import stripHtml from 'string-strip-html';
 
 const Header = props => {
-  const { title, subtitle, intro, bling, avatar } = props;
+  const { title, subtitle, intro, avatar } = props;
   const { t, i18n } = useTranslation();
 
   const style = {};
@@ -48,12 +48,6 @@ const Header = props => {
             />
           </a>
       </div>
-      { bling &&
-        <div
-          className="header__bling"
-          data-aos="fade-up"
-        >{bling}</div>
-      }
     </header>
   );
 };

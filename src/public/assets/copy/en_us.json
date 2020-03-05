@@ -7,6 +7,12 @@
         "internal": false,
         "slug": "resume",
         "href": "/resume.pdf"
+      },
+      {
+        "name": "About this Site",
+        "internal": true,
+        "slug": "about-this-site",
+        "href": "/about-this-site/"
       }
     ]
   },
@@ -29,12 +35,7 @@
     "title": "Seasoned Javascript Geek",
     "subtitle": "Breaking things since 2000",
     "description": "I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard.",
-    "introduction": [
-      "<span class='dropcap'>Hello, my name is Stephen Young and I ___________. I have been coding since middle school when I first learned QBasic which sparked my creative power and I couldn’t stop. I found it thrilling that with this simple program, I could create something out of what seemed like nothing. After a while, I found Visual Basic which brought UI into my world. I just couldnt stop. I later learned HTML and CSS and from there, I grew into what I am today. Backed by all the art classes (painting, Photoshop, cartooning, etc..) I was able to use what I learned from art, and incorporate that into front end coding and design. None of this seemed like it was a skill that I could do as a career until one day someone asked me to make them a website. From there, I started thinking “Can I actually make money coding?” - I made more and more micro sites for small businesses and then attended a bootcamp to learn more of the “product” aspects to apps. From there I got larger contracts and then finally landed my first internship which developed into a full time position.</span>",
-      "<span>Today, I am a few jobs in and passionate as ever! I want to find a company whose product resonates with me, not just a job. (etc.)</span>",
-      "<span>When I am not working on the computer, learning new skills or making fun web-apps, I am usually found outside. Some of my favorite activities are woodworking in the shop, maintaining a beautiful lawn, being a father of two kids, and taking care of my chickens.</span>",
-      "[TODO] I am looking for a tech team to work with that does things 'by the book' - not willy nilly. I want to learn from a well oiled team, one that doest constantly worry about deployments and regressions. One that has well functioning inter-departament communiation and functions."
-    ],
+    "introduction": [""],
     "conclusion": {
       "title": "Conclusion",
       "content": []
@@ -78,8 +79,7 @@
           "location": "Boston, MA",
           "from": "May 2014",
           "until": "Apr 2015",
-          "description": "Node.js / Angular.js / NPM / Gulp / Karma / Lint / Bower - Agile Development - Jira / Slack - Test-Driven Development - HTML5 / CSS3 - Minor backend/API bug fixes (Node.js) - Responsive across all modern devices and browsers - Wireframed in Balsamiq - User tested for UX/UI - Designed HI-Res mockups in Photoshop (side project) I was also very lucky to have built a life-size Doctor Who TARDIS to be a quiet space for recording vsnaps and to take phone calls. www.vsnap.com",
-          "link": null
+          "description": "Node.js / Angular.js / NPM / Gulp / Karma / Lint / Bower - Agile Development - Jira / Slack - Test-Driven Development - HTML5 / CSS3 - Minor backend/API bug fixes (Node.js) - Responsive across all modern devices and browsers - Wireframed in Balsamiq - User tested for UX/UI - Designed HI-Res mockups in Photoshop (side project) I was also very lucky to have built a life-size Doctor Who TARDIS to be a quiet space for recording vsnaps and to take phone calls."
         },
         {
           "name": "Freelance Web Developer",
@@ -87,8 +87,7 @@
           "location": null,
           "from": "Aug 2011",
           "until": "Jan 2017",
-          "description": "Wordpress, EJS, jQuery, CreateJS, Static HTML, Email Templates, Heroku, GA",
-          "link": null
+          "description": "Wordpress, EJS, jQuery, CreateJS, Static HTML, Email Templates, Heroku, GA"
         },
         {
           "name": "Acidotic Racing",
@@ -96,8 +95,7 @@
           "location": "Seacoast NH",
           "from": "Nov 2013",
           "until": "Dec 2015",
-          "description": "Angular, Firebase, Custom CMS",
-          "link": null
+          "description": "Angular, Firebase, Custom CMS"
         },
         {
           "name": "PICA Manufacturing Solutions ",
@@ -105,8 +103,7 @@
           "location": "Derry, NH",
           "from": "Dec 2012",
           "until": "Dec 2014",
-          "description": "Designed and developed PICA Manufacturing's website to allow visitors clear and easy access to the company's brand, value propositions and general information. Also created new landing pages, trade booth designs and generating new customer leads through email marketing, Google Ads/Analytics, and custom landing pages. - Website Design & Development - User Testing - Tradeshow Booth Design - Brochure Design - Logo re-design - Folder Design - Pop-Up Banner design - White Paper Template - PICA About Video - PicaKit Video - Mailchimp - WuFoo",
-          "link": null
+          "description": "Designed and developed PICA Manufacturing's website to allow visitors clear and easy access to the company's brand, value propositions and general information. Also created new landing pages, trade booth designs and generating new customer leads through email marketing, Google Ads/Analytics, and custom landing pages. - Website Design & Development - User Testing - Tradeshow Booth Design - Brochure Design - Logo re-design - Folder Design - Pop-Up Banner design - White Paper Template - PICA About Video - PicaKit Video - Mailchimp - WuFoo"
         },
         {
           "name": "Central Midori",
@@ -114,8 +111,7 @@
           "location": null,
           "from": "Sept 2017",
           "until": "Jan 2018",
-          "description": "S3, CloudFront, EC2. Static HTML with Gulp and hosted Wordpress for Blog.",
-          "link": null
+          "description": "S3, CloudFront, EC2. Static HTML with Gulp and hosted Wordpress for Blog."
         },
         {
           "name": "Marilinda Garcia for Congress",
@@ -123,8 +119,7 @@
           "location": "New Hampshire",
           "from": "Nov 2013",
           "until": "April 2014",
-          "description": "My primary role with this campaign is to create a website where voters have access to latest news, social media links and general campaign information. Other responsibilities include: graphic design, photo editing and logo design.",
-          "link": null
+          "description": "My primary role with this campaign is to create a website where voters have access to latest news, social media links and general campaign information. Other responsibilities include: graphic design, photo editing and logo design."
         },
         {
           "name": "Startup Institute",
@@ -132,8 +127,7 @@
           "location": "Boston, MA",
           "from": "Mar 2014",
           "until": "Apr 2014",
-          "description": "Selected by Startup Institute in a highly competitive process to attend an intensive training program focused on developing the core skills in product & design to have a meaningful and positive influence on a startup's objectives. - HTML, CSS, jQuery and Javascript - Product Management - Responsive Design - Organizing a Design Project - User Centered Design & Whiteboarding - Wireframing & Rapid Prototyping - Typography",
-          "link": null
+          "description": "Selected by Startup Institute in a highly competitive process to attend an intensive training program focused on developing the core skills in product & design to have a meaningful and positive influence on a startup's objectives. - HTML, CSS, jQuery and Javascript - Product Management - Responsive Design - Organizing a Design Project - User Centered Design & Whiteboarding - Wireframing & Rapid Prototyping - Typography"
         }
       ]
     },
@@ -278,14 +272,15 @@
       "title": "Employment Highlight",
       "moreInfo": "For a more detailed description of Major Projects. Please visit my resume site at https://www.thewickedweb.dev/",
       "cta": "Click for more details",
-      "header": "Paint Nite, LLC d/b/a Yaymaker, Somerville, MA",
+      "header": "Paint Nite, LLC d/b/a Yaymaker",
+      "address": "Somerville, MA (Remote)",
       "link": "https://www.yaymaker.com/",
       "logo": "yaymaker-logo.svg",
       "roles": [
-        "Senior Software Engineer — May 2016 - Feb 2020",
-        "Software Engineer, Front End — May 2015 - May 2016"
+        { "name": "Senior Software Engineer", "from": "May 2016", "until": "Feb 2020" },
+        { "name": "Software Engineer, Front End", "from": "May 2015", "until": "May 2016" }
       ],
-      "description": "Worked with React, Graphql, Elastic Search, MySql and many other Javascript packages daily. Using Jenkins, Docker and other tools to help our team with deployments, I delivered countless new features and improvements to all of our codebases.<br/><br/>Brought unit testing to our client projects taking advantage of packages such as Enzyme, Jest, Cha, Nightwatch as well as Flow for our static tests. These changes were baked into our git-flow using pre-push and pre-commit hooks.<br/><br/>Collaborated with the Project Manager to define the development process using Kanban as the core. Created new ticket types, improved our swimlanes, and increased the efficiency of our meetings.<br/><br/>Participated in phone screens, interviews, code challenges, and resume reviews in order to help build our technology department.",
+      "description": "Worked with React, Graphql, Elastic Search, MySql and many other Javascript packages daily. Using Jenkins, Docker and other tools to help our team with deployments, I delivered countless new features and improvements to all of our codebases.<br/><br/>Brought unit testing to our client projects taking advantage of packages such as Enzyme, Jest, Chai, Nightwatch as well as Flow for our static tests. These changes were baked into our git-flow using pre-push and pre-commit hooks.<br/><br/>Collaborated with the Project Manager to define the development process using Kanban as the core. Created new ticket types, improved our swimlanes, and increased the efficiency of our meetings.<br/><br/>Participated in phone screens, interviews, code challenges, and resume reviews in order to help build our technology department.",
       "rolesHeader": "Roles",
       "focusHeader": "Focus",
       "focus": "Node, React, Express, Flow, Redux, Apollo, GraphQl, MySql, Sequelize, Elastic Search, Storybook, Webpack, Enzyme, Nightwatch, SEO, A/B Testing, HTML, SCSS",

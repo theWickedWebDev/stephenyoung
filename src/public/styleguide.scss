@@ -322,6 +322,15 @@ h4 {
     margin: 24px;
     font-size: 60px;
   }
+
+  // noscript - javascript off
+  &.icon-list-small {
+    .icon-list-item em {
+      font-size: 30px;
+      font-family: $primaryFont;
+      font-style: normal;
+    }
+  }
 }
 
 .test-list {

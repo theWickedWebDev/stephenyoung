@@ -25,3 +25,5 @@ i18n
 i18n.on('languageChanged', function(lng) {
   window.scrollTo(0,0);
 })
+
+export default i18n;

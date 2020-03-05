@@ -18,6 +18,7 @@ const app = express(({ strict: true }))
 app.use(compression())
 
 app.use('/static', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }))
+app.use('/coverage', express.static(path.resolve(__dirname, 'public/coverage/'), { maxAge: '7d' }))
 
 // Generates and compiles a PDF of my resume
 // based on the JSON data in this repo
@@ -84,6 +85,7 @@ app.get('/*', (req, res) => {
   }
 })
 
-const { PORT = 3000 } = process.env
-
-app.listen(PORT, () => console.log('######## app running ########'))
+module.exports = {
+  getTranslations,
+  app,
+}

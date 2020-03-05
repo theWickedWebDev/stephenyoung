@@ -12,7 +12,7 @@ const TagList = props => (
         }
         key={index}
       >
-        { item.name }
+        <span>{ item.name }</span>
         { item.favorite &&
           <em className="fas fa-heart tag-list-icon"></em>
         }

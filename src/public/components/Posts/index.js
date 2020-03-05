@@ -1,5 +1,5 @@
 import React from 'react';
-import LazyLoad from 'components/LazyLoad/LazyLoad';
+import LazyLoad from 'components/LazyLoad';
 import stripHtml from 'string-strip-html';
 
 import './styles.scss';
@@ -34,10 +34,10 @@ const Posts = props => {
                 />
               </LazyLoad>
             }
-            <quote className="posts_list_quote">
+            <blockquote className="posts_list_quote">
               <h3>{getPostHeader(ref)}</h3>
               <p>{getPostBody(ref)}</p>
-            </quote>
+            </blockquote>
           </div>
 
           { ref.link

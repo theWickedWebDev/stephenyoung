@@ -187,7 +187,7 @@ const resumeBuilder = (req, res, CONTENT) => {
       .fillColor(COLORS.body)
       .font(FONT_PRIMARY)
       .fontSize(FONT_SIZE.body)
-      .text(stripHtml(r), { indent: 25 });
+      .text(r.name + ' - ' + r.from + ' - ' + r.until);
   });
 
   doc
@@ -234,7 +234,7 @@ addPage();
       .font(FONT_PRIMARY_BOLD)
       .fontSize(FONT_SIZE.body)
       .fillColor(COLORS.body)
-      .text(c.name ? c.name + ' - ' + c.title : c.title, { link: c.link })
+      .text(c.name ? c.name + ' - ' + c.title : c.title)
       .fillColor(COLORS.body)
       .font(FONT_PRIMARY_ITALIC)
       .fontSize(FONT_SIZE.small)

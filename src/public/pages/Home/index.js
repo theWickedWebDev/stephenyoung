@@ -21,7 +21,7 @@ const Home = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div>
+    <div className="homepage__page">
       <Header
         title={t('homepage:title')}
         subtitle={t('homepage:subtitle')}

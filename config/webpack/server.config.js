@@ -10,7 +10,7 @@ module.exports = {
   },
   externals: [nodeExternals()],
   entry: {
-    'index.js': path.resolve(__dirname, '../../src/server/express.js')
+    'index.js': path.resolve(__dirname, '../../src/server/start.js')
   },
   module: {},
   output: {

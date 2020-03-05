@@ -21,6 +21,7 @@ module.exports = {
   plugins: [
     new CopyPlugin([
       { from: 'src/public/assets/', to: './assets/' },
+      { from: 'coverage/lcov-report/', to: './coverage/' },
     ]),
   ],
 }

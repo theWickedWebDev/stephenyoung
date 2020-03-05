@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Viewport extends React.Component {
+export class Viewport extends React.Component {
   state = { viewport: 'desktop' }
 
   checkViewport() {

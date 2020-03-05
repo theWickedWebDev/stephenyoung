@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import LazyLoad from 'components/LazyLoad/LazyLoad';
+import LazyLoad from 'components/LazyLoad';
 
 import './styles.scss';
 
@@ -13,6 +13,12 @@ const Footer = props => {
     </div>,
     <footer className="footer__component">
       <div className="footer__component-space">
+        <noscript>
+          <p>
+            Unfortunately you have Javascript turned off so you
+            are <em>currently</em> unable to switch langauges.
+          </p>
+        </noscript>
         <ul className="footer__flags">
           <LazyLoad>
             <li className="footer__flags-item">
