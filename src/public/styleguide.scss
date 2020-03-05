@@ -253,13 +253,14 @@ h4 {
   .tag-list-item {
     display: inline-block;
     margin: 3px;
-    background-color: $lightGray;
+    background-color: lighten($lightGray, 5%);
     padding: 3px 12px;
     border-radius: 2px;
     position: relative;
 
     &.favorite {
-      background-color: $primaryColor_light;
+      background-color: lighten($primaryColor, 30%);
+      border: solid 1px $lightGray;
     }
 
     .tag-list-icon {
@@ -348,7 +349,7 @@ h4 {
 .tablet {
   .highlight-logo {
     display: block;
-    margin: 30px auto 12px;
+    margin: 30px 0 12px;
     width: 150px;
   }
 
@@ -367,27 +368,24 @@ h4 {
       display: none;
     }
   }
-}
-
-
-.mobile {
-  .text-center-mobile {
-    text-align: center;
-  }
 
   .tag-list {
-    text-align: center;
+    margin-top: 12px;
   }
 
   .employment-highlight__component {
-      .vertical-align-middle {
-        display: block;
-      }
+    .vertical-align-middle {
+      display: block;
+    }
+
+    p {
+      text-align: justify;
+    }
   }
 
   .employment-highlight__h3 {
     font-size: 16px;
-    padding: 0 40px;
+    padding: 0;
   }
 
   h3 {
