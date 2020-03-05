@@ -27,7 +27,7 @@ const About = () => {
         canonical="https://www.thewickedweb.dev/about/"
       />
       <Section>
-        <Article title={t('about:outcomeHeader')}>
+        <Article title={t('about:outcomeHeader')} className="about-page__component">
           <ul className="test-list">
             <li><em className="fab fa-node" /> Node, Express</li>
             <li><em className="fab fa-react" /> React, Webpack, SCSS</li>
@@ -38,7 +38,7 @@ const About = () => {
           <h3>Accessibility</h3>
           <ul>
             <li>
-              <h4>Font size & color</h4>
+              <h4 className="margin-bottom-large">Font size & color</h4>
               <p>
                 I made sure I had sufficient contrast on the foreground
                 and background on all sections.
@@ -50,14 +50,14 @@ const About = () => {
               <br/>
             </li>
             <li>
-              <h4>Alt & Title</h4>
+              <h4 className="margin-bottom-large">Alt & Title</h4>
               <p>All anchor and img tags have alt attributes.</p>
               <br/>
               <p>Anchor tags also have a title attribute.</p>
               <br/>
             </li>
             <li>
-              <h4>Localization</h4>
+              <h4 className="margin-bottom-large">Localization</h4>
               <p>Not the highest quality, but for demo purposes I used Google Translate to add French and Spanish languages.</p>
               <br/>
             </li>
@@ -66,7 +66,7 @@ const About = () => {
           <h3>Site Performance</h3>
           <ul>
             <li>
-              <h4>Page Size</h4>
+              <h4 className="margin-bottom-large">Page Size</h4>
               <p>
                 1.9MB (as of when I'm typing this). It could use a little
                 work for sure, but not terrible as is. I plan on adding
@@ -76,7 +76,7 @@ const About = () => {
               <br/>
             </li>
             <li>
-              <h4>Lazy loading images</h4>
+              <h4 className="margin-bottom-large">Lazy loading images</h4>
               <p>Doesn't load images until visible on screen.</p>
               <br/>
               <p>
@@ -91,7 +91,7 @@ const About = () => {
               <br/>
             </li>
             <li>
-              <h4>Page Speed</h4>
+              <h4 className="margin-bottom-large">Page Speed</h4>
               <p>
                 Minified, Cached and Compressed - HTML, JS, CSS and Images.
               </p>
@@ -109,7 +109,7 @@ const About = () => {
           <h3>SEO</h3>
           <ul>
             <li>
-              <h4>Server Side Rendered</h4>
+              <h4 className="margin-bottom-large">Server Side Rendered</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -117,7 +117,7 @@ const About = () => {
               </p>
             </li>
             <li>
-              <h4>Headers</h4>
+              <h4 className="margin-bottom-large">Headers</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -125,7 +125,7 @@ const About = () => {
               </p>
             </li>
             <li>
-              <h4>Meta Tags</h4>
+              <h4 className="margin-bottom-large">Meta Tags</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -133,7 +133,7 @@ const About = () => {
               </p>
             </li>
             <li>
-              <h4>Sitemap</h4>
+              <h4 className="margin-bottom-large">Sitemap</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -141,7 +141,7 @@ const About = () => {
               </p>
             </li>
             <li>
-              <h4>Robots.txt</h4>
+              <h4 className="margin-bottom-large">Robots.txt</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -149,7 +149,7 @@ const About = () => {
               </p>
             </li>
             <li>
-              <h4>Cananical URLs</h4>
+              <h4 className="margin-bottom-large">Cananical URLs</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -161,7 +161,7 @@ const About = () => {
           <h3>Just Kinda Cool</h3>
           <ul>
             <li>
-              <h4>Automatic Resume Builder</h4>
+              <h4 className="margin-bottom-large">Automatic Resume Builder</h4>
               <p>
                 Using the same JSON content I use for the homepage, I generate
                 a PDF vesion of my résumé. This way I dont have to worry about
@@ -182,7 +182,7 @@ export default About;
 /*
 
 <li>
-  <h4>Screen Reader</h4>
+  <h4 className="margin-bottom-large">Screen Reader</h4>
   <p>aria-attributes (coming soon)</p>
   1. Pay attention to the title tag
   2. Make sure your site is navigation-friendly
