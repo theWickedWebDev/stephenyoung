@@ -2,7 +2,7 @@
 
 body {
   font-family: $primaryFont;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 28px;
 }
 
@@ -60,19 +60,26 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
   font-family: $secondaryFont;
   padding-bottom: 8px;
   margin: 24px 0 12px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-family: $secondaryFont;
   font-weight: bold;
+  color: $primaryColor;
   padding-bottom: 8px;
   margin: 24px 0 12px;
-  //border-bottom: solid 1px $lightGray;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: $primaryFont;
+  font-weight: bold;
+  margin: 18px 0 10px;
 }
 
 .dropcap {
@@ -92,7 +99,7 @@ h3 {
 }
 
 .body-font {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-family: $primaryFont;
 }
@@ -217,30 +224,8 @@ h3 {
 .btn-link-full {
   background-color: $linkColor;
   padding: 12px 24px;
-  font-size: 14px;
+  font-size: 16px;
   color: $linkColorText;
-}
-
-summary  {
-  .project,
-  .general {
-    float: right;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 1px 8px;
-    border-radius: 2px;
-    text-transform: uppercase;
-  }
-
-  .project {
-    background-color: $primaryColor;
-    color: $primaryColor_light;
-  }
-
-  .general {
-    background-color: $secondaryColor;
-    color: $secondaryColor_light;
-  }
 }
 
 .bulleted-list {
@@ -289,11 +274,11 @@ summary  {
 .cursor {
     position: relative;
     text-decoration: underline;
-    background-color: rgb(84, 153, 204);
+    background-color: transparentize($linkColor, .8);
 
     @keyframes blinkingText{
         0% {   background-color: #fff;}
-        49% {  background-color: #167db7;}
+        49% {  background-color: $linkColor;}
         60% {  background-color: transparent;}
         99% {  background-color: transparent;}
         100% { background-color: #fff;}
@@ -307,7 +292,8 @@ summary  {
       bottom: 4px;
       top: 4px;
       background-color: #fff;
-      animation:blinkingText 1.2s infinite;
+      animation:blinkingText 1.0s infinite;
+      opacity: .7;
     }
 }
 
@@ -345,12 +331,12 @@ summary  {
 
   li {
     padding: 50px;
-    border: solid 1px #000;
-    background-color: $secondaryColor;
-    color: $secondaryColor_light;
+    background-color: $darkGray;
+    color: $white;
     text-align: center;
 
-    i {
+    svg {
+      margin: 0 auto;
       display: block;
       font-size: 70px;
       margin-bottom: 12px;
@@ -403,4 +389,17 @@ summary  {
     font-size: 16px;
     padding: 0 40px;
   }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.color-break {
+  background-color: $primaryColor;
+  color: $primaryColor_light;
+  display: block;
+  padding: 100px 12px;
+  margin-top: 60px;
+  text-align: center;
 }

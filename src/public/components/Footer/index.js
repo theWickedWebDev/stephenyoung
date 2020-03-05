@@ -7,8 +7,11 @@ import './styles.scss';
 const Footer = props => {
   const { t, i18n } = useTranslation();
 
-  return (
-    <footer className="footer__component bg-light">
+  return [
+    <div className="color-break">
+      <p>https://www.thewickedweb.dev</p>
+    </div>,
+    <footer className="footer__component">
       <div className="footer__component-space">
         <ul className="footer__flags">
           <LazyLoad>
@@ -42,8 +45,8 @@ const Footer = props => {
           </LazyLoad>
         </ul>
       </div>
-    </footer>
-  )
+    </footer>,
+  ]
 };
 
 export default Footer;

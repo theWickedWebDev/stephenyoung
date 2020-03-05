@@ -42,9 +42,9 @@ const Posts = props => {
 
           { ref.link
             ? <p className="posts_list_name">
-                — <a href={ref.link} target="_blank" title={stripHtml(ref.title)}>
-                    <strong>{ref.name}</strong>, <em>{ref.title}</em>
-                  </a>
+                <a href={ref.link} target="_blank" title={stripHtml(ref.title)}>
+                  <strong>{ref.name}</strong>, <em>{ref.title}</em>
+                </a>
               </p>
             : <p className="posts_list_name">
                 — <strong>{ref.name}</strong>, <em>{ref.title}</em>

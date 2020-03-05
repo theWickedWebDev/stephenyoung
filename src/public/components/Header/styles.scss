@@ -46,8 +46,8 @@
 .tablet,
 .mobile {
   .header__component {
-    background-position: 114px calc(100% - 164px);
-    background-size: 300px;
+    background-position: 50% 20px;
+    background-size: 250px;
     padding: 0;
   }
 
@@ -60,6 +60,7 @@
     background-color: $white;
     color: $darkBlue;
     padding: 0;
+    margin: 0 0 30px;
 
     .cursor { background-color: $white; }
 
@@ -69,7 +70,7 @@
   }
 
   .header__component-p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
   }
 }

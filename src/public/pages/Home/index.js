@@ -41,7 +41,7 @@ const Home = () => {
         <AdditionalExperience/>
         <References/>
         <Article title={t('gallery:title')}>
-          <h3 className="body-font">{t('gallery:copy')}</h3>
+          <h3>{t('gallery:copy')}</h3>
           <Gallery/>
         </Article>
       </Section>

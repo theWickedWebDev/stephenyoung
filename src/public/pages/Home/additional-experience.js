@@ -17,7 +17,7 @@ const AdditionalExperience = () => {
                   { exp.name }
                   { exp.link && <em className="fas fa-link padding-left-sm"/> }
                 </strong>
-              </a>, { exp.location } — { exp.from } - { exp.until }
+              </a> &nbsp; { exp.from } - { exp.until }
             </h3>
             <p>{ exp.description }</p>
             <br/>
