@@ -15,29 +15,31 @@ const CompressedNavbar = () => {
 
   return (
     <nav className="navbar__component-compressed clearfix">
-      <div className="navbar__component-compressed-logo-wrapper">
-        <Logo />
-      </div>
-      <div className="navbar__component-compressed-menu-wrap">
-        { !visible &&
-          <div
-            onClick={() => setVisible(true)}
-            className="navbar__component-compressed-menu closed"
-          >
-            <span className="navbar__component-compressed-menu-title">
-              {t('navbar:menu')}
-            </span>
-            <em className="fas navbar__menu-btn fa-ellipsis-v"/>
-          </div>}
-        { visible &&
-          <div
-            onClick={() => setVisible(false)}
-            className="navbar__component-compressed-menu"
-          >
-            <em className="fas navbar__menu-btn fa-ellipsis-h"/>
-            <NavList/>
-          </div>
-        }
+      <div className="navbar__component--wrapper">
+        <div className="navbar__component-compressed-logo-wrapper">
+          <Logo />
+        </div>
+        <div className="navbar__component-compressed-menu-wrap">
+          { !visible &&
+            <div
+              onClick={() => setVisible(true)}
+              className="navbar__component-compressed-menu closed"
+            >
+              <span className="navbar__component-compressed-menu-title">
+                {t('navbar:menu')}
+              </span>
+              <em className="fas navbar__menu-btn fa-ellipsis-v"/>
+            </div>}
+          { visible &&
+            <div
+              onClick={() => setVisible(false)}
+              className="navbar__component-compressed-menu"
+            >
+              <em className="fas navbar__menu-btn fa-ellipsis-h"/>
+              <NavList/>
+            </div>
+          }
+        </div>
       </div>
     </nav>
   );

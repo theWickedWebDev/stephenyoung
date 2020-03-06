@@ -43,7 +43,7 @@ const Home = () => {
         <EmploymentHighlight/>
         <AdditionalExperience/>
         <References/>
-        <Article title={t('gallery:title')}>
+        <Article title={t('gallery:title')} className="gallery__article">
           <h3>{t('gallery:copy')}</h3>
           <Gallery/>
         </Article>

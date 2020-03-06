@@ -1,16 +1,21 @@
+import config from 'config';
+
 import structuredData from './structured-data';
 
-const GA = `
-  <script async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-159258682-1">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-159258682-1');
-  </script>
-`;
+let GA = "";
+if (config.get('env') === 'production') {
+  GA = `
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-159258682-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159258682-1');
+    </script>
+  `;
+}
 
 const GOOGLE_FONTS = `
   <link
@@ -32,9 +37,9 @@ const html = ({ helmet, component, req }) => `
   <!DOCTYPE html>
   <html ${helmet.htmlAttributes.toString()} lang="en" xml:lang="en">
   <head>
+    ${GA}
     ${INTERNAL_CSS}
     ${GOOGLE_FONTS}
-    ${GA}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     ${helmet.title.toString()}
     ${helmet.meta.toString()}

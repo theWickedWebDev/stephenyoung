@@ -1,8 +1,13 @@
 @import '../../variables.scss';
 
 .navbar__component-compressed {
-  position: relative;
   text-align: right;
+
+  .navbar__component--wrapper {
+    max-width: $bodyMaxWidth;
+    margin: 0 auto;
+    position: relative;
+  }
 
   .navbar__menu-btn {
     width: 46px;

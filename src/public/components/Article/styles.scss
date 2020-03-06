@@ -3,6 +3,12 @@
 .article__component {
   padding: 24px 0;
 
+  .article__component-content {
+    display: block;
+    max-width: $bodyMaxWidth;
+    margin: 0 auto;
+  }
+
   .article__component-h2 {
     position: sticky;
     top: 0;

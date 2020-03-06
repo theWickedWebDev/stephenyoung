@@ -11,10 +11,12 @@ const DefaultLayout  = props => {
 
   return (
     <Viewport>{ viewport => (
-      <div className={viewport}>
-        <MobileNav/>
-          { children }
-        <Footer/>
+      <div className={`${viewport} default__layout`}>
+        <div className="default__layout-content">
+          <MobileNav/>
+            { children }
+          <Footer/>
+        </div>
       </div>
     )}</Viewport>
   );

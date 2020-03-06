@@ -19,8 +19,8 @@ const Header = props => {
     .find(l => l.slug === 'resume');
 
   return (
-    <header className={classNames.join(' ')} style={style}>
-      <div className="header__body">
+    <header className={classNames.join(' ')}>
+      <div className="header__body" style={style}>
         <h1
           className="header__component-h1"
           data-aos="fade-right"
