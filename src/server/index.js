@@ -38,6 +38,7 @@ const getTranslations = locale => {
 }
 
 app.get('/robots.txt', (req, res) => {
+  console.log(config);
   if (config.get('env') === 'staging') {
     res.sendFile(path.resolve(__dirname, 'public/assets/robots-staging.txt'));
   } else {

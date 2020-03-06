@@ -1,7 +1,20 @@
 {
   "lang": "fr",
   "navbar": {
+    "menu": "Menu",
     "links": [
+      {
+        "name": "<em class='fas fa-home margin-right-lg'></em>Accueil",
+        "internal": true,
+        "slug": "accueil",
+        "href": "/"
+      },
+      {
+        "name": "<em class='fas fa-star margin-right-lg'></em>À propos de ce site<sup>NOUVEAU</sup>",
+        "internal": true,
+        "slug": "about-this-site",
+        "href": "/about-this-site/"
+      },
       {
         "name": "<em class='fas fa-download margin-right-lg'></em>Télécharger mon CV",
         "internal": false,
@@ -260,8 +273,9 @@
           {"name": "FileStack", "favorite": false, "strong": false },
           {"name": "Balsamiq", "favorite": false, "strong": false },
           {"name": "InvisionApp", "favorite": true, "strong": false },
-          {"name": "Photoshop", "favorite": true, "strong": true },
-          {"name": "Illustrator", "favorite": true, "strong": true },
+          {"name": "Adobe Photoshop", "favorite": true, "strong": true },
+          {"name": "Adobe Illustrator", "favorite": true, "strong": true },
+          {"name": "Adobe After Effects", "favorite": true, "strong": false },
           {"name": "Jira", "favorite": false, "strong": false },
           {"name": "Confluence", "favorite": false, "strong": false },
           {"name": "GtMetrix", "favorite": false, "strong": false }

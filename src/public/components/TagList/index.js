@@ -4,13 +4,8 @@ const TagList = props => (
   <ul className="tag-list">
     { props.list.map((item, index) => (
       <li
-        className={
-          `tag-list-item ${item.favorite ? 'favorite' : ''}`
-        }
-        data-aos={
-          `${item.favorite ? 'zoom-out' : ''}`
-        }
-        key={index}
+        className="tag-list-item"
+        key={index + '-tag'}
       >
         <span>{ item.name }</span>
         { item.favorite &&

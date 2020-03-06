@@ -1,6 +1,7 @@
 {
   "lang": "en",
   "navbar": {
+    "menu": "Menu",
     "links": [
       {
         "name": "<em class='fas fa-home margin-right-lg'></em>Home",
@@ -9,7 +10,7 @@
         "href": "/"
       },
       {
-        "name": "<em class='fas fa-star margin-right-lg'></em>About this Site<sup>NEW</sup>",
+        "name": "<em class='fas fa-star margin-right-lg'></em>About this site<sup>NEW</sup>",
         "internal": true,
         "slug": "about-this-site",
         "href": "/about-this-site/"
@@ -24,10 +25,10 @@
   },
   "about": {
     "meta": {
-      "title": "About my resume site - Stephen Young",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      "title": "How I built my résumé app - Node / React / Webpack",
+      "description": "Goes over key concepts on how I built this site, such as Accessibility, Site Performance, SEO, PDF Generation, and code quality."
     },
-    "title": "About this Site",
+    "title": "How I built my résumé app",
     "description": "I wanted to make a résumé site that could showcase some of the concepts I am passionate about (even if its total overkill). This site demonstrates a lot of things I have learned in the past. Hope you enjoy!",
     "techHeader": "What is this site made with?",
     "outcomeHeader": "What are some key concepts for this site?",

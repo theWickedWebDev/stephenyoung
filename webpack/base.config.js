@@ -5,7 +5,7 @@ const path = require('path')
 const MiniCssExtractPlugin =  require("mini-css-extract-plugin");
 const ReplacePlugin = require('webpack-plugin-replace');
 
-const isDevelopment = process.env.NODE_ENV === 'development'
+const isDevelopment = process.env.NODE_ENV !== 'production'
 
 const js = {
   test: /\.js$/,
@@ -62,9 +62,9 @@ const baseConfig = {
   },
   resolve: {
     alias: {
-      layouts: path.resolve(__dirname, '../../src/public/layouts/'),
-      components: path.resolve(__dirname, '../../src/public/components/'),
-      pages: path.resolve(__dirname, '../../src/public/pages/'),
+      layouts: path.resolve(__dirname, '../src/public/layouts/'),
+      components: path.resolve(__dirname, '../src/public/components/'),
+      pages: path.resolve(__dirname, '../src/public/pages/'),
     }
   },
   watchOptions: {

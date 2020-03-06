@@ -1,3 +1,4 @@
+
 // Dependencies
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -286,6 +287,7 @@ const About = () => {
                 identifable as possible. This allows for code that can be
                 more easily read without the need for much commenting.
               </p>
+              <br/>
               <h4 className="margin-bottom-large">
                 <abbr>DRY</abbr> - Do not repeat yourself
               </h4>
@@ -295,6 +297,7 @@ const About = () => {
                 projects progress, but as I work I keep that in mind and do
                 my best.
               </p>
+              <br/>
               <h4 className="margin-bottom-large">
                 Testing with Jest and Nightwatch
               </h4>
@@ -319,6 +322,16 @@ const About = () => {
                 and helpful while working on new features or projects.
               </p>
               <br/>
+              <h4 className="margin-bottom-large">
+                Staging Site (https://staging.thewickedweb.dev)
+              </h4>
+              <p>
+                I made myself a staging website too - so that I ensure a
+                deployment will go smooth and not hurt any users experience
+                while visiting my site. <br/><br/><strong>Note:</strong> I have made a
+                custom robots.txt file that <em className="alt">blocks search
+                engines</em> from crawling and indexing my staging site.
+              </p>
             </li>
           </ul>
           <br/>

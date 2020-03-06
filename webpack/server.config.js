@@ -10,11 +10,11 @@ module.exports = {
   },
   externals: [nodeExternals()],
   entry: {
-    'index.js': path.resolve(__dirname, '../../src/server/start.js')
+    'index.js': path.resolve(__dirname, '../src/server/start.js')
   },
   module: {},
   output: {
-    path: path.resolve(__dirname, '../../dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: '[name]'
   },
   plugins: [

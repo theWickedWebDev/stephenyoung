@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "webpack --mode=production && concurrently \"webpack --watch --info-verbosity verbose\" \"nodemon dist --verbose\" \"npm run test:watch\"",
+    "dev": "NODE_ENV=production webpack --mode=production && concurrently \"webpack --watch --info-verbosity verbose\" \"nodemon dist --verbose\" \"npm run test:watch\"",
     "build": "npm run test && webpack --mode=production",
     "start": "node dist/index.js",
     "test": "NODE_ENV=test && BABEL_ENV=test && jest --detectOpenHandles",

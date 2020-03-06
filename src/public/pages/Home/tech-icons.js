@@ -2,7 +2,7 @@ import React from 'react';
 
 const TechIcons = () => {
   return [
-    <noscript>
+    <noscript key="noscript">
       <ul className="icon-list icon-list-light icon-list-small">
         <li className="icon-list-item">
           <em title="Javascript">Javascript</em>
@@ -21,7 +21,7 @@ const TechIcons = () => {
         </li>
       </ul>
     </noscript>,
-    <ul className="icon-list icon-list-light">
+    <ul key="tech-icons" className="icon-list icon-list-light">
       <li className="icon-list-item">
         <em className="fab fa-node-js" title="Javascript" />
       </li>

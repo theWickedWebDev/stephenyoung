@@ -1,3 +1,5 @@
+
+
 export const path = `${S3_URL}${S3_IMAGES_PATH}/favicon/`;
 
 export const links = [

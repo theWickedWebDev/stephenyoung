@@ -1,7 +1,20 @@
 {
   "lang": "es",
   "navbar": {
+    "menu": "Menú",
     "links": [
+      {
+        "name": "<em class='fas fa-home margin-right-lg'></em>Hogar",
+        "internal": true,
+        "slug": "hogar",
+        "href": "/"
+      },
+      {
+        "name": "<em class='fas fa-star margin-right-lg'></em>Sobre este sitio<sup>NUEVO</sup>",
+        "internal": true,
+        "slug": "about-this-site",
+        "href": "/about-this-site/"
+      },
       {
         "name": "<em class='fas fa-download margin-right-lg'></em>Descargar My Résumé",
         "internal": false,
@@ -247,25 +260,26 @@
       "other": {
         "title": "Other things I've learned or used",
         "content": [
-        {"name": "SEO", "favorite": true, "strong": false },
-        {"name": "Site performance", "favorite": true, "strong": false },
-        {"name": "A/B testing", "favorite": true, "strong": false },
-        {"name": "Jest", "favorite": false, "strong": false },
-        {"name": "Lambda", "favorite": false, "strong": false },
-        {"name": "Git", "favorite": false, "strong": true },
-        {"name": "Firebase", "favorite": false, "strong": false },
-        {"name": "Tealium", "favorite": false, "strong": false },
-        {"name": "GA", "favorite": false, "strong": false },
-        {"name": "KISSmetrics", "favorite": false, "strong": false },
-        {"name": "Optimizely", "favorite": false, "strong": false },
-        {"name": "FileStack", "favorite": false, "strong": false },
-        {"name": "Balsamiq", "favorite": false, "strong": false },
-        {"name": "InvisionApp", "favorite": true, "strong": false },
-        {"name": "Photoshop", "favorite": true, "strong": true },
-        {"name": "Illustrator", "favorite": true, "strong": true },
-        {"name": "Jira", "favorite": false, "strong": false },
-        {"name": "Confluence", "favorite": false, "strong": false },
-        {"name": "GtMetrix", "favorite": false, "strong": false }
+          {"name": "SEO", "favorite": true, "strong": false },
+          {"name": "Site performance", "favorite": true, "strong": false },
+          {"name": "A/B testing", "favorite": true, "strong": false },
+          {"name": "Jest", "favorite": false, "strong": false },
+          {"name": "Lambda", "favorite": false, "strong": false },
+          {"name": "Git", "favorite": false, "strong": true },
+          {"name": "Firebase", "favorite": false, "strong": false },
+          {"name": "Tealium", "favorite": false, "strong": false },
+          {"name": "GA", "favorite": false, "strong": false },
+          {"name": "KISSmetrics", "favorite": false, "strong": false },
+          {"name": "Optimizely", "favorite": false, "strong": false },
+          {"name": "FileStack", "favorite": false, "strong": false },
+          {"name": "Balsamiq", "favorite": false, "strong": false },
+          {"name": "InvisionApp", "favorite": true, "strong": false },
+          {"name": "Adobe Photoshop", "favorite": true, "strong": true },
+          {"name": "Adobe Illustrator", "favorite": true, "strong": true },
+          {"name": "Adobe After Effects", "favorite": true, "strong": false },
+          {"name": "Jira", "favorite": false, "strong": false },
+          {"name": "Confluence", "favorite": false, "strong": false },
+          {"name": "GtMetrix", "favorite": false, "strong": false }
       ]
       }
     },

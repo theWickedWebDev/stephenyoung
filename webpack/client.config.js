@@ -6,7 +6,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   target: 'web',
   entry: {
-    'index.js': path.resolve(__dirname, '../../src/public/index.js')
+    'index.js': path.resolve(__dirname, '../src/public/index.js')
   },
   optimization: {
     splitChunks: {
@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   output: {
-   path: path.resolve(__dirname, '../../dist/public'),
+   path: path.resolve(__dirname, '../dist/public'),
    filename: '[name].bundle.js',
    chunkFilename: '[name].bundle.js',
   },

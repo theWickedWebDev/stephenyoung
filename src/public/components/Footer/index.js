@@ -8,10 +8,10 @@ const Footer = props => {
   const { t, i18n } = useTranslation();
 
   return [
-    <div className="color-break">
+    <div className="color-break" key="color">
       <p>https://www.thewickedweb.dev</p>
     </div>,
-    <footer className="footer__component">
+    <footer className="footer__component" key="footer__component">
       <div className="footer__component-space">
         <noscript>
           <p>

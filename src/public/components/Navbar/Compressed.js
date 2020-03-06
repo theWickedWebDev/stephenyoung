@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import NavList from './NavList.js';
 import Social from './Social.js';
@@ -10,6 +11,7 @@ const CompressedNavbar = () => {
   const state = useState(false);
   const visible = state[0];
   const setVisible = state[1];
+  const { t, i18n } = useTranslation();
 
   return (
     <nav className="navbar__component-compressed clearfix">
@@ -23,7 +25,7 @@ const CompressedNavbar = () => {
             className="navbar__component-compressed-menu closed"
           >
             <span className="navbar__component-compressed-menu-title">
-              Menu
+              {t('navbar:menu')}
             </span>
             <em className="fas navbar__menu-btn fa-ellipsis-v"/>
           </div>}

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './styles.scss';
 import { useTranslation } from 'react-i18next';
@@ -7,7 +8,7 @@ const Gallery = () => {
   const { t, i18n } = useTranslation();
 
   return [
-    <noscript>
+    <noscript key="noscript">
       { t('gallery:content', { returnObjects: true }).map((image, index) => (
         <li className="image-list-item" key={index}>
           <figure>
@@ -22,20 +23,20 @@ const Gallery = () => {
         </li>
       ))}
     </noscript>,
-    <ul className="image-list">
+    <ul className="image-list" key="image-list">
     { t('gallery:content', { returnObjects: true }).map((image, index) => (
       <li className="image-list-item" key={index}>
-        <LazyLoad skeleton={Skeleton}>
-          <figure>
+        <figure>
+          <LazyLoad skeleton={<Skeleton/>}>
             <img
               src={`${S3_URL}${S3_IMAGES_PATH}${S3_IMAGES_GALLERY_PATH}/${image.src}`}
               alt={image.alt}
               title={image.alt}
               className="image-list-item__image"
             />
-            <figcaption><h4>{image.alt}</h4></figcaption>
-          </figure>
-        </LazyLoad>
+          </LazyLoad>
+          <figcaption><h4>{image.alt}</h4></figcaption>
+        </figure>
       </li>
     ))}
     </ul>

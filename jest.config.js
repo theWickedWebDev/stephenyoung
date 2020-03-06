@@ -50,6 +50,7 @@ module.exports = {
     'src/server/index.test.js',
     'src/public/App.test.js',
     'dist/',
+    'config/',
   ],
   transformIgnorePatterns: ['node_modules/']
 };
