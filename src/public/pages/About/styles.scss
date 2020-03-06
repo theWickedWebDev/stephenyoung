@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+.about__page {
+  h3 {
+    position: sticky;
+    top: 0;
+    top: 80px;
+    z-index: 9999;
+    background-color: #fff;
+  }
+
+  .tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      padding: 50px;
+      background-color: $darkGray;
+      color: $white;
+      text-align: center;
+      max-width: 100%;
+      width: 300px;
+      margin: 12px auto;
+      min-height: 250px;
+
+      svg {
+        margin: 0 auto;
+        display: block;
+        font-size: 70px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.mobile,
+.tablet {
+  .about__page {
+    h3 {
+      font-size: 18px;
+    }
+
+    .tools-list li {
+      max-width: 100%;
+      width: 300px;
+      margin: 12px auto;
+    }
+  }
+}

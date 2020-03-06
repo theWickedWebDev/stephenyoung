@@ -27,10 +27,7 @@ const Header = props => {
           data-aos-duration="1000"
         >
           <span>
-            {title.substring(0, title.length - 1)}
-            <span className="cursor">
-              {title.charAt(title.length - 1)}
-            </span>
+            {title}
           </span>
         </h1>
         <h2 className="header__component-h2">{subtitle}</h2>

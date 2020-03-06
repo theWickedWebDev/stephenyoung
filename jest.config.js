@@ -45,5 +45,11 @@ module.exports = {
     "\\.(css|scss)$": "<rootDir>/test/__mocks__/styleMock.js",
     "\\.(xml|txt)$": "<rootDir>/test/__mocks__/fileMock.js"
    },
+  watchPathIgnorePatterns: [
+    'src/server/resume-builder.test.js',
+    'src/server/index.test.js',
+    'src/public/App.test.js',
+    'dist/',
+  ],
   transformIgnorePatterns: ['node_modules/']
 };

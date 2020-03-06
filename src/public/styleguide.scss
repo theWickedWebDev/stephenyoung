@@ -272,32 +272,6 @@ h4 {
   }
 }
 
-.cursor {
-    position: relative;
-    text-decoration: underline;
-    background-color: transparentize($linkColor, .8);
-
-    @keyframes blinkingText{
-        0% {   background-color: #fff;}
-        49% {  background-color: $linkColor;}
-        60% {  background-color: transparent;}
-        99% {  background-color: transparent;}
-        100% { background-color: #fff;}
-    }
-
-    &:after {
-      content: ' ';
-      width: 3px;
-      position: absolute;
-      right: -10px;
-      bottom: 4px;
-      top: 4px;
-      background-color: #fff;
-      animation:blinkingText 1.0s infinite;
-      opacity: .7;
-    }
-}
-
 .icon-list {
   text-align: center;
 
@@ -329,27 +303,6 @@ h4 {
       font-size: 30px;
       font-family: $primaryFont;
       font-style: normal;
-    }
-  }
-}
-
-.test-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-
-  li {
-    padding: 50px;
-    background-color: $darkGray;
-    color: $white;
-    text-align: center;
-
-    svg {
-      margin: 0 auto;
-      display: block;
-      font-size: 70px;
-      margin-bottom: 12px;
     }
   }
 }

@@ -5,5 +5,10 @@
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
+    <url>
+      <loc>https://www.thewickedweb.dev/about-this-site/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
   </urlset>
 </sitemapindex>

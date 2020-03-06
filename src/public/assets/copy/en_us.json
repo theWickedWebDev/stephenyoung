@@ -3,16 +3,22 @@
   "navbar": {
     "links": [
       {
-        "name": "<em class='fas fa-download margin-right-lg'></em>Download My Résumé",
-        "internal": false,
-        "slug": "resume",
-        "href": "/resume.pdf"
+        "name": "<em class='fas fa-home margin-right-lg'></em>Home",
+        "internal": true,
+        "slug": "home",
+        "href": "/"
       },
       {
-        "name": "About this Site",
+        "name": "<em class='fas fa-star margin-right-lg'></em>About this Site<sup>NEW</sup>",
         "internal": true,
         "slug": "about-this-site",
         "href": "/about-this-site/"
+      },
+      {
+        "name": "<em class='fas fa-download margin-right-lg'></em>Download Résumé",
+        "internal": false,
+        "slug": "resume",
+        "href": "/resume.pdf"
       }
     ]
   },

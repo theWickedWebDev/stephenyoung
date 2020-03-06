@@ -3,7 +3,7 @@ import AOS from 'aos';
 
 import { Favicon } from 'components/Meta';
 import Viewport from 'components/Viewport';
-import Navbar from 'components/Navbar';
+import { Compressed as MobileNav } from 'components/Navbar';
 import Footer from 'components/Footer';
 
 const DefaultLayout  = props => {
@@ -12,7 +12,7 @@ const DefaultLayout  = props => {
   return (
     <Viewport>{ viewport => (
       <div className={viewport}>
-        <Navbar/>
+        <MobileNav/>
           { children }
         <Footer/>
       </div>

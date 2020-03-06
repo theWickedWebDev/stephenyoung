@@ -2,6 +2,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+// Styling
+import './styles.scss';
+
 // Components
 import Meta from 'components/Meta';
 import Section from 'components/Section';
@@ -29,7 +32,7 @@ const About = () => {
       />
       <Section>
         <Article title={t('about:outcomeHeader')} className="about-page__component">
-          <ul className="test-list">
+          <ul className="tools-list">
             <li><em className="fab fa-node" /> Node, Express</li>
             <li><em className="fab fa-react" /> React, Webpack, SCSS</li>
             <li><em className="fab fa-aws" /> EC2, Load Balancer, S3, CloudFront</li>
@@ -261,6 +264,17 @@ const About = () => {
               { name: 'Enzyme' },
               { name: 'Nightwatch'},
           ]} />
+          <br/>
+          <a
+            className="btn-link-full"
+            href="/coverage/"
+            title="View Jest Coverage"
+            target="_blank"
+          >
+            View Test Coverage
+          </a>
+          <br/>
+          <br/>
           <ul>
             <li>
               <h4 className="margin-bottom-large">
@@ -287,12 +301,15 @@ const About = () => {
               <p>
                 The code that runs this site is thoroughly tested. I use Jest as my
                 runner and other packages such as <em className="alt">Supertest</em>
-                and <em className="alt">Enzyme</em> for my testing libraries.
+                &nbsp;and <em className="alt">Enzyme</em> for my testing libraries.
               </p>
               <br/>
               <p>
-                I am actively working on increasing my code coverage, specifically
-                end-to-end <abbr>(E2E)</abbr> tests using <em className="alt">Nightwatch</em>.
+                I am actively working on increasing&nbsp;
+                <a href="/coverage/" title="View Jest Coverage" target="_blank">
+                  my code coverage
+                </a>, specifically end-to-end <abbr>(E2E)</abbr> tests
+                using <em className="alt">Nightwatch</em>.
               </p>
               <br/>
               <p>

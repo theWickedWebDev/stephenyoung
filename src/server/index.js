@@ -1,3 +1,4 @@
+import config from 'config';
 import compression from 'compression'
 import express from 'express'
 import path from 'path'
@@ -37,7 +38,11 @@ const getTranslations = locale => {
 }
 
 app.get('/robots.txt', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public/assets/robots.txt'));
+  if (config.get('env') === 'staging') {
+    res.sendFile(path.resolve(__dirname, 'public/assets/robots-staging.txt'));
+  } else {
+    res.sendFile(path.resolve(__dirname, 'public/assets/robots.txt'));
+  }
 });
 
 app.get('/sitemap.xml', (req, res) => {
@@ -50,7 +55,6 @@ app.get('/resume.pdf', (req, res) => {
 });
 
 app.get('/*', (req, res) => {
-
   // Redirects trailing slashes
   const noTrailingSlash = !req.url.endsWith('/');
   const notHomepage = !req.url !== '/';

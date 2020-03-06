@@ -1,3 +1,4 @@
+const config = require('config');
 const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
 const path = require('path')
@@ -65,6 +66,10 @@ const baseConfig = {
       components: path.resolve(__dirname, '../../src/public/components/'),
       pages: path.resolve(__dirname, '../../src/public/pages/'),
     }
+  },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000,
   },
   plugins: [
     new ReplacePlugin({

@@ -19,7 +19,7 @@ describe('<Navbar/> component', () => {
 
   it('should display Download My Résumé link', () => {
     expect(wrapper.find('.navbar__link').at(0).props().title)
-      .toEqual('Download My Résumé');
+      .toEqual('Download Résumé');
   });
 
   it('should display social icons', () => {
