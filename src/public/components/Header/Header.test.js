@@ -21,7 +21,7 @@ describe('<Header/> component', () => {
   it('should render component with avatar', () => {
     const wrapper = mount(<Component {...sharedProps} avatar="test.jpg"/>);
     expect(wrapper.find('header')).toExist();
-    expect(wrapper.find('header').props().style.backgroundImage)
+    expect(wrapper.find('.header__body').props().style.backgroundImage)
       .toContain("test.jpg");
   })
 })

@@ -4,7 +4,7 @@
     "menu": "Menu",
     "links": [
       {
-        "name": "<em class='fas fa-home margin-right-lg'></em>Home",
+        "name": "<em class='fas fa-home margin-right-lg'></em>Résumé",
         "internal": true,
         "slug": "home",
         "href": "/"
@@ -16,7 +16,13 @@
         "href": "/about-this-site/"
       },
       {
-        "name": "<em class='fas fa-download margin-right-lg'></em>Download Résumé",
+        "name": "<em class='fas fa-star margin-right-lg'></em>Other Experience<sup>NEW</sup>",
+        "internal": true,
+        "slug": "other-experience",
+        "href": "/other-experience/"
+      },
+      {
+        "name": "<em class='fas fa-download margin-right-lg'></em>Download Résumé PDF",
         "internal": false,
         "slug": "resume",
         "href": "/resume.pdf"
@@ -390,6 +396,9 @@
           ]
         }
       ]
+    },
+    "otherExperience": {
+      "title": "Other experience that may be relevant to you"
     }
   }
 }
