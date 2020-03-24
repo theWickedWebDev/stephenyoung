@@ -4,7 +4,6 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 
 import './fort-awesome';
-import './translations';
 import './css-reset.css';
 import './styleguide.scss';
 

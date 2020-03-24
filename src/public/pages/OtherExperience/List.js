@@ -2,7 +2,6 @@
 
 // Dependencies
 import React from 'react'
-import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 // Components
@@ -13,8 +12,6 @@ import Header from 'components/Header';
 
 // <Medical/> Page
 const OtherExperienceList = () => {
-  const { t, i18n } = useTranslation();
-
   return (
     <div className="homepage__page">
       <Meta

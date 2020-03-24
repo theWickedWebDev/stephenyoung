@@ -1,6 +1,5 @@
 // Dependencies
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 // Components
 import Section from 'components/Section';
@@ -10,7 +9,6 @@ import TagList from 'components/TagList';
 import Meta from 'components/Meta';
 
 const MedicalExperience = () => {
-  const { t, i18n } = useTranslation();
 
   const medicalFieldTags = [
     { name: 'Phlebotomy' },

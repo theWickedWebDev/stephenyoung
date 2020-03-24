@@ -27,22 +27,6 @@ app.use(compression())
 app.use('/static', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }))
 app.use('/coverage', express.static(path.resolve(__dirname, 'public/coverage/'), { maxAge: '7d' }))
 
-// Generates and compiles a PDF of my resume
-// based on the JSON data in this repo
-const getTranslations = locale => {
-  let translations;
-
-  if (locale && locale === 'fr_fr') {
-    translations = require('../public/assets/copy/fr_fr.json');
-  } else if (locale && locale === 'es_es') {
-    translations = require('../public/assets/copy/es_es.json');
-  } else {
-    translations = require('../public/assets/copy/en_us.json');
-  }
-
-  return translations;
-}
-
 app.get('/robots.txt', (req, res) => {
   console.log(config);
   if (config.get('env') === 'staging') {
@@ -54,11 +38,6 @@ app.get('/robots.txt', (req, res) => {
 
 app.get('/sitemap.xml', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public/assets/sitemap.xml'));
-});
-
-// resume.pdf?locale=es_es
-app.get('/resume.pdf', (req, res) => {
-  resumeBuilder(req, res, getTranslations(req.query.locale));
 });
 
 app.get('/*', (req, res) => {
@@ -81,7 +60,7 @@ app.get('/*', (req, res) => {
       </Loadable.Capture>
     </Router>
   );
-  
+
   let bundles = getBundles(getStats(), modules);
 
   const helmet = Helmet.renderStatic();
@@ -102,6 +81,5 @@ app.get('/*', (req, res) => {
 })
 
 module.exports = {
-  getTranslations,
   app,
 }

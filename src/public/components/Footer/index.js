@@ -1,5 +1,4 @@
 import React from 'react';
-import LanguageSelector from 'components/LanguageSelector';
 
 import './styles.scss';
 
@@ -17,7 +16,6 @@ const Footer = props => {
             are <em>currently</em> unable to switch langauges.
           </p>
         </noscript>
-        <LanguageSelector/>
       </div>
     </footer>,
   ]

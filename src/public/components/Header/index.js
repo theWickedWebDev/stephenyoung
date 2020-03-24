@@ -1,11 +1,17 @@
 import React from 'react';
 import './styles.scss';
-import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = props => {
   const { title, subtitle, intro, avatar } = props;
-  const { t, i18n } = useTranslation();
+
+  const download = {
+    "name": "Download Résumé PDF",
+    "icon": "download",
+    "internal": false,
+    "slug": "resume",
+    "href": `${S3_URL}${S3_RESUME_PDF}`
+  }
 
   const style = {};
   const classNames = ["header__component"];
@@ -14,9 +20,6 @@ const Header = props => {
     style.backgroundImage = `url('${avatar}')`;
     classNames.push('with-avatar');
   }
-
-  const download = t('navbar:links', { returnObjects: true})
-    .find(l => l.slug === 'resume');
 
   return (
     <header className={classNames.join(' ')}>

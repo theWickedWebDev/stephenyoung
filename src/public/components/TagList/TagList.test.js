@@ -24,6 +24,6 @@ describe('<TagList/> component', () => {
 
   it('should render with favorite tags', () => {
     const wrapper = mount(<Component {...sharedProps}/>);
-    expect(wrapper.find('em').length).toEqual(1);
+    expect(wrapper.find('i').length).toEqual(1);
   })
 })

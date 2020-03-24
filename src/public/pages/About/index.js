@@ -1,7 +1,6 @@
 
 // Dependencies
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Styling
@@ -10,7 +9,6 @@ import './styles.scss';
 // Components
 import { SquareSkeleton, RectSkeleton } from 'components/Skeletons';
 import LazyLoad from 'components/LazyLoad';
-import LanguageSelector from 'components/LanguageSelector';
 import Meta from 'components/Meta';
 import Section from 'components/Section';
 import Article from 'components/Article';
@@ -20,26 +18,34 @@ import Viewport from 'components/Viewport';
 
 // <Home/> Component
 const About = () => {
-  const { t, i18n } = useTranslation();
+  const copy = {
+    "meta": {
+      "title": "How I built my résumé app - Node / React / Webpack",
+      "description": "Goes over key concepts on how I built this site, such as Accessibility, Site Performance, SEO, PDF Generation, and code quality."
+    },
+    "title": "How I built my résumé app",
+    "description": "I wanted to make a résumé site that could showcase some of the concepts I am passionate about (even if its total overkill). This site demonstrates a lot of things I have learned in the past. Hope you enjoy!",
+    "outcomeHeader": "What are some key concepts for this site?",
+  };
 
   return (
     <div className="about__page">
       <Viewport>{ viewport => (
         <React.Fragment>
           <Header
-            title={t('about:title')}
-            intro={t('about:description')}
+            title={copy.title}
+            intro={copy.description}
             avatar={`${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-2.svg`}
           />
           <Meta
             robots="index"
             keywords="HTML,CSS,XML,JavaScript"
-            title={t('about:meta:title')}
-            description={t('about:meta:description')}
+            title={copy.meta.title}
+            description={copy.meta.description}
             canonical="https://www.thewickedweb.dev/about/"
           />
           <Section>
-            <Article title={t('about:outcomeHeader')} className="about-page__component">
+            <Article title={copy.outcomeHeader} className="about-page__component">
               <ul className="tools-list">
                 <li><FontAwesomeIcon icon={['fab', 'node-js']}/> Node, Express</li>
                 <li><FontAwesomeIcon icon={['fab', 'react']}/> React, Webpack, SCSS</li>
@@ -249,7 +255,6 @@ const About = () => {
               <h3>Just Kinda Cool</h3>
               <TagList list={[
                   { name: 'PDFKit' },
-                  { name: 'i18next'},
                   { name: 'Node'},
               ]} />
               <ul>
@@ -300,18 +305,6 @@ const About = () => {
                     about keeping a current version ready if/when I need one. For
                     fun, I also tied it in with my localization so you can
                     download in English, Spanish or French!
-                  </p>
-                  <br/>
-                </li>
-                <li>
-                  <h4 className="margin-bottom-large">
-                    Translated into 3 languages
-                  </h4>
-                  <p>Try it out! Click on a flag below.</p>
-                  <LanguageSelector/>
-                  <p>
-                    Not the highest quality, but for demo purposes I used
-                    Google Translate to add French and Spanish languages.
                   </p>
                   <br/>
                 </li>

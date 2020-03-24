@@ -8,6 +8,7 @@ window.S3_AVATAR_PATH = '/avatar';
 window.S3_LOGOS_PATH = '/logo';
 window.S3_SOCIAL_PATH = '/social';
 window.S3_ABOUT_SITE_PATH = '/how-i-made-this-site';
+window.S3_RESUME_PDF = '/resume/stephen-young-resume.pdf';
 
 window.BREAKPOINTS = {
   mobile: 500,
