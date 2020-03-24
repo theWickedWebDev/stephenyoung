@@ -25,12 +25,12 @@ const GOOGLE_FONTS = `
 `;
 
 const INTERNAL_CSS = `
-  <link rel="stylesheet" type="text/css" href="/static/index.js.css">
+  <link rel="stylesheet" type="text/css" href="/static/index.css">
 `;
 
 const INTERNAL_SCRIPTS = `
-  <script src="/static/vendors~index.js.bundle.js"></script>
-  <script src="/static/index.js.bundle.js"></script>
+  <script src="/static/vendors-index.bundle.js"></script>
+  <script src="/static/index.bundle.js"></script>
 `;
 
 const html = ({ helmet, component, req }) => `

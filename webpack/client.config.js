@@ -6,10 +6,11 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   target: 'web',
   entry: {
-    'index.js': path.resolve(__dirname, '../src/public/index.js')
+    'index': path.resolve(__dirname, '../src/public/index.js')
   },
   optimization: {
     splitChunks: {
+      automaticNameDelimiter: '-',
       chunks: 'all'
     }
   },
@@ -17,6 +18,7 @@ module.exports = {
    path: path.resolve(__dirname, '../dist/public'),
    filename: '[name].bundle.js',
    chunkFilename: '[name].bundle.js',
+   publicPath: '/static/',
   },
   plugins: [
     new CopyPlugin([
