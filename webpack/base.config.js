@@ -13,13 +13,25 @@ const js = {
   use: {
     loader: 'babel-loader',
     options: {
-      "presets": ["@babel/env", "@babel/react"],
+      "presets": [
+        [
+          '@babel/env',
+          {
+            targets: {
+              esmodules: true
+            },
+            useBuiltIns: 'entry',
+            corejs: '3'
+          }
+
+        ],
+        [ '@babel/react' ]
+      ],
       "plugins": [
         "@babel/plugin-transform-runtime",
         "transform-es2015-modules-commonjs",
         "@babel/plugin-proposal-class-properties",
-        "react-loadable/babel",
-        "@babel/plugin-syntax-dynamic-import"
+        '@babel/plugin-syntax-dynamic-import'
       ],
     }
   }

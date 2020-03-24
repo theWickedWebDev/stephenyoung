@@ -1,7 +1,6 @@
 import React from 'react'
-import Loadable from 'react-loadable';
 import { Link, Route, Switch } from 'react-router-dom';
-
+// import loadable from '@loadable/component'
 
 import './fort-awesome';
 import './css-reset.css';
@@ -10,35 +9,15 @@ import './styleguide.scss';
 import DefaultLayout from 'layouts/default';
 import ScrollToTop from 'components/ScrollToTop';
 
-const Loading = () => (<div>Loading...</div>);
+// const Home = loadable(() => import('pages/Home'));
+// const About = loadable(() => import('pages/About'));
+// const OtherExperience = loadable(() => import('pages/OtherExperience'));
+// const NoMatch = loadable(() => import('pages/NoMatch'));
 
-const Home = Loadable({
-  loader: () => import(/* webpackChunkName: "homepage" */'pages/Home'),
-  loading() {
-    return <Loading/>;
-  },
-});
-
-const About = Loadable({
-  loader: () => import('pages/About'),
-  loading() {
-    return <Loading/>;
-  },
-});
-
-const OtherExperience = Loadable({
-  loader: () => import('pages/OtherExperience'),
-  loading() {
-    return <Loading/>;
-  },
-});
-
-const NoMatch = Loadable({
-  loader: () => import('pages/404'),
-  loading() {
-    return <Loading/>;
-  },
-});
+import Home from 'pages/Home';
+import About from 'pages/About';
+import OtherExperience from 'pages/OtherExperience';
+import NoMatch from 'pages/404';
 
 const routes = [
   {path: '/', Component: Home },

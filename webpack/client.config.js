@@ -2,9 +2,10 @@ const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
 const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin');
-const { ReactLoadablePlugin } = require('react-loadable/webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const CleanObsoleteChunks = require("webpack-clean-obsolete-chunks");
 
 module.exports = {
   target: 'web',
@@ -12,20 +13,32 @@ module.exports = {
     'index': path.resolve(__dirname, '../src/public/index.js')
   },
   optimization: {
-    nodeEnv: 'production',
-    mangleWasmImports: true,
-    usedExports: true,
-    namedModules: true,
     runtimeChunk: {
       name: 'runtime',
     },
-    splitChunks: {
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: "vendor",
-          chunks: "initial",
+    minimizer: [
+      new TerserPlugin({
+        sourceMap: true,
+        terserOptions: {
+          ecma: 8,
+          mangle: false,
+          keep_classnames: true,
+          keep_fnames: true
         }
+      })
+    ],
+    splitChunks: {
+      maxAsyncRequests: 20,
+      maxInitialRequests: 20,
+      minChunks: 2,
+      chunks: 'all',
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'initial',
+          minChunks: 2
+        },
       }
     }
   },
@@ -36,13 +49,11 @@ module.exports = {
    publicPath: '/static/',
   },
   plugins: [
+    new CleanObsoleteChunks(),
     new CopyPlugin([
       { from: 'src/public/assets/', to: './assets/' },
-      { from: 'coverage/lcov-report/', to: './coverage/' },
+      // { from: 'coverage/lcov-report/', to: './coverage/' },
     ]),
-    new ReactLoadablePlugin({
-      filename: './dist/react-loadable.json',
-    }),
     new LodashModuleReplacementPlugin(),
     new BundleAnalyzerPlugin({
         analyzerPort: '8585',

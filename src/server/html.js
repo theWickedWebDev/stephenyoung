@@ -24,11 +24,7 @@ const GOOGLE_FONTS = `
   >
 `;
 
-const html = ({ helmet, component, req, bundles }) => {
-  console.log('BUNDLES')
-  let styles = bundles.filter(bundle => bundle.file.endsWith('.css'));
-  let scripts = bundles.filter(bundle => bundle.file.endsWith('.js'));
-  console.log(scripts);
+const html = ({ helmet, component, req }) => {
 
   return `
     <!DOCTYPE html>
@@ -41,16 +37,11 @@ const html = ({ helmet, component, req, bundles }) => {
       ${helmet.meta.toString()}
       ${helmet.link.toString()}
       ${structuredData[req.url] ? structuredData[req.url] : ''}
-      ${styles.map(style => {
-          return `<link href="${style.publicPath}" rel="stylesheet"/>`
-        }).join('\n')}
+      <link href="/static/index.css" rel="stylesheet"/>
     </head>
     <body ${helmet.bodyAttributes.toString()}>
       <div id="root">${component}</div>
-      <script src="/static/vendor.js"></script>
-      ${scripts.map(bundle => {
-          return `<script src=${bundle.publicPath}></script>`
-        }).join('\n')}
+      <script src="/static/index.js"></script>
       <script src="/static/runtime.bundle.js"></script>
     </body>
     </html>

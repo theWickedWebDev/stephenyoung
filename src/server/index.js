@@ -10,12 +10,6 @@ import Helmet from 'react-helmet';
 import fs from 'fs';
 import resumeBuilder from './resume-builder';
 import html from './html';
-import Loadable from 'react-loadable';
-import { getBundles } from 'react-loadable/webpack';
-
-export let getStats = () => JSON.parse(
-  fs.readFileSync('./dist/react-loadable.json', 'utf8')
-);
 
 /**
 * Start Server
@@ -55,17 +49,13 @@ app.get('/*', (req, res) => {
 
   const component = ReactDOMServer.renderToString(
     <Router location={req.url} context={context}>
-      <Loadable.Capture report={moduleName => modules.push(moduleName)}>
-        <App/>
-      </Loadable.Capture>
+      <App/>
     </Router>
   );
 
-  let bundles = getBundles(getStats(), modules);
-
   const helmet = Helmet.renderStatic();
 
-  const renderedHtml = html({ helmet, component, req, bundles });
+  const renderedHtml = html({ helmet, component, req, bundles: [] });
 
   var minify = require('html-minifier').minify;
   var minifiedHtml = minify(renderedHtml, {
