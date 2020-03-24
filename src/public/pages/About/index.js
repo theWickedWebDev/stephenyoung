@@ -134,7 +134,7 @@ const About = () => {
                 <li>
                   <h4 className="margin-bottom-large">Decreasing Page Size</h4>
                   <p>
-                    1.9MB (as of when I'm typing this). It could use a little
+                    876kb (as of when I'm typing this). It could use a little
                     work for sure, but not terrible as is. I plan on adding
                     better code splitting, dynamic imports, and an audit of the NPM
                     packages I am using to reduce some bloat.
@@ -166,11 +166,11 @@ const About = () => {
                   <br/>
                   <p>
                     The JS bundles could use a little more work. They are about
-                    538kb. I am going to be adding code-splitting with dynamic imports
+                    321kb. I am going to be adding code-splitting with dynamic imports
                     to achieve smaller bundle sizes.
                   </p>
                   <br/>
-                  <p>For CSS I am only loading 2.8kb.</p>
+                  <p>For CSS I am only loading 4.2kb.</p>
                   <br/>
                 </li>
                 <li>
@@ -260,7 +260,7 @@ const About = () => {
               <ul>
                 <li>
                   <h4 className="margin-bottom-large">
-                    My PDF résumé is generated automagically
+                    My PDF résumé <strike>is</strike> was generated automagically
                   </h4>
                   <div className="about__page-generate-pdf-section">
                     <figure>
@@ -297,14 +297,19 @@ const About = () => {
                     </figure>
                   </div>
                   <p>
-                    Using the same JSON content I use for the homepage, I generate
-                    a PDF vesion of my résumé. I am currently using &nbsp;
+                    Using the same JSON content I use for the homepage, I generated
+                    a PDF vesion of my résumé. I was using &nbsp;
                     <em className="alt">pdfkit</em> however I am not the biggest
                     fan of their limited built-in api, but it was simple to set up
                     and get running, so I kept it. This way I dont have to worry
                     about keeping a current version ready if/when I need one. For
                     fun, I also tied it in with my localization so you can
                     download in English, Spanish or French!
+                    <br/><br/>
+                    <em><strong>EDIT</strong></em> - I have removed the localization support
+                    because it was getting too much to maintain. I also wanted
+                    to try a new package, one that was easier with SSR and one
+                    that makes it simple to grab translation files from a CDN.
                   </p>
                   <br/>
                 </li>
