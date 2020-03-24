@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import NavList from './NavList.js';
-import Social from './Social.js';
 import Logo from './Logo.js';
 
 import './compressed.scss';
@@ -28,14 +28,14 @@ const CompressedNavbar = () => {
               <span className="navbar__component-compressed-menu-title">
                 {t('navbar:menu')}
               </span>
-              <em className="fas navbar__menu-btn fa-ellipsis-v"/>
+              <FontAwesomeIcon icon="ellipsis-v" className="navbar__menu-btn"/>
             </div>}
           { visible &&
             <div
               onClick={() => setVisible(false)}
               className="navbar__component-compressed-menu"
             >
-              <em className="fas navbar__menu-btn fa-ellipsis-h"/>
+            <FontAwesomeIcon icon="ellipsis-h" className="navbar__menu-btn"/>
               <NavList/>
             </div>
           }

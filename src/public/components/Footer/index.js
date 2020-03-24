@@ -7,7 +7,7 @@ const Footer = props => {
 
   return [
     <div className="color-break" key="color">
-      <p>https://www.thewickedweb.dev</p>
+      <p>https://www.thewickedweb.dev</p><br/>
     </div>,
     <footer className="footer__component" key="footer__component">
       <div className="footer__component-space">

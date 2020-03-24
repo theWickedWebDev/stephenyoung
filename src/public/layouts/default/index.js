@@ -1,6 +1,4 @@
 import React from 'react'
-import AOS from 'aos';
-
 import { Favicon } from 'components/Meta';
 import Viewport from 'components/Viewport';
 import { Compressed as MobileNav } from 'components/Navbar';

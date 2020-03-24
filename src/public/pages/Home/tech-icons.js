@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const TechIcons = () => {
   return [
@@ -23,19 +24,19 @@ const TechIcons = () => {
     </noscript>,
     <ul key="tech-icons" className="icon-list icon-list-light">
       <li className="icon-list-item">
-        <em className="fab fa-node-js" title="Javascript" />
+        <FontAwesomeIcon icon={['fab', 'node-js']}/>
       </li>
       <li className="icon-list-item">
-        <em className="fab fa-node" title="Node JS"/>
+        <FontAwesomeIcon icon={['fab', 'node']}/>
       </li>
       <li className="icon-list-item">
-        <em className="fab fa-react" title="React JS" />
+        <FontAwesomeIcon icon={['fab', 'react']}/>
       </li>
       <li className="icon-list-item">
-        <em className="fab fa-html5" title="HTML5" />
+        <FontAwesomeIcon icon={['fab', 'html5']}/>
       </li>
       <li className="icon-list-item">
-        <em className="fab fa-css3-alt" title="CSS3" />
+        <FontAwesomeIcon icon={['fab', 'css3-alt']}/>
       </li>
     </ul>
   ];

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TagList = props => (
   <ul className="tag-list">
@@ -9,7 +10,7 @@ const TagList = props => (
       >
         <span>{ item.name }</span>
         { item.favorite &&
-          <em className="fas fa-heart tag-list-icon"></em>
+          <FontAwesomeIcon icon="heart" className="tag-list-icon"/>
         }
       </li>
     ))}

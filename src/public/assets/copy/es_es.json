@@ -4,19 +4,29 @@
     "menu": "Menú",
     "links": [
       {
-        "name": "<em class='fas fa-home margin-right-lg'></em>Hogar",
+        "name": "Hogar",
+        "icon": "home",
         "internal": true,
         "slug": "hogar",
         "href": "/"
       },
       {
-        "name": "<em class='fas fa-star margin-right-lg'></em>Sobre este sitio<sup>NUEVO</sup>",
+        "name": "Sobre este sitio",
+        "icon": "star",
         "internal": true,
         "slug": "about-this-site",
         "href": "/about-this-site/"
       },
       {
-        "name": "<em class='fas fa-download margin-right-lg'></em>Descargar My Résumé",
+        "name": "Otra Experiencia",
+        "icon": "star",
+        "internal": true,
+        "slug": "other-experience",
+        "href": "/other-experience/"
+      },
+      {
+        "name": "Descargar My Résumé",
+        "icon": "download",
         "internal": false,
         "slug": "resume",
         "href": "/resume.pdf?locale=es_es"
@@ -291,8 +301,8 @@
       "link": "https://www.yaymaker.com/",
       "logo": "yaymaker-logo.svg",
       "roles": [
-        "Ingeniero de software sénior - mayo de 2016 - febrero de 2020",
-        "Ingeniero de software, Front End - mayo de 2015 - mayo de 2016"
+        { "name": "Ingeniero de software sénior", "from": "May 2016", "until": "Feb 2020" },
+        { "name": "Ingeniero de software, Front End", "from": "May 2015", "until": "May 2016" }
       ],
       "description": "Trabajé con React, Graphql, Elastic Search, MySql y muchos otros paquetes de Javascript a diario. Utilizando Jenkins, Docker y otras herramientas para ayudar a nuestro equipo con las implementaciones, ofrecí innumerables nuevas funciones y mejoras en todas nuestras bases de códigos. <br/> < Br /> Trajimos pruebas unitarias a los proyectos de nuestros clientes aprovechando paquetes como Enzyme, Jest, Cha, Nightwatch y Flow para nuestras pruebas estáticas. Estos cambios se incorporaron a nuestro flujo de git usando ganchos de pre-empuje y pre-compromiso . <br/> <br/> Colaboré con el Gerente de Proyecto para definir el proceso de desarrollo utilizando Kanban como núcleo. Creé nuevos tipos de boletos, mejoré nuestros carriles y aumentó la eficiencia de nuestras reuniones. <br/> <br/> Participó en pantallas telefónicas, entrevistas, desafíos de código y revisiones de currículums para ayudar a construir nuestro departamento de tecnología ",
       "rolesHeader": "Roles",

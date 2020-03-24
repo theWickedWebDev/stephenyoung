@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import stripHtml from 'string-strip-html';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Links = () => {
   const { t, i18n } = useTranslation();
@@ -15,9 +15,11 @@ const Links = () => {
             <Link
               to={l.href}
               className="navbar__link"
-              dangerouslySetInnerHTML={{__html: l.name }}
-              title={stripHtml(l.name)}
-              />
+              title={l.name}
+            >
+              <FontAwesomeIcon icon={l.icon} className="margin-right-lg"/>
+              {l.name}
+            </Link>
           </li>
         );
       } else {
@@ -28,9 +30,11 @@ const Links = () => {
               href={l.href}
               className="navbar__link"
               target="_blank"
-              dangerouslySetInnerHTML={{__html: l.name }}
-              title={stripHtml(l.name)}
-            />
+              title={l.name}
+            >
+              <FontAwesomeIcon icon={l.icon} className="margin-right-lg"/>
+              {l.name}
+            </a>
           </li>
         );
       }

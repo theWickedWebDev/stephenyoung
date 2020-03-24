@@ -2,6 +2,7 @@
 // Dependencies
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Styling
 import './styles.scss';
@@ -40,10 +41,10 @@ const About = () => {
           <Section>
             <Article title={t('about:outcomeHeader')} className="about-page__component">
               <ul className="tools-list">
-                <li><em className="fab fa-node" /> Node, Express</li>
-                <li><em className="fab fa-react" /> React, Webpack, SCSS</li>
-                <li><em className="fab fa-aws" /> EC2, Load Balancer, S3, CloudFront</li>
-                <li><em className="fab fa-expeditedssl" /> SSL HTTPS</li>
+                <li><FontAwesomeIcon icon={['fab', 'node-js']}/> Node, Express</li>
+                <li><FontAwesomeIcon icon={['fab', 'react']}/> React, Webpack, SCSS</li>
+                <li><FontAwesomeIcon icon={['fab', 'aws']}/>  EC2, Load Balancer, S3, CloudFront</li>
+                <li><FontAwesomeIcon icon={['fab', 'expeditedssl']}/> SSL HTTPS</li>
               </ul>
               <br/>
               <h3>Accessibility</h3>
@@ -273,8 +274,9 @@ const About = () => {
                       </LazyLoad>
                       <figcaption>Data from Web App</figcaption>
                     </figure>
-                    <em
-                      className="fas fa-arrow-right about__page-generate-pdf-arrow"
+                    <FontAwesomeIcon
+                      icon="arrow-right"
+                      className="about__page-generate-pdf-arrow"
                     />
                     <figure>
                       <LazyLoad skeleton={<SquareSkeleton size="150px"/>}>

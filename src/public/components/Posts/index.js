@@ -1,6 +1,5 @@
 import React from 'react';
 import LazyLoad from 'components/LazyLoad';
-import stripHtml from 'string-strip-html';
 
 import './styles.scss';
 
@@ -21,7 +20,6 @@ const Posts = props => {
         <li
           key={index}
           className={`posts_list-item ${ref.relevant ? 'strong' : ''}`}
-          data-aos={index % 2 ? "fade-left" : "fade-right"}
         >
           <div className="posts_list_content clearfix">
             { ref.image &&
@@ -42,7 +40,7 @@ const Posts = props => {
 
           { ref.link
             ? <p className="posts_list_name">
-                <a href={ref.link} target="_blank" title={stripHtml(ref.title)}>
+                <a href={ref.link} target="_blank" title={ref.title}>
                   <strong>{ref.name}</strong>, <em>{ref.title}</em>
                 </a>
               </p>

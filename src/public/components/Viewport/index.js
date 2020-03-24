@@ -19,7 +19,6 @@ export class Viewport extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', this.checkViewport.bind(this));
     window.addEventListener('resize', this.checkViewport.bind(this));
-    //AOS.init({ duration : 2000 });
     this.checkViewport();
   }
 

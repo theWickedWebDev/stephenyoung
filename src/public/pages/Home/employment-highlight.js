@@ -3,8 +3,8 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import Article from 'components/Article';
 import LazyLoad from 'components/LazyLoad';
-import stripHtml from 'string-strip-html';
 import moment from 'moment';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const EmploymentHighlight = () => {
   const { t, i18n } = useTranslation();
@@ -30,7 +30,7 @@ const EmploymentHighlight = () => {
               href={t('resume:highlight:link')}
               rel="nofollow"
               target="_blank"
-              title={stripHtml(t('resume:highlight:header'))}
+              title={t('resume:highlight:header')}
             >
               {t('resume:highlight:header')}
               &nbsp;
@@ -38,7 +38,7 @@ const EmploymentHighlight = () => {
                 {t('resume:highlight:address')}
               </address>
               &nbsp;
-              <em className="fas fa-link"/>
+              <FontAwesomeIcon icon="link"/>
             </a>
           </h3>
           <div className="vertical-align-middle">
@@ -74,7 +74,7 @@ const EmploymentHighlight = () => {
 
         {t('resume:highlight:content', { returnObjects: true }).map((h, index) => (
           <details key={index}>
-            <summary data-aos="zoom-in-up">{ h.title }</summary>
+            <summary>{ h.title }</summary>
             <ul>
               { h.content.map((content, index) => (
                 <li key={index}>

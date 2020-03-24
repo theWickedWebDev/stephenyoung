@@ -13,8 +13,14 @@ const js = {
   use: {
     loader: 'babel-loader',
     options: {
-      presets: ['react', 'es2015'],
-      plugins: ['transform-class-properties']
+      "presets": ["@babel/env", "@babel/react"],
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        "transform-es2015-modules-commonjs",
+        "@babel/plugin-proposal-class-properties",
+        "react-loadable/babel",
+        "@babel/plugin-syntax-dynamic-import"
+      ],
     }
   }
 }
@@ -51,7 +57,7 @@ const svg = {
 };
 
 const baseConfig = {
-  mode: isDevelopment ? 'development' : 'production',
+  mode: 'production',
   module: {
     rules: [
       js,
@@ -72,6 +78,7 @@ const baseConfig = {
     poll: 1000,
   },
   plugins: [
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new ReplacePlugin({
       exclude: [
         /node_modules/,
