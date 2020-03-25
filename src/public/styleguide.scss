@@ -1,4 +1,6 @@
 @import './variables.scss';
+// Import this here due to "flicker" during SSR
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
 
 body {
   font-family: $primaryFont;
@@ -314,7 +316,7 @@ h4 {
     margin: 30px 0 12px;
     width: 150px;
   }
-  
+
   .block-on-mobile {
     display: block;
   }

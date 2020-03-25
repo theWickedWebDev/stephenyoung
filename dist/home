@@ -1,0 +1,1640 @@
+exports.ids = [2];
+exports.modules = [
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Meta = __webpack_require__(58);
+
+var _Meta2 = _interopRequireDefault(_Meta);
+
+var _Section = __webpack_require__(61);
+
+var _Section2 = _interopRequireDefault(_Section);
+
+var _Article = __webpack_require__(57);
+
+var _Article2 = _interopRequireDefault(_Article);
+
+var _Header = __webpack_require__(64);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Gallery = __webpack_require__(70);
+
+var _Gallery2 = _interopRequireDefault(_Gallery);
+
+var _skills = __webpack_require__(72);
+
+var _skills2 = _interopRequireDefault(_skills);
+
+var _employmentHighlight = __webpack_require__(73);
+
+var _employmentHighlight2 = _interopRequireDefault(_employmentHighlight);
+
+var _additionalExperience = __webpack_require__(74);
+
+var _additionalExperience2 = _interopRequireDefault(_additionalExperience);
+
+var _references = __webpack_require__(75);
+
+var _references2 = _interopRequireDefault(_references);
+
+var _techIcons = __webpack_require__(78);
+
+var _techIcons2 = _interopRequireDefault(_techIcons);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+// Dependencies
+// Components
+// Internal Components
+// <Home/> Component
+var Home = function Home() {
+  /* eslint-disable max-len */
+  var copy = {
+    meta: {
+      title: 'Seasoned Javascript Geek - Stephen Young',
+      description: 'I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don\'t know something, I learn it. I am extremely motivated and thrive on working hard.'
+    },
+    title: 'Seasoned Javascript Geek',
+    subtitle: 'Breaking things since 2000',
+    description: 'I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don\'t know something, I learn it. I am extremely motivated and thrive on working hard.',
+    introduction: [''],
+    conclusion: {
+      title: 'Conclusion',
+      content: []
+    }
+  };
+  /* eslint-enable max-len */
+
+  return _react2["default"].createElement("div", {
+    className: "homepage__page"
+  }, _react2["default"].createElement(_Header2["default"], {
+    title: copy.title,
+    subtitle: copy.subtitle,
+    intro: copy.description,
+    avatar: "".concat("https://cdn.thewickedweb.dev", "/images/avatar/avatar-2.svg")
+  }), _react2["default"].createElement(_Meta2["default"], {
+    robots: "index",
+    keywords: "HTML,CSS,XML,JavaScript",
+    title: copy.meta.title,
+    description: copy.meta.description,
+    canonical: "https://www.thewickedweb.dev/"
+  }), _react2["default"].createElement(_techIcons2["default"], null), _react2["default"].createElement(_Section2["default"], null, _react2["default"].createElement(_skills2["default"], null), _react2["default"].createElement(_employmentHighlight2["default"], null), _react2["default"].createElement(_additionalExperience2["default"], null), _react2["default"].createElement(_references2["default"], null), _react2["default"].createElement(_Gallery2["default"], null)));
+};
+
+exports["default"] = Home;
+
+/***/ }),
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(1);
+
+__webpack_require__(63);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Article = function Article(props) {
+  return _react2["default"].createElement("article", {
+    className: "article__component ".concat(props.className)
+  }, _react2["default"].createElement("div", {
+    className: "article__component-content"
+  }, props.title && _react2["default"].createElement("h2", {
+    className: "article__component-h2"
+  }, props.title), props.children));
+};
+
+exports["default"] = Article;
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactHelmet = __webpack_require__(5);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+
+var _favicon = __webpack_require__(59);
+
+var favicon = _interopRequireWildcard(_favicon);
+
+var _og = __webpack_require__(60);
+
+var og = _interopRequireWildcard(_og);
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { return;("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var defaultTitle = 'Stephen Young - TheWickedWebDev';
+var defaultDescription = 'Support others. Stay positive. Embrace Change. Take Risks.';
+var defaultImage = "".concat("https://cdn.thewickedweb.dev", "/images/social/social-card-image.jpg");
+var MIN_DESCRIPTION_LENGTH = 0;
+var MAX_DESCRIPTION_LENGTH = 160;
+
+var Meta = function Meta(props) {
+  var _props$robots = props.robots,
+      robots = _props$robots === void 0 ? 'noindex' : _props$robots,
+      _props$keywords = props.keywords,
+      keywords = _props$keywords === void 0 ? 'thewickedwebdev' : _props$keywords,
+      _props$title = props.title,
+      title = _props$title === void 0 ? defaultTitle : _props$title,
+      _props$description = props.description,
+      description = _props$description === void 0 ? defaultDescription : _props$description,
+      _props$canonical = props.canonical,
+      canonical = _props$canonical === void 0 ? false : _props$canonical,
+      _props$siteName = props.siteName,
+      siteName = _props$siteName === void 0 ? 'TheWickedWebDev' : _props$siteName,
+      _props$image = props.image,
+      image = _props$image === void 0 ? defaultImage : _props$image;
+  var canonicalLink = canonical ? {
+    rel: 'canonical',
+    href: canonical
+  } : null;
+
+  var links = _toConsumableArray(favicon.links);
+
+  if (canonicalLink) {
+    links.push(canonicalLink);
+  }
+
+  var metas = [].concat(_toConsumableArray(favicon.meta), _toConsumableArray(og.meta({
+    title: title,
+    siteName: siteName,
+    url: canonical,
+    description: description,
+    image: image
+  })), [{
+    key: 'robots',
+    name: 'robots',
+    content: robots
+  }, {
+    key: 'keywords',
+    name: 'keywords',
+    content: keywords
+  }, {
+    key: 'description',
+    name: 'description',
+    content: description.substring(MIN_DESCRIPTION_LENGTH, MAX_DESCRIPTION_LENGTH)
+  }]);
+  return _react2["default"].createElement(_reactHelmet2["default"], null, _react2["default"].createElement("title", null, title), _react2["default"].createElement("meta", {
+    "http-equiv": "X-UA-Compatible",
+    content: "ie=edge"
+  }), _react2["default"].createElement("meta", {
+    "http-equiv": "content-language",
+    content: "en-us"
+  }), _react2["default"].createElement("meta", {
+    name: "author",
+    content: "Stephen Young"
+  }), links.map(function (l, index) {
+    return _react2["default"].createElement("link", _extends({
+      key: index
+    }, l));
+  }), metas.map(function (m, index) {
+    return _react2["default"].createElement("meta", _extends({
+      key: index
+    }, m));
+  }));
+};
+
+exports["default"] = Meta;
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var path = exports.path = "".concat("https://cdn.thewickedweb.dev", "/images/favicon/");
+var links = exports.links = [{
+  rel: 'apple-touch-icon',
+  sizes: '57x57',
+  href: "".concat(path, "apple-icon-57x57.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '60x60',
+  href: "".concat(path, "apple-icon-60x60.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '72x72',
+  href: "".concat(path, "apple-icon-72x72.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '76x76',
+  href: "".concat(path, "apple-icon-76x76.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '114x114',
+  href: "".concat(path, "apple-icon-114x114.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '120x120',
+  href: "".concat(path, "apple-icon-120x120.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '144x144',
+  href: "".concat(path, "apple-icon-144x144.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '152x152',
+  href: "".concat(path, "apple-icon-152x152.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '180x180',
+  href: "".concat(path, "apple-icon-180x180.png")
+}, {
+  rel: 'icon',
+  type: 'image/png',
+  sizes: '192x192',
+  href: "".concat(path, "android-icon-192x192.png")
+}, {
+  rel: 'icon',
+  type: 'image/png',
+  sizes: '32x32',
+  href: "".concat(path, "favicon-32x32.png")
+}, {
+  rel: 'icon',
+  type: 'image/png',
+  sizes: '96x96',
+  href: "".concat(path, "favicon-96x96.png")
+}, {
+  rel: 'icon',
+  type: 'image/png',
+  sizes: '16x16',
+  href: "".concat(path, "favicon-16x16.png")
+}, {
+  rel: 'manifest',
+  href: "".concat(path, "manifest.json")
+}];
+var meta = exports.meta = [{
+  key: 'themecolor',
+  name: 'theme-color',
+  content: '#ffffff'
+}, {
+  key: 'tilecolor',
+  name: 'msapplication-TileColor',
+  content: '#ffffff'
+}, {
+  key: 'tileimage',
+  name: 'msapplication-TileImage',
+  content: "".concat(path, "ms-icon-144x144.png")
+}];
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var meta = exports.meta = function meta(_ref) {
+  var title = _ref.title,
+      siteName = _ref.siteName,
+      url = _ref.url,
+      description = _ref.description,
+      image = _ref.image;
+  return [{
+    property: 'og:title',
+    content: title
+  }, {
+    property: 'og:site_name',
+    content: siteName
+  }, {
+    property: 'og:url',
+    content: url
+  }, {
+    property: 'og:description',
+    content: description
+  }, {
+    property: 'og:type',
+    content: 'website'
+  }, {
+    property: 'og:image',
+    content: image
+  }, {
+    property: 'twitter:card',
+    content: 'summary_large_image'
+  }, {
+    property: 'twitter:url',
+    content: url
+  }, {
+    property: 'twitter:title',
+    content: title
+  }, {
+    property: 'twitter:description',
+    content: description
+  }, {
+    property: 'twitter:image',
+    content: image
+  }];
+};
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(1);
+
+__webpack_require__(62);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Section = function Section(props) {
+  return _react2["default"].createElement("section", {
+    className: "section__component container-fh"
+  }, props.title && _react2["default"].createElement("h1", {
+    className: "section__component-h1"
+  }, props.title), props.children);
+};
+
+exports["default"] = Section;
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(65);
+
+var _reactFontawesome = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Header = function Header(props) {
+  var title = props.title,
+      subtitle = props.subtitle,
+      intro = props.intro,
+      avatar = props.avatar;
+  var download = {
+    name: 'Download Résumé PDF',
+    icon: 'download',
+    internal: false,
+    slug: 'resume',
+    href: "".concat("https://cdn.thewickedweb.dev", "/resume/stephen-young-resume.pdf")
+  };
+  var style = {};
+  var classNames = ['header__component'];
+
+  if (avatar) {
+    style.backgroundImage = "url('".concat(avatar, "')");
+    classNames.push('with-avatar');
+  }
+
+  return _react2["default"].createElement("header", {
+    className: classNames.join(' ')
+  }, _react2["default"].createElement("div", {
+    className: "header__body",
+    style: style
+  }, _react2["default"].createElement("h1", {
+    className: "header__component-h1"
+  }, _react2["default"].createElement("span", null, title)), _react2["default"].createElement("h2", {
+    className: "header__component-h2"
+  }, subtitle), _react2["default"].createElement("p", {
+    className: "header__component-p",
+    dangerouslySetInnerHTML: {
+      __html: intro
+    }
+  }), _react2["default"].createElement("br", null), _react2["default"].createElement("a", {
+    href: download.href,
+    target: "_blank",
+    title: download.name
+  }, _react2["default"].createElement("button", {
+    className: "btn-link-full"
+  }, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: download.icon
+  }), "\xA0", download.name))));
+};
+
+exports["default"] = Header;
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.WindowScroll = exports.LazyLoad = undefined;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { return;("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { return;("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { return;("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var DEFAULT_OFFSET = 0;
+
+var LazyLoad = /*#__PURE__*/exports.LazyLoad = function (_React$Component) {
+  _inherits(LazyLoad, _React$Component);
+
+  function LazyLoad() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, LazyLoad);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(LazyLoad)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      visible: false
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onScroll", function () {
+      if (_this.isScrolledIntoView() && !_this.state.visible) {
+        _this.setState({
+          visible: true
+        });
+      }
+    });
+
+    return _this;
+  }
+
+  _createClass(LazyLoad, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.onScroll();
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      this.onScroll();
+    }
+  }, {
+    key: "isScrolledIntoView",
+    value: function isScrolledIntoView() {
+      var offset = this.props.offset || DEFAULT_OFFSET;
+
+      if (!this.componentRef) {
+        return null;
+      }
+
+      var rect = this.componentRef.getBoundingClientRect();
+      var elemTop = rect.top;
+      var elemBottom = rect.bottom;
+      return elemTop - offset < window.innerHeight && elemBottom + offset >= DEFAULT_OFFSET;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var visible = this.state.visible;
+      var _this$props = this.props,
+          children = _this$props.children,
+          skeleton = _this$props.skeleton;
+
+      if (visible) {
+        return children;
+      }
+
+      return _react2["default"].createElement("div", {
+        ref: function ref(elem) {
+          return _this2.componentRef = elem;
+        }
+      }, _react2["default"].createElement(WindowScroll, {
+        onChange: this.onScroll
+      }), skeleton);
+    }
+  }]);
+
+  return LazyLoad;
+}(_react2["default"].Component);
+
+var WindowScroll = /*#__PURE__*/exports.WindowScroll = function (_React$Component2) {
+  _inherits(WindowScroll, _React$Component2);
+
+  function WindowScroll() {
+    var _getPrototypeOf3;
+
+    var _this3;
+
+    _classCallCheck(this, WindowScroll);
+
+    for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      args[_key2] = arguments[_key2];
+    }
+
+    _this3 = _possibleConstructorReturn(this, (_getPrototypeOf3 = _getPrototypeOf(WindowScroll)).call.apply(_getPrototypeOf3, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this3), "onWindowChange", _this3.props.onChange);
+
+    return _this3;
+  }
+
+  _createClass(WindowScroll, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener('scroll', this.onWindowChange);
+      window.addEventListener('resize', this.onWindowChange);
+      this.onWindowChange();
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      window.removeEventListener('scroll', this.onWindowChange);
+      window.removeEventListener('resize', this.onWindowChange);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return null;
+    }
+  }]);
+
+  return WindowScroll;
+}(_react2["default"].Component);
+
+_defineProperty(WindowScroll, "defaultProps", {
+  onChange: function onChange() {}
+});
+
+exports["default"] = LazyLoad;
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactFontawesome = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var TagList = function TagList(props) {
+  return _react2["default"].createElement("ul", {
+    className: "tag-list"
+  }, props.list.map(function (item, index) {
+    return _react2["default"].createElement("li", {
+      className: "tag-list-item",
+      key: "".concat(index, "-tag")
+    }, _react2["default"].createElement("span", null, item.name), item.favorite && _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      icon: "heart",
+      className: "tag-list-icon"
+    }));
+  }));
+};
+
+exports["default"] = TagList;
+
+/***/ }),
+/* 68 */,
+/* 69 */,
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Skeleton = undefined;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(71);
+
+var _LazyLoad = __webpack_require__(66);
+
+var _LazyLoad2 = _interopRequireDefault(_LazyLoad);
+
+var _Article = __webpack_require__(57);
+
+var _Article2 = _interopRequireDefault(_Article);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Gallery = function Gallery() {
+  /* eslint-disable max-len */
+  var copy = {
+    title: 'Me in my zone',
+    copy: 'Here are some photographs of the times when I\'m the best version of myself. Places and activities where I shine.',
+    content: [{
+      src: 'portsmouth.jpg',
+      alt: 'Family day in Portsmouth, NH'
+    }, {
+      src: 'woodworking.jpg',
+      alt: 'Standing over a workbench using a biscuit joiner'
+    }, {
+      src: 'ski.jpg',
+      alt: 'A friend and I on a chairlift headed up Sugarloaf Mountain to ski.'
+    }, {
+      src: 'painting-coop.jpg',
+      alt: 'Painting a DIY Chicken Coop project'
+    }, {
+      src: 'planting-tree.jpg',
+      alt: 'Planting apple trees with my son'
+    }, {
+      src: 'grass-close.jpg',
+      alt: 'Up close photo of my lawn'
+    }, {
+      src: 'laying-pavers.jpg',
+      alt: 'Making a paver entry way'
+    }, {
+      src: 'picking-potatoes.jpg',
+      alt: 'Adding more soil to our potato mounds'
+    }, {
+      src: 'planting-grass.jpg',
+      alt: 'Planting grass with my two kids'
+    }, {
+      src: 'radishes.jpg',
+      alt: 'Fresh picked radishes from the garden'
+    }, {
+      src: 'chickens.jpg',
+      alt: 'Some of our chickens walking around the lawn'
+    }, {
+      src: 'fishing.jpg',
+      alt: 'Family canoeing and fishing'
+    }, {
+      src: 'bowling.jpg',
+      alt: 'Me taking a turn at bowling'
+    }]
+  };
+  /* eslint-enable max-len */
+
+  return _react2["default"].createElement(_Article2["default"], {
+    title: copy.title,
+    className: "gallery__article"
+  }, _react2["default"].createElement("h3", null, copy.copy), _react2["default"].createElement("noscript", {
+    key: "noscript"
+  }, copy.content.map(function (image, index) {
+    return _react2["default"].createElement("li", {
+      className: "image-list-item",
+      key: index
+    }, _react2["default"].createElement("figure", null, _react2["default"].createElement("img", {
+      src: "".concat("https://cdn.thewickedweb.dev", "/images/gallery/").concat(image.src),
+      alt: image.alt,
+      title: image.alt,
+      className: "image-list-item__image"
+    }), _react2["default"].createElement("figcaption", null, _react2["default"].createElement("h4", null, image.alt))));
+  })), _react2["default"].createElement("ul", {
+    className: "image-list",
+    key: "image-list"
+  }, copy.content.map(function (image, index) {
+    return _react2["default"].createElement("li", {
+      className: "image-list-item",
+      key: index
+    }, _react2["default"].createElement("figure", null, _react2["default"].createElement(_LazyLoad2["default"], {
+      skeleton: _react2["default"].createElement(Skeleton, null)
+    }, _react2["default"].createElement("img", {
+      src: "".concat("https://cdn.thewickedweb.dev", "/images/gallery/").concat(image.src),
+      alt: image.alt,
+      title: image.alt,
+      className: "image-list-item__image"
+    })), _react2["default"].createElement("figcaption", null, _react2["default"].createElement("h4", null, image.alt))));
+  })));
+};
+
+var Skeleton = exports.Skeleton = function Skeleton() {
+  return _react2["default"].createElement("div", {
+    className: "skeleton bg-light",
+    style: {
+      width: '200px',
+      height: '133px'
+    }
+  });
+};
+
+exports["default"] = Gallery;
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Article = __webpack_require__(57);
+
+var _Article2 = _interopRequireDefault(_Article);
+
+var _TagList = __webpack_require__(67);
+
+var _TagList2 = _interopRequireDefault(_TagList);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Skills = function Skills() {
+  var copy = {
+    title: 'Support others. Stay positive. Embrace Change. Take Risks.',
+    tech: {
+      title: 'Technologies/Languages/Frameworks',
+      content: [{
+        name: 'Javascript',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'Node',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'React',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'Redux',
+        favorite: false,
+        strong: true
+      }, {
+        name: 'GraphQl',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'Elastic Search',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'AWS',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Docker',
+        favorite: true,
+        strong: false
+      }, {
+        name: 'Keycloak',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Auth0',
+        favorite: true,
+        strong: false
+      }, {
+        name: 'Apollo',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Flow',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Webpack',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'Gulp',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Storybook',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'NPM',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'MySql',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Angular',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'jQuery',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'HTML5',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'CSS3',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'SCSS/LESS',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'Karma',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Enzyme',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Drupal',
+        favorite: false,
+        strong: false
+      }]
+    },
+    other: {
+      title: 'Other things I\'ve learned or used',
+      content: [{
+        name: 'SEO',
+        favorite: true,
+        strong: false
+      }, {
+        name: 'Site performance',
+        favorite: true,
+        strong: false
+      }, {
+        name: 'A/B testing',
+        favorite: true,
+        strong: false
+      }, {
+        name: 'Jest',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Lambda',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Git',
+        favorite: false,
+        strong: true
+      }, {
+        name: 'Firebase',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Tealium',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'GA',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'KISSmetrics',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Optimizely',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'FileStack',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Balsamiq',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'InvisionApp',
+        favorite: true,
+        strong: false
+      }, {
+        name: 'Adobe Photoshop',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'Adobe Illustrator',
+        favorite: true,
+        strong: true
+      }, {
+        name: 'Adobe After Effects',
+        favorite: true,
+        strong: false
+      }, {
+        name: 'Jira',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'Confluence',
+        favorite: false,
+        strong: false
+      }, {
+        name: 'GtMetrix',
+        favorite: false,
+        strong: false
+      }]
+    }
+  };
+  return _react2["default"].createElement(_Article2["default"], {
+    title: copy.title
+  }, _react2["default"].createElement(_TagList2["default"], {
+    list: copy.tech.content
+  }), _react2["default"].createElement("br", null), _react2["default"].createElement(_TagList2["default"], {
+    list: copy.other.content
+  }));
+};
+
+exports["default"] = Skills;
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Article = __webpack_require__(57);
+
+var _Article2 = _interopRequireDefault(_Article);
+
+var _LazyLoad = __webpack_require__(66);
+
+var _LazyLoad2 = _interopRequireDefault(_LazyLoad);
+
+var _moment = __webpack_require__(7);
+
+var _moment2 = _interopRequireDefault(_moment);
+
+var _reactFontawesome = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var EmploymentHighlight = function EmploymentHighlight() {
+  /* eslint-disable max-len */
+  var copy = {
+    title: 'Employment Highlight',
+    moreInfo: 'For a more detailed description of Major Projects. Please visit my resume site at https://www.thewickedweb.dev/',
+    cta: 'Click for more details',
+    header: 'Paint Nite, LLC d/b/a Yaymaker',
+    address: 'Somerville, MA (Remote)',
+    link: 'https://www.yaymaker.com/',
+    logo: 'yaymaker-logo.svg',
+    roles: [{
+      name: 'Senior Software Engineer',
+      from: 'May 2016',
+      until: 'Feb 2020'
+    }, {
+      name: 'Software Engineer, Front End',
+      from: 'May 2015',
+      until: 'May 2016'
+    }],
+    description: 'Worked with React, Graphql, Elastic Search, MySql and many other Javascript packages daily. Using Jenkins, Docker and other tools to help our team with deployments, I delivered countless new features and improvements to all of our codebases.<br/><br/>Brought unit testing to our client projects taking advantage of packages such as Enzyme, Jest, Chai, Nightwatch as well as Flow for our static tests. These changes were baked into our git-flow using pre-push and pre-commit hooks.<br/><br/>Collaborated with the Project Manager to define the development process using Kanban as the core. Created new ticket types, improved our swimlanes, and increased the efficiency of our meetings.<br/><br/>Participated in phone screens, interviews, code challenges, and resume reviews in order to help build our technology department.',
+    rolesHeader: 'Roles',
+    focusHeader: 'Focus',
+    focus: 'Node, React, Express, Flow, Redux, Apollo, GraphQl, MySql, Sequelize, Elastic Search, Storybook, Webpack, Enzyme, Nightwatch, SEO, A/B Testing, HTML, SCSS',
+    contentHeader: 'Projects and General Duties',
+    content: [{
+      title: 'Major Project Highlights',
+      content: ['<br/>', '<strong>Full rewrite of our main web app</strong>', '<br/>', '• Converted a Java & Angular app, to <em class=\'alt\'>Node</em> & <em class=\'alt\'>React</em>', '• Releasing incremental changes - page by page. This allowed for a safer and smoother transition', '• Localized content', '• More extensive Google Analytics tracking, powered through Tealium', '• Executed an innovative search design that highlights both landscape and portrait paintings.', '• Search was powered by a GraphQl query which leveraged Elastic Search', '• Used/Created a shared components NPM repo', '• A year or so later: We had two different sister-brands either with their own technologies. We needed to easily bring Plant Nite into React world. To do this we made our main Paint Nite app deployable as either \'Paint\' or \'Plant\'. Each had its own custom copy, assets, and styling for each brand and saved us a lot of time and QA effort.', '<br/>', '<strong><a href=\'https://storybook.js.org/\' title=\'Storybook Website\' target=\'_blank\'>Storybook</a> for our React Components</strong>', '<br/>', '• Worked with design to develop components based off of <a href=\'https://www.sketch.com/\' title=\'Sketch Website\' target=\'_blank\'>Sketch</a> symbols', '• Bundled up with <em class=\'alt\'>Webpack</em> and <em class=\'alt\'>Rollup</em> and published to NPM', '• Fully unit tested.', '• 4 separate apps use these shared components', '• 100% code coverage with <em class=\'alt\'>Jest</em> and <em class=\'alt\'>Enzyme</em>', '<br/>', '<strong>Reskin and refactor of our user-facing admin portal app (Backstage)</strong>', '<br/>', '• Upgraded to the latest packages for dependencies such as <em class=\'alt\'>React</em> and <em class=\'alt\'>Apollo</em>.', '• Faster to spin out new pages since we decided to go with <em class=\'alt\'>Ant Design</em> for our component library.', '• Used <em class=\'alt\'>Flow</em> type checks', '• Implemented <em class=\'alt\'>Keycloak</em>, and later on, <em class=\'alt\'>Auth0</em>', '<br/>', '<strong>Part of a large rebrand of the company: Paint Nite ==> Yaymaker</strong>', '<br/>', '• Releasing incremental changes - page by page. This allowed for a safer and smoother transition', '• After many/most pages were deployed we pulled the plug and made the switch over one early morning', '• This project sparked many smaller projects, such as <em class=\'alt\'>SEO</em>, <em class=\'alt\'>Site Performance</em>, new features like searching updates and landing pages.', '• Used a more concise and streamlined style guide that allowed for faster development', '<br/>', '<strong>Developed an in-house, server-side rendered, A/B Testing platform</strong>', '<br/>', '• No flicker due to <em class=\'alt\'>server-side rendering</em>, or custom any CSS needed', '• Connected to Google Analytics Reporting', '• <em>$600k annualized lift</em> with one of our first tests. (New filter design)']
+    }, {
+      title: 'Site Performance / Optimization / Tracking',
+      content: ['<br/>', '<strong>Images and other static assets</strong>', '• Used new GraphQL endpoints to automate the optimization of all our images, including SEO friendly paths and alt attributes', '<br/>', '<strong>Code Splitting and more</strong>', '• Significantly reduced <em class=\'alt\'>bundle size</em> using <em class=\'alt\'>Webpack</em>.', '• Removed duplicate or bloated node modules and unused code', '• Tied a code audit into our development process', '• Used Webpack to render <em class=\'alt\'>Critical CSS</em> in the head', '• Addressed 5xx\'s, 4xx\'s and 3xx\'s', '• Significantly reduced the number of <em class=\'alt\'>HTTP Requests</em> made', '• Implemented <em class=\'alt\'>lazy loading</em> by creating an <em>RenderOnVisible</em> React component.', '<br/>', '<strong>S3/Cloudfront caching and compression</strong>', '<br/>', '<strong>SEO</strong>', '• Worked closely with a consultant to help identify and address issues.', '• Quick fixes such as <em class=\'alt\'>meta tags</em>, <em class=\'alt\'>alt tags</em>, <em class=\'alt\'>Hx’s</em>, etc.', '• Generated sitemap that ran daily helped significantly with our event detail pages.', '• Created a <em class=\'alt\'>shared URLs package</em> with graphql partials that ensure our urls were always canonical', '• Middleware for inactive landing pages with proper redirects', '• Nightwatch E2E tests to catch some basic SEO regressions', '• Used <em class=\'alt\'><a href=\'https://gtmetrix.com/\' title=\'GtMetrix Website\' target=\'_blank\'>GtMetrix</a></em> as an additional montoring tool.', '• <em class=\'alt\'><a href=\'https://www.screamingfrog.co.uk/seo-spider/\' title=\'Screaming Frog Website\' target=\'_blank\'>Screaming Frog</a></em> helped us minimize redirects, identify broken links, fix missing H1\'s, identify issues with our Robots.txt and sitemap, and much more.', '• Used NPM package to handle UGC links rel=”ugc nofollow”', '<br/>', '<strong>3rd party scripts</strong>', '• Lambda function to assist with our SEO objectives. 3rd Party Scripts were minified, cloned, cached and served from our own S3 bucket. A Slack integration alerted us whenever this function ran.', '<br/>', '<strong>Elastic Search</strong>', '• Brought more use to our search page as well as other pages', '• <em class=\'alt\'>Fuzzy matching</em> and <em class=\'alt\'>auto-complete</em>. Able to search against many different resource types in one search box', '• Setup tools for the team to easily update/copy/remove/etc our indices and migrate data up/down environments', '• Worked to replace Google Maps Places API with in-house ES version which <em>decreased API costs by approximately $87,000 yearly</em>', '<br/>', '<strong>Tealium (Powered by Google Analytics)</strong>', '• Created a shared library of tracking function, constants and other helpers to ensure we dont have regressions with our tracking', '• 100% Unit and integration tested', '• GraphqQl query partials ensured that all data needed was retrieved', '• Great configuration makes it simple to update how the data is transposed', '• Custom components to simplify the adding of new tracking events']
+    }]
+  };
+  /* eslint-enable max-len */
+
+  var LogoImage = function LogoImage() {
+    return _react2["default"].createElement("img", {
+      src: "".concat("https://cdn.thewickedweb.dev", "/images/resume/yaymaker-logo.svg"),
+      className: "vertical-align-middle margin-right-lg highlight-logo",
+      width: "90px",
+      alt: "Logo",
+      title: "Logo"
+    });
+  };
+
+  var STARTING_INDEX_ROLES_NAME = 0;
+  return _react2["default"].createElement("div", {
+    className: "employment-highlight__component",
+    id: "employmentHighlight"
+  }, _react2["default"].createElement(_Article2["default"], {
+    title: copy.title
+  }, _react2["default"].createElement("div", null, _react2["default"].createElement("noscript", null, _react2["default"].createElement(LogoImage, null)), _react2["default"].createElement(_LazyLoad2["default"], null, _react2["default"].createElement(LogoImage, null)), _react2["default"].createElement("h3", {
+    className: "employment-highlight__h3"
+  }, _react2["default"].createElement("a", {
+    href: copy.link,
+    rel: "nofollow",
+    target: "_blank",
+    title: copy.header
+  }, copy.header, "\xA0", _react2["default"].createElement("address", {
+    style: {
+      display: 'inline-block'
+    }
+  }, copy.address), "\xA0", _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: "link"
+  }))), _react2["default"].createElement("div", {
+    className: "vertical-align-middle"
+  }, copy.roles.map(function (role, index) {
+    return _react2["default"].createElement("p", {
+      key: index,
+      className: "text-center-mobile"
+    }, index === STARTING_INDEX_ROLES_NAME ? _react2["default"].createElement("strong", null, role.name) : role.name, "\xA0-\xA0", _react2["default"].createElement("time", {
+      dateTime: (0, _moment2["default"])(role.from, 'MMM YYYY').format()
+    }, role.from), " -", _react2["default"].createElement("time", {
+      dateTime: (0, _moment2["default"])(role.until, 'MMM YYYY').format()
+    }, role.until));
+  }))), _react2["default"].createElement("br", null), _react2["default"].createElement("p", {
+    className: "text-center-mobile"
+  }, _react2["default"].createElement("strong", null, copy.focusHeader), ": ", copy.focus), _react2["default"].createElement("br", null), _react2["default"].createElement("p", {
+    dangerouslySetInnerHTML: {
+      __html: copy.description
+    }
+  }), _react2["default"].createElement("br", null), copy.content.map(function (h, index) {
+    return _react2["default"].createElement("details", {
+      key: index
+    }, _react2["default"].createElement("summary", null, h.title), _react2["default"].createElement("ul", null, h.content.map(function (content, index) {
+      return _react2["default"].createElement("li", {
+        key: index
+      }, _react2["default"].createElement("div", {
+        dangerouslySetInnerHTML: {
+          __html: content
+        }
+      }));
+    })));
+  })));
+};
+
+exports["default"] = EmploymentHighlight;
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(1);
+
+var _Article = __webpack_require__(57);
+
+var _Article2 = _interopRequireDefault(_Article);
+
+var _moment = __webpack_require__(7);
+
+var _moment2 = _interopRequireDefault(_moment);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var AdditionalExperience = function AdditionalExperience() {
+  /* eslint-disable max-len */
+  var copy = {
+    title: 'Additional Experience',
+    content: [{
+      name: 'Vsnap',
+      title: 'Software Developer',
+      location: 'Boston, MA',
+      from: 'May 2014',
+      until: 'Apr 2015',
+      description: 'Node.js / Angular.js / NPM / Gulp / Karma / Lint / Bower - Agile Development - Jira / Slack - Test-Driven Development - HTML5 / CSS3 - Minor backend/API bug fixes (Node.js) - Responsive across all modern devices and browsers - Wireframed in Balsamiq - User tested for UX/UI - Designed HI-Res mockups in Photoshop (side project) I was also very lucky to have built a life-size Doctor Who TARDIS to be a quiet space for recording vsnaps and to take phone calls.'
+    }, {
+      name: 'Freelance Web Developer',
+      title: 'Web Developer',
+      location: null,
+      from: 'Aug 2011',
+      until: 'Jan 2017',
+      description: 'Wordpress, EJS, jQuery, CreateJS, Static HTML, Email Templates, Heroku, GA'
+    }, {
+      name: 'Acidotic Racing',
+      title: 'Web Developer',
+      location: 'Seacoast NH',
+      from: 'Nov 2013',
+      until: 'Dec 2015',
+      description: 'Angular, Firebase, Custom CMS'
+    }, {
+      name: 'PICA Manufacturing Solutions ',
+      title: 'Web Developer',
+      location: 'Derry, NH',
+      from: 'Dec 2012',
+      until: 'Dec 2014',
+      description: 'Designed and developed PICA Manufacturing\'s website to allow visitors clear and easy access to the company\'s brand, value propositions and general information. Also created new landing pages, trade booth designs and generating new customer leads through email marketing, Google Ads/Analytics, and custom landing pages. - Website Design & Development - User Testing - Tradeshow Booth Design - Brochure Design - Logo re-design - Folder Design - Pop-Up Banner design - White Paper Template - PICA About Video - PicaKit Video - Mailchimp - WuFoo'
+    }, {
+      name: 'Central Midori',
+      title: 'Web Developer',
+      location: null,
+      from: 'Sept 2017',
+      until: 'Jan 2018',
+      description: 'S3, CloudFront, EC2. Static HTML with Gulp and hosted Wordpress for Blog.'
+    }, {
+      name: 'Marilinda Garcia for Congress',
+      title: 'Web Developer',
+      location: 'New Hampshire',
+      from: 'Nov 2013',
+      until: 'April 2014',
+      description: 'My primary role with this campaign is to create a website where voters have access to latest news, social media links and general campaign information. Other responsibilities include: graphic design, photo editing and logo design.'
+    }, {
+      name: 'Startup Institute',
+      title: 'Product & Design',
+      location: 'Boston, MA',
+      from: 'Mar 2014',
+      until: 'Apr 2014',
+      description: 'Selected by Startup Institute in a highly competitive process to attend an intensive training program focused on developing the core skills in product & design to have a meaningful and positive influence on a startup\'s objectives. - HTML, CSS, jQuery and Javascript - Product Management - Responsive Design - Organizing a Design Project - User Centered Design & Whiteboarding - Wireframing & Rapid Prototyping - Typography'
+    }]
+  };
+  return [_react2["default"].createElement(_Article2["default"], {
+    title: copy.title,
+    key: "main"
+  }, copy.content.map(function (exp, index) {
+    return _react2["default"].createElement("div", {
+      key: index
+    }, _react2["default"].createElement("h3", null, _react2["default"].createElement("strong", null, exp.name), "\xA0", _react2["default"].createElement("time", {
+      dateTime: (0, _moment2["default"])(exp.from, 'MMM YYYY').format()
+    }, exp.from), " -", _react2["default"].createElement("time", {
+      dateTime: (0, _moment2["default"])(exp.until, 'MMM YYYY').format()
+    }, exp.until)), _react2["default"].createElement("p", null, exp.description), _react2["default"].createElement("br", null));
+  })), _react2["default"].createElement(_Article2["default"], {
+    title: "Other Potentially Relevent Experience",
+    key: "other"
+  }, _react2["default"].createElement("p", null, "I haven't always been a professional coder.", _react2["default"].createElement("br", null), _react2["default"].createElement("br", null), "In fact, I have a rich history of experiences that could prove relevent to a future employment offer and helpful while considering me as your next hire.", _react2["default"].createElement("br", null), _react2["default"].createElement("br", null), "I have decided toincluded this in order to represent myself as best as possible."), _react2["default"].createElement("br", null), _react2["default"].createElement("br", null), _react2["default"].createElement(_reactRouterDom.Link, {
+    to: "/other-experience/",
+    title: "Learn more about my other profesional and personal experience"
+  }, "Learn more about my other professional and personal experience"), _react2["default"].createElement("br", null))];
+};
+
+exports["default"] = AdditionalExperience;
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Article = __webpack_require__(57);
+
+var _Article2 = _interopRequireDefault(_Article);
+
+var _Posts = __webpack_require__(76);
+
+var _Posts2 = _interopRequireDefault(_Posts);
+
+var _Viewport = __webpack_require__(6);
+
+var _Viewport2 = _interopRequireDefault(_Viewport);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { return;("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var References = function References() {
+  /* eslint-disable max-len */
+  var copy = {
+    title: 'Wonderful things people had to say',
+    showMore: 'Show More References',
+    content: [{
+      name: 'Konrad Zalewski',
+      image: 'https://media-exp1.licdn.com/dms/image/C4D03AQFmHDIgBG7O_Q/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=og-ZuCN_nMbRmcjev_JN2jk8qTmqyXj_mgY3bDI6oIU',
+      link: 'https://www.linkedin.com/in/konrad-zalewski-605b9112/',
+      title: 'Impassioned front end technologist',
+      content: 'Stephen is a great developer that excels in many qualities often overlooked in developers.He possesses an entrepreneurial spirit and "go get it" attitude that allows him to confront any challenge head on. He goes above and beyond to take initiative to research problems and solutions to not only his own projects and tasks but to problems in the business overall. Having worked remotely with Stephen I can attest that he is a great communicator. Remote teams present many challenges but Stephen has a knack for keeping communication lines open and keeping information flowing among the team. Maybe most importantly, Stephen is a great learner. He is both great at receiving criticism and giving back constructive criticism. He never takes things personally and instead sees things objectively as opportunities for personal growth or of doing what\'s best for the team as a whole.',
+      relevant: true
+    }, {
+      name: 'Chris Chambers',
+      image: 'https://media-exp1.licdn.com/dms/image/C4D03AQHGQ1z3cDsTdw/profile-displayphoto-shrink_800_800/0?e=1588809600&v=beta&t=7nknxuXRZ6g7gHsvu-PwZuMEyCH3Ql711hDxmy8PnGc',
+      link: 'https://www.linkedin.com/in/chris-chambers-47a3a8147/',
+      title: 'Looking for ways to change the world',
+      content: 'Stephen has unstoppable energy and enthusiasm. He has a deep intuitive understanding of design and how it translates to the web, recognizing in seconds issues that might normally take several iterations to uncover. He\'s a highly collaborative team member with top-notch execution who constantly works to raise the quality around him. He\'s fast, efficient, and delivers immaculate results. And in all that, he\'s cheerful, fun, and a joy to work with. I can\'t recommend him highly enough.',
+      relevant: true
+    }, {
+      name: 'Winfield Trail',
+      image: 'https://media-exp1.licdn.com/dms/image/C4D03AQGypiSJAZ4tHw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=NSMwHjf3v4ZURo5dWKfJ1jHSotPGI8EKGVl1p-TTYDE',
+      link: 'https://www.linkedin.com/in/winfield-trail-a9799329/',
+      title: 'Lead Programmer, Paint Nite d/b/a Yaymaker',
+      content: 'Stephen is one of my most valued colleagues, and nobody can bang out CSS faster or better than him. In his time with Paint Nite [Yaymaker], Stephen has successfully evangelized technologies like Less, Gulp, and Angular, which alongside his spectacular problem-solving ability have radically improved every aspect of our product. It is my privilege to work with Mr. Young, so much that I can overlook his barbaric preference for soft tab indentation when editing HTML. He is a consummate team player: even though in terms of capability, he is an army of one.',
+      relevant: true
+    }, {
+      name: 'Katelyn Friedson',
+      image: 'https://media-exp1.licdn.com/dms/image/C4E03AQF5wL91d9VdDw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=NUMUJnbShrleFsMsJE2s2JT26c962vudRN3j-7TqT9A',
+      link: 'https://www.linkedin.com/in/kfriedson/',
+      title: 'Product Manager, at Paint Nite d/b/a Yaymaker',
+      content: 'I have worked with few developers who are as knowledgeable, passionate and effective at creating beautiful and engaging user experiences as Stephen has at Paint Nite. Stephen is not only highly skilled and agile, but he also has excellent people, communication and leadership skills which make him a pleasure to work with, and an invaluable part of any web team. As lead developer at Paint Nite, Stephen not only demonstrates a mastery of web technologies, but also a commanding grasp and deep understanding of business goals and cross-functional initiatives. Stephen has been a key contributor to the success of Paint Nite\'s \'Next Gen\' product launch, and has been a valued and respected member of the organization. On a personal level, Stephen has a great sense of humor, contagious creative energy, and has lots of hidden artistic talents. :)',
+      relevant: true
+    }, {
+      name: 'Ryan McDonald',
+      image: 'https://media-exp1.licdn.com/dms/image/C4E03AQGl8srY1KmJdQ/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=c1H7YEH9Hdw2Izrj6-8ne2xhe3CN8i5ELpLGkQRcQos',
+      link: 'https://www.linkedin.com/in/rpmcdonald/',
+      title: 'Full Stack Developer, Vsnap',
+      content: 'Stephen is a passionate, driven and talented developer. His love for programming is clearly visible in his tireless dedication to a project and his artistic abilities and creativity only add to his effectiveness as a front end web developer. Stephen and I first worked together when he was brought on as an interim-developer at Vsnap while he planned a move from Boston, MA to Austin, TX. He quickly picked up AngularJS (a front end framework that was new to him) and demonstrated so much ambition that he was hired as a full time front end dev despite the fact that he would be moving and have to work remotely. As a member of the Vsnap dev team Stephen was always happy to pick up any task that needed doing and never shy about working on things that were outside of his comfort zone. He as always very helpful if I ever had a question and very open to discussion when deciding the best way to tackle a problem. I would highly recommend Stephen and would love to work with again if the opportunity presented itself.',
+      relevant: true
+    }, {
+      name: 'Dave McLaughlin',
+      image: 'https://media-exp1.licdn.com/dms/image/C4E03AQElcXREaOzWXw/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=3zUvQSOG-tWwkTFdPjWMjPJXD9e6cuqvL4gjgdjQ_I0',
+      link: 'https://www.linkedin.com/in/davemacboston/',
+      title: 'CEO & Co-Founder, Vsnap',
+      content: 'Stephen is super talented and hard working, and he\'s also just a wonderful guy and an amazing team member. He has the creative spirit of an artist and the work ethic of a coal miner. Absolutely a guy who amplifies the energy and brings great things to any team. He brought so much to our product at Vsnap, and it\'s a true pleasure to recommend him.',
+      relevant: true
+    }, {
+      name: 'Niksa Janjic',
+      title: 'Developer, Vsnap',
+      content: 'Stephen is a talented Frontend developer who also has a keen eye for design. As a developer at Vsnap he worked on a frontend part of the app developing in Angular. He is very fast at delivering new features and rewrote whole HTML/CSS part of the app to optimize it and improve it noticeably. He is capable of making pages from scratch, creating beautiful designs straight from the head. He also wrote lots and refactored most of unit-tests with a coverage over 90%, created bunch of directives to reduce boilerplate code and made sure all pages are responsive and work cross-browser. He usually reviewed my code and gave me ideas and advices how to improve it and made sure it is optimized and minimal as possible.'
+    }, {
+      name: 'Nathan Levesque',
+      title: 'Lead Software Developer, Vsnap',
+      content: 'Stephen is a strong front end developer who doesn\'t hesitate to dive in and learn backend services for feature implementation and bug fixes. Recently, Stephen put in a great deal of effort to identify and fix some deficiencies with our Jasmine-based front end tests which enabled the tests to be much more stable. Stephen is very talented in taking web designs from a designer and implementing them in a page with responsive design. In particular he has greatly refactored the Vsnap application\'s CSS to eliminate duplication and improve page load times.'
+    }, {
+      name: 'Guillaume Delloue',
+      title: 'Director of Marketing, Vsnap',
+      content: 'Stephen is a talented front-end developer with an immense appetite for learning and improving his skills. I can guarantee he\'ll be in the top 10% of the most productive developers in any organization. He\'s also a team player who\'s sensitive to the needs of other departments (marketing, sales, support etc.). Combined with his friendly demeanor and positive attitude Stephen is that rare dev talent any tech company would want to have. I highly recommend him.'
+    }, {
+      name: 'Christopher Swenor',
+      content: 'It was amazing watch Stephen grow into what he is today. He started off as a Junior Developer and has grown into a developer that I can truly trust to make the right decisions. He has passion for JavaScript, and shows it in his work ethic. Vsnap is a better product because we found Stephen. He is extremely creative, and a pleasure to work with. I would do it again any chance I get.',
+      title: 'CTO, Vsnap'
+    }, {
+      name: 'Brad Stevens',
+      content: 'Stephen did a tremendous job detailing the essential components of the campaign\'s website and putting it together in a way that was visually stunning and easy to navigate. Stephen is great to work with and very responsive. I would highly recommend Stephen to any candidate, business or organization looking to make their digital mark.',
+      title: 'worked directly with Stephen at Marilinda Garcia for Congress'
+    }]
+  };
+  /* eslint-enable max-len */
+
+  var ITEMS_TO_SHOW = 3;
+  var STARTING_ITEM = 0;
+
+  var _useState = (0, _react.useState)(ITEMS_TO_SHOW),
+      _useState2 = _slicedToArray(_useState, 2),
+      limit = _useState2[0],
+      setLimit = _useState2[1];
+
+  var references = copy.content;
+  return _react2["default"].createElement(_Viewport2["default"], null, function (viewport) {
+    return _react2["default"].createElement(_Article2["default"], {
+      title: copy.title
+    }, _react2["default"].createElement(_Posts2["default"], {
+      references: references.slice(STARTING_ITEM, limit)
+    }), limit < references.length && _react2["default"].createElement("div", {
+      className: "text-align-center"
+    }, _react2["default"].createElement("button", {
+      className: "btn-link-full",
+      onClick: function onClick() {
+        return setLimit(references.length);
+      }
+    }, copy.showMore)));
+  });
+};
+
+exports["default"] = References;
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _LazyLoad = __webpack_require__(66);
+
+var _LazyLoad2 = _interopRequireDefault(_LazyLoad);
+
+__webpack_require__(77);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Posts = function Posts(props) {
+  var references = props.references;
+
+  var getPostHeader = function getPostHeader(ref) {
+    var FIRST_SENTENCE = 0;
+    return "".concat(ref.content.split('.')[FIRST_SENTENCE], ".");
+  };
+
+  var getPostBody = function getPostBody(ref) {
+    var AMOUNT_TO_CUT = 1;
+    var content = ref.content;
+    var sentences = content.split('.');
+    var contentLength = content.split('.').length;
+    var sentenceArray = sentences.slice(AMOUNT_TO_CUT, contentLength - AMOUNT_TO_CUT);
+    return sentenceArray.join('. ');
+  };
+
+  return _react2["default"].createElement("ul", {
+    className: "posts_list_component"
+  }, references.map(function (ref, index) {
+    return _react2["default"].createElement("li", {
+      key: index,
+      className: "posts_list-item ".concat(ref.relevant ? 'strong' : '')
+    }, _react2["default"].createElement("div", {
+      className: "posts_list_content clearfix"
+    }, ref.image && _react2["default"].createElement(_LazyLoad2["default"], null, _react2["default"].createElement("img", {
+      src: ref.image,
+      width: "70px",
+      alt: "Photo of coworker ".concat(ref.name),
+      title: getPostHeader(ref)
+    })), _react2["default"].createElement("blockquote", {
+      className: "posts_list_quote"
+    }, _react2["default"].createElement("h3", null, getPostHeader(ref)), _react2["default"].createElement("p", null, getPostBody(ref)))), ref.link ? _react2["default"].createElement("p", {
+      className: "posts_list_name"
+    }, _react2["default"].createElement("a", {
+      href: ref.link,
+      target: "_blank",
+      title: ref.title
+    }, _react2["default"].createElement("strong", null, ref.name), ", ", _react2["default"].createElement("em", null, ref.title))) : _react2["default"].createElement("p", {
+      className: "posts_list_name"
+    }, "\u2014 ", _react2["default"].createElement("strong", null, ref.name), ", ", _react2["default"].createElement("em", null, ref.title)));
+  }));
+};
+
+exports["default"] = Posts;
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactFontawesome = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var TechIcons = function TechIcons() {
+  return [_react2["default"].createElement("noscript", {
+    key: "noscript"
+  }, _react2["default"].createElement("ul", {
+    className: "icon-list icon-list-light icon-list-small"
+  }, _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement("em", {
+    title: "Javascript"
+  }, "Javascript")), _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement("em", {
+    title: "Javascript"
+  }, "Node")), _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement("em", {
+    title: "Javascript"
+  }, "React")), _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement("em", {
+    title: "Javascript"
+  }, "HTML5")), _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement("em", {
+    title: "Javascript"
+  }, "CSS3")))), _react2["default"].createElement("ul", {
+    key: "tech-icons",
+    className: "icon-list icon-list-light"
+  }, _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: ['fab', 'node-js']
+  })), _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: ['fab', 'node']
+  })), _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: ['fab', 'react']
+  })), _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: ['fab', 'html5']
+  })), _react2["default"].createElement("li", {
+    className: "icon-list-item"
+  }, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: ['fab', 'css3-alt']
+  })))];
+};
+
+exports["default"] = TechIcons;
+
+/***/ })
+];;

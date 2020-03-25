@@ -1,18 +1,25 @@
 import React from 'react';
 import LazyLoad from 'components/LazyLoad';
-import stripHtml from 'string-strip-html';
 
 import './styles.scss';
 
-const Posts = props => {
+const Posts = (props) => {
   const { references } = props;
 
-  const getPostHeader = ref => {
-    return `${ref.content.split('.')[0]}.`;
+  const getPostHeader = (ref) => {
+    const FIRST_SENTENCE = 0;
+    return `${ref.content.split('.')[FIRST_SENTENCE]}.`;
   };
 
-  const getPostBody = ref => {
-    return `${ref.content.split('.').slice(1, ref.content.split('.').length - 1).join('. ')}`;
+  const getPostBody = (ref) => {
+    const AMOUNT_TO_CUT = 1;
+    const content = ref.content;
+    const sentences = content.split('.');
+    const contentLength = content.split('.').length;
+    const sentenceArray = sentences.slice(
+      AMOUNT_TO_CUT, contentLength - AMOUNT_TO_CUT
+    );
+    return sentenceArray.join('. ');
   };
 
   return (
@@ -21,7 +28,6 @@ const Posts = props => {
         <li
           key={index}
           className={`posts_list-item ${ref.relevant ? 'strong' : ''}`}
-          data-aos={index % 2 ? "fade-left" : "fade-right"}
         >
           <div className="posts_list_content clearfix">
             { ref.image &&
@@ -29,7 +35,7 @@ const Posts = props => {
                 <img
                   src={ref.image}
                   width="70px"
-                  alt={"Photo of coworker " + ref.name}
+                  alt={`Photo of coworker ${ ref.name}`}
                   title={getPostHeader(ref)}
                 />
               </LazyLoad>
@@ -39,10 +45,9 @@ const Posts = props => {
               <p>{getPostBody(ref)}</p>
             </blockquote>
           </div>
-
           { ref.link
             ? <p className="posts_list_name">
-                <a href={ref.link} target="_blank" title={stripHtml(ref.title)}>
+                <a href={ref.link} target="_blank" title={ref.title}>
                   <strong>{ref.name}</strong>, <em>{ref.title}</em>
                 </a>
               </p>

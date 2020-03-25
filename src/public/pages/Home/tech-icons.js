@@ -1,44 +1,43 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const TechIcons = () => {
-  return [
-    <noscript key="noscript">
-      <ul className="icon-list icon-list-light icon-list-small">
-        <li className="icon-list-item">
-          <em title="Javascript">Javascript</em>
-        </li>
-        <li className="icon-list-item">
-          <em title="Javascript">Node</em>
-        </li>
-        <li className="icon-list-item">
-          <em title="Javascript">React</em>
-        </li>
-        <li className="icon-list-item">
-          <em title="Javascript">HTML5</em>
-        </li>
-        <li className="icon-list-item">
-          <em title="Javascript">CSS3</em>
-        </li>
-      </ul>
-    </noscript>,
-    <ul key="tech-icons" className="icon-list icon-list-light">
+const TechIcons = () => [
+  <noscript key="noscript">
+    <ul className="icon-list icon-list-light icon-list-small">
       <li className="icon-list-item">
-        <em className="fab fa-node-js" title="Javascript" />
+        <em title="Javascript">Javascript</em>
       </li>
       <li className="icon-list-item">
-        <em className="fab fa-node" title="Node JS"/>
+        <em title="Javascript">Node</em>
       </li>
       <li className="icon-list-item">
-        <em className="fab fa-react" title="React JS" />
+        <em title="Javascript">React</em>
       </li>
       <li className="icon-list-item">
-        <em className="fab fa-html5" title="HTML5" />
+        <em title="Javascript">HTML5</em>
       </li>
       <li className="icon-list-item">
-        <em className="fab fa-css3-alt" title="CSS3" />
+        <em title="Javascript">CSS3</em>
       </li>
     </ul>
-  ];
-};
+  </noscript>,
+  <ul key="tech-icons" className="icon-list icon-list-light">
+    <li className="icon-list-item">
+      <FontAwesomeIcon icon={[ 'fab', 'node-js' ]}/>
+    </li>
+    <li className="icon-list-item">
+      <FontAwesomeIcon icon={[ 'fab', 'node' ]}/>
+    </li>
+    <li className="icon-list-item">
+      <FontAwesomeIcon icon={[ 'fab', 'react' ]}/>
+    </li>
+    <li className="icon-list-item">
+      <FontAwesomeIcon icon={[ 'fab', 'html5' ]}/>
+    </li>
+    <li className="icon-list-item">
+      <FontAwesomeIcon icon={[ 'fab', 'css3-alt' ]}/>
+    </li>
+  </ul>
+];
 
 export default TechIcons;

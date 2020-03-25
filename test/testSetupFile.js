@@ -8,6 +8,7 @@ window.S3_AVATAR_PATH = '/avatar';
 window.S3_LOGOS_PATH = '/logo';
 window.S3_SOCIAL_PATH = '/social';
 window.S3_ABOUT_SITE_PATH = '/how-i-made-this-site';
+window.S3_RESUME_PDF = '/resume/stephen-young-resume.pdf';
 
 window.BREAKPOINTS = {
   mobile: 500,
@@ -18,33 +19,3 @@ window.BREAKPOINTS = {
 window.scrollTo = jest.fn();
 window.addEventListener = jest.fn((event, cb) => cb);
 window.removeEventListener = jest.fn((event, cb) => cb);
-
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from 'i18next-browser-languagedetector';
-
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources: {
-      en: require('../src/public/assets/copy/en_us.json'),
-      es: require('../src/public/assets/copy/es_es.json'),
-      fr: require('../src/public/assets/copy/fr_fr.json'),
-    },
-    lng: "en",
-    fallbackLng: "en",
-    interpolation: {
-      escapeValue: false
-    },
-    detection: {
-      order: ['cookie'],
-      lookupCookie: 'lang'
-    }
-  });
-
-i18n.on('languageChanged', function(lng) {
-  window.scrollTo(0,0);
-})
-
-export { i18n };

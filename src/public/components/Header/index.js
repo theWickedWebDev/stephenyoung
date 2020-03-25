@@ -1,52 +1,53 @@
 import React from 'react';
 import './styles.scss';
-import { useTranslation } from 'react-i18next';
-import stripHtml from 'string-strip-html';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Header = props => {
-  const { title, subtitle, intro, avatar } = props;
-  const { t, i18n } = useTranslation();
+const Header = (props) => {
+    const { title, subtitle, intro, avatar } = props;
 
-  const style = {};
-  const classNames = ["header__component"];
+    const download = {
+        name: 'Download Résumé PDF',
+        icon: 'download',
+        internal: false,
+        slug: 'resume',
+        href: `${S3_URL}/resume/stephen-young-resume.pdf`
+    };
 
-  if (avatar) {
-    style.backgroundImage = `url('${avatar}')`;
-    classNames.push('with-avatar');
-  }
+    const style = {};
+    const classNames = [ 'header__component' ];
 
-  const download = t('navbar:links', { returnObjects: true})
-    .find(l => l.slug === 'resume');
+    if (avatar) {
+        style.backgroundImage = `url('${avatar}')`;
+        classNames.push('with-avatar');
+    }
 
-  return (
-    <header className={classNames.join(' ')}>
-      <div className="header__body" style={style}>
-        <h1
-          className="header__component-h1"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          <span>
-            {title}
-          </span>
-        </h1>
-        <h2 className="header__component-h2">{subtitle}</h2>
-        <p
-          className="header__component-p"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          dangerouslySetInnerHTML={{ __html: intro }}
-          />
-          <br/>
-          <a href={download.href} target="_blank" title={stripHtml(download.name)}>
-            <button
-              className="btn-link-full"
-              dangerouslySetInnerHTML={{__html: download.name }}
-            />
-          </a>
-      </div>
-    </header>
-  );
+    return (
+        <header className={classNames.join(' ')}>
+            <div className="header__body" style={style}>
+                <h1
+                    className="header__component-h1"
+                >
+                    <span>
+                        {title}
+                    </span>
+                </h1>
+                <h2 className="header__component-h2">{subtitle}</h2>
+                <p
+                    className="header__component-p"
+                    dangerouslySetInnerHTML={{ __html: intro }}
+                />
+                <br/>
+                <a href={download.href} target="_blank" title={download.name}>
+                    <button
+                        className="btn-link-full"
+                    >
+                        <FontAwesomeIcon icon={download.icon} />&nbsp;
+                        {download.name}
+                    </button>
+                </a>
+            </div>
+        </header>
+    );
 };
 
 export default Header;

@@ -1,0 +1,978 @@
+exports.ids = [1];
+exports.modules = {
+
+/***/ 10:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactFontawesome = __webpack_require__(2);
+
+__webpack_require__(79);
+
+var _Meta = __webpack_require__(58);
+
+var _Meta2 = _interopRequireDefault(_Meta);
+
+var _Skeletons = __webpack_require__(80);
+
+var _LazyLoad = __webpack_require__(66);
+
+var _LazyLoad2 = _interopRequireDefault(_LazyLoad);
+
+var _Section = __webpack_require__(61);
+
+var _Section2 = _interopRequireDefault(_Section);
+
+var _Article = __webpack_require__(57);
+
+var _Article2 = _interopRequireDefault(_Article);
+
+var _Header = __webpack_require__(64);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _TagList = __webpack_require__(67);
+
+var _TagList2 = _interopRequireDefault(_TagList);
+
+var _Viewport = __webpack_require__(6);
+
+var _Viewport2 = _interopRequireDefault(_Viewport);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+/* eslint-disable max-len */
+// Dependencies
+// Styling
+// Components
+// <Home/> Component
+var About = function About() {
+  var copy = {
+    meta: {
+      title: 'How I built my résumé app - Node / React / Webpack',
+      description: 'Goes over key concepts on how I built this site, such as Accessibility, Site Performance, SEO, PDF Generation, and code quality.'
+    },
+    title: 'How I built my résumé app',
+    description: 'I wanted to make a résumé site that could showcase some of the concepts I am passionate about (even if its total overkill). This site demonstrates a lot of things I have learned in the past. Hope you enjoy!',
+    outcomeHeader: 'What are some key concepts for this site?'
+  };
+  return _react2["default"].createElement("div", {
+    className: "about__page"
+  }, _react2["default"].createElement(_Viewport2["default"], null, function (viewport) {
+    return _react2["default"].createElement(_react2["default"].Fragment, null, _react2["default"].createElement(_Meta2["default"], {
+      robots: "index",
+      keywords: "HTML,CSS,XML,JavaScript",
+      title: copy.meta.title,
+      description: copy.meta.description,
+      canonical: "https://www.thewickedweb.dev/about/"
+    }), _react2["default"].createElement(_Header2["default"], {
+      title: copy.title,
+      intro: copy.description,
+      avatar: "".concat("https://cdn.thewickedweb.dev", "/images/avatar/avatar-2.svg")
+    }), _react2["default"].createElement(_Section2["default"], null, _react2["default"].createElement(_Article2["default"], {
+      title: copy.outcomeHeader,
+      className: "about-page__component"
+    }, _react2["default"].createElement("ul", {
+      className: "tools-list"
+    }, _react2["default"].createElement("li", null, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      icon: ['fab', 'node-js']
+    }), " Node, Express"), _react2["default"].createElement("li", null, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      icon: ['fab', 'react']
+    }), " React, Webpack, SCSS"), _react2["default"].createElement("li", null, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      icon: ['fab', 'aws']
+    }), "  EC2, Load Balancer, S3, CloudFront"), _react2["default"].createElement("li", null, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      icon: ['fab', 'expeditedssl']
+    }), " SSL HTTPS")), _react2["default"].createElement("br", null), _react2["default"].createElement("h3", null, "Accessibility"), _react2["default"].createElement(_TagList2["default"], {
+      list: [{
+        name: 'W3C - Web Accessibility Initiative'
+      }]
+    }), _react2["default"].createElement("ul", null, _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Font size & Contrast make it easy to read text"), _react2["default"].createElement("p", null, "I made sure I had sufficient contrast on the foreground and background on all sections."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "Header (coral/white) with large text passes ", _react2["default"].createElement("em", {
+      className: "alt"
+    }, "WCAG AA"), " checks with ", _react2["default"].createElement("strong", null, "3.06:1"), ".", _react2["default"].createElement("br", null), "The rest of site passes all of the WCAG checks (", _react2["default"].createElement("strong", null, "16.98:1"), " - ", _react2["default"].createElement("strong", null, "21:1"), ")."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "I originally had a lighter color coral, but adjusted it when I realized it wasn't passing any of the checks."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "Font-weights are not too thin and all font-sizes are set to at least 16px."), _react2["default"].createElement("br", null)), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Images and links contain alternate text & title attributes"), _react2["default"].createElement("p", null, "All anchor and img tags have alt attributes."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "Anchor tags also have a title attribute."), _react2["default"].createElement("br", null)), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Headings have a meaningful hierarchy"), _react2["default"].createElement("p", null, "Paid attention to all the headings used. Each page has an H1, H2, H3, and H4 - and they are structured in a meaningful way."), _react2["default"].createElement("br", null)), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Resizing text does not make the page unusable"), _react2["default"].createElement("p", null, "This site is made in a way so that a user can zoom in the text and read clearly. It does not cause any issues in the browser such as text being cut-off."), _react2["default"].createElement("br", null))), _react2["default"].createElement("br", null), _react2["default"].createElement("h3", null, "Site Performance"), _react2["default"].createElement(_TagList2["default"], {
+      list: [{
+        name: 'GtMetrix'
+      }, {
+        name: 'Webpack Bundle Analyzer'
+      }, {
+        name: 'CloudFront'
+      }, {
+        name: 'Express'
+      }]
+    }), _react2["default"].createElement("ul", null, _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Server-side rendered content"), _react2["default"].createElement("p", null, "Users can browse the site sooner, even while React is making the virtual DOM to make the page interactive."), _react2["default"].createElement("p", null, "I also dont have a giant white screen (or flicker) like many SPA sites do")), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Decreasing Page Size"), _react2["default"].createElement("p", null, "240kb (as of when I'm typing this). I have added better code splitting, dynamic imports, and an audit of the NPM packages I am using to reduce some bloat."), _react2["default"].createElement("br", null)), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Lazy loading images"), _react2["default"].createElement("p", null, "Doesn't load images until visible on screen."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "On page load, only 2 images are requested totalling ~38kb."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "As the user scrolls throughout the page, they can expect to download ~338kb of imagery. Much better than requesting that on initial page load."), _react2["default"].createElement("br", null)), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Page speed"), _react2["default"].createElement("p", null, _react2["default"].createElement("abbr", null, "SSR"), " - Server Side Rendered"), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "Minified, Cached and Compressed - HTML, JS, CSS and Images."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "The JS bundles could use a little more work. They are about 94kb. I am going to be adding code-splitting with dynamic imports to achieve smaller bundle sizes."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "For CSS I am only loading 3.6kb."), _react2["default"].createElement("br", null)), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Disabled Javascript Support"), _react2["default"].createElement("p", null, "Site will continue to perform all of its duties"), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "I used ", _react2["default"].createElement("em", {
+      className: "alt"
+    }, _react2["default"].createElement("code", null, '<noscript/>')), "\xA0\xA0for any relevant imagery since they are lazyloaded, the user would never have seen them.", _react2["default"].createElement("br", null), "An example would be the image gallery at the bottom of the page, as well as the Tech Icons under the header. I have replaced those icons with text versions if the user has ", _react2["default"].createElement("abbr", null, "JS"), "\xA0 turned off."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "In development: Give the site the ability to change locales via the URL - so that I can SSR content with different copy. Right now, this is the only functionality that isn't supported without Javasript."), _react2["default"].createElement("br", null))), _react2["default"].createElement("br", null), _react2["default"].createElement("h3", null, "Search Engine Optimization (", _react2["default"].createElement("abbr", null, "SEO"), ")"), _react2["default"].createElement(_TagList2["default"], {
+      list: [{
+        name: 'Screaming Frog'
+      }, {
+        name: 'Google Tools'
+      }]
+    }), _react2["default"].createElement("ul", null, _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Meta Tags are present"), _react2["default"].createElement("figure", null, _react2["default"].createElement(_LazyLoad2["default"], {
+      skeleton: _react2["default"].createElement(_Skeletons.RectSkeleton, {
+        width: "300px",
+        height: "167px"
+      })
+    }, _react2["default"].createElement("img", {
+      src: "".concat("https://cdn.thewickedweb.dev", "/images/how-i-made-this-site/social-card.jpg"),
+      alt: "Photo of this website",
+      width: "300px",
+      height: "167px",
+      className: "about__page-social-sharing-image"
+    })), _react2["default"].createElement("figcaption", null, "Social Sharing Preview")), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "Titles, descriptions, social tags, lang attributes, robots and other tags make it easier for people to get to my site."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "I am not putting much energy into online marketing at all, but if one day someone finds me organically, thats awesome!"), _react2["default"].createElement("br", null)), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Provides a sitemap.xml and robots.txt"), _react2["default"].createElement("p", null, "Although this site has static URLs, I thought it would be fun to create a sitemap. Who knows, perhaps one day ill have created 1000 dynamic pages, *chuckle*."), _react2["default"].createElement("br", null)), _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Pages are canonicalized"), _react2["default"].createElement("p", null, "Made sure to automatically redirect to include trailing slashes and include a canonical link in the head of my pages."), _react2["default"].createElement("br", null))), _react2["default"].createElement("br", null), _react2["default"].createElement("h3", null, "Just Kinda Cool"), _react2["default"].createElement(_TagList2["default"], {
+      list: [{
+        name: 'PDFKit'
+      }, {
+        name: 'Node'
+      }]
+    }), _react2["default"].createElement("ul", null, _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "My PDF r\xE9sum\xE9 ", _react2["default"].createElement("strike", null, "is"), " was generated automagically"), _react2["default"].createElement("div", {
+      className: "about__page-generate-pdf-section"
+    }, _react2["default"].createElement("figure", null, _react2["default"].createElement(_LazyLoad2["default"], {
+      skeleton: _react2["default"].createElement(_Skeletons.SquareSkeleton, {
+        size: viewport === 'desktop' ? '150px' : '120px'
+      })
+    }, _react2["default"].createElement("img", {
+      src: "".concat("https://cdn.thewickedweb.dev", "/images/how-i-made-this-site/website-400x400.jpg"),
+      alt: "Photo of this website",
+      className: "about__page-generate-pdf-image",
+      height: viewport === 'desktop' ? '150px' : '120px',
+      width: viewport === 'desktop' ? '150px' : '120px'
+    })), _react2["default"].createElement("figcaption", null, "Data from Web App")), _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      icon: "arrow-right",
+      className: "about__page-generate-pdf-arrow"
+    }), _react2["default"].createElement("figure", null, _react2["default"].createElement(_LazyLoad2["default"], {
+      skeleton: _react2["default"].createElement(_Skeletons.SquareSkeleton, {
+        size: "150px"
+      })
+    }, _react2["default"].createElement("img", {
+      src: "".concat("https://cdn.thewickedweb.dev", "/images/how-i-made-this-site/resume-400x400.jpg"),
+      alt: "Photo of my PDF r\xE9sum\xE9",
+      className: "about__page-generate-pdf-image",
+      height: viewport === 'desktop' ? '150px' : '120px',
+      width: viewport === 'desktop' ? '150px' : '120px'
+    })), _react2["default"].createElement("figcaption", null, "Generated PDF"))), _react2["default"].createElement("p", null, "Using the same JSON content I use for the homepage, I generated a PDF vesion of my r\xE9sum\xE9. I was using \xA0", _react2["default"].createElement("em", {
+      className: "alt"
+    }, "pdfkit"), " however I am not the biggest fan of their limited built-in api, but it was simple to set up and get running, so I kept it. This way I dont have to worry about keeping a current version ready if/when I need one. For fun, I also tied it in with my localization so you can download in English, Spanish or French!", _react2["default"].createElement("br", null), _react2["default"].createElement("br", null), _react2["default"].createElement("em", null, _react2["default"].createElement("strong", null, "EDIT")), " - I have removed the localization support because it was getting too much to maintain. I also wanted to try a new package, one that was easier with SSR and one that makes it simple to grab translation files from a CDN."), _react2["default"].createElement("br", null))), _react2["default"].createElement("br", null), _react2["default"].createElement("h3", null, "Code Quality"), _react2["default"].createElement(_TagList2["default"], {
+      list: [{
+        name: 'Jest'
+      }, {
+        name: 'Enzyme'
+      }, {
+        name: 'Nightwatch'
+      }]
+    }), _react2["default"].createElement("br", null), _react2["default"].createElement("ul", null, _react2["default"].createElement("li", null, _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Clean and Organized"), _react2["default"].createElement("p", null, "I always do my best to keep my code clean and organized. I try to keep functions and variable named clearly and easily identifable as possible. This allows for code that can be more easily read without the need for much commenting."), _react2["default"].createElement("br", null), _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Do not repeat yourself ", _react2["default"].createElement("abbr", null, "(DRY)")), _react2["default"].createElement("p", null, "I am positive I had to have repeated myself at least in a few places. It is quite hard to keep your code completely ", _react2["default"].createElement("abbr", null, "DRY"), " as the projects progress, but as I work I keep that in mind and do my best."), _react2["default"].createElement("br", null), _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Testing with Jest and Nightwatch"), _react2["default"].createElement("br", null), _react2["default"].createElement("a", {
+      className: "btn-link-full",
+      href: "/coverage/",
+      title: "View Jest Coverage",
+      target: "_blank"
+    }, "View Test Coverage"), _react2["default"].createElement("br", null), _react2["default"].createElement("small", {
+      className: "block-on-mobile"
+    }, "(Generated on build)"), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "The code that runs this site is thoroughly tested. I use Jest as my runner and other packages such as ", _react2["default"].createElement("em", {
+      className: "alt"
+    }, "Supertest"), "\xA0and ", _react2["default"].createElement("em", {
+      className: "alt"
+    }, "Enzyme"), " for my testing libraries."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "I am actively working on increasing\xA0", _react2["default"].createElement("a", {
+      href: "/coverage/",
+      title: "View Jest Coverage",
+      target: "_blank"
+    }, "my code coverage"), ", specifically end-to-end ", _react2["default"].createElement("abbr", null, "(E2E)"), " tests using ", _react2["default"].createElement("em", {
+      className: "alt"
+    }, "Nightwatch"), "."), _react2["default"].createElement("br", null), _react2["default"].createElement("p", null, "Although I didn't use it for this site, I am a big fan of \xA0", _react2["default"].createElement("em", {
+      className: "alt"
+    }, "Test Driven Development"), "\xA0 (", _react2["default"].createElement("abbr", null, "TDD"), "). I have found it to be extremely insightful and helpful while working on new features or projects."), _react2["default"].createElement("br", null), _react2["default"].createElement("h4", {
+      className: "margin-bottom-large"
+    }, "Staging Site (https://staging.thewickedweb.dev)"), _react2["default"].createElement("p", null, "I made myself a staging website too - so that I ensure a deployment will go smooth and not hurt any users experience while visiting my site. ", _react2["default"].createElement("br", null), _react2["default"].createElement("br", null), _react2["default"].createElement("strong", null, "Note:"), " I have made a custom robots.txt file that ", _react2["default"].createElement("em", {
+      className: "alt"
+    }, "blocks search engines"), " from crawling and indexing my staging site."))))));
+  }));
+};
+
+exports["default"] = About;
+/*
+<li>
+  <h4 className="margin-bottom-large">Screen Reader</h4>
+  <p>aria-attributes (coming soon)</p>
+  1. Pay attention to the title tag
+  2. Make sure your site is navigation-friendly
+  3. Every image needs an alt attribute
+  4. Role Attributes and Landmarks
+  5. Avoid click event listeners on <div> elements
+  <br/>
+</li>
+*/
+
+/***/ }),
+
+/***/ 57:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(1);
+
+__webpack_require__(63);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Article = function Article(props) {
+  return _react2["default"].createElement("article", {
+    className: "article__component ".concat(props.className)
+  }, _react2["default"].createElement("div", {
+    className: "article__component-content"
+  }, props.title && _react2["default"].createElement("h2", {
+    className: "article__component-h2"
+  }, props.title), props.children));
+};
+
+exports["default"] = Article;
+
+/***/ }),
+
+/***/ 58:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactHelmet = __webpack_require__(5);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+
+var _favicon = __webpack_require__(59);
+
+var favicon = _interopRequireWildcard(_favicon);
+
+var _og = __webpack_require__(60);
+
+var og = _interopRequireWildcard(_og);
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { return;("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var defaultTitle = 'Stephen Young - TheWickedWebDev';
+var defaultDescription = 'Support others. Stay positive. Embrace Change. Take Risks.';
+var defaultImage = "".concat("https://cdn.thewickedweb.dev", "/images/social/social-card-image.jpg");
+var MIN_DESCRIPTION_LENGTH = 0;
+var MAX_DESCRIPTION_LENGTH = 160;
+
+var Meta = function Meta(props) {
+  var _props$robots = props.robots,
+      robots = _props$robots === void 0 ? 'noindex' : _props$robots,
+      _props$keywords = props.keywords,
+      keywords = _props$keywords === void 0 ? 'thewickedwebdev' : _props$keywords,
+      _props$title = props.title,
+      title = _props$title === void 0 ? defaultTitle : _props$title,
+      _props$description = props.description,
+      description = _props$description === void 0 ? defaultDescription : _props$description,
+      _props$canonical = props.canonical,
+      canonical = _props$canonical === void 0 ? false : _props$canonical,
+      _props$siteName = props.siteName,
+      siteName = _props$siteName === void 0 ? 'TheWickedWebDev' : _props$siteName,
+      _props$image = props.image,
+      image = _props$image === void 0 ? defaultImage : _props$image;
+  var canonicalLink = canonical ? {
+    rel: 'canonical',
+    href: canonical
+  } : null;
+
+  var links = _toConsumableArray(favicon.links);
+
+  if (canonicalLink) {
+    links.push(canonicalLink);
+  }
+
+  var metas = [].concat(_toConsumableArray(favicon.meta), _toConsumableArray(og.meta({
+    title: title,
+    siteName: siteName,
+    url: canonical,
+    description: description,
+    image: image
+  })), [{
+    key: 'robots',
+    name: 'robots',
+    content: robots
+  }, {
+    key: 'keywords',
+    name: 'keywords',
+    content: keywords
+  }, {
+    key: 'description',
+    name: 'description',
+    content: description.substring(MIN_DESCRIPTION_LENGTH, MAX_DESCRIPTION_LENGTH)
+  }]);
+  return _react2["default"].createElement(_reactHelmet2["default"], null, _react2["default"].createElement("title", null, title), _react2["default"].createElement("meta", {
+    "http-equiv": "X-UA-Compatible",
+    content: "ie=edge"
+  }), _react2["default"].createElement("meta", {
+    "http-equiv": "content-language",
+    content: "en-us"
+  }), _react2["default"].createElement("meta", {
+    name: "author",
+    content: "Stephen Young"
+  }), links.map(function (l, index) {
+    return _react2["default"].createElement("link", _extends({
+      key: index
+    }, l));
+  }), metas.map(function (m, index) {
+    return _react2["default"].createElement("meta", _extends({
+      key: index
+    }, m));
+  }));
+};
+
+exports["default"] = Meta;
+
+/***/ }),
+
+/***/ 59:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var path = exports.path = "".concat("https://cdn.thewickedweb.dev", "/images/favicon/");
+var links = exports.links = [{
+  rel: 'apple-touch-icon',
+  sizes: '57x57',
+  href: "".concat(path, "apple-icon-57x57.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '60x60',
+  href: "".concat(path, "apple-icon-60x60.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '72x72',
+  href: "".concat(path, "apple-icon-72x72.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '76x76',
+  href: "".concat(path, "apple-icon-76x76.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '114x114',
+  href: "".concat(path, "apple-icon-114x114.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '120x120',
+  href: "".concat(path, "apple-icon-120x120.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '144x144',
+  href: "".concat(path, "apple-icon-144x144.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '152x152',
+  href: "".concat(path, "apple-icon-152x152.png")
+}, {
+  rel: 'apple-touch-icon',
+  sizes: '180x180',
+  href: "".concat(path, "apple-icon-180x180.png")
+}, {
+  rel: 'icon',
+  type: 'image/png',
+  sizes: '192x192',
+  href: "".concat(path, "android-icon-192x192.png")
+}, {
+  rel: 'icon',
+  type: 'image/png',
+  sizes: '32x32',
+  href: "".concat(path, "favicon-32x32.png")
+}, {
+  rel: 'icon',
+  type: 'image/png',
+  sizes: '96x96',
+  href: "".concat(path, "favicon-96x96.png")
+}, {
+  rel: 'icon',
+  type: 'image/png',
+  sizes: '16x16',
+  href: "".concat(path, "favicon-16x16.png")
+}, {
+  rel: 'manifest',
+  href: "".concat(path, "manifest.json")
+}];
+var meta = exports.meta = [{
+  key: 'themecolor',
+  name: 'theme-color',
+  content: '#ffffff'
+}, {
+  key: 'tilecolor',
+  name: 'msapplication-TileColor',
+  content: '#ffffff'
+}, {
+  key: 'tileimage',
+  name: 'msapplication-TileImage',
+  content: "".concat(path, "ms-icon-144x144.png")
+}];
+
+/***/ }),
+
+/***/ 60:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var meta = exports.meta = function meta(_ref) {
+  var title = _ref.title,
+      siteName = _ref.siteName,
+      url = _ref.url,
+      description = _ref.description,
+      image = _ref.image;
+  return [{
+    property: 'og:title',
+    content: title
+  }, {
+    property: 'og:site_name',
+    content: siteName
+  }, {
+    property: 'og:url',
+    content: url
+  }, {
+    property: 'og:description',
+    content: description
+  }, {
+    property: 'og:type',
+    content: 'website'
+  }, {
+    property: 'og:image',
+    content: image
+  }, {
+    property: 'twitter:card',
+    content: 'summary_large_image'
+  }, {
+    property: 'twitter:url',
+    content: url
+  }, {
+    property: 'twitter:title',
+    content: title
+  }, {
+    property: 'twitter:description',
+    content: description
+  }, {
+    property: 'twitter:image',
+    content: image
+  }];
+};
+
+/***/ }),
+
+/***/ 61:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(1);
+
+__webpack_require__(62);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Section = function Section(props) {
+  return _react2["default"].createElement("section", {
+    className: "section__component container-fh"
+  }, props.title && _react2["default"].createElement("h1", {
+    className: "section__component-h1"
+  }, props.title), props.children);
+};
+
+exports["default"] = Section;
+
+/***/ }),
+
+/***/ 62:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 63:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 64:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(65);
+
+var _reactFontawesome = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Header = function Header(props) {
+  var title = props.title,
+      subtitle = props.subtitle,
+      intro = props.intro,
+      avatar = props.avatar;
+  var download = {
+    name: 'Download Résumé PDF',
+    icon: 'download',
+    internal: false,
+    slug: 'resume',
+    href: "".concat("https://cdn.thewickedweb.dev", "/resume/stephen-young-resume.pdf")
+  };
+  var style = {};
+  var classNames = ['header__component'];
+
+  if (avatar) {
+    style.backgroundImage = "url('".concat(avatar, "')");
+    classNames.push('with-avatar');
+  }
+
+  return _react2["default"].createElement("header", {
+    className: classNames.join(' ')
+  }, _react2["default"].createElement("div", {
+    className: "header__body",
+    style: style
+  }, _react2["default"].createElement("h1", {
+    className: "header__component-h1"
+  }, _react2["default"].createElement("span", null, title)), _react2["default"].createElement("h2", {
+    className: "header__component-h2"
+  }, subtitle), _react2["default"].createElement("p", {
+    className: "header__component-p",
+    dangerouslySetInnerHTML: {
+      __html: intro
+    }
+  }), _react2["default"].createElement("br", null), _react2["default"].createElement("a", {
+    href: download.href,
+    target: "_blank",
+    title: download.name
+  }, _react2["default"].createElement("button", {
+    className: "btn-link-full"
+  }, _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: download.icon
+  }), "\xA0", download.name))));
+};
+
+exports["default"] = Header;
+
+/***/ }),
+
+/***/ 65:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 66:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.WindowScroll = exports.LazyLoad = undefined;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { return;("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { return;("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { return;("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var DEFAULT_OFFSET = 0;
+
+var LazyLoad = /*#__PURE__*/exports.LazyLoad = function (_React$Component) {
+  _inherits(LazyLoad, _React$Component);
+
+  function LazyLoad() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, LazyLoad);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(LazyLoad)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      visible: false
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onScroll", function () {
+      if (_this.isScrolledIntoView() && !_this.state.visible) {
+        _this.setState({
+          visible: true
+        });
+      }
+    });
+
+    return _this;
+  }
+
+  _createClass(LazyLoad, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.onScroll();
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      this.onScroll();
+    }
+  }, {
+    key: "isScrolledIntoView",
+    value: function isScrolledIntoView() {
+      var offset = this.props.offset || DEFAULT_OFFSET;
+
+      if (!this.componentRef) {
+        return null;
+      }
+
+      var rect = this.componentRef.getBoundingClientRect();
+      var elemTop = rect.top;
+      var elemBottom = rect.bottom;
+      return elemTop - offset < window.innerHeight && elemBottom + offset >= DEFAULT_OFFSET;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var visible = this.state.visible;
+      var _this$props = this.props,
+          children = _this$props.children,
+          skeleton = _this$props.skeleton;
+
+      if (visible) {
+        return children;
+      }
+
+      return _react2["default"].createElement("div", {
+        ref: function ref(elem) {
+          return _this2.componentRef = elem;
+        }
+      }, _react2["default"].createElement(WindowScroll, {
+        onChange: this.onScroll
+      }), skeleton);
+    }
+  }]);
+
+  return LazyLoad;
+}(_react2["default"].Component);
+
+var WindowScroll = /*#__PURE__*/exports.WindowScroll = function (_React$Component2) {
+  _inherits(WindowScroll, _React$Component2);
+
+  function WindowScroll() {
+    var _getPrototypeOf3;
+
+    var _this3;
+
+    _classCallCheck(this, WindowScroll);
+
+    for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      args[_key2] = arguments[_key2];
+    }
+
+    _this3 = _possibleConstructorReturn(this, (_getPrototypeOf3 = _getPrototypeOf(WindowScroll)).call.apply(_getPrototypeOf3, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this3), "onWindowChange", _this3.props.onChange);
+
+    return _this3;
+  }
+
+  _createClass(WindowScroll, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener('scroll', this.onWindowChange);
+      window.addEventListener('resize', this.onWindowChange);
+      this.onWindowChange();
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      window.removeEventListener('scroll', this.onWindowChange);
+      window.removeEventListener('resize', this.onWindowChange);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return null;
+    }
+  }]);
+
+  return WindowScroll;
+}(_react2["default"].Component);
+
+_defineProperty(WindowScroll, "defaultProps", {
+  onChange: function onChange() {}
+});
+
+exports["default"] = LazyLoad;
+
+/***/ }),
+
+/***/ 67:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactFontawesome = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var TagList = function TagList(props) {
+  return _react2["default"].createElement("ul", {
+    className: "tag-list"
+  }, props.list.map(function (item, index) {
+    return _react2["default"].createElement("li", {
+      className: "tag-list-item",
+      key: "".concat(index, "-tag")
+    }, _react2["default"].createElement("span", null, item.name), item.favorite && _react2["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      icon: "heart",
+      className: "tag-list-icon"
+    }));
+  }));
+};
+
+exports["default"] = TagList;
+
+/***/ }),
+
+/***/ 79:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 80:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.RectSkeleton = exports.SquareSkeleton = undefined;
+
+__webpack_require__(81);
+
+var _Square = __webpack_require__(82);
+
+var _Square2 = _interopRequireDefault(_Square);
+
+var _RectSkeleton = __webpack_require__(83);
+
+var _RectSkeleton2 = _interopRequireDefault(_RectSkeleton);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+exports.SquareSkeleton = _Square2["default"];
+exports.RectSkeleton = _RectSkeleton2["default"];
+
+/***/ }),
+
+/***/ 81:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 82:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var Square = function Square(_ref) {
+  var _ref$size = _ref.size,
+      size = _ref$size === void 0 ? '300px' : _ref$size;
+  return _react2["default"].createElement("div", {
+    className: "skeletons__component-square skeletons__component",
+    style: {
+      height: size,
+      width: size
+    }
+  });
+};
+
+exports["default"] = Square;
+
+/***/ }),
+
+/***/ 83:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var RectSkeleton = function RectSkeleton(_ref) {
+  var _ref$width = _ref.width,
+      width = _ref$width === void 0 ? '300px' : _ref$width,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? '200px' : _ref$height;
+  return _react2["default"].createElement("div", {
+    className: "skeletons__component-rect skeletons__component",
+    style: {
+      height: height,
+      width: width
+    }
+  });
+};
+
+exports["default"] = RectSkeleton;
+
+/***/ })
+
+};;

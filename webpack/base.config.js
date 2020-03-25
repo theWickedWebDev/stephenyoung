@@ -13,8 +13,23 @@ const js = {
   use: {
     loader: 'babel-loader',
     options: {
-      presets: ['react', 'es2015'],
-      plugins: ['transform-class-properties']
+      "presets": [
+        [
+          '@babel/env',
+          {
+            targets: {
+              esmodules: false
+            },
+            modules: false,
+          }
+        ],
+        [ '@babel/react' ],
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "@babel/plugin-proposal-class-properties",
+        "@loadable/babel-plugin"
+      ],
     }
   }
 }
@@ -51,7 +66,7 @@ const svg = {
 };
 
 const baseConfig = {
-  mode: isDevelopment ? 'development' : 'production',
+  mode: 'production',
   module: {
     rules: [
       js,
@@ -72,6 +87,7 @@ const baseConfig = {
     poll: 1000,
   },
   plugins: [
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new ReplacePlugin({
       exclude: [
         /node_modules/,
@@ -83,14 +99,6 @@ const baseConfig = {
       }],
       values: {
         S3_URL: JSON.stringify('https://cdn.thewickedweb.dev'),
-        S3_IMAGES_PATH: JSON.stringify('/images'),
-        S3_IMAGES_GALLERY_PATH: JSON.stringify('/gallery'),
-        S3_RESUME_PATH: JSON.stringify('/resume'),
-        S3_FLAGS_PATH: JSON.stringify('/flags'),
-        S3_AVATAR_PATH: JSON.stringify('/avatar'),
-        S3_LOGOS_PATH: JSON.stringify('/logo'),
-        S3_SOCIAL_PATH: JSON.stringify('/social'),
-        S3_ABOUT_SITE_PATH: JSON.stringify('/how-i-made-this-site'),
         BREAKPOINTS: JSON.stringify({
           mobile: 500,
           tablet: 800,

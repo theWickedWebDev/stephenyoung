@@ -1,44 +1,37 @@
-import config from 'config';
-import compression from 'compression'
-import express from 'express'
-import path from 'path'
-import React from 'react'
-import ReactDOMServer from 'react-dom/server'
-import { StaticRouter as Router } from 'react-router-dom'
-import App from '../public/App'
-import Helmet from 'react-helmet';
-import fs from 'fs';
-import resumeBuilder from './resume-builder';
-import html from './html';
+const config = require('config');
+const compression = require('compression');
+const express = require('express');
+const path = require('path');
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+const Router = require('react-router-dom').StaticRouter;
+const App = require('../public/App').default;
+const Helmet = require('react-helmet').Helmet;
+const fs = require('fs');
+const resumeBuilder = require('./resume-builder');
+const html = require('./html').default;
+
+const ChunkExtractor = require('@loadable/server').ChunkExtractor;
+
+const REDIRECT_CODE = 301;
+
+let getStats = () => {
+    return JSON.parse(
+        fs.readFileSync('./dist/public/stats.json', 'utf8')
+    );
+};
 
 /**
 * Start Server
 */
-const app = express(({ strict: true }))
+const app = express({ strict: true });
 
-app.use(compression())
+app.use(compression());
 
-app.use('/static', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }))
-app.use('/coverage', express.static(path.resolve(__dirname, 'public/coverage/'), { maxAge: '7d' }))
-
-// Generates and compiles a PDF of my resume
-// based on the JSON data in this repo
-const getTranslations = locale => {
-  let translations;
-
-  if (locale && locale === 'fr_fr') {
-    translations = require('../public/assets/copy/fr_fr.json');
-  } else if (locale && locale === 'es_es') {
-    translations = require('../public/assets/copy/es_es.json');
-  } else {
-    translations = require('../public/assets/copy/en_us.json');
-  }
-
-  return translations;
-}
+app.use('/static', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }));
+app.use('/coverage', express.static(path.resolve(__dirname, '../coverage/lcov-report/'), { maxAge: '7d' }));
 
 app.get('/robots.txt', (req, res) => {
-  console.log(config);
   if (config.get('env') === 'staging') {
     res.sendFile(path.resolve(__dirname, 'public/assets/robots-staging.txt'));
   } else {
@@ -50,47 +43,64 @@ app.get('/sitemap.xml', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public/assets/sitemap.xml'));
 });
 
-// resume.pdf?locale=es_es
-app.get('/resume.pdf', (req, res) => {
-  resumeBuilder(req, res, getTranslations(req.query.locale));
-});
-
 app.get('/*', (req, res) => {
+  const url = req.url;
+
   // Redirects trailing slashes
-  const noTrailingSlash = !req.url.endsWith('/');
-  const notHomepage = !req.url !== '/';
-  const notAFile = !req.url.includes('.');
-  if (noTrailingSlash &&  notHomepage && notAFile) {
-    res.redirect(301, req.url + '/');
+  const noTrailingSlash = !url.endsWith('/');
+  const notHomepage = !url !== '/';
+  const notAFile = !url.includes('.');
+  if (noTrailingSlash && notHomepage && notAFile) {
+    res.redirect(REDIRECT_CODE, `${url }/`);
     res.end();
   }
 
   const context = {};
-
-  const component = ReactDOMServer.renderToString(
-    <Router location={req.url} context={context}>
-      <App/>
-    </Router>
-  )
+  let modules = [];
 
   const helmet = Helmet.renderStatic();
 
-  const renderedHtml = html({ helmet, component, req });
+  const extractor = new ChunkExtractor({ stats: getStats() });
 
-  var minify = require('html-minifier').minify;
-  var minifiedHtml = minify(renderedHtml, {
+  // Wrap your application using "collectChunks"
+  const jsx = extractor.collectChunks(
+    <Router location={url} context={context}>
+      <App/>
+    </Router>
+  );
+
+  // Render your application
+  const component = ReactDOMServer.renderToString(jsx);
+
+  // You can now collect your script tags
+  const scriptTags = extractor.getScriptTags(); // or extractor.getScriptElements();
+  // You can also collect your "preload/prefetch" links
+  const linkTags = extractor.getLinkTags(); // or extractor.getLinkElements();
+  // And you can even collect your style tags (if you use "mini-css-extract-plugin")
+  const styleTags = extractor.getStyleTags(); // or extractor.getStyleElements();
+
+  const renderedHtml = html({
+    url: url,
+    helmet: helmet,
+    component: component,
+    scriptTags: scriptTags,
+    linkTags: linkTags,
+    styleTags: styleTags
+  });
+
+  let minify = require('html-minifier').minify;
+  let minifiedHtml = minify(renderedHtml, {
     removeAttributeQuotes: true
   });
 
   if (context.url) {
-    res.writeHead(301, { Location: context.url })
-    res.end()
+    res.writeHead(REDIRECT_CODE, { Location: context.url });
+    res.end();
   } else {
-    res.send(minifiedHtml)
+    res.send(minifiedHtml);
   }
-})
+});
 
 module.exports = {
-  getTranslations,
-  app,
-}
+    app: app,
+};

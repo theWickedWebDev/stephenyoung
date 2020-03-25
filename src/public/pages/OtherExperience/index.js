@@ -1,24 +1,32 @@
-
-
 // Dependencies
-import React from 'react'
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import loadable from '@loadable/component';
 
 // Internal Components
-import OtherExperienceList from './List.js';
-import MedicalExperience from './MedicalExperience';
+const OtherExperienceList = loadable(() => {
+    return import(
+    /* webpackChunkName: "other-experience-list" */'./List.js'
+    );
+});
+
+const MedicalExperience = loadable(() => {
+    return import(
+    /* webpackChunkName: "other-experience-medical" */'./MedicalExperience.js'
+    );
+});
 
 // <OtherExperience/> Page
 const OtherExperiencePage = () => {
-  return (
-    <Switch>
-      <Route
-        path="/other-experience/medical"
-        component={MedicalExperience}
-      />
-      <Route path="*" component={OtherExperienceList}/>
-    </Switch>
-  );
+    return (
+        <Switch>
+            <Route
+                path="/other-experience/medical"
+                component={MedicalExperience}
+            />
+            <Route path="*" component={OtherExperienceList}/>
+        </Switch>
+    );
 };
 
 export default OtherExperiencePage;

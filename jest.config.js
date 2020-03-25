@@ -43,7 +43,8 @@ module.exports = {
     "components(.*)$": "<rootDir>/src/public/components/$1",
     "pages(.*)$": "<rootDir>/src/public/pages/$1",
     "\\.(css|scss)$": "<rootDir>/test/__mocks__/styleMock.js",
-    "\\.(xml|txt)$": "<rootDir>/test/__mocks__/fileMock.js"
+    "\\.(xml|txt)$": "<rootDir>/test/__mocks__/fileMock.js",
+    "@fortawesome/react-fontawesome": "<rootDir>/test/__mocks__/font-awesome.js"
    },
   watchPathIgnorePatterns: [
     'src/server/resume-builder.test.js',

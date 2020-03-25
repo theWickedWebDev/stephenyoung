@@ -4,12 +4,13 @@ import Component from './App.js';
 import { MemoryRouter } from 'react-router-dom';
 
 describe('<App/>', () => {
-  it('should render', () => {
-    window.innerWidth = 300;
-    const wrapper = mount(
-      <MemoryRouter><Component/></MemoryRouter>
-    );
-    expect(wrapper.length).toEqual(1);
-    expect(wrapper.find('div')).toExist();
-  });
-})
+    const APP_COUNT = 1;
+    it('should render', () => {
+        window.innerWidth = 300;
+        const wrapper = mount(
+            <MemoryRouter><Component/></MemoryRouter>
+        );
+        expect(wrapper.length).toEqual(APP_COUNT);
+        expect(wrapper.find('div')).toExist();
+    });
+});

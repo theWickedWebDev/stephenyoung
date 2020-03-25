@@ -1,5 +1,10 @@
 const { app } = require('./index.js');
+var log = require('loglevel');
 
-const { PORT = 3000 } = process.env
+const DEFAULT_PORT = 3000;
 
-app.listen(PORT, () => console.log('######## app running ########'))
+const { PORT = DEFAULT_PORT } = process.env;
+
+app.listen(PORT, () => {
+    log.info('######## app running on port ' + PORT + ' ########');
+});
