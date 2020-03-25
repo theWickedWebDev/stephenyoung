@@ -1,5 +1,4 @@
-import React from 'react'
-import { Favicon } from 'components/Meta';
+import React from 'react';
 import Viewport from 'components/Viewport';
 import { Compressed as MobileNav } from 'components/Navbar';
 import Footer from 'components/Footer';

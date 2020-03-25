@@ -32,7 +32,7 @@ const Gallery = () => {
           <li className="image-list-item" key={index}>
             <figure>
               <img
-                src={`${S3_URL}${S3_IMAGES_PATH}${S3_IMAGES_GALLERY_PATH}/${image.src}`}
+                src={`${S3_URL}/images/gallery/${image.src}`}
                 alt={image.alt}
                 title={image.alt}
                 className="image-list-item__image"
@@ -48,7 +48,7 @@ const Gallery = () => {
             <figure>
               <LazyLoad skeleton={<Skeleton/>}>
                 <img
-                  src={`${S3_URL}${S3_IMAGES_PATH}${S3_IMAGES_GALLERY_PATH}/${image.src}`}
+                  src={`${S3_URL}/images/gallery//${image.src}`}
                   alt={image.alt}
                   title={image.alt}
                   className="image-list-item__image"

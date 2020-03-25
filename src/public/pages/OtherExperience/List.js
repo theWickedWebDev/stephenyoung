@@ -26,7 +26,7 @@ const OtherExperienceList = () => {
       <Header
         title="I am more than just a coder"
         subtitle="I have various experience in many other industries as well"
-        avatar={`${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-2.svg`}
+        avatar={`${S3_URL}/images/avatar/avatar-2.svg`}
       />
       <Section>
         <Article title="Medical Industry - 5 years professional experience">

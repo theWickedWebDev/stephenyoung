@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Article from 'components/Article';
 import TagList from 'components/TagList';
 

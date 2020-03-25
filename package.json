@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "NODE_ENV=production webpack --mode=production && concurrently \"webpack --watch --info-verbosity verbose\" \"nodemon dist --verbose\"",
+    "dev": "NODE_ENV=production webpack --mode=production && concurrently \"webpack --watch --info-verbosity verbose\" \"nodemon dist --verbose\" \"npm run test\"",
     "build": "npm run test && webpack --mode=production",
     "start": "node dist/index.js",
     "test": "NODE_ENV=test && BABEL_ENV=test && jest --detectOpenHandles",
@@ -52,6 +52,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "express": "^4.16.4",
+    "fs": "0.0.1-security",
     "fs-extra": "^7.0.1",
     "html-minifier": "^4.0.0",
     "jest-css-modules": "^2.1.0",

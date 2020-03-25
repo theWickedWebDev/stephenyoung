@@ -40,7 +40,7 @@ const Home = () => {
         title={copy.title}
         subtitle={copy.subtitle}
         intro={copy.description}
-        avatar={`${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-2.svg`}
+        avatar={`${S3_URL}/images/avatar/avatar-2.svg`}
       />
       <Meta
         robots="index"

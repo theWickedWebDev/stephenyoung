@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React from 'react';
 import Article from 'components/Article';
 import LazyLoad from 'components/LazyLoad';
 import moment from 'moment';
@@ -125,7 +125,7 @@ const EmploymentHighlight = () => {
 
   const LogoImage = () => (
     <img
-      src={`${S3_URL}${S3_IMAGES_PATH}${S3_RESUME_PATH}/${copy.logo}`}
+      src={`${S3_URL}/images/resume/yaymaker-logo.svg`}
       className="vertical-align-middle margin-right-lg highlight-logo"
       width="90px"
       alt="Logo"

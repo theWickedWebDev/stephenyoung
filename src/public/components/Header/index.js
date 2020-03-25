@@ -10,7 +10,7 @@ const Header = props => {
     "icon": "download",
     "internal": false,
     "slug": "resume",
-    "href": `${S3_URL}${S3_RESUME_PDF}`
+    "href": `${S3_URL}/resume/stephen-young-resume.pdf`
   }
 
   const style = {};

@@ -1,6 +1,4 @@
-
-
-export const path = `${S3_URL}${S3_IMAGES_PATH}/favicon/`;
+export const path = `${S3_URL}/images/favicon/`;
 
 export const links = [
   {rel: "apple-touch-icon", sizes: "57x57", href: `${path}apple-icon-57x57.png` },

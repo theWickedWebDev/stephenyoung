@@ -7,9 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles.scss';
 
 // Components
+import Meta from 'components/Meta';
 import { SquareSkeleton, RectSkeleton } from 'components/Skeletons';
 import LazyLoad from 'components/LazyLoad';
-import Meta from 'components/Meta';
+
 import Section from 'components/Section';
 import Article from 'components/Article';
 import Header from 'components/Header';
@@ -28,21 +29,22 @@ const About = () => {
     "outcomeHeader": "What are some key concepts for this site?",
   };
 
+
   return (
     <div className="about__page">
       <Viewport>{ viewport => (
         <React.Fragment>
-          <Header
-            title={copy.title}
-            intro={copy.description}
-            avatar={`${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-2.svg`}
-          />
           <Meta
             robots="index"
             keywords="HTML,CSS,XML,JavaScript"
             title={copy.meta.title}
             description={copy.meta.description}
             canonical="https://www.thewickedweb.dev/about/"
+          />
+          <Header
+            title={copy.title}
+            intro={copy.description}
+            avatar={`${S3_URL}/images/avatar/avatar-2.svg`}
           />
           <Section>
             <Article title={copy.outcomeHeader} className="about-page__component">
@@ -210,7 +212,7 @@ const About = () => {
                   <figure>
                     <LazyLoad skeleton={<RectSkeleton width="300px" height="167px"/>}>
                       <img
-                        src={`${S3_URL}${S3_IMAGES_PATH}${S3_ABOUT_SITE_PATH}/social-card.jpg`}
+                        src={`${S3_URL}/images/how-i-made-this-site/social-card.jpg`}
                         alt="Photo of this website"
                         width="300px"
                         height="167px"
@@ -270,7 +272,7 @@ const About = () => {
                         />
                       }>
                         <img
-                          src={`${S3_URL}${S3_IMAGES_PATH}${S3_ABOUT_SITE_PATH}/website-400x400.jpg`}
+                          src={`${S3_URL}/images/how-i-made-this-site/website-400x400.jpg`}
                           alt="Photo of this website"
                           className="about__page-generate-pdf-image"
                           height={viewport === 'desktop' ? '150px' : '120px'}
@@ -286,7 +288,7 @@ const About = () => {
                     <figure>
                       <LazyLoad skeleton={<SquareSkeleton size="150px"/>}>
                         <img
-                          src={`${S3_URL}${S3_IMAGES_PATH}${S3_ABOUT_SITE_PATH}/resume-400x400.jpg`}
+                          src={`${S3_URL}/images/how-i-made-this-site/resume-400x400.jpg`}
                           alt="Photo of my PDF résumé"
                           className="about__page-generate-pdf-image"
                           height={viewport === 'desktop' ? '150px' : '120px'}

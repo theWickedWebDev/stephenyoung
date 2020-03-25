@@ -25,7 +25,7 @@ const app = express(({ strict: true }))
 app.use(compression())
 
 app.use('/static', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }))
-app.use('/coverage', express.static(path.resolve(__dirname, 'public/coverage/'), { maxAge: '7d' }))
+app.use('/coverage', express.static(path.resolve(__dirname, '../coverage/lcov-report/'), { maxAge: '7d' }))
 
 app.get('/robots.txt', (req, res) => {
   console.log(config);

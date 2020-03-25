@@ -47,7 +47,7 @@ const MedicalExperience = () => {
       key="header"
       title="Phlebotomist / Medical Assistant"
       subtitle="Sometimes referred to as a vampire or dracula"
-      avatar={`${S3_URL}${S3_IMAGES_PATH}${S3_AVATAR_PATH}/avatar-2.svg`}
+      avatar={`${S3_URL}/images/avatar/avatar-2.svg`}
     />,
     <Section key="section">
       <Article title="Medical Industry">

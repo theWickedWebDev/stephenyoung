@@ -20,19 +20,14 @@ const js = {
             targets: {
               esmodules: false
             },
-            useBuiltIns: 'entry',
-            corejs: '3',
-
+            modules: false,
           }
-
         ],
         [ '@babel/react' ],
       ],
       "plugins": [
-        "@babel/plugin-transform-runtime",
         "transform-es2015-modules-commonjs",
         "@babel/plugin-proposal-class-properties",
-        '@loadable/babel-plugin'
       ],
     }
   }
@@ -103,15 +98,6 @@ const baseConfig = {
       }],
       values: {
         S3_URL: JSON.stringify('https://cdn.thewickedweb.dev'),
-        S3_RESUME_PDF: JSON.stringify('/resume/stephen-young-resume.pdf'),
-        S3_IMAGES_PATH: JSON.stringify('/images'),
-          S3_IMAGES_GALLERY_PATH: JSON.stringify('/gallery'),
-          S3_RESUME_PATH: JSON.stringify('/resume'),
-          S3_FLAGS_PATH: JSON.stringify('/flags'),
-          S3_AVATAR_PATH: JSON.stringify('/avatar'),
-          S3_LOGOS_PATH: JSON.stringify('/logo'),
-          S3_SOCIAL_PATH: JSON.stringify('/social'),
-          S3_ABOUT_SITE_PATH: JSON.stringify('/how-i-made-this-site'),
         BREAKPOINTS: JSON.stringify({
           mobile: 500,
           tablet: 800,
