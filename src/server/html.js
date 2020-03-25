@@ -1,9 +1,9 @@
 import config from 'config';
 import structuredData from './structured-data';
 
-let GA = "";
+let GA = '';
 if (config.get('env') === 'production') {
-  GA = `
+    GA = `
     <script async
       src="https://www.googletagmanager.com/gtag/js?id=UA-159258682-1">
     </script>
@@ -24,7 +24,7 @@ const GOOGLE_FONTS = `
 `;
 
 const html = ({ url, helmet, component, scriptTags, linkTags, styleTags }) => {
-  return `
+    return `
     <!DOCTYPE html>
     <html ${helmet.htmlAttributes.toString()} lang="en" xml:lang="en">
     <head>
@@ -35,15 +35,15 @@ const html = ({ url, helmet, component, scriptTags, linkTags, styleTags }) => {
       ${helmet.meta.toString()}
       ${helmet.link.toString()}
       ${structuredData[url] ? structuredData[url] : ''}
+      ${styleTags}
     </head>
     <body ${helmet.bodyAttributes.toString()}>
       <div id="root">${component}</div>
-      ${linkTags}
-      ${styleTags}
       ${scriptTags}
+      ${linkTags}
     </body>
     </html>
-  `
+  `;
 };
 
 export default html;

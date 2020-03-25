@@ -1,5 +1,6 @@
 
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 
 // FREE SOLID
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons/faEllipsisH';
@@ -12,14 +13,14 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart';
 import { faLink } from '@fortawesome/free-solid-svg-icons/faLink';
 
 library.add(
-  faEllipsisV,
-  faEllipsisH,
-  faHome,
-  faStar,
-  faDownload,
-  faArrowRight,
-  faHeart,
-  faLink,
+    faEllipsisV,
+    faEllipsisH,
+    faHome,
+    faStar,
+    faDownload,
+    faArrowRight,
+    faHeart,
+    faLink,
 );
 
 // FREE BRANDED
@@ -32,11 +33,11 @@ import { faAws } from '@fortawesome/free-brands-svg-icons/faAws';
 import { faExpeditedssl } from '@fortawesome/free-brands-svg-icons/faExpeditedssl';
 
 library.add(
-  faNodeJs,
-  faNode,
-  faReact,
-  faHtml5,
-  faCss3Alt,
-  faAws,
-  faExpeditedssl,
+    faNodeJs,
+    faNode,
+    faReact,
+    faHtml5,
+    faCss3Alt,
+    faAws,
+    faExpeditedssl,
 );

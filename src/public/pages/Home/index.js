@@ -1,7 +1,7 @@
 
 
 // Dependencies
-import React from 'react'
+import React from 'react';
 
 // Components
 import Meta from 'components/Meta';
@@ -19,20 +19,22 @@ import TechIcons from './tech-icons';
 
 // <Home/> Component
 const Home = () => {
+  /* eslint-disable max-len */
   const copy = {
-    "meta": {
-      "title": "Seasoned Javascript Geek - Stephen Young",
-      "description": "I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard."
-    },
-    "title": "Seasoned Javascript Geek",
-    "subtitle": "Breaking things since 2000",
-    "description": "I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don't know something, I learn it. I am extremely motivated and thrive on working hard.",
-    "introduction": [""],
-    "conclusion": {
-      "title": "Conclusion",
-      "content": []
-    }
+      meta: {
+          title: 'Seasoned Javascript Geek - Stephen Young',
+          description: 'I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don\'t know something, I learn it. I am extremely motivated and thrive on working hard.'
+      },
+      title: 'Seasoned Javascript Geek',
+      subtitle: 'Breaking things since 2000',
+      description: 'I’m an experienced web developer, woodworker and green-thumbed creative with a passion for creating beautiful websites, projects and lawns. I work quickly, efficiently and if I don\'t know something, I learn it. I am extremely motivated and thrive on working hard.',
+      introduction: [ '' ],
+      conclusion: {
+          title: 'Conclusion',
+          content: []
+      }
   };
+  /* eslint-enable max-len */
 
   return (
     <div className="homepage__page">

@@ -28,6 +28,7 @@ const js = {
       "plugins": [
         "transform-es2015-modules-commonjs",
         "@babel/plugin-proposal-class-properties",
+        "@loadable/babel-plugin"
       ],
     }
   }

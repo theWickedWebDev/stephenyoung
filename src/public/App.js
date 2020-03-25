@@ -16,49 +16,49 @@ const OtherExperience = loadable(() => import(/* webpackChunkName: "other-experi
 const NoMatch = loadable(() => import(/* webpackChunkName: "404" */'pages/404'));
 
 const routes = [
-  { path: '/',
-    exact: true,
-    render: props => (
-      <DefaultLayout>
-        <ScrollToTop/>
-        <Home {...props}/>
-      </DefaultLayout>
-    )
-  },
-  { path: '/about-this-site/',
-    exact: true,
-    render: props => (
-      <DefaultLayout>
-        <ScrollToTop/>
-        <About {...props}/>
-      </DefaultLayout>
-    )
-  },
-  { path: '/other-experience/',
-    exact: false,
-    render: props => (
-      <DefaultLayout>
-        <ScrollToTop/>
-        <OtherExperience {...props}/>
-      </DefaultLayout>
-    )
-  },
+    { path: '/',
+      exact: true,
+      render: (props) => (
+        <DefaultLayout>
+          <ScrollToTop/>
+          <Home {...props}/>
+        </DefaultLayout>
+      )
+    },
+    { path: '/about-this-site/',
+      exact: true,
+      render: (props) => (
+        <DefaultLayout>
+          <ScrollToTop/>
+          <About {...props}/>
+        </DefaultLayout>
+      )
+    },
+    { path: '/other-experience/',
+      exact: false,
+      render: (props) => (
+        <DefaultLayout>
+            <ScrollToTop/>
+            <OtherExperience {...props}/>
+        </DefaultLayout>
+      )
+    },
 
-  { path: '*',
-    exact: false,
-    render: props => (
-      <DefaultLayout>
-        <ScrollToTop/>
-        <NoMatch {...props}/>
-      </DefaultLayout>
-    )
-  },
+    { path: '*',
+      exact: false,
+      render: (props) => (
+        <DefaultLayout>
+            <ScrollToTop/>
+            <NoMatch {...props}/>
+        </DefaultLayout>
+      )
+    },
 ];
 
 const App = () => (
   <Switch>
-    { routes.map((props, key) => (<Route key={key} {...props}/>))}
+    { routes.map((props, key) => <Route key={key} {...props}/>) }
   </Switch>
-)
+);
 
-export default App
+export default App;

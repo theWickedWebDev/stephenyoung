@@ -17,7 +17,7 @@ module.exports = {
       name: 'runtime',
     },
     splitChunks: {
-      chunks: "all",
+      chunks: "async",
       minSize: 1,
       minChunks: 1,
       automaticNameDelimiter: '-',
@@ -36,7 +36,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../dist/public'),
     filename: '[name].bundle.js',
-    //chunkFilename: '[name].js',
+    chunkFilename: '[name]-[chunkHash].js',
     publicPath: '/static/',
   },
   plugins: [
