@@ -6,11 +6,12 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CleanObsoleteChunks = require("webpack-clean-obsolete-chunks");
+const LoadablePlugin = require('@loadable/webpack-plugin');
 
 module.exports = {
   target: 'web',
   entry: {
-    'index': path.resolve(__dirname, '../src/public/index.js')
+    'main': path.resolve(__dirname, '../src/public/index.js')
   },
   optimization: {
     runtimeChunk: {
@@ -28,10 +29,13 @@ module.exports = {
       })
     ],
     splitChunks: {
-      maxAsyncRequests: 20,
-      maxInitialRequests: 20,
-      minChunks: 2,
-      chunks: 'all',
+      chunks: 'all', // 'all'
+      minSize: 30000,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      name: true,
       cacheGroups: {
         vendors: {
           test: /[\\/]node_modules[\\/]/,
@@ -39,6 +43,11 @@ module.exports = {
           chunks: 'initial',
           minChunks: 2
         },
+        default: {
+          minChunks: 1,
+          priority: -20,
+          reuseExistingChunk: true
+        }
       }
     }
   },
@@ -49,6 +58,7 @@ module.exports = {
    publicPath: '/static/',
   },
   plugins: [
+    new LoadablePlugin({ filename: 'stats.json' }),
     new CleanObsoleteChunks(),
     new CopyPlugin([
       { from: 'src/public/assets/', to: './assets/' },

@@ -1,5 +1,4 @@
 import config from 'config';
-
 import structuredData from './structured-data';
 
 let GA = "";
@@ -24,8 +23,7 @@ const GOOGLE_FONTS = `
   >
 `;
 
-const html = ({ helmet, component, req }) => {
-
+const html = ({ url, helmet, component, scriptTags, linkTags, styleTags }) => {
   return `
     <!DOCTYPE html>
     <html ${helmet.htmlAttributes.toString()} lang="en" xml:lang="en">
@@ -36,13 +34,13 @@ const html = ({ helmet, component, req }) => {
       ${helmet.title.toString()}
       ${helmet.meta.toString()}
       ${helmet.link.toString()}
-      ${structuredData[req.url] ? structuredData[req.url] : ''}
-      <link href="/static/index.css" rel="stylesheet"/>
+      ${structuredData[url] ? structuredData[url] : ''}
     </head>
     <body ${helmet.bodyAttributes.toString()}>
       <div id="root">${component}</div>
-      <script src="/static/index.js"></script>
-      <script src="/static/runtime.bundle.js"></script>
+      ${linkTags}
+      ${styleTags}
+      ${scriptTags}
     </body>
     </html>
   `

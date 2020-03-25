@@ -18,20 +18,21 @@ const js = {
           '@babel/env',
           {
             targets: {
-              esmodules: true
+              esmodules: false
             },
             useBuiltIns: 'entry',
-            corejs: '3'
+            corejs: '3',
+
           }
 
         ],
-        [ '@babel/react' ]
+        [ '@babel/react' ],
       ],
       "plugins": [
         "@babel/plugin-transform-runtime",
         "transform-es2015-modules-commonjs",
         "@babel/plugin-proposal-class-properties",
-        '@babel/plugin-syntax-dynamic-import'
+        '@loadable/babel-plugin'
       ],
     }
   }
