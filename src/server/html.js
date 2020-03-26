@@ -31,8 +31,8 @@ const html = ({ url, helmet, component, scriptTags, linkTags, styleTags }) => {
     </head>
     <body ${helmet.bodyAttributes.toString()}>
       <div id="root">${component}</div>
-      ${scriptTags}
       ${linkTags}
+      ${scriptTags}
     </body>
     </html>
   `;
