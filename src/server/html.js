@@ -16,20 +16,12 @@ if (config.get('env') === 'production') {
   `;
 }
 
-const GOOGLE_FONTS = `
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Spartan:400,500,700&display=swap"
-    rel="stylesheet"
-  >
-`;
-
 const html = ({ url, helmet, component, scriptTags, linkTags, styleTags }) => {
     return `
     <!DOCTYPE html>
     <html ${helmet.htmlAttributes.toString()} lang="en" xml:lang="en">
     <head>
       ${GA}
-      ${GOOGLE_FONTS}
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       ${helmet.title.toString()}
       ${helmet.meta.toString()}

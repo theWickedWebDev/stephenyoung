@@ -4,9 +4,13 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "NODE_ENV=production webpack --mode=production && concurrently \"webpack --watch --info-verbosity verbose\" \"nodemon dist --verbose\"",
+    "dev": "concurrently \"npm run dev:build\" \"npm run dev:serve\"",
+    "dev:build": "NODE_ENV=development webpack --watch",
+    "dev:serve": "nodemon dist --verbose",
+
     "build": "webpack --mode=production",
     "start": "node dist/index.js",
+
     "lint": "eslint src",
     "test": "NODE_ENV=test && BABEL_ENV=test && jest --detectOpenHandles",
     "test:watch": "NODE_ENV=test && BABEL_ENV=test && jest -o --watch --config=jest.config.js"

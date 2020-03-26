@@ -1,3 +1,5 @@
+const config = require('config');
+const log = require('loglevel');
 const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
 const path = require('path')
@@ -6,6 +8,36 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const CleanObsoleteChunks = require("webpack-clean-obsolete-chunks");
 const LoadablePlugin = require('@loadable/webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const isLocal = process.env.LOCAL;
+
+const PUBLIC_PATH = config.publicPath;
+log.info({PUBLIC_PATH});
+
+const cleaner = new CleanWebpackPlugin({
+  verbose: true,
+  cleanAfterEveryBuildPatterns: ['*.*'],
+});
+
+const plugins = [
+  new LoadablePlugin({ filename: 'stats.json' }),
+  new CleanObsoleteChunks(),
+  new CopyPlugin([
+    { from: 'src/public/assets/', to: './assets/' },
+  ]),
+  new LodashModuleReplacementPlugin(),
+  new BundleAnalyzerPlugin({
+      analyzerPort: '8585',
+      openAnalyzer: false,
+      analyzerMode: 'static',
+      generateStatsFile: true,
+    }),
+];
+
+if (isLocal) {
+  plugins.push(cleaner);
+}
 
 module.exports = {
   target: 'web',
@@ -18,7 +50,7 @@ module.exports = {
     },
     splitChunks: {
       chunks: "async",
-      minSize: 1,
+      minSize: 30000,
       minChunks: 1,
       automaticNameDelimiter: '-',
       cacheGroups: {
@@ -36,21 +68,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../dist/public'),
     filename: '[name].bundle.js',
-    chunkFilename: '[name]-[chunkHash].js',
-    publicPath: '/static/',
+    publicPath: PUBLIC_PATH,
   },
-  plugins: [
-    new LoadablePlugin({ filename: 'stats.json' }),
-    new CleanObsoleteChunks(),
-    new CopyPlugin([
-      { from: 'src/public/assets/', to: './assets/' },
-    ]),
-    new LodashModuleReplacementPlugin(),
-    new BundleAnalyzerPlugin({
-        analyzerPort: '8585',
-        openAnalyzer: false,
-        analyzerMode: 'static',
-        generateStatsFile: true,
-      }),
-  ],
+  plugins: plugins,
 }

@@ -1,3 +1,4 @@
 module.exports = {
-  env: 'production'
+  env: 'local',
+  publicPath: '/static/'
 }

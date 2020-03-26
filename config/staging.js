@@ -1,3 +1,4 @@
 module.exports = {
-  env: 'staging'
+  env: 'staging',
+  publicPath: 'https://cdn.thewickedweb.dev/staging/'
 }
