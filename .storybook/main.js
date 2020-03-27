@@ -14,7 +14,7 @@ module.exports = {
   webpackFinal: async config => {
     const rules = [
       {
-        test: /\.js$/,
+        test: /components\/+[.]js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',

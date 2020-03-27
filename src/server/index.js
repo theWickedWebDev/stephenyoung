@@ -51,7 +51,8 @@ app.get('/*', (req, res) => {
   const noTrailingSlash = !url.endsWith('/');
   const notHomepage = !url !== '/';
   const notAFile = !url.includes('.');
-  if (noTrailingSlash && notHomepage && notAFile) {
+  const notStorybook = !url.includes('/storybook');
+  if (noTrailingSlash && notHomepage && notAFile && notStorybook) {
     res.redirect(REDIRECT_CODE, `${url }/`);
     res.end();
   }
