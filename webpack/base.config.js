@@ -98,6 +98,7 @@ const baseConfig = {
         value: 'return;('
       }],
       values: {
+        WEBSITE_URL: JSON.stringify('https://www.thewickedweb.dev'),
         S3_URL: JSON.stringify('https://cdn.thewickedweb.dev'),
         BREAKPOINTS: JSON.stringify({
           mobile: 500,

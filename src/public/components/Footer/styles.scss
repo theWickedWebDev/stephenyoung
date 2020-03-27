@@ -3,4 +3,9 @@
 .footer__component {
   padding: 24px;
   text-align: center;
+  background-color: $primaryColor;
+  color: $primaryColor_light;
+  display: block;
+  padding: 100px 12px;
+  text-align: center;
 }

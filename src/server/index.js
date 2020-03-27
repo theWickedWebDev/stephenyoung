@@ -58,8 +58,6 @@ app.get('/*', (req, res) => {
   const context = {};
   let modules = [];
 
-  const helmet = Helmet.renderStatic();
-
   const extractor = new ChunkExtractor({ stats: getStats() });
 
   // Wrap your application using "collectChunks"
@@ -71,6 +69,8 @@ app.get('/*', (req, res) => {
 
   // Render your application
   const component = ReactDOMServer.renderToString(jsx);
+
+  const helmet = Helmet.renderStatic();
 
   // You can now collect your script tags
   const scriptTags = extractor.getScriptTags(); // or extractor.getScriptElements();

@@ -13,13 +13,13 @@ const MAX_DESCRIPTION_LENGTH = 160;
 
 const Meta = (props) => {
     const {
-        robots = 'noindex',
-        keywords = 'thewickedwebdev',
-        title = defaultTitle,
-        description = defaultDescription,
-        canonical = false,
-        siteName = 'TheWickedWebDev',
-        image = defaultImage,
+      robots = 'index',
+      keywords = 'thewickedwebdev',
+      title = defaultTitle,
+      description = defaultDescription,
+      canonical = false,
+      siteName = 'TheWickedWebDev',
+      image = defaultImage,
     } = props;
 
     const canonicalLink = canonical ?
@@ -31,33 +31,29 @@ const Meta = (props) => {
     }
 
     const metas = [
-        ...favicon.meta,
-        ...og.meta({ title: title, siteName: siteName, url: canonical, description: description, image: image }),
-        { key: 'robots', name: 'robots', content: robots },
-        { key: 'keywords', name: 'keywords', content: keywords },
-        {
-            key: 'description',
-            name: 'description',
-            content: description.substring(
-              MIN_DESCRIPTION_LENGTH,
-              MAX_DESCRIPTION_LENGTH
-            )
-        },
+      ...favicon.meta,
+      ...og.meta({ title: title, siteName: siteName, url: canonical, description: description, image: image }),
+      { key: 'robots', name: 'robots', content: robots },
+      { key: 'keywords', name: 'keywords', content: keywords },
+      {
+        key: 'description',
+        name: 'description',
+        content: description.substring(
+          MIN_DESCRIPTION_LENGTH,
+          MAX_DESCRIPTION_LENGTH
+        )
+      },
     ];
 
     return (
-        <Helmet>
-            <title>{ title }</title>
-            <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-            <meta http-equiv="content-language" content="en-us" />
-            <meta name="author" content="Stephen Young" />
-            { links.map((l, index) => {
-                return <link key={index} {...l} />;
-            })}
-            { metas.map((m, index) => {
-                return <meta key={index} {...m} />;
-            })}
-        </Helmet>
+      <Helmet>
+        <title>{ title }</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="content-language" content="en-us" />
+        <meta name="author" content="Stephen Young" />
+        { links.map((l, index) => <link key={index} {...l} />)}
+        { metas.map((m, index) => <meta key={index} {...m} />)}
+      </Helmet>
     );
 };
 

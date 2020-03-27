@@ -1,7 +1,6 @@
 @import '../../variables.scss';
 
 .header__component {
-  background-color: $primaryColor;
   padding: 0 24px;
   position: relative;
 
@@ -31,10 +30,10 @@
 }
 
 .header__component-h2 {
-    color: $white;
-    margin: 0 0 24px;
-    font-size: 18px;
-    line-height: 32px;
+  color: $white;
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .header__component-p {
@@ -61,7 +60,7 @@
     background-position: 50% 20px;
     background-size: 250px;
   }
-  
+
   .header__component .header__body {
     padding: 305px 12px 24px;
     text-align: center;

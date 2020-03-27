@@ -25,10 +25,10 @@ const Gallery = () => {
       ]
   };
   /* eslint-enable max-len */
-  
+
   return (
     <Article title={copy.title} className="gallery__article">
-      <h3>{copy.copy}</h3>
+      <p className="gallery__article__intro">{copy.copy}</p>
       <noscript key="noscript">
         { copy.content.map((image, index) => (
           <li className="image-list-item" key={index}>

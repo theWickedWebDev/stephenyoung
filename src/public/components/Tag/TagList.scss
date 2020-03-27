@@ -1,0 +1,9 @@
+@import '../../variables';
+
+.TagList__Tag {
+  margin: 3px 6px;
+}
+
+.TagList.Small .TagList__Tag {
+  margin: 0 2px;
+}

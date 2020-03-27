@@ -1,51 +1,45 @@
+// TODO: Needs major refactoring and cleanup
+
 /* eslint-disable max-len */
 
 // Dependencies
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { withRouter } from 'react-router-dom';
 
 // Styling
 import './styles.scss';
 
 // Components
-import Meta from 'components/Meta';
 import { SquareSkeleton, RectSkeleton } from 'components/Skeletons';
 import LazyLoad from 'components/LazyLoad';
 
+import Page from 'components/Page';
 import Section from 'components/Section';
 import Article from 'components/Article';
 import Header from 'components/Header';
-import TagList from 'components/TagList';
+import { TagList } from 'components/Tag';
 import Viewport from 'components/Viewport';
 
 // <Home/> Component
-const About = () => {
+const About = ({ location }) => {
   const copy = {
-    meta: {
-      title: 'How I built my résumé app - Node / React / Webpack',
-      description: 'Goes over key concepts on how I built this site, such as Accessibility, Site Performance, SEO, PDF Generation, and code quality.'
-    },
     title: 'How I built my résumé app',
-    description: 'I wanted to make a résumé site that could showcase some of the concepts I am passionate about (even if its total overkill). This site demonstrates a lot of things I have learned in the past. Hope you enjoy!',
+    description: `I wanted to make a résumé site that could showcase
+    some of the concepts I am passionate about (even if its total overkill).
+    This site demonstrates a lot of things I have learned in the past.
+    Hope you enjoy!`,
     outcomeHeader: 'What are some key concepts for this site?',
   };
 
   return (
-    <div className="about__page">
+    <Page
+      className="About__Page"
+      meta={{ title: copy.title, description: copy.description }}
+    >
       <Viewport>{ (viewport) => (
         <React.Fragment>
-          <Meta
-            robots="index"
-            keywords="HTML,CSS,XML,JavaScript"
-            title={copy.meta.title}
-            description={copy.meta.description}
-            canonical="https://www.thewickedweb.dev/about/"
-          />
-          <Header
-            title={copy.title}
-            intro={copy.description}
-            avatar={`${S3_URL}/images/avatar/avatar-2.svg`}
-          />
+          <Header title={copy.title} intro={copy.description}/>
           <Section>
             <Article title={copy.outcomeHeader} className="about-page__component">
               <ul className="tools-list">
@@ -56,7 +50,7 @@ const About = () => {
               </ul>
               <br/>
               <h3>Accessibility</h3>
-              <TagList list={[ { name: 'W3C - Web Accessibility Initiative' } ]} />
+              <TagList tags={[ { tag: 'W3C - Web Accessibility Initiative' } ]} />
               <ul>
                 <li>
                   <h4 className="margin-bottom-large">
@@ -112,11 +106,11 @@ const About = () => {
               <br/>
 
               <h3>Site Performance</h3>
-              <TagList list={[
-                { name: 'GtMetrix' },
-                { name: 'Webpack Bundle Analyzer' },
-                { name: 'CloudFront' },
-                { name: 'Express' },
+              <TagList tags={[
+                { tag: 'GtMetrix' },
+                { tag: 'Webpack Bundle Analyzer' },
+                { tag: 'CloudFront' },
+                { tag: 'Express' },
               ]} />
                 <ul>
                     <li>
@@ -198,9 +192,9 @@ const About = () => {
                 </ul>
                 <br/>
                 <h3>Search Engine Optimization (<abbr>SEO</abbr>)</h3>
-                <TagList list={[
-                    { name: 'Screaming Frog' },
-                    { name: 'Google Tools' },
+                <TagList tags={[
+                    { tag: 'Screaming Frog' },
+                    { tag: 'Google Tools' },
                 ]} />
                 <ul>
                     <li>
@@ -251,9 +245,9 @@ const About = () => {
                 </ul>
                 <br/>
                 <h3>Just Kinda Cool</h3>
-                <TagList list={[
-                    { name: 'PDFKit' },
-                    { name: 'Node' },
+                <TagList tags={[
+                    { tag: 'PDFKit' },
+                    { tag: 'Node' },
                 ]} />
                 <ul>
                     <li>
@@ -314,10 +308,10 @@ const About = () => {
                 </ul>
                 <br/>
                 <h3>Code Quality</h3>
-                <TagList list={[
-                    { name: 'Jest' },
-                    { name: 'Enzyme' },
-                    { name: 'Nightwatch' },
+                <TagList tags={[
+                    { tag: 'Jest' },
+                    { tag: 'Enzyme' },
+                    { tag: 'Nightwatch' },
                 ]} />
                 <br/>
                 <ul>
@@ -396,11 +390,11 @@ const About = () => {
           </Section>
         </React.Fragment>
       )}</Viewport>
-    </div>
+    </Page>
   );
 };
 
-export default About;
+export default withRouter(About);
 
 /*
 <li>

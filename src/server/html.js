@@ -17,7 +17,7 @@ if (config.get('env') === 'production') {
 }
 
 const html = ({ url, helmet, component, scriptTags, linkTags, styleTags }) => {
-    return `
+  return `
     <!DOCTYPE html>
     <html ${helmet.htmlAttributes.toString()} lang="en" xml:lang="en">
     <head>

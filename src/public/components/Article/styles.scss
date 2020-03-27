@@ -7,14 +7,18 @@
     display: block;
     max-width: $bodyMaxWidth;
     margin: 0 auto;
+    padding-top: 36px;
   }
 
   .article__component-h2 {
-    position: sticky;
-    top: 0;
-    padding: 36px 2px;
+    padding: 12px 2px 36px;
     background-color: $white;
-    z-index: $top_max;
+    margin-top: 0;
+    z-index: $top_belowMax;
+    position: sticky;
+    
+    // FIXME: This should be programatic
+    top: 40px;
   }
 
   details {

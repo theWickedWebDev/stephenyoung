@@ -1,75 +1,84 @@
+// MOBILE FIRST
 @import '../../variables.scss';
 
-.navbar__component {
-  padding: 6px;
-
-  .fa-github-alt {
-    color: $black;
-  }
-
-  .fa-linkedin {
-    color: #0077b5;
-  }
+.NavbarComponent {
+  background-color: #fff;
+  z-index: $top_max;
+  position: sticky;
+  top: 0;
 }
 
-.navbar_right {
-  margin: 9px 24px 0 0;
-  float: right;
-  font-size: 24px;
-
-  li {
-    display: inline-block;
-    margin-left: 12px;
-  }
-}
-
-.navbar__component-logo,
-.navbar__component-list,
-.navbar__title {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.navbar__title {
+.NavbarComponent__title {
   font-family: $secondaryFont;
-  font-weight: bold;
-  font-size: 18px;
-  margin-right: 20px;
-  color: $black;
 }
 
-.navbar__component-logo {
-  height: 40px;
-  width: 40px;
-  background-color: $darkGray;
-  margin-right: 12px;
+.NavbarComponent__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
 }
 
-.navbar__component-list {
-  list-style: none;
-  margin-left: 20px;
+.NavbarComponent__logo-wrapper {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
 
-  li {
-    display: inline-block;
-    padding: 12px;
-    margin: 0 22px 0;
-  }
-
-  .navbar__link {
-    color: $black;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: $primaryFont;
-
-    &:hover {
-      text-decoration: underline;
-    }
+  .Logo__Link {
+    display: inherit;
   }
 }
 
-.tablet,
-.mobile {
-  .navbar__component .navbar__component-list {
-    display: none;
+.NavbarComponent__links-list {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  z-index: $top_max;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform ease .2s;
+
+  // TODO: This should be dynamic/programatic
+  top: 40px;
+
+  &.open {
+    transform: scaleY(1);
+  }
+}
+
+.NavbarComponent__link {
+  display: inline-block;
+  padding: 6px 12px;
+  color: $bodyTextColor;
+  width: 100%;
+  box-sizing: border-box;
+
+  &.active {
+    color: $primaryColor;
+  }
+
+  &:hover {
+    background-color: $secondaryColor_light;
+  }
+}
+
+.NavbarComponent__menu {
+  cursor: pointer;
+}
+
+.NavbarComponent__menu-btn {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+.NavbarComponent__menu-title {
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.NavbarComponent.desktop {
+  .NavbarComponent__menu-title {
+    font-size: 16px;
   }
 }

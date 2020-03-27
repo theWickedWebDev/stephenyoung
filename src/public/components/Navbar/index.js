@@ -1,7 +1,7 @@
-import './styles.scss';
-
-import Compressed from './Compressed';
+import Navbar from './components/Navbar';
 
 export {
-    Compressed
+    Navbar
 };
+
+export default Navbar;

@@ -1,14 +1,13 @@
 @import '../../variables.scss';
 
-.about__page {
+.About__Page {
   figcaption {
     font-style: italic;
   }
 
   h3 {
     position: sticky;
-    top: 0;
-    top: 80px;
+    top: 90px;
     z-index: 9999;
     background-color: #fff;
   }
@@ -69,7 +68,7 @@
 
 .mobile,
 .tablet {
-  .about__page {
+  .About__Page {
     figcaption {
       font-size: 12px;
     }

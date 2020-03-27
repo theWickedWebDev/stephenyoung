@@ -11,17 +11,11 @@ const LoadablePlugin = require('@loadable/webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const isLocal = process.env.LOCAL;
-
 const PUBLIC_PATH = config.publicPath;
+
 log.info({PUBLIC_PATH});
 
-const cleaner = new CleanWebpackPlugin({
-  verbose: true,
-  cleanAfterEveryBuildPatterns: ['*.*'],
-});
-
 const plugins = [
-  new LoadablePlugin({ filename: 'stats.json' }),
   new CleanObsoleteChunks(),
   new CopyPlugin([
     { from: 'src/public/assets/', to: './assets/' },
@@ -33,10 +27,15 @@ const plugins = [
       analyzerMode: 'static',
       generateStatsFile: true,
     }),
+  new LoadablePlugin({ filename: 'stats.json' })
 ];
 
 if (isLocal) {
-  plugins.push(cleaner);
+  plugins.push(
+    new CleanWebpackPlugin({
+      verbose: true,
+    })
+  );
 }
 
 module.exports = {

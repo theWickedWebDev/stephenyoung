@@ -1,4 +1,5 @@
 @import './variables.scss';
+
 // Import this here due to "flicker" during SSR
 @import '~@fortawesome/fontawesome-svg-core/styles.css';
 
@@ -6,6 +7,7 @@ body {
   font-family: $primaryFont;
   font-size: 16px;
   line-height: 28px;
+  color: $bodyTextColor;
 }
 
 li,
@@ -84,6 +86,13 @@ h4 {
   margin: 18px 0 10px;
 }
 
+.mobile,
+.tablet {
+  h3 {
+    font-size: 18px;
+  }
+}
+
 .dropcap {
   display: block;
 
@@ -98,12 +107,6 @@ h4 {
     padding-right: 8px;
     padding-left: 3px;
   }
-}
-
-.body-font {
-  font-size: 16px;
-  font-weight: normal;
-  font-family: $primaryFont;
 }
 
 .skeleton {
@@ -230,142 +233,13 @@ h4 {
   color: $linkColorText;
 }
 
-.bulleted-list {
-  box-sizing: border-box;
-  margin: 12px 0;
-  list-style: circle;
-  padding-left: 32px;
-}
-
-.bulleted-list-item {
-  margin-bottom: 6px;
-}
-
-.intro {
-  border-left: solid 3px $lightGray;
-  font-size: 16px;
-  line-height: 32px;
-  padding-left: 24px;
-  text-align: justify;
-}
-
-.tag-list {
-  list-style: none;
-
-  .tag-list-item {
-    display: inline-block;
-    margin: 3px;
-    background-color: lighten($lightGray, 5%);
-    padding: 3px 12px;
-    border-radius: 2px;
-    position: relative;
-
-    &.favorite {
-      background-color: lighten($primaryColor, 30%);
-      border: solid 1px $lightGray;
-    }
-
-    .tag-list-icon {
-      color: $primaryColor;
-      padding-left: 10px;
-      font-size: 10px;
-      vertical-align: middle;
-    }
-  }
-}
-
-.icon-list {
-  text-align: center;
-
-  &.icon-list-dark {
-    background-color: $primaryColor;
-
-    .icon-list-item {
-      color: $primaryColor_light;
-    }
-  }
-
-  &.icon-list-light {
-    background-color: $primaryColor_light;
-
-    .icon-list-item {
-      color: $primaryColor;
-    }
-  }
-
-  .icon-list-item {
-    display: inline-block;
-    margin: 24px;
-    font-size: 60px;
-  }
-
-  // noscript - javascript off
-  &.icon-list-small {
-    .icon-list-item em {
-      font-size: 30px;
-      font-family: $primaryFont;
-      font-style: normal;
-    }
-  }
-}
-
 .mobile,
 .tablet {
-  .highlight-logo {
-    display: block;
-    margin: 30px 0 12px;
-    width: 150px;
-  }
-
   .block-on-mobile {
     display: block;
-  }
-
-  .icon-list {
-    padding: 20px 0;
-
-    .icon-list-item {
-      font-size: 30px;
-      margin: 12px 20px;
-    }
-  }
-
-  summary  {
-    .project,
-    .general {
-      display: none;
-    }
-  }
-
-  .tag-list {
-    margin-top: 12px;
-  }
-
-  .employment-highlight__component {
-    .vertical-align-middle {
-      display: block;
-    }
-
-    p {
-      text-align: justify;
-    }
-  }
-
-  .employment-highlight__h3 {
-    font-size: 16px;
-    padding: 0;
   }
 
   h3 {
     font-size: 18px;
   }
-}
-
-.color-break {
-  background-color: $primaryColor;
-  color: $primaryColor_light;
-  display: block;
-  padding: 100px 12px;
-  margin-top: 60px;
-  text-align: center;
 }

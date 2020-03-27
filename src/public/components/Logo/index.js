@@ -1,21 +1,19 @@
-
-
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'components/Link';
+import Image from 'components/Image';
 
 const Logo = () => (
-  <Link to="/" title="Home">
-    <img
+  <Link href="/" title="Home" internal={true} className="Logo__Link">
+    <Image
       src={`${S3_URL}/images/logo/logo.jpg`}
       className="navbar__component-logo"
       alt="Logo for TheWickedWebDev"
       title="Logo for TheWickedWebDev"
-      srcset={`
+      srcSet={`
         ${S3_URL}/images/logo/logo@2x.jpg 2x,
         ${S3_URL}/images/logo/logo@3x.jpg 3x
       `}
     />
-    <span className="navbar__title">TheWickedWebDev</span>
   </Link>
 );
 
