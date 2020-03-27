@@ -1,0 +1,17 @@
+@import 'variables.scss';
+
+.EmployerNameComponent_address,
+.EmployerNameComponent_name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.EmployerNameComponent_name {
+  margin-right: 4px;
+}
+
+.EmployerNameComponent_address {
+  color: $bodyTextColor;
+  font-size: 18px;
+  font-weight: 400;
+}

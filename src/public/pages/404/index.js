@@ -2,12 +2,13 @@
 import React from 'react';
 
 // Components
-import Page from 'components/Page';
+import { Page } from '@thewickedwebdev/components';
 import Header from 'components/Header';
 
 // Main
 const NoMatch = (props) => (
   <Page
+    domain={WEBSITE_URL}
     className="About__Page"
     meta={{ title: 'Uh oh! 404', robots: 'noindex' }}
   >

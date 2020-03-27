@@ -2,12 +2,12 @@
 import React from 'react';
 
 // Components
-import Page from 'components/Page';
-import Section from 'components/Section';
-import Article from 'components/Article';
+import {
+  Page, Section, Article, TagList, Link,
+ } from '@thewickedwebdev/components';
+
 import Header from 'components/Header';
 import Gallery from 'components/Gallery';
-import Link from 'components/Link';
 
 const OtherExperience = () => {
   const content = {
@@ -19,6 +19,7 @@ const OtherExperience = () => {
 
   return (
     <Page
+      domain={WEBSITE_URL}
       meta={{
         title: content.title,
         description: content.description

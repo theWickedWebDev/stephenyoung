@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:build\" \"npm run dev:serve\"",
+    "components": "cd src/public/components && npm run dev",
+    "components:patch": "cd src/public/components && npm version patch && npm publish",
+    "components:minor": "cd src/public/components && npm version minor && npm publish",
+    "components:major": "cd src/public/components && npm version major && npm publish",
     "dev:build": "NODE_ENV=development webpack --watch",
     "dev:serve": "nodemon dist --verbose",
     "build": "webpack --mode=production",
@@ -41,6 +45,7 @@
     "@storybook/addon-a11y": "^5.3.17",
     "@storybook/addon-info": "^5.3.17",
     "@storybook/addon-storysource": "^5.3.17",
+    "@thewickedwebdev/components": "0.0.6",
     "autoprefixer": "^9.7.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",

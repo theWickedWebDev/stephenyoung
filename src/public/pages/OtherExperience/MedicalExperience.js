@@ -2,11 +2,9 @@
 import React from 'react';
 
 // Components
-import Page from 'components/Page';
-import Section from 'components/Section';
-import Article from 'components/Article';
+import { Page, Section, Article, TagList } from '@thewickedwebdev/components';
+
 import Header from 'components/Header';
-import { TagList } from 'components/Tag';
 
 const MedicalExperience = () => {
   const medicalFieldTags = [
@@ -31,6 +29,7 @@ const MedicalExperience = () => {
 
   return (
     <Page
+      domain={WEBSITE_URL}
       meta={{
         keywords: "Medical, Phlebotomy, Medical Assistant",
         title: "Phlebotomist and Medical Assistant",

@@ -11,14 +11,13 @@ import { withRouter } from 'react-router-dom';
 import './styles.scss';
 
 // Components
-import { SquareSkeleton, RectSkeleton } from 'components/Skeletons';
-import LazyLoad from 'components/LazyLoad';
+import {
+  Page, Section, Article, TagList, LazyLoad,
+} from '@thewickedwebdev/components';
 
-import Page from 'components/Page';
-import Section from 'components/Section';
-import Article from 'components/Article';
+import { SquareSkeleton, RectSkeleton } from 'components/Skeletons';
+
 import Header from 'components/Header';
-import { TagList } from 'components/Tag';
 import Viewport from 'components/Viewport';
 
 // <Home/> Component
@@ -34,6 +33,7 @@ const About = ({ location }) => {
 
   return (
     <Page
+      domain={WEBSITE_URL}
       className="About__Page"
       meta={{ title: copy.title, description: copy.description }}
     >

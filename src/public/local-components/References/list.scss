@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+.ReferencesComponent {
+  text-align: center;
+}
+
+.ReferencesComponent__listItem {
+  margin: 0 0 60px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}

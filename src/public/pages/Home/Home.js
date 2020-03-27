@@ -3,14 +3,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Components
-import Page from 'components/Page';
-import Section from 'components/Section';
-import Article from 'components/Article';
+import {
+  List, Section, Article, TagList, Page,
+} from '@thewickedwebdev/components';
+
 import Header from 'components/Header';
 import References from 'components/References';
-import List from 'components/List';
 import Highlight, { EmploymentRole } from 'components/Employment';
-import { TagList } from 'components/Tag';
 
 // Styling
 import './Home.scss';

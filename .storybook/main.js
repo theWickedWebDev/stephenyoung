@@ -45,7 +45,7 @@ module.exports = {
 
     const alias = {
       layouts: path.resolve(__dirname, '../src/public/layouts/'),
-      components: path.resolve(__dirname, '../src/public/components/'),
+      components: path.resolve(__dirname, '../src/public/components/src/'),
       pages: path.resolve(__dirname, '../src/public/pages/'),
     };
 

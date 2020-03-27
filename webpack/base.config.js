@@ -9,7 +9,9 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const js = {
   test: /\.js$/,
-  exclude: /node_modules/,
+  exclude: [
+    /node_modules/
+  ],
   use: {
     loader: 'babel-loader',
     options: {
@@ -36,7 +38,9 @@ const js = {
 
 const cssLoader = {
   loader: 'css-loader',
-  options: { importLoaders: 1 },
+  options: {
+    importLoaders: 1,
+  },
 };
 
 const css = {
@@ -66,10 +70,10 @@ const svg = {
 };
 
 const rules = [
-  js,
   css,
   scss,
   svg,
+  js,
 ];
 
 const baseConfig = {
@@ -80,8 +84,9 @@ const baseConfig = {
   resolve: {
     alias: {
       layouts: path.resolve(__dirname, '../src/public/layouts/'),
-      components: path.resolve(__dirname, '../src/public/components/'),
+      components: path.resolve(__dirname, '../src/public/local-components/'),
       pages: path.resolve(__dirname, '../src/public/pages/'),
+      'variables.scss': path.resolve(__dirname, '../src/public/variables.scss'),
     }
   },
   watchOptions: {
