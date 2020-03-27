@@ -1,0 +1,48 @@
+# Article
+##### This is used to render a simple list element.
+<br/>
+
+```
+import { Article } from '@thewickedwebdev/components';
+```
+<br/>
+
+### API
+
+**List**
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Required</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>title</td>
+      <td></td>
+      <td>Adds a title to the <code>Article</code></td>
+      <td>string || ReactNode</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>children</td>
+      <td></td>
+      <td>The content rendered inside of the tag</td>
+      <td>any</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>className</td>
+      <td></td>
+      <td>Classname to add to the component</td>
+      <td>string</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
