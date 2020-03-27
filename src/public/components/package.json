@@ -1,0 +1,9 @@
+{
+  "name": "@thewickedwebdev/components",
+  "version": "0.0.1",
+  "description": "Component library used for my site",
+  "main": "index.js",
+  "author": "Stephen Young <stephen@thewickedweb.dev",
+  "license": "MIT",
+  "homepage": "https://www.thewickedweb.dev/storybook/"
+}

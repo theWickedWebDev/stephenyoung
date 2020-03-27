@@ -1,0 +1,80 @@
+@mixin code {
+  display: inline-block;
+  background-color: #f4f4f4;
+  padding: 0 2px;
+  font-family: monospace;
+  border: solid 1px #d4d4d4;
+  line-height: 20px;
+}
+
+.LayoutDecorator {
+  padding: 24px;
+
+  .LayoutDecorator__content {
+    margin: 36px 0;
+    background-color: #fff;
+    padding: 12px;
+  }
+
+  .LayoutDecorator__sourceDescription {
+    margin: 0 0 12px;
+    code {
+      @include code;
+    }
+  }
+
+  .LayoutDecorator__source {
+    font-family: "Courier", sans-serif;
+  }
+}
+
+// MARKDOWN STYLING
+.LayoutDecorator__description {
+  h1 {
+    border-bottom: solid 1px #000;
+  }
+
+  pre code {
+    @include code;
+    padding: 12px;
+  }
+
+  $tableBorderColor: #a7a7a7;
+  $tableHeadBgColor: #d4d4d4;
+
+  table {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    border: solid 1px $tableBorderColor;
+    background-color: #fff;
+    margin: 12px 0;
+  }
+
+  td,
+  th {
+    padding: 6px;
+  }
+
+  td:first-child {
+    font-weight: bold;
+    font-family: "Courier", sans-serif;
+  }
+
+  td:nth-child(4) {
+    color: #f00;
+    font-family: "Courier", sans-serif;
+  }
+
+  thead {
+    background-color: $tableHeadBgColor;
+  }
+
+  tr {
+    border-bottom: solid 1px $tableBorderColor;
+  }
+
+  tbody tr:last-child {
+    border-bottom: 0;
+  }
+}

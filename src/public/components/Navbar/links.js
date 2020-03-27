@@ -21,6 +21,13 @@ const links = [
     href: '/other-experience/'
   },
   {
+    title: 'Storybook Components',
+    icon: 'book',
+    internal: false,
+    slug: 'storybook-components',
+    href: `/storybook/`
+  },
+  {
     title: 'Download Résumé PDF',
     icon: 'download',
     internal: false,

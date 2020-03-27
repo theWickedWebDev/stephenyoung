@@ -65,15 +65,17 @@ const svg = {
   ],
 };
 
+const rules = [
+  js,
+  css,
+  scss,
+  svg,
+];
+
 const baseConfig = {
   mode: 'production',
   module: {
-    rules: [
-      js,
-      css,
-      scss,
-      svg,
-    ],
+    rules: rules,
   },
   resolve: {
     alias: {
@@ -111,4 +113,7 @@ const baseConfig = {
   ]
 };
 
-module.exports = baseConfig;
+module.exports = {
+  baseConfig,
+  rules,
+}

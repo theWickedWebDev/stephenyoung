@@ -10,20 +10,7 @@ module.exports = {
   },
   collectCoverage: true,
   collectCoverageFrom: [
-    "**/*.{js,jsx}",
-
-    "!**/node_modules/**",
-    "!**/vendor/**",
-    "!**/dist/**",
-    "!**/config/**",
-    "!**/coverage/**",
-    "!**/public/index.js",
-    "!**/public/assets/copy/**.*",
-    "!**/server/index.js",
-    "!**/server/start.js",
-    "!**/*.config.js",
-    "!**/server/resume-builder.js",
-    "!**/server/server/index.js",
+    "<rootDir/src/**/*.{js,jsx}",
   ],
   setupFilesAfterEnv: [
     '<rootDir>/test/testSetupFile.js',

@@ -30,6 +30,7 @@ app.use(compression());
 
 app.use('/static', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }));
 app.use('/coverage', express.static(path.resolve(__dirname, '../coverage/lcov-report/'), { maxAge: '7d' }));
+app.use('/storybook', express.static(path.resolve(__dirname, '../storybook-static/'), { maxAge: '7d' }));
 
 app.get('/robots.txt', (req, res) => {
   if (config.get('env') === 'staging') {

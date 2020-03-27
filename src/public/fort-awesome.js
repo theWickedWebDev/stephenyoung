@@ -11,6 +11,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons/faDownload';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight';
 import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart';
 import { faLink } from '@fortawesome/free-solid-svg-icons/faLink';
+import { faBook } from '@fortawesome/free-solid-svg-icons/faBook';
 
 library.add(
     faEllipsisV,
@@ -21,6 +22,7 @@ library.add(
     faArrowRight,
     faHeart,
     faLink,
+    faBook,
 );
 
 // FREE BRANDED

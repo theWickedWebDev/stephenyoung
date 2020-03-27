@@ -62,6 +62,12 @@
   }
 }
 
+.NavbarComponent__Icon {
+  display: inline-block;
+  width: 20px;
+  text-align: left;
+}
+
 .NavbarComponent__menu {
   cursor: pointer;
 }

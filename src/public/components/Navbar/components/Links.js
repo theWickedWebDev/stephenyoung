@@ -23,7 +23,10 @@ const Links = ({ open, location }) => {
         {links.map((link, key) => (
           <li key={key}>
             <Link {...link} className={getLinkClassName(link)}>
-              <FontAwesomeIcon icon={link.icon} className="margin-right-lg"/>
+              <FontAwesomeIcon
+                icon={link.icon}
+                className="NavbarComponent__Icon margin-right-lg"
+              />
               {link.title}
             </Link>
           </li>

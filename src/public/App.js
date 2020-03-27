@@ -4,9 +4,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 import loadable from '@loadable/component';
 
 import './fort-awesome';
-import './css-reset.css';
-import './styleguide.scss';
-import './fonts.css';
+import './App.scss';
 
 import DefaultLayout from 'layouts/default';
 import ScrollToTop from 'components/ScrollToTop';
