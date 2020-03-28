@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Components
-import { TagList } from '@thewickedwebdev/components';
+import { Tag, List } from '@thewickedwebdev/components';
 
 import {
   EmployerLogo,
@@ -34,10 +34,11 @@ const Highlight = (props) => {
       />
       <EmploymentRoles roles={roles} />
       <br/>
-      <TagList
+      <List
+        items={focus}
         className="HighlightComponent__focusList"
         small
-        tags={focus}
+        renderer={item => <Tag>{item}</Tag>}
       />
       <br/>
       <p

@@ -6,7 +6,6 @@ import Article from './Article/index.js';
 
 import List from './List/index.js';
 import Tag from './Tag/index.js';
-import TagList from './TagList/index.js';
 import Image from './Image/index.js';
 import Skeleton from './Skeleton/index.js';
 
@@ -19,7 +18,6 @@ export {
   Article,
   List,
   Tag,
-  TagList,
   Image,
   Lazy,
   Skeleton,

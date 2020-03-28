@@ -1,6 +1,6 @@
 {
   "name": "@thewickedwebdev/components",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Component library used for my site",
   "module": "dist/index.esm.min.js",
   "main": "dist/index.cjs.min.js",

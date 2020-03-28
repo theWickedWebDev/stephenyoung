@@ -13,7 +13,7 @@ import './styles.scss';
 
 // Components
 import {
-  Page, Section, Article, TagList, Lazy, Skeleton
+  Page, Section, Article, List, Tag, Lazy, Skeleton
 } from '@thewickedwebdev/components';
 
 import Header from 'components/Header';
@@ -52,7 +52,10 @@ const About = ({ location }) => {
               </ul>
               <br/>
               <h3>Accessibility</h3>
-              <TagList tags={[ { tag: 'W3C - Web Accessibility Initiative' } ]} />
+              <List
+                items={[ { tag: 'W3C - Web Accessibility Initiative' } ]}
+                renderer={item => <Tag>{item}</Tag>}
+              />
               <ul>
                 <li>
                   <h4 className="margin-bottom-large">
@@ -108,12 +111,15 @@ const About = ({ location }) => {
               <br/>
 
               <h3>Site Performance</h3>
-              <TagList tags={[
-                { tag: 'GtMetrix' },
-                { tag: 'Webpack Bundle Analyzer' },
-                { tag: 'CloudFront' },
-                { tag: 'Express' },
-              ]} />
+              <List
+                items={[
+                  { tag: 'GtMetrix' },
+                  { tag: 'Webpack Bundle Analyzer' },
+                  { tag: 'CloudFront' },
+                  { tag: 'Express' },
+                ]}
+                renderer={item => <Tag>{item}</Tag>}
+              />
                 <ul>
                     <li>
                         <h4 className="margin-bottom-large">Server-side rendered content</h4>
@@ -194,10 +200,13 @@ const About = ({ location }) => {
                 </ul>
                 <br/>
                 <h3>Search Engine Optimization (<abbr>SEO</abbr>)</h3>
-                <TagList tags={[
-                    { tag: 'Screaming Frog' },
-                    { tag: 'Google Tools' },
-                ]} />
+                <List
+                  items={[
+                      { tag: 'Screaming Frog' },
+                      { tag: 'Google Tools' },
+                  ]}
+                  renderer={item => <Tag>{item}</Tag>}
+                />
                 <ul>
                     <li>
                         <h4 className="margin-bottom-large">Meta Tags are present</h4>
@@ -247,10 +256,13 @@ const About = ({ location }) => {
                 </ul>
                 <br/>
                 <h3>Just Kinda Cool</h3>
-                <TagList tags={[
+                <List
+                  items={[
                     { tag: 'PDFKit' },
                     { tag: 'Node' },
-                ]} />
+                  ]}
+                  renderer={item => <Tag>{item}</Tag>}
+                />
                 <ul>
                     <li>
                         <h4 className="margin-bottom-large">
@@ -310,11 +322,14 @@ const About = ({ location }) => {
                 </ul>
                 <br/>
                 <h3>Code Quality</h3>
-                <TagList tags={[
-                    { tag: 'Jest' },
-                    { tag: 'Enzyme' },
-                    { tag: 'Nightwatch' },
-                ]} />
+                <List
+                  items={[
+                      { tag: 'Jest' },
+                      { tag: 'Enzyme' },
+                      { tag: 'Nightwatch' },
+                  ]}
+                  renderer={item => <Tag>{item}</Tag>}
+                />
                 <br/>
                 <ul>
                     <li>

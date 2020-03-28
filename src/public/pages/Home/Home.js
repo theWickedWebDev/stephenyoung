@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { withRouter } from 'react-router-dom';
 
 // Components
-import { List, Section, Article, TagList, Page } from '@thewickedwebdev/components';
+import { List, Section, Article, Page, Tag } from '@thewickedwebdev/components';
 
 import Header from 'components/Header';
 import Link from 'components/Link';
@@ -80,7 +80,11 @@ const Home = (props) => (
     <Section>
       <Article title={copy.skills.title}>
         { skills.map(({ content }, i) => (
-          <TagList key={i} tags={content}/>
+          <List
+            key={i}
+            items={content}
+            renderer={item => <Tag icon={item.icon}>{item.tag}</Tag>}
+          />
         ))}
       </Article>
       <Article title={copy.highlight.title}>

@@ -3,7 +3,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 // Components
-import { Page, Section, Article, TagList } from '@thewickedwebdev/components';
+import { Page, Section, Article, List, Tag } from '@thewickedwebdev/components';
 
 import Header from 'components/Header';
 
@@ -48,7 +48,10 @@ const MedicalExperience = (props) => {
         <Article title="Medical Industry">
             <h3>Phlebotomist / Medical Assistant</h3>
             <h4>Keywords / Skills</h4>
-            <TagList tags={medicalFieldTags}/>
+            <List
+              items={medicalFieldTags}
+              renderer={item => <Tag>{item}</Tag>}
+            />
             <br/>
             <h4>Introduction</h4>
             <p>

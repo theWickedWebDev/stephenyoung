@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 
 // Components
 import {
-  Page, Section, Article, TagList, Link,
+  Page, Section, Article, List, Tag, Link,
  } from '@thewickedwebdev/components';
 
 import Header from 'components/Header';

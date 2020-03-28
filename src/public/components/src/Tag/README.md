@@ -8,8 +8,7 @@ import { Tag } from '@thewickedwebdev/components';
 
 <br/>
 ### How to use
-This can be used on its own, or coupled with other components found here. I have
-also included a `<TagList/>` component which is essentially `<List><Tag/></List>`
+This can be used on its own, or coupled with other components found here such as  `<List><Tag/></List>`
 
 ### API
 
