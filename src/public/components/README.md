@@ -15,3 +15,4 @@ import '@thewickedwebdev/components/dist/bundle.css';
 - Make each module have its own CSS so you dont need to import the whole thing
 - Make <Meta/> customizable
 - Make a "type" data reference and link specific ones to the API documention
+- TODO add all the standard HTML attributes to components, like onClick

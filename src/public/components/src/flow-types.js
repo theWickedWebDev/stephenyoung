@@ -1,5 +1,6 @@
 // @flow
 
+/** List of all Flow types used in this package */
 export type ListType = {
   items: ?string[],
   renderer: any => any,
@@ -36,4 +37,13 @@ export type PageType = {
   robots?: string,
   keywords?: string,
   children?: any,
+};
+
+export type ImageType = {
+  src: string,
+  srcSet?: string,
+  alt?: string,
+  title?: string,
+  className?: string,
+  lazy?: boolean,
 };

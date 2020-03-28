@@ -1,7 +1,15 @@
+// TODO: Add LazyLoading by default
+
+// @flow
+// Dependencies
 import React from 'react';
 import log from 'loglevel';
 
-const Image = (props) => {
+// Types
+import type { ImageType } from '../flow-types';
+
+// Main
+const Image = (props : ImageType) => {
   const { src, className, alt, title, srcSet } = props;
   if (!src) {
     log.error("'src' is required for all <Image/>s");
