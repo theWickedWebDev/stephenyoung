@@ -243,6 +243,8 @@ h4 {
   .ArticleComponent__h2 {
     // FIXME: This should be programatic
     top: 40px;
+    position: sticky;
+    background-color: $white;
   }
 }
 
@@ -253,8 +255,6 @@ h4 {
       line-height: 30px;
       text-align: left;
       padding: 12px 0;
-      // FIXME: This should be programatic
-      top: 40px;
     }
 
     details {

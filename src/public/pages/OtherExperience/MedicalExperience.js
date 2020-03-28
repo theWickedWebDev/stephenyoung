@@ -48,6 +48,7 @@ const MedicalExperience = (props) => {
             <h3>Phlebotomist / Medical Assistant</h3>
             <h4>Keywords / Skills</h4>
             <List
+              inline
               items={medicalFieldTags}
               renderer={item => <Tag>{item}</Tag>}
             />
@@ -159,6 +160,8 @@ const MedicalExperience = (props) => {
       comunicate safely and properly to patients, or even the use of
       different medical equipment such as N95 respirators and AEDs.
             </p>
+            <br/>
+            <br/>
         </Article>
       </Section>
     </Page>
