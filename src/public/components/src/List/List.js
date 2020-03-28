@@ -1,7 +1,10 @@
 // @flow
 import React from 'react';
+
+// Types
 import type { ListType } from '../flow-types';
 
+// Main
 const List = (props: ListType) => {
   const {
     items,
@@ -10,7 +13,7 @@ const List = (props: ListType) => {
     className,
     itemClassName,
   } = props;
-  
+
   if (!items || items.length === 0) return null;
 
   const classNames = ['ListComponent'];

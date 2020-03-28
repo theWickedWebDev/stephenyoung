@@ -5,11 +5,15 @@
 ```
 import { Tag } from '@thewickedwebdev/components';
 ```
+
 <br/>
+### How to use
+This can be used on its own, or coupled with other components found here. I have
+also included a `<TagList/>` component which is essentially `<List><Tag/></List>`
 
 ### API
 
-**List**
+<pre><code>(TagType) => React.Node</code></pre>
 
 <table>
   <thead>
@@ -33,8 +37,12 @@ import { Tag } from '@thewickedwebdev/components';
     <tr>
       <td>icon</td>
       <td></td>
-      <td>Will display an <code>FortAwesomeIcon</code> to the left of the content</td>
-      <td>string (FortAwesome Icon)</td>
+      <td>Will display an <code>FontAwesomeIcon</code> to the left of the content</td>
+      <td>string
+        <a href="https://fontawesome.com/icons" target="_blank">
+          (FontAwesome Icon)
+        </a>
+      </td>
       <td>-</td>
     </tr>
     <tr>

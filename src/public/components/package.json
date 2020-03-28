@@ -16,6 +16,7 @@
     "build": "rollup -c"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015-rollup": "^3.0.0",
     "install": "^0.13.0",
@@ -30,9 +31,12 @@
     "rollup-plugin-uglify-es": "0.0.1"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "concurrently": "^5.1.0",
     "flow-bin": "^0.121.0",
     "flow-watch": "^1.1.5",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "rollup-plugin-flow": "^1.1.1"
   }
 }

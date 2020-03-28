@@ -13,7 +13,7 @@ practice.
 
 ### API
 
-**List**
+<pre><code>(PageType) => ?any</code></pre>
 
 <table>
   <thead>
@@ -32,9 +32,9 @@ practice.
       <td>Yes*</td>
       <td>
         Information passed will be used to generate the `<head/>` section
-        of your page. See the `Meta` type for more information.
+        of your page. See the <a href="/?path=/story/flow--types#MetaType">Meta</a> for more information.
       </td>
-      <td><a href="#">Meta</a></td>
+      <td><a href="/?path=/story/flow--types#MetaType">Meta</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -48,7 +48,7 @@ practice.
       <td>children</td>
       <td></td>
       <td>Main page content</td>
-      <td>any</td>
+      <td>?any</td>
       <td>-</td>
     </tr>
   </tbody>

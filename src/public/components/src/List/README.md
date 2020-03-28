@@ -1,10 +1,10 @@
 # List
-##### This is used to render a simple list element.
+##### This is used to render a simple <em>unordered list</em> element.
 <br/>
-
 ```
 import { List } from '@thewickedwebdev/components';
 ```
+
 <br/>
 
 ### How to use
@@ -13,7 +13,7 @@ context.
 
 ### API
 
-**List**
+<pre><code>(ListType) => React.Node</code></pre>
 
 <table>
   <thead>

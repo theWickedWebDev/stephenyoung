@@ -21,12 +21,14 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             "presets": [
-              [ '@babel/env' ],
-              [ '@babel/react' ],
+              '@babel/env',
+              '@babel/react',
+              "@babel/preset-flow"
             ],
             "plugins": [
               "transform-es2015-modules-commonjs",
               "@babel/plugin-proposal-class-properties",
+              "@babel/plugin-proposal-export-default-from"
             ],
           }
         }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "concurrently \"npm run dev:build\" \"npm run dev:serve\"",
+    "dev": "concurrently \"npm run dev:build\" \"npm run dev:serve\" \"npm run floww\"",
     "components": "cd src/public/components && npm run dev",
     "components:patch": "cd src/public/components && npm version patch && npm publish",
     "components:minor": "cd src/public/components && npm version minor && npm publish",
@@ -16,6 +16,7 @@
     "lint": "eslint src",
     "flow": "flow",
     "floww": "flow-watch",
+    "flow-typed": "flow-typed install",
     "test": "NODE_ENV=test BABEL_ENV=test jest --detectOpenHandles --json --outputFile=.storybook/test-results.json",
     "test:watch": "NODE_ENV=test && BABEL_ENV=test && jest -o --watch --config=jest.config.js",
     "storybook": "NODE_ENV=production start-storybook -s ./src -p 6006",
@@ -109,6 +110,7 @@
     "webpack-plugin-replace": "^1.2.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-react": "^7.8.3",

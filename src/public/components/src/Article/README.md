@@ -1,10 +1,11 @@
 # Article
-##### This is used to render an <article/> layout element.
+##### This is used to render a layout element
 <br/>
 
 ```
 import { Article } from '@thewickedwebdev/components';
 ```
+
 <br/>
 ### How to use
 The intended purpose of this component was to be nested inside of `<Section/>`
@@ -13,7 +14,7 @@ provide consistent styling.
 
 ### API
 
-**List**
+<pre><code>(ArticleType) => ?any</code></pre>
 
 <table>
   <thead>
@@ -38,7 +39,7 @@ provide consistent styling.
       <td>children</td>
       <td></td>
       <td>The content rendered inside of the tag</td>
-      <td>any</td>
+      <td>?any</td>
       <td>-</td>
     </tr>
     <tr>
