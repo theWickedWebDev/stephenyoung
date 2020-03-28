@@ -1,3 +1,4 @@
+// @flow
 import Page from './Page/index.js';
 import Meta from './Meta/index.js';
 import Section from './Section/index.js';

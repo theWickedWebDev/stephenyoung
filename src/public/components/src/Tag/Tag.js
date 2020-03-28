@@ -1,3 +1,4 @@
+// @flow
 // Dependencies
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -5,7 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Styling
 import './Tag.scss';
 
-const Tag = ({ children, icon, small, className, style }) => {
+// Types
+import type { TagType } from '../flow-types';
+
+const Tag = (props : TagType) => {
+  const { children, icon, small, className, style } = props;
+
   const classes = ["Tag"];
   if (className) classes.push(className);
   if (small) classes.push('Small');

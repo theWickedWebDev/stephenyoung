@@ -8,7 +8,9 @@
   "license": "MIT",
   "homepage": "https://www.thewickedweb.dev/storybook/",
   "scripts": {
-    "dev": "rollup -c --watch",
+    "dev": "concurrently \"rollup -c --watch\" \"npm run floww\"",
+    "flow": "flow",
+    "floww": "flow-watch",
     "test": "jest --verbose",
     "prepare": "npm --silent run build",
     "build": "rollup -c"
@@ -26,5 +28,11 @@
     "rollup-plugin-scss": "^2.1.0",
     "rollup-plugin-terser": "^5.3.0",
     "rollup-plugin-uglify-es": "0.0.1"
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "flow-bin": "^0.121.0",
+    "flow-watch": "^1.1.5",
+    "rollup-plugin-flow": "^1.1.1"
   }
 }

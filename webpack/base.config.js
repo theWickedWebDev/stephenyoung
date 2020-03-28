@@ -25,7 +25,8 @@ const js = {
             modules: false,
           }
         ],
-        [ '@babel/react' ],
+        '@babel/react',
+        "@babel/preset-flow"
       ],
       "plugins": [
         "transform-es2015-modules-commonjs",

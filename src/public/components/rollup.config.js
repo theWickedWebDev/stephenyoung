@@ -5,6 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 import sass from 'node-sass';
 import autoprefixer from 'autoprefixer';
 import postcss from 'rollup-plugin-postcss';
+var flow = require('rollup-plugin-flow');
 
 const config = function() {
   const entry = './src/index.js';
@@ -20,6 +21,7 @@ const config = function() {
     ],
     plugins: [
       clean(),
+      flow({ pretty: true }),
       postcss({
         preprocessor: (content, id) => new Promise((resolve, reject) => {
           const result = sass.renderSync({ file: id })
