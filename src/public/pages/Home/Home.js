@@ -79,13 +79,13 @@ const Home = (props) => (
     </div>
     <Section>
       <Article title={copy.skills.title}>
-        { skills.map(({ content }, i) => (
-          <List
-            key={i}
-            items={content}
-            renderer={item => <Tag icon={item.icon}>{item.tag}</Tag>}
-          />
-        ))}
+        <List
+          inline
+          items={skills}
+          renderer={item => (
+            <Tag icon={item.icon} style={{margin: '3px'}}>{item.tag}</Tag>
+          )}
+        />
       </Article>
       <Article title={copy.highlight.title}>
         <Highlight
@@ -94,7 +94,7 @@ const Home = (props) => (
           name={highlight.name}
           address={highlight.address}
           roles={highlight.roles}
-          focus={highlight.focus.map(f => ({ tag: f }))}
+          focus={highlight.focus}
           description={highlight.description}
           projects={highlight.projects}
         />

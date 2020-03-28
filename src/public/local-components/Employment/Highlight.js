@@ -35,10 +35,13 @@ const Highlight = (props) => {
       <EmploymentRoles roles={roles} />
       <br/>
       <List
+        small
+        inline
         items={focus}
         className="HighlightComponent__focusList"
-        small
-        renderer={item => <Tag>{item}</Tag>}
+        renderer={item => (
+          <Tag style={{margin: '3px'}}>{item}</Tag>
+        )}
       />
       <br/>
       <p

@@ -1,12 +1,10 @@
 // Dependencies
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
 // Components
-import {
-  Page, Section, Article, List, Tag, Link,
- } from '@thewickedwebdev/components';
+import { Page, Section, Article } from '@thewickedwebdev/components';
 
+import Link from 'components/Link';
 import Header from 'components/Header';
 import Gallery from 'components/Gallery';
 
@@ -58,4 +56,4 @@ const OtherExperience = (props) => {
   );
 }
 
-export default withRouter(OtherExperience);
+export default OtherExperience;

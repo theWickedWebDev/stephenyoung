@@ -37,8 +37,8 @@ const routes = [
       exact: false,
       render: (props) => (
         <DefaultLayout>
-            <ScrollToTop/>
-            <OtherExperience {...props}/>
+          <ScrollToTop/>
+          <OtherExperience {...props}/>
         </DefaultLayout>
       )
     },

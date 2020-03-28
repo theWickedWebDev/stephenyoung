@@ -53,7 +53,7 @@ const About = ({ location }) => {
               <br/>
               <h3>Accessibility</h3>
               <List
-                items={[ { tag: 'W3C - Web Accessibility Initiative' } ]}
+                items={['W3C - Web Accessibility Initiative']}
                 renderer={item => <Tag>{item}</Tag>}
               />
               <ul>
@@ -113,10 +113,10 @@ const About = ({ location }) => {
               <h3>Site Performance</h3>
               <List
                 items={[
-                  { tag: 'GtMetrix' },
-                  { tag: 'Webpack Bundle Analyzer' },
-                  { tag: 'CloudFront' },
-                  { tag: 'Express' },
+                  'GtMetrix',
+                  'Webpack Bundle Analyzer',
+                  'CloudFront',
+                  'Express',
                 ]}
                 renderer={item => <Tag>{item}</Tag>}
               />
@@ -201,10 +201,7 @@ const About = ({ location }) => {
                 <br/>
                 <h3>Search Engine Optimization (<abbr>SEO</abbr>)</h3>
                 <List
-                  items={[
-                      { tag: 'Screaming Frog' },
-                      { tag: 'Google Tools' },
-                  ]}
+                  items={[ 'Screaming Frog', 'Google Tools']}
                   renderer={item => <Tag>{item}</Tag>}
                 />
                 <ul>
@@ -257,10 +254,7 @@ const About = ({ location }) => {
                 <br/>
                 <h3>Just Kinda Cool</h3>
                 <List
-                  items={[
-                    { tag: 'PDFKit' },
-                    { tag: 'Node' },
-                  ]}
+                  items={[ 'PDFKit', 'Node']}
                   renderer={item => <Tag>{item}</Tag>}
                 />
                 <ul>
@@ -323,11 +317,7 @@ const About = ({ location }) => {
                 <br/>
                 <h3>Code Quality</h3>
                 <List
-                  items={[
-                      { tag: 'Jest' },
-                      { tag: 'Enzyme' },
-                      { tag: 'Nightwatch' },
-                  ]}
+                  items={[ 'Jest', 'Enzyme', 'Nightwatch' ]}
                   renderer={item => <Tag>{item}</Tag>}
                 />
                 <br/>

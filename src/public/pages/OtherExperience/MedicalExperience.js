@@ -1,6 +1,5 @@
 // Dependencies
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
 // Components
 import { Page, Section, Article, List, Tag } from '@thewickedwebdev/components';
@@ -9,23 +8,23 @@ import Header from 'components/Header';
 
 const MedicalExperience = (props) => {
   const medicalFieldTags = [
-      { tag: 'Phlebotomy' },
-      { tag: 'Medical Terminology' },
-      { tag: 'Hospitals' },
-      { tag: 'Assisted Living' },
-      { tag: 'Rehabiliation Facilities' },
-      { tag: 'ICU' },
-      { tag: 'NICU' },
-      { tag: 'Maternity' },
-      { tag: 'Primary Care Physician offices' },
-      { tag: 'HIPPA' },
-      { tag: 'ICD-9 Codes' },
-      { tag: 'Microbiology' },
-      { tag: 'Hematology' },
-      { tag: 'Chemistry' },
-      { tag: 'HIPPA' },
-      { tag: 'Protected Health Information (PHI)' },
-      { tag: 'Personal Protective Equipment (PPE)' },
+    'Phlebotomy',
+    'Medical Terminology',
+    'Hospitals',
+    'Assisted Living',
+    'Rehabiliation Facilities',
+    'ICU',
+    'NICU',
+    'Maternity',
+    'Primary Care Physician offices',
+    'HIPPA',
+    'ICD-9 Codes',
+    'Microbiology',
+    'Hematology',
+    'Chemistry',
+    'HIPPA',
+    'Protected Health Information (PHI)',
+    'Personal Protective Equipment (PPE)',
   ];
 
   return (
@@ -166,4 +165,4 @@ const MedicalExperience = (props) => {
   );
 };
 
-export default withRouter(MedicalExperience);
+export default MedicalExperience;

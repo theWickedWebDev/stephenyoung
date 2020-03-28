@@ -12,14 +12,21 @@ const MedicalExperience = loadable(() => import(
   /* webpackChunkName: "other-experience-medical" */'./MedicalExperience.js'
 ));
 
+const routes = [
+  { path: '/other-experience/medical/',
+    exact: true,
+    render: (props) => (<MedicalExperience {...props}/>)
+  },
+  { path: '/other-experience/',
+    exact: true,
+    render: (props) => (<OtherExperience {...props}/>)
+  },
+];
+
 // <OtherExperience/> Page
 const OtherExperiencePage = () => (
   <Switch>
-    <Route
-      path="/other-experience/medical"
-      component={MedicalExperience}
-    />
-    <Route path="*" component={OtherExperience}/>
+    { routes.map((props, key) => <Route key={key} {...props}/>) }
   </Switch>
 );
 

@@ -10,10 +10,9 @@ const NoMatch = (props) => (
   <Page
     className="About__Page"
     meta={{
-      domain: WEBSITE_URL,
       title: 'Uh oh! 404',
       robots: 'noindex',
-     }}
+   }}
   >
     <Header
       title="404 - Sorry!"
