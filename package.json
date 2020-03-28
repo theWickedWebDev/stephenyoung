@@ -17,7 +17,7 @@
     "test": "NODE_ENV=test BABEL_ENV=test jest --detectOpenHandles --json --outputFile=.storybook/test-results.json",
     "test:watch": "NODE_ENV=test && BABEL_ENV=test && jest -o --watch --config=jest.config.js",
     "storybook": "start-storybook -s ./src -p 6006",
-    "buildstorybook": "build-storybook"
+    "buildstorybook": "NODE_ENV=production build-storybook"
   },
   "engines": {
     "node": "9.2.0"
