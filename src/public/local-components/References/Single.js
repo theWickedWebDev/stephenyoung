@@ -2,7 +2,8 @@
 import React from 'react';
 
 // components
-import { Link, Image, LazyLoad } from '@thewickedwebdev/components';
+import { Image } from '@thewickedwebdev/components';
+import Link from 'components/Link';
 
 // Styles
 import './single.scss';
@@ -31,15 +32,13 @@ const Reference = props => {
     <div className={`ReferenceComponent ${relevant ? '' : 'small'}`}>
       <div className="ReferenceComponent__content clearfix">
         { image &&
-          <LazyLoad>
-            <Image
-              className="ReferenceComponent__image"
-              src={image}
-              width="70px"
-              alt={`Photo of coworker ${name}`}
-              title={getPostHeader(content)}
-            />
-          </LazyLoad>
+          <Image
+            className="ReferenceComponent__image"
+            src={image}
+            width="70px"
+            alt={`Photo of coworker ${name}`}
+            title={getPostHeader(content)}
+          />
         }
         <blockquote className="ReferenceComponent__quote">
           <h3 className="ReferenceComponent__firstLine">

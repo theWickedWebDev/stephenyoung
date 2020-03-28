@@ -1,4 +1,5 @@
 // TODO: Needs major refactoring and cleanup
+// TODO: use <Image/> instead
 
 /* eslint-disable max-len */
 
@@ -12,10 +13,8 @@ import './styles.scss';
 
 // Components
 import {
-  Page, Section, Article, TagList, LazyLoad,
+  Page, Section, Article, TagList, Lazy, Skeleton
 } from '@thewickedwebdev/components';
-
-import { SquareSkeleton, RectSkeleton } from 'components/Skeletons';
 
 import Header from 'components/Header';
 import Viewport from 'components/Viewport';
@@ -35,7 +34,7 @@ const About = ({ location }) => {
     <Page
       className="About__Page"
       meta={{
-        domain: WEBSITE_URL,
+        canonical: WEBSITE_URL + location.pathname,
         title: copy.title,
         description: copy.description,
       }}
@@ -203,7 +202,7 @@ const About = ({ location }) => {
                     <li>
                         <h4 className="margin-bottom-large">Meta Tags are present</h4>
                         <figure>
-                            <LazyLoad skeleton={<RectSkeleton width="300px" height="167px"/>}>
+                            <Lazy skeleton={<Skeleton.Rect width="300px" height="167px"/>}>
                                 <img
                                     src={`${S3_URL}/images/how-i-made-this-site/social-card.jpg`}
                                     alt="Photo of this website"
@@ -211,7 +210,7 @@ const About = ({ location }) => {
                                     height="167px"
                                     className="about__page-social-sharing-image"
                                 />
-                            </LazyLoad>
+                            </Lazy>
                             <figcaption>Social Sharing Preview</figcaption>
                         </figure>
                         <br/>
@@ -259,8 +258,8 @@ const About = ({ location }) => {
                         </h4>
                         <div className="about__page-generate-pdf-section">
                             <figure>
-                                <LazyLoad skeleton={
-                                    <SquareSkeleton
+                                <Lazy skeleton={
+                                    <Skeleton.Square
                                         size={viewport === 'desktop' ? '150px' : '120px'}
                                     />
                                 }>
@@ -271,7 +270,7 @@ const About = ({ location }) => {
                                         height={viewport === 'desktop' ? '150px' : '120px'}
                                         width={viewport === 'desktop' ? '150px' : '120px'}
                                     />
-                                </LazyLoad>
+                                </Lazy>
                                 <figcaption>Data from Web App</figcaption>
                             </figure>
                             <FontAwesomeIcon
@@ -279,7 +278,7 @@ const About = ({ location }) => {
                                 className="about__page-generate-pdf-arrow"
                             />
                             <figure>
-                                <LazyLoad skeleton={<SquareSkeleton size="150px"/>}>
+                                <Lazy skeleton={<Skeleton.Square size="150px"/>}>
                                     <img
                                         src={`${S3_URL}/images/how-i-made-this-site/resume-400x400.jpg`}
                                         alt="Photo of my PDF résumé"
@@ -287,7 +286,7 @@ const About = ({ location }) => {
                                         height={viewport === 'desktop' ? '150px' : '120px'}
                                         width={viewport === 'desktop' ? '150px' : '120px'}
                                     />
-                                </LazyLoad>
+                                </Lazy>
                                 <figcaption>Generated PDF</figcaption>
                             </figure>
                         </div>

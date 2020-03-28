@@ -1,4 +1,5 @@
 // @flow
+import * as React from 'react';
 
 /** List of all Flow types used in this package */
 export type ListType = {
@@ -28,6 +29,10 @@ export type MetaType = {
   description?: string,
   domain?: string,
   canonical?: string,
+  robots?: string,
+  keywords?: string,
+  siteName?: string,
+  image?: string,
 };
 
 export type PageType = {
@@ -42,8 +47,31 @@ export type PageType = {
 export type ImageType = {
   src: string,
   srcSet?: string,
+  height?: string,
+  width?: string,
+  sizes?: string,
   alt?: string,
   title?: string,
   className?: string,
   lazy?: boolean,
+  lazyProps?: {
+    offset?: number,
+    skeleton?: React.Element<*>,
+  },
+};
+
+export type SkeletonType = {
+  height?: string,
+  width?: string,
+  size?: string,
+}
+
+export type WindowScrollType = {
+  onChange: () => void,
+};
+
+export type LazyType = {
+  offset?: number,
+  skeleton?: React.Element<*>,
+  children?: any,
 };

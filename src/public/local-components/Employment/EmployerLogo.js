@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Components
-import { Image, LazyLoad } from '@thewickedwebdev/components';
+import { Image } from '@thewickedwebdev/components';
 
 // Styling
 import './EmployerLogo.scss';
@@ -23,8 +23,7 @@ const EmployerLogo = ({ src, className }) => {
 
   return (
     <div className={`EmployerLogo ${className}`}>
-      <noscript><LogoImage/></noscript>
-      <LazyLoad><LogoImage/></LazyLoad>
+      <LogoImage/>
     </div>
   )
 };

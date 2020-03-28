@@ -3,7 +3,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Components
-import { Link } from '@thewickedwebdev/components';
+import Link from 'components/Link';
 
 // Styling
 import './EmployerName.scss';

@@ -8,9 +8,9 @@ import List from './List/index.js';
 import Tag from './Tag/index.js';
 import TagList from './TagList/index.js';
 import Image from './Image/index.js';
-import Link from './Link/index.js';
+import Skeleton from './Skeleton/index.js';
 
-import LazyLoad from './LazyLoad/index.js';
+import Lazy from './Lazy/index.js';
 
 export {
   Page,
@@ -21,6 +21,6 @@ export {
   Tag,
   TagList,
   Image,
-  Link,
-  LazyLoad,
+  Lazy,
+  Skeleton,
 }

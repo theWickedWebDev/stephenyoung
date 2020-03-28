@@ -1,4 +1,4 @@
-// flow-typed signature: eea15427541ffda05f1bef7ff0e78ca6
+// flow-typed signature: b224e2c8b258c10b9c39f9c2b9969c52
 // flow-typed version: <<STUB>>/@thewickedwebdev/components_v0.0.6/flow_v0.121.0
 
 /**
@@ -42,11 +42,31 @@ declare module '@thewickedwebdev/components/rollup.config' {
   declare module.exports: any;
 }
 
+declare module '@thewickedwebdev/components/src/Article/Article.stories' {
+  declare module.exports: any;
+}
+
 declare module '@thewickedwebdev/components/src/Article/Article.test' {
   declare module.exports: any;
 }
 
 declare module '@thewickedwebdev/components/src/Article' {
+  declare module.exports: any;
+}
+
+declare module '@thewickedwebdev/components/src/flow-types' {
+  declare module.exports: any;
+}
+
+declare module '@thewickedwebdev/components/src/flow-types.stories' {
+  declare module.exports: any;
+}
+
+declare module '@thewickedwebdev/components/src/Image/Image' {
+  declare module.exports: any;
+}
+
+declare module '@thewickedwebdev/components/src/Image/Image.stories' {
   declare module.exports: any;
 }
 
@@ -58,11 +78,15 @@ declare module '@thewickedwebdev/components/src' {
   declare module.exports: any;
 }
 
-declare module '@thewickedwebdev/components/src/LazyLoad' {
+declare module '@thewickedwebdev/components/src/Lazy' {
   declare module.exports: any;
 }
 
-declare module '@thewickedwebdev/components/src/LazyLoad/LazyLoad.test' {
+declare module '@thewickedwebdev/components/src/Lazy/Lazy' {
+  declare module.exports: any;
+}
+
+declare module '@thewickedwebdev/components/src/Lazy/Lazy.test' {
   declare module.exports: any;
 }
 
@@ -110,11 +134,27 @@ declare module '@thewickedwebdev/components/src/Page/Page' {
   declare module.exports: any;
 }
 
+declare module '@thewickedwebdev/components/src/Page/Page.stories' {
+  declare module.exports: any;
+}
+
 declare module '@thewickedwebdev/components/src/Section' {
   declare module.exports: any;
 }
 
 declare module '@thewickedwebdev/components/src/Section/Section.test' {
+  declare module.exports: any;
+}
+
+declare module '@thewickedwebdev/components/src/Skeleton' {
+  declare module.exports: any;
+}
+
+declare module '@thewickedwebdev/components/src/Skeleton/Rect' {
+  declare module.exports: any;
+}
+
+declare module '@thewickedwebdev/components/src/Skeleton/Square' {
   declare module.exports: any;
 }
 
@@ -154,6 +194,9 @@ declare module '@thewickedwebdev/components/dist/index.esm.min.js' {
 declare module '@thewickedwebdev/components/rollup.config.js' {
   declare module.exports: $Exports<'@thewickedwebdev/components/rollup.config'>;
 }
+declare module '@thewickedwebdev/components/src/Article/Article.stories.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Article/Article.stories'>;
+}
 declare module '@thewickedwebdev/components/src/Article/Article.test.js' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src/Article/Article.test'>;
 }
@@ -162,6 +205,18 @@ declare module '@thewickedwebdev/components/src/Article/index' {
 }
 declare module '@thewickedwebdev/components/src/Article/index.js' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src/Article'>;
+}
+declare module '@thewickedwebdev/components/src/flow-types.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/flow-types'>;
+}
+declare module '@thewickedwebdev/components/src/flow-types.stories.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/flow-types.stories'>;
+}
+declare module '@thewickedwebdev/components/src/Image/Image.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Image/Image'>;
+}
+declare module '@thewickedwebdev/components/src/Image/Image.stories.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Image/Image.stories'>;
 }
 declare module '@thewickedwebdev/components/src/Image/index' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src/Image'>;
@@ -175,14 +230,17 @@ declare module '@thewickedwebdev/components/src/index' {
 declare module '@thewickedwebdev/components/src/index.js' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src'>;
 }
-declare module '@thewickedwebdev/components/src/LazyLoad/index' {
-  declare module.exports: $Exports<'@thewickedwebdev/components/src/LazyLoad'>;
+declare module '@thewickedwebdev/components/src/Lazy/index' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Lazy'>;
 }
-declare module '@thewickedwebdev/components/src/LazyLoad/index.js' {
-  declare module.exports: $Exports<'@thewickedwebdev/components/src/LazyLoad'>;
+declare module '@thewickedwebdev/components/src/Lazy/index.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Lazy'>;
 }
-declare module '@thewickedwebdev/components/src/LazyLoad/LazyLoad.test.js' {
-  declare module.exports: $Exports<'@thewickedwebdev/components/src/LazyLoad/LazyLoad.test'>;
+declare module '@thewickedwebdev/components/src/Lazy/Lazy.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Lazy/Lazy'>;
+}
+declare module '@thewickedwebdev/components/src/Lazy/Lazy.test.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Lazy/Lazy.test'>;
 }
 declare module '@thewickedwebdev/components/src/Link/index' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src/Link'>;
@@ -229,6 +287,9 @@ declare module '@thewickedwebdev/components/src/Page/index.js' {
 declare module '@thewickedwebdev/components/src/Page/Page.js' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src/Page/Page'>;
 }
+declare module '@thewickedwebdev/components/src/Page/Page.stories.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Page/Page.stories'>;
+}
 declare module '@thewickedwebdev/components/src/Section/index' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src/Section'>;
 }
@@ -237,6 +298,18 @@ declare module '@thewickedwebdev/components/src/Section/index.js' {
 }
 declare module '@thewickedwebdev/components/src/Section/Section.test.js' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src/Section/Section.test'>;
+}
+declare module '@thewickedwebdev/components/src/Skeleton/index' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Skeleton'>;
+}
+declare module '@thewickedwebdev/components/src/Skeleton/index.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Skeleton'>;
+}
+declare module '@thewickedwebdev/components/src/Skeleton/Rect.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Skeleton/Rect'>;
+}
+declare module '@thewickedwebdev/components/src/Skeleton/Square.js' {
+  declare module.exports: $Exports<'@thewickedwebdev/components/src/Skeleton/Square'>;
 }
 declare module '@thewickedwebdev/components/src/Tag/index' {
   declare module.exports: $Exports<'@thewickedwebdev/components/src/Tag'>;

@@ -1,7 +1,6 @@
 // @flow
 // Dependencies
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import type { Location } from 'react-router';
 
 // Components
@@ -16,10 +15,9 @@ const Page = (props : PageType) => {
     meta: {
       title = 'Title',
       description = 'Page Description',
-      domain = 'https://www.thewickedweb.dev',
+      canonical = 'https://www.thewickedweb.dev',
     },
     className,
-    location,
     robots = 'index',
     keywords = '',
   } = props;
@@ -34,11 +32,11 @@ const Page = (props : PageType) => {
         keywords={keywords}
         title={title}
         description={description}
-        canonical={`${domain}${location.pathname}`}
+        canonical={canonical}
       />
       { props.children }
     </div>
   )
 }
 
-export default withRouter(Page);
+export default Page;

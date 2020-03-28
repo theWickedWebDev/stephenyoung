@@ -1,12 +1,13 @@
 // Dependencies
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 // Components
 import { Page, Section, Article, TagList } from '@thewickedwebdev/components';
 
 import Header from 'components/Header';
 
-const MedicalExperience = () => {
+const MedicalExperience = (props) => {
   const medicalFieldTags = [
       { tag: 'Phlebotomy' },
       { tag: 'Medical Terminology' },
@@ -30,7 +31,7 @@ const MedicalExperience = () => {
   return (
     <Page
       meta={{
-        domain: WEBSITE_URL,
+        canonical: WEBSITE_URL + props.location.pathname,
         keywords: "Medical, Phlebotomy, Medical Assistant",
         title: "Phlebotomist and Medical Assistant",
         description: `For the first 5 years or so of my professional
@@ -162,4 +163,4 @@ const MedicalExperience = () => {
   );
 };
 
-export default MedicalExperience;
+export default withRouter(MedicalExperience);

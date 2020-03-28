@@ -1,5 +1,6 @@
 // Dependencies
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 // Components
 import {
@@ -9,7 +10,7 @@ import {
 import Header from 'components/Header';
 import Gallery from 'components/Gallery';
 
-const OtherExperience = () => {
+const OtherExperience = (props) => {
   const content = {
     title: "I am more than just a coder",
     description: `I have a rich history of experiences ranging from
@@ -20,7 +21,7 @@ const OtherExperience = () => {
   return (
     <Page
       meta={{
-        domain: WEBSITE_URL,
+        canonical: WEBSITE_URL + props.location.pathname,
         title: content.title,
         description: content.description
       }}
@@ -57,4 +58,4 @@ const OtherExperience = () => {
   );
 }
 
-export default OtherExperience;
+export default withRouter(OtherExperience);

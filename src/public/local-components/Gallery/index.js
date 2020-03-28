@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Components
-import { Article, LazyLoad } from '@thewickedwebdev/components';
+import { Article, Image } from '@thewickedwebdev/components';
 
 // Styling
 import './styles.scss';
@@ -34,33 +34,18 @@ const Gallery = () => {
   return (
     <Article title={copy.title} className="gallery__article">
       <p className="gallery__article__intro">{copy.copy}</p>
-      <noscript key="noscript">
-        { copy.content.map((image, index) => (
-          <li className="image-list-item" key={index}>
-            <figure>
-              <img
-                src={`${S3_URL}/images/gallery/${image.src}`}
-                alt={image.alt}
-                title={image.alt}
-                className="image-list-item__image"
-              />
-              <figcaption><h4>{image.alt}</h4></figcaption>
-            </figure>
-          </li>
-        ))}
-      </noscript>
       <ul className="image-list" key="image-list">
         { copy.content.map((image, index) => (
           <li className="image-list-item" key={index}>
             <figure>
-              <LazyLoad skeleton={<Skeleton/>}>
-                <img
-                  src={`${S3_URL}/images/gallery/${image.src}`}
-                  alt={image.alt}
-                  title={image.alt}
-                  className="image-list-item__image"
-                />
-              </LazyLoad>
+              <Image
+                src={`${S3_URL}/images/gallery/${image.src}`}
+                alt={image.alt}
+                title={image.alt}
+                width="200px"
+                height="133px"
+                className="image-list-item__image"
+              />
               <figcaption><h4>{image.alt}</h4></figcaption>
             </figure>
           </li>
@@ -69,15 +54,5 @@ const Gallery = () => {
     </Article>
   );
 };
-
-export const Skeleton = () => {
-    return <div
-        className="skeleton bg-light"
-        style={{
-            width: '200px',
-            height: '133px'
-        }} />;
-}
-;
 
 export default Gallery;

@@ -1,13 +1,13 @@
 // Dependencies
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { withRouter } from 'react-router-dom';
 
 // Components
-import {
-  List, Section, Article, TagList, Page, Link,
-} from '@thewickedwebdev/components';
+import { List, Section, Article, TagList, Page } from '@thewickedwebdev/components';
 
 import Header from 'components/Header';
+import Link from 'components/Link';
 import References from 'components/References';
 import Highlight, { EmploymentRole } from 'components/Employment';
 
@@ -24,11 +24,11 @@ import {
 } from './content';
 
 // Main
-const Home = () => (
+const Home = (props) => (
   <Page
     className="Homepage__Page"
     meta={{
-      domain: WEBSITE_URL,
+      canonical: WEBSITE_URL + props.location.pathname,
       title: copy.title,
       description: copy.description,
     }}
@@ -74,13 +74,13 @@ const Home = () => (
         href="https://blog.thewickedweb.dev/do-it-yourself/how-i-code-split-server-side-rendered-made-performant-my-resume-react-application/296/"
         title="How I Code Split and Server Side Rendered my performant Resume React Application"
       >
-        <button class="btn-link-full">Learn More</button>
+        <button className="btn-link-full">Learn More</button>
       </Link>
     </div>
     <Section>
       <Article title={copy.skills.title}>
         { skills.map(({ content }, i) => (
-          <TagList tags={content}/>
+          <TagList key={i} tags={content}/>
         ))}
       </Article>
       <Article title={copy.highlight.title}>
@@ -97,7 +97,7 @@ const Home = () => (
       </Article>
       <Article title={copy.additionalExperience.title}>
         {additionalExperience.map((role, i) => (
-          <div>
+          <div key={i}>
             <EmploymentRole {...role}/>
             <p>{role.description}</p>
             <br/>
@@ -132,4 +132,4 @@ const TechIcons = ({ items }) => [
   />
 ];
 
-export default Home;
+export default withRouter(Home);

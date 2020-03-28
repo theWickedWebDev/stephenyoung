@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, Image } from '@thewickedwebdev/components';
+import { Image } from '@thewickedwebdev/components';
+import Link from 'components/Link';
 
 const Logo = () => (
   <Link href="/" title="Home" internal={true} className="Logo__Link">

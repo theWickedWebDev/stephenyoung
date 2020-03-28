@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from '@thewickedwebdev/components';
+import Link from 'components/Link';
 import links from '../links.js';
 
 const Links = ({ open, location }) => {
