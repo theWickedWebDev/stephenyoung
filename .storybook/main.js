@@ -1,3 +1,4 @@
+const domain = require('domain');
 const path = require('path');
 const MiniCssExtractPlugin =  require("mini-css-extract-plugin");
 const results = require('./test-results.json');

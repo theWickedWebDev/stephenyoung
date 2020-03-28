@@ -29,8 +29,8 @@ const MedicalExperience = () => {
 
   return (
     <Page
-      domain={WEBSITE_URL}
       meta={{
+        domain: WEBSITE_URL,
         keywords: "Medical, Phlebotomy, Medical Assistant",
         title: "Phlebotomist and Medical Assistant",
         description: `For the first 5 years or so of my professional

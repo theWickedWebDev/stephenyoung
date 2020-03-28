@@ -1,11 +1,15 @@
 # Article
-##### This is used to render a simple list element.
+##### This is used to render an <article/> layout element.
 <br/>
 
 ```
 import { Article } from '@thewickedwebdev/components';
 ```
 <br/>
+### How to use
+The intended purpose of this component was to be nested inside of `<Section/>`
+which would then also be nested inside of `<Page/>`. Doing it this way will
+provide consistent styling.
 
 ### API
 

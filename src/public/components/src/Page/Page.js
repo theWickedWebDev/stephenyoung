@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import Meta from '../Meta/index.js';
 
 const Page = props => {
-  const { meta, className, location, robots, keywords, domain } = props;
+  const { meta, className, location, robots, keywords } = props;
 
   return (
     <div className={`PageComponent ${className}`}>
@@ -13,7 +13,7 @@ const Page = props => {
         keywords={keywords || "HTML,CSS,XML,JavaScript"}
         title={meta.title}
         description={meta.description}
-        canonical={`${domain}${location.pathname}`}
+        canonical={`${meta.domain}${location.pathname}`}
       />
       { props.children }
     </div>

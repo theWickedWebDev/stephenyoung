@@ -27,7 +27,11 @@ import {
 const Home = () => (
   <Page
     className="Homepage__Page"
-    meta={{ title: copy.title, description: copy.description }}
+    meta={{
+      domain: WEBSITE_URL,
+      title: copy.title,
+      description: copy.description,
+    }}
   >
     <Header
       title={copy.title}

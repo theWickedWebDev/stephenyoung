@@ -33,9 +33,12 @@ const About = ({ location }) => {
 
   return (
     <Page
-      domain={WEBSITE_URL}
       className="About__Page"
-      meta={{ title: copy.title, description: copy.description }}
+      meta={{
+        domain: WEBSITE_URL,
+        title: copy.title,
+        description: copy.description,
+      }}
     >
       <Viewport>{ (viewport) => (
         <React.Fragment>

@@ -19,8 +19,8 @@ const OtherExperience = () => {
 
   return (
     <Page
-      domain={WEBSITE_URL}
       meta={{
+        domain: WEBSITE_URL,
         title: content.title,
         description: content.description
       }}
