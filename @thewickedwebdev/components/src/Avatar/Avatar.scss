@@ -1,0 +1,41 @@
+@import '../styleguide/variables.scss';
+
+.Avatar {
+  display: inline-block;
+  text-align: center;
+  background-color: #f4f4f4;
+  font-weight: bold;
+  background-color: $lightGray;
+  color: $bodyTextColor;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: $secondaryFont;
+
+  &.primary {
+    background-color: $primaryColor;
+    color: $primaryColor_light;
+  }
+
+  &.secondary {
+    background-color: $secondaryColor;
+    color: $secondaryColor_light;
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .Avatar_child {
+    transform-origin: 0 center;
+    position: absolute;
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+  }
+}

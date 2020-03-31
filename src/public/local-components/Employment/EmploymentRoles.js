@@ -32,7 +32,14 @@ const EmploymentRole = ({ name, date: { from, until, format }}) => {
   );
 }
 
-const Date = ({ date }) => (<time dateTime={date}>{ date }</time>);
+const Date = ({ date }) => (
+  <time
+    dateTime={date}
+    className="EmploymentRoles_Date"
+  >
+      { date }
+  </time>
+);
 
 export { EmploymentRole };
 export default EmploymentRoles;

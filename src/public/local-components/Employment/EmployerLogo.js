@@ -15,7 +15,7 @@ const EmployerLogo = ({ src, className }) => {
     <Image
       src={src}
       className="vertical-align-middle margin-right-lg EmployerLogo__image"
-      width="90px"
+      width="120px"
       alt="Logo"
       title="Logo"
     />

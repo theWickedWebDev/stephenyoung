@@ -9,10 +9,7 @@ import Header from 'components/Header';
 const NoMatch = (props) => (
   <Page
     className="About__Page"
-    meta={{
-      title: 'Uh oh! 404',
-      robots: 'noindex',
-   }}
+    meta={{ title: 'Uh oh! 404', robots: 'noindex' }}
   >
     <Header
       title="404 - Sorry!"

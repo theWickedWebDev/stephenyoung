@@ -43,7 +43,7 @@ const MedicalExperience = (props) => {
         subtitle="Sometimes referred to as a vampire or dracula"
         style={{ backgroundColor: "#444444" }}
       />
-      <Section>
+      <Section className="container-fh">
         <Article title="Medical Industry">
             <h3>Phlebotomist / Medical Assistant</h3>
             <h4>Keywords / Skills</h4>

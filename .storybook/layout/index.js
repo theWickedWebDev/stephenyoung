@@ -4,6 +4,7 @@ import { makeDecorator } from '@storybook/addons';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierEstuaryLight as highlightStyle } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
+require('@thewickedwebdev/components/dist/bundle.css');
 require('./styles.scss');
 
 export default makeDecorator({
@@ -42,7 +43,7 @@ export default makeDecorator({
             </div>
           </div>
         }
-        
+
         { source &&
           <div className="LayoutDecorator__sourceExample">
             <h3>Source Example</h3>

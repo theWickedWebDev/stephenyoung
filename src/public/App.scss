@@ -1,4 +1,6 @@
 @import '~@thewickedwebdev/components/dist/bundle.css';
-@import './css-reset';
-@import './fonts';
-@import './styleguide';
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
+
+.ArticleComponent .ArticleComponent__h2 {
+  top: 30px;
+}

@@ -29,7 +29,7 @@ const OtherExperience = (props) => {
         subtitle={content.description}
         style={{ backgroundColor: "#444444" }}
       />
-      <Section>
+      <Section className="container-fh">
         <Article title="Professional">
           <h3>Phlebotomist / Medical Assistant (5 years experience)</h3>
           <Link

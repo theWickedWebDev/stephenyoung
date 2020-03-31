@@ -39,7 +39,14 @@ const Home = (props) => (
       intro={copy.description}
       avatar={`${S3_URL}/images/avatar/avatar-2.svg`}
     />
-    <TechIcons items={techIcons}/>
+    <List
+      inline
+      key="icon-list"
+      className="IconList"
+      itemClassName="IconList__item"
+      items={techIcons}
+      renderer={({ icon }) => (<FontAwesomeIcon icon={icon}/>)}
+    />
     <div
       style={{
         textAlign: "center",
@@ -77,7 +84,7 @@ const Home = (props) => (
         <button className="btn-link-full">Learn More</button>
       </Link>
     </div>
-    <Section>
+    <Section className="container-fh">
       <Article title={copy.skills.title}>
         <List
           inline
@@ -100,40 +107,22 @@ const Home = (props) => (
         />
       </Article>
       <Article title={copy.additionalExperience.title}>
-        {additionalExperience.map((role, i) => (
-          <div key={i}>
-            <EmploymentRole {...role}/>
-            <p>{role.description}</p>
-            <br/>
-          </div>
-        ))}
+        <List
+          items={additionalExperience}
+          renderer={role => (
+            <div>
+              <EmploymentRole {...role}/>
+              <p>{role.description}</p>
+              <br/>
+            </div>
+          )}
+        />
       </Article>
       <Article title={copy.references.title}>
         <References/>
       </Article>
-      <br/>
     </Section>
   </Page>
 );
-
-const TechIcons = ({ items }) => [
-  <noscript key="noscript">
-    <List
-      inline
-      className="icon-list icon-list-light icon-list-small"
-      itemClassName="icon-list-item"
-      items={items}
-      renderer={({ name }) => (<em title={name}>{name}</em>)}
-    />
-  </noscript>,
-  <List
-    inline
-    key="icon-list"
-    className="icon-list icon-list-light"
-    itemClassName="icon-list-item"
-    items={items}
-    renderer={({ icon }) => (<FontAwesomeIcon icon={icon}/>)}
-  />
-];
 
 export default withRouter(Home);

@@ -42,7 +42,7 @@ const About = ({ location }) => {
       <Viewport>{ (viewport) => (
         <React.Fragment>
           <Header title={copy.title} intro={copy.description}/>
-          <Section>
+          <Section className="container-fh">
             <Article title={copy.outcomeHeader} className="about-page__component">
               <ul className="tools-list">
                 <li><FontAwesomeIcon icon={[ 'fab', 'node-js' ]}/> Node, Express</li>

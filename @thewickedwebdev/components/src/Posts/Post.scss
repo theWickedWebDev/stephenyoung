@@ -1,0 +1,62 @@
+@import '../styleguide/variables.scss';
+
+.PostComponent {
+  border-left: solid 3px #e7e7e7;
+  display: block;
+  width: 100%;
+}
+
+.PostComponent__Avatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.PostComponent__content {
+  padding: 12px 30px 6px;
+}
+
+.PostComponent__quote {
+  text-align: justify;
+}
+
+.PostComponent__name {
+  float: right;
+}
+
+.PostComponent__image {
+  float: left;
+  border-radius: 100px;
+  margin: 0 12px 12px 0;
+}
+
+.PostComponent__firstLine {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0 0 6px;
+  padding: 0;
+}
+
+.PostComponent__p {
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+.PostComponent.small {
+  border-left: 0;
+  max-width: 100%;
+  width: 300px;
+
+  .PostComponent__name {
+    float: none;
+    font-size: 14px;
+  }
+
+  .PostComponent__firstLine {
+    font-size: 16px;
+  }
+
+  .PostComponent__p {
+    font-size: 14px;
+  }
+}

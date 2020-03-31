@@ -1,48 +1,28 @@
 @import '../../variables';
-// TODO: Refactor
-.icon-list {
-  text-align: center;
 
-  &.icon-list-dark {
-    background-color: $primaryColor;
-
-    .icon-list-item {
-      color: $primaryColor_light;
-    }
-  }
-
-  &.icon-list-light {
+.Homepage__Page {
+  .IconList {
+    text-align: center;
     background-color: $primaryColor_light;
 
-    .icon-list-item {
-      color: $primaryColor;
+    .IconList__item {
+      display: inline-block;
+      margin: 24px;
+      font-size: 60px;
+        color: $primaryColor;
     }
   }
 
-  .icon-list-item {
-    display: inline-block;
-    margin: 24px;
-    font-size: 60px;
-  }
+  .mobile,
+  .tablet {
+    .IconList {
+      padding: 20px 0;
 
-  // noscript - javascript off
-  &.icon-list-small {
-    .icon-list-item em {
-      font-size: 30px;
-      font-family: $primaryFont;
-      font-style: normal;
+      .IconList__item {
+        font-size: 30px;
+        margin: 12px 20px;
+      }
     }
   }
-}
 
-.mobile,
-.tablet {
-  .icon-list {
-    padding: 20px 0;
-
-    .icon-list-item {
-      font-size: 30px;
-      margin: 12px 20px;
-    }
-  }
 }

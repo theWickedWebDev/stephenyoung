@@ -47,7 +47,7 @@ const Header = (props) => {
         />
         <br/>
         <a href={download.href} target="_blank" title={download.name}>
-          <button className="btn-link-full">
+          <button className="btn-secondary">
             <FontAwesomeIcon icon={download.icon} />
             &nbsp;
             {download.name}

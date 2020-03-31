@@ -1,0 +1,16 @@
+@import 'reset.css';
+@import './variables.scss';
+@import './fonts.css';
+
+// Import this here due to "flicker" during SSR
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
+
+body {
+  font-family: $primaryFont;
+  font-size: 16px;
+  line-height: 28px;
+  color: $bodyTextColor;
+}
+
+@import 'Typeography';
+@import 'Buttons';

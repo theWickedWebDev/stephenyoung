@@ -12,17 +12,19 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight';
 import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart';
 import { faLink } from '@fortawesome/free-solid-svg-icons/faLink';
 import { faBook } from '@fortawesome/free-solid-svg-icons/faBook';
+import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 
 library.add(
-    faEllipsisV,
-    faEllipsisH,
-    faHome,
-    faStar,
-    faDownload,
-    faArrowRight,
-    faHeart,
-    faLink,
-    faBook,
+  faEllipsisV,
+  faEllipsisH,
+  faHome,
+  faStar,
+  faDownload,
+  faArrowRight,
+  faHeart,
+  faLink,
+  faBook,
+  faUser,
 );
 
 // FREE BRANDED
@@ -35,11 +37,11 @@ import { faAws } from '@fortawesome/free-brands-svg-icons/faAws';
 import { faExpeditedssl } from '@fortawesome/free-brands-svg-icons/faExpeditedssl';
 
 library.add(
-    faNodeJs,
-    faNode,
-    faReact,
-    faHtml5,
-    faCss3Alt,
-    faAws,
-    faExpeditedssl,
+  faNodeJs,
+  faNode,
+  faReact,
+  faHtml5,
+  faCss3Alt,
+  faAws,
+  faExpeditedssl,
 );

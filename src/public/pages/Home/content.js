@@ -3,7 +3,7 @@ export const highlight = {
   name: 'Paint Nite, LLC d/b/a Yaymaker',
   address: 'Somerville, MA (Remote)',
   href: 'https://www.yaymaker.com/',
-  logo: `${S3_URL}/images/resume/yaymaker-logo.svg`,
+  logo: `${S3_URL}/images/resume/paintnite-logo.svg`,
   roles: [
     { name: 'Senior Software Engineer',
       date: { from: 'May 2016', until: 'Feb 2020', format: 'MMM YYYY' },

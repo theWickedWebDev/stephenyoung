@@ -4,7 +4,7 @@ const MiniCssExtractPlugin =  require("mini-css-extract-plugin");
 const results = require('./test-results.json');
 
 module.exports = {
-  stories: ['../src/**/*.stories.js'],
+  stories: ['../@thewickedwebdev/components/index.stories.js'],
   addons: [
     '@storybook/addon-actions',
     '@storybook/addon-links',
@@ -15,7 +15,7 @@ module.exports = {
   webpackFinal: async config => {
     const rules = [
       {
-        test: /components\/+[.]js$/,
+        test: /@thewickedwebdev\/components\/+[.]js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -46,19 +46,12 @@ module.exports = {
       }
     ];
 
-    const alias = {
-      layouts: path.resolve(__dirname, '../src/public/layouts/'),
-      components: path.resolve(__dirname, '../src/public/components/src/'),
-      pages: path.resolve(__dirname, '../src/public/pages/'),
-    };
-
     const plugins = [
       new MiniCssExtractPlugin({
         filename: "[name].[contenthash].css",
       }),
     ];
 
-    config.resolve.alias = { ...config.resolve.alias, ...alias };
     config.module.rules = config.module.rules.concat(rules);
     config.plugins = config.plugins.concat(plugins);
 

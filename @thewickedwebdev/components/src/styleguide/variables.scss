@@ -1,0 +1,39 @@
+$black: #000;
+$white: #fff;
+
+// Palette 1
+$blue: #2fa4f7;
+$darkBlue: #11486e;
+
+// Palette 2
+$coral: #ED6B5A;
+$softBlue: #258ea1;
+$beige: #e5c4a3;
+
+// Other
+$teal: #1e7d78;
+$lightBrown: #a27749;
+$red: #f00;
+$green: #2c7d1e;
+$lightGray: #e7e7e7;
+$darkGray: #5d5d5d;
+
+// NAMED
+$primaryColor: $coral;
+$secondaryColor: $softBlue;
+$linkColor: $softBlue;
+
+$linkColorText: lighten($linkColor, 60);
+$primaryColor_light: lighten($primaryColor, 40);
+$secondaryColor_light: lighten($secondaryColor, 50);
+
+// FONTS
+$primaryFont: 'Spartan';
+$secondaryFont: 'Roboto';
+$bodyTextColor: $black;
+
+// Position and Other
+$top_max: 999;
+$top_justBelowMax: 998;
+$top_belowMax: 997;
+$bodyMaxWidth: 1100px;

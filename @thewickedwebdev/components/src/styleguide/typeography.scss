@@ -1,0 +1,82 @@
+@import 'variables';
+
+em {
+  font-style: normal;
+  border-bottom: solid 1px $lightGray;
+
+  &.alt {
+    border-bottom: dotted 2px $primaryColor;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+
+  &.disabled {
+    color: $bodyTextColor;
+  }
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+h1 {
+  font-family: $secondaryFont;
+  font-size: 42px;
+  font-weight: normal;
+  padding-bottom: 12px;
+  margin: 26px 0 24px;
+}
+
+h2 {
+  font-family: $secondaryFont;
+  font-size: 26px;
+  padding-bottom: 8px;
+  margin: 28px 0 12px;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: $secondaryFont;
+  font-weight: bold;
+  color: $primaryColor;
+  padding-bottom: 8px;
+  margin: 24px 0 12px;
+}
+
+h4 {
+  font-family: $primaryFont;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 18px 0 10px;
+}
+
+.dropcap {
+  display: block;
+
+  &:first-child:first-letter {
+    color: $primaryColor;
+    font-family: $secondaryFont;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+}

@@ -9,25 +9,20 @@ module.exports = {
     PORT: 3333,
   },
   collectCoverage: true,
-  collectCoverageFrom: [
-    "<rootDir/src/**/*.{js,jsx}",
-  ],
   setupFilesAfterEnv: [
     '<rootDir>/test/testSetupFile.js',
     "jest-enzyme",
   ],
-  moduleDirectories: [
-     "node_modules",
-     "app"
-   ],
+  moduleDirectories: [ "node_modules" ],
   testEnvironment: "enzyme",
   testEnvironmentOptions: {
     "enzymeAdapter": "react16"
   },
   moduleNameMapper: {
+    "@thewickedwebdev/components": "<rootDir>/node_modules/@thewickedwebdev/components",
     "assets(.*)$": "<rootDir>/src/public/assets/$1",
     "layouts(.*)$": "<rootDir>/src/public/layouts/$1",
-    "components(.*)$": "<rootDir>/src/public/components/$1",
+    "components(.*)$": "<rootDir>/src/public/local-components/$1",
     "pages(.*)$": "<rootDir>/src/public/pages/$1",
     "\\.(css|scss)$": "<rootDir>/test/__mocks__/styleMock.js",
     "\\.(xml|txt)$": "<rootDir>/test/__mocks__/fileMock.js",
@@ -35,10 +30,8 @@ module.exports = {
    },
   watchPathIgnorePatterns: [
     'src/server/resume-builder.test.js',
-    'src/server/index.test.js',
-    'src/public/App.test.js',
-    'dist/',
+    './dist/',
+    '@thewickedwebdev',
     'config/',
-  ],
-  transformIgnorePatterns: ['node_modules/']
+  ]
 };

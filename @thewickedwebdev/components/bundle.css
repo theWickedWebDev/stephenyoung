@@ -1,0 +1,145 @@
+.SectionComponent {
+  padding: 0 24px;
+}.ArticleComponent {
+  padding: 24px 0;
+}
+.ArticleComponent .ArticleComponent__content {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+.ArticleComponent .ArticleComponent__h2 {
+  padding: 12px 2px 36px;
+  background-color: #fff;
+  margin-top: 0;
+  z-index: 997;
+  position: sticky;
+  top: 0;
+}.Tag {
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.Tag__Icon {
+  padding-right: 10px;
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+.Tag.Small {
+  padding: 1px 8px;
+  font-size: 14px;
+}@import 'reset.css';
+@import './fonts.css';
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
+body {
+  font-family: "Spartan";
+  font-size: 16px;
+  line-height: 28px;
+  color: #000;
+}
+
+em {
+  font-style: normal;
+  border-bottom: solid 1px #e7e7e7;
+}
+em.alt {
+  border-bottom: dotted 2px #ED6B5A;
+}
+
+a {
+  text-decoration: none;
+  color: #258ea1;
+}
+a.disabled {
+  color: #000;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-size: 42px;
+  font-weight: normal;
+  padding-bottom: 12px;
+  margin: 26px 0 24px;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-size: 26px;
+  padding-bottom: 8px;
+  margin: 28px 0 12px;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #ED6B5A;
+  padding-bottom: 8px;
+  margin: 24px 0 12px;
+}
+
+h4 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: bold;
+  margin: 18px 0 10px;
+}
+
+.dropcap {
+  display: block;
+}
+.dropcap:first-child:first-letter {
+  color: #ED6B5A;
+  font-family: "Roboto";
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+button {
+  border: 0;
+  font-size: 16px;
+  padding: 12px 24px;
+  outline: none;
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.btn-primary {
+  background-color: #ED6B5A;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #258ea1;
+  color: white;
+}
+
+.btn-container {
+  padding: 12px 0;
+  display: block;
+}
