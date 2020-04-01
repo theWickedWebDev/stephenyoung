@@ -1,6 +1,37 @@
+@import './variables';
 @import '~@thewickedwebdev/components/dist/bundle.css';
 @import '~@fortawesome/fontawesome-svg-core/styles.css';
 
 .ArticleComponent .ArticleComponent__h2 {
   top: 30px;
+}
+
+.mobile {
+  .ArticleComponent .ArticleComponent__h2 {
+    position: static;
+  }
+
+  // TODO: Refactor Header Component
+  .MedicalExperience__Page,
+  .OtherExperience__page,
+  .About__Page {
+    .header__component .header__body {
+      padding: 60px 12px 40px;
+    }
+  }
+
+  .About__Page {
+    .header__component-h1 {
+      background-color: $primaryColor;
+      color: $primaryColor_light;
+    }
+  }
+
+  .MedicalExperience__Page,
+  .OtherExperience__page {
+    .header__component-h1 {
+      background-color: #444;
+      color: $white;
+    }
+  }
 }

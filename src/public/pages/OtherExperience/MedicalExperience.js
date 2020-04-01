@@ -29,6 +29,7 @@ const MedicalExperience = (props) => {
 
   return (
     <Page
+      className="MedicalExperience__Page"
       meta={{
         canonical: WEBSITE_URL + props.location.pathname,
         keywords: "Medical, Phlebotomy, Medical Assistant",

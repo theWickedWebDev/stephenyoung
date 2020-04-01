@@ -44,17 +44,27 @@ const About = ({ location }) => {
           <Header title={copy.title} intro={copy.description}/>
           <Section className="container-fh">
             <Article title={copy.outcomeHeader} className="about-page__component">
-              <ul className="tools-list">
-                <li><FontAwesomeIcon icon={[ 'fab', 'node-js' ]}/> Node, Express</li>
-                <li><FontAwesomeIcon icon={[ 'fab', 'react' ]}/> React, Webpack, SCSS</li>
-                <li><FontAwesomeIcon icon={[ 'fab', 'aws' ]}/>  EC2, Load Balancer, S3, CloudFront</li>
-                <li><FontAwesomeIcon icon={[ 'fab', 'expeditedssl' ]}/> SSL HTTPS</li>
-              </ul>
+              <List
+                inline
+                className="tools-list"
+                items={[
+                  { icon: [ 'fab', 'node-js' ], copy: "Node, Express"},
+                  { icon: [ 'fab', 'react' ], copy: "React, Webpack, SCSS"},
+                  { icon: [ 'fab', 'aws' ], copy: "EC2, Load Balancer, S3, CloudFront"},
+                  { icon: [ 'fab', 'expeditedssl' ], copy: "SSL HTTPS"},
+                ]}
+                renderer={({ icon, copy }) => (
+                  <div style={{margin: '3px'}}>
+                    <FontAwesomeIcon icon={icon}/> {copy}
+                  </div>
+                )}
+              />
               <br/>
               <h3>Accessibility</h3>
               <List
+                inline
                 items={['W3C - Web Accessibility Initiative']}
-                renderer={item => <Tag>{item}</Tag>}
+                renderer={item => <Tag style={{margin: '3px'}}>{item}</Tag>}
               />
               <ul>
                 <li>
@@ -112,13 +122,14 @@ const About = ({ location }) => {
 
               <h3>Site Performance</h3>
               <List
+                inline
                 items={[
                   'GtMetrix',
                   'Webpack Bundle Analyzer',
                   'CloudFront',
                   'Express',
                 ]}
-                renderer={item => <Tag>{item}</Tag>}
+                renderer={item => <Tag style={{margin: '3px'}}>{item}</Tag>}
               />
                 <ul>
                     <li>
@@ -201,8 +212,9 @@ const About = ({ location }) => {
                 <br/>
                 <h3>Search Engine Optimization (<abbr>SEO</abbr>)</h3>
                 <List
+                  inline
                   items={[ 'Screaming Frog', 'Google Tools']}
-                  renderer={item => <Tag>{item}</Tag>}
+                  renderer={item => <Tag style={{margin: '3px'}}>{item}</Tag>}
                 />
                 <ul>
                     <li>
@@ -254,8 +266,9 @@ const About = ({ location }) => {
                 <br/>
                 <h3>Just Kinda Cool</h3>
                 <List
+                  inline
                   items={[ 'PDFKit', 'Node']}
-                  renderer={item => <Tag>{item}</Tag>}
+                  renderer={item => <Tag style={{margin: '3px'}}>{item}</Tag>}
                 />
                 <ul>
                     <li>
@@ -317,8 +330,9 @@ const About = ({ location }) => {
                 <br/>
                 <h3>Code Quality</h3>
                 <List
+                  inline
                   items={[ 'Jest', 'Enzyme', 'Nightwatch' ]}
-                  renderer={item => <Tag>{item}</Tag>}
+                  renderer={item => <Tag style={{margin: '3px'}}>{item}</Tag>}
                 />
                 <br/>
                 <ul>

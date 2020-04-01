@@ -33,5 +33,5 @@ export default create({
 
   brandTitle: 'TheWickedWebDev',
   brandUrl: 'https://www.thewickedweb.dev/',
-  brandImage: 'https://cdn.thewickedweb.dev/images/avatar/avatar-square-blue.jpg'
+  brandImage: 'https://cdn.thewickedweb.dev/images/avatar/square-coral@.1x.jpg'
 });

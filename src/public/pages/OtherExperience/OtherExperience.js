@@ -18,6 +18,7 @@ const OtherExperience = (props) => {
 
   return (
     <Page
+      className="OtherExperience__page"
       meta={{
         canonical: WEBSITE_URL + props.location.pathname,
         title: content.title,

@@ -8,7 +8,7 @@
   h3 {
     position: sticky;
     top: 90px;
-    z-index: 9999;
+    z-index: $top_belowMax;
     background-color: #fff;
   }
 
@@ -74,7 +74,7 @@
     }
 
     h3 {
-      font-size: 18px;
+      position: static;
     }
 
     .fa-arrow-right {
