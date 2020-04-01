@@ -1,4 +1,3 @@
-const config = require('config');
 const compression = require('compression');
 const express = require('express');
 const path = require('path');
@@ -28,12 +27,12 @@ const app = express({ strict: true });
 
 app.use(compression());
 
-app.use('/static', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }));
+app.use('/static/', express.static(path.resolve(__dirname, 'public/'), { maxAge: '7d' }));
 app.use('/coverage/', express.static(path.resolve(__dirname, '../coverage/lcov-report/'), { maxAge: '7d' }));
-app.use('/storybook', express.static(path.resolve(__dirname, '../storybook-static/'), { maxAge: '7d' }));
 
 app.get('/robots.txt', (req, res) => {
-  if (config.get('env') === 'staging') {
+
+  if (req.headers.host.includes('staging.thewickedweb.dev')) {
     res.sendFile(path.resolve(__dirname, 'public/assets/robots-staging.txt'));
   } else {
     res.sendFile(path.resolve(__dirname, 'public/assets/robots.txt'));

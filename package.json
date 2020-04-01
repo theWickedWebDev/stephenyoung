@@ -19,8 +19,8 @@
     "flow-typed": "flow-typed install",
     "test": "NODE_ENV=test BABEL_ENV=test jest ./src --detectOpenHandles --json --outputFile=.storybook/test-results.json",
     "test:watch": "NODE_ENV=test && BABEL_ENV=test && jest -o --watch --config=jest.config.js",
-    "storybook": "NODE_ENV=production start-storybook -s ./src -p 6006",
-    "buildstorybook": "NODE_ENV=production build-storybook"
+    "storybook": "NODE_ENV=production start-storybook -p 6006",
+    "buildstorybook": "NODE_ENV=development build-storybook -c ./.storybook -o storybook-static"
   },
   "engines": {
     "node": "9.2.0"
@@ -121,7 +121,7 @@
     "@storybook/addon-jest": "^5.3.17",
     "@storybook/addon-links": "^5.3.17",
     "@storybook/addons": "^5.3.17",
-    "@storybook/react": "^5.3.17",
+    "@storybook/react": "^5.3.18",
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
     "supertest": "^4.0.2",

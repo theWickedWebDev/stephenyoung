@@ -32,6 +32,6 @@ export default create({
   inputBorderRadius: 2,
 
   brandTitle: 'TheWickedWebDev',
-  brandUrl: '/',
+  brandUrl: 'https://www.thewickedweb.dev/',
   brandImage: 'https://cdn.thewickedweb.dev/images/avatar/avatar-square-blue.jpg'
 });

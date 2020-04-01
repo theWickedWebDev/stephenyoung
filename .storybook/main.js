@@ -1,10 +1,8 @@
 const domain = require('domain');
 const path = require('path');
 const MiniCssExtractPlugin =  require("mini-css-extract-plugin");
-const results = require('./test-results.json');
 
 module.exports = {
-  stories: ['../@thewickedwebdev/components/index.stories.js'],
   addons: [
     '@storybook/addon-actions',
     '@storybook/addon-links',
@@ -15,7 +13,7 @@ module.exports = {
   webpackFinal: async config => {
     const rules = [
       {
-        test: /@thewickedwebdev\/components\/+[.]js$/,
+        test: /\.js/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -23,7 +21,6 @@ module.exports = {
             "presets": [
               '@babel/env',
               '@babel/react',
-              "@babel/preset-flow"
             ],
             "plugins": [
               "transform-es2015-modules-commonjs",

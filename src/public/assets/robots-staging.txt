@@ -1,5 +1,2 @@
 User-agent: *
-Allow: /$
-Disallow: /coverage/
-Disallow: /static/
-Sitemap: https://www.thewickedweb.dev/sitemap.xml
+Disallow: /

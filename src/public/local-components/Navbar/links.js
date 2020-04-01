@@ -25,7 +25,7 @@ const links = [
     icon: 'book',
     internal: false,
     slug: 'storybook-components',
-    href: `/storybook/`
+    href: 'https://cdn.thewickedweb.dev/storybook/index.html?path=/story/general--image'
   },
   {
     title: 'Download Résumé PDF',
