@@ -28,7 +28,7 @@ const Home = (props) => (
   <Page
     className="Homepage__Page"
     meta={{
-      canonical: WEBSITE_URL + props.location.pathname,
+      canonical: WEBSITE_URL,
       title: copy.title,
       description: copy.description,
     }}
@@ -47,43 +47,6 @@ const Home = (props) => (
       items={techIcons}
       renderer={({ icon }) => (<FontAwesomeIcon icon={icon}/>)}
     />
-    <div
-      style={{
-        textAlign: "center",
-        backgroundColor: "#f4f4f4",
-        padding: "80px",
-      }}
-    >
-      <p style={{ fontSize: '20px' }}>
-        www.thewickedweb.dev is a great portfolio piece on its own
-      </p>
-      <br/>
-      <p>
-        I created my own&nbsp;
-          <Link href="/storybook" title="Component Library">
-            component library
-          </Link> which takes advantage of Storybook, it is&nbsp;
-          <Link href="/coverage/" title="Jest Test Coverage">
-            fully tested
-          </Link> with Jest/Enzyme
-          and&nbsp;
-          <Link href="/about-this-site/" title="About this site">
-            performant!
-          </Link>
-      </p>
-      <br/>
-      <p style={{ fontSize: '20px' }}>
-        How I Code Split and Server Side Rendered my performant
-        Resume React Application
-      </p>
-      <br/>
-      <Link
-        href="https://blog.thewickedweb.dev/do-it-yourself/how-i-code-split-server-side-rendered-made-performant-my-resume-react-application/296/"
-        title="How I Code Split and Server Side Rendered my performant Resume React Application"
-      >
-        <button className="btn-link-full">Learn More</button>
-      </Link>
-    </div>
     <Section className="container-fh">
       <Article title={copy.skills.title}>
         <List
