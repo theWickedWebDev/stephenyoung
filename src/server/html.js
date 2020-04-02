@@ -1,5 +1,4 @@
 import config from 'config';
-import structuredData from './structured-data';
 
 let GA = '';
 if (config.get('env') === 'production') {
@@ -26,7 +25,6 @@ const html = ({ url, helmet, component, scriptTags, linkTags, styleTags }) => {
       ${helmet.title.toString()}
       ${helmet.meta.toString()}
       ${helmet.link.toString()}
-      ${structuredData[url] ? structuredData[url] : ''}
       ${styleTags}
     </head>
     <body ${helmet.bodyAttributes.toString()}>
