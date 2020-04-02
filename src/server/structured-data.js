@@ -24,7 +24,7 @@ const structuredData = {
     "name" : "Stephen Young"
   },
   "image" : "https://s3.amazonaws.com/s3.thewickedweb.dev/images/avatar/avatar.svg",
-  "articleSection" : "Support others. Stay positive. Embrace Change. Take Risks.",
+  "articleSection" : "Support others. Stay positive. Embrace Change. Take Risks."
 }, {
   "@context" : "http://schema.org",
   "@type" : "Article",

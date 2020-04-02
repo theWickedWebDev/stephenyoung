@@ -6,7 +6,7 @@ export const highlight = {
   logo: `${S3_URL}/images/resume/paintnite-logo.svg`,
   roles: [
     { name: 'Senior Software Engineer',
-      date: { from: 'May 2016', until: 'Feb 2020', format: 'MMM YYYY' },
+      date: { from: 'May 2016', format: 'MMM YYYY' },
     },
     { name: 'Software Engineer, Front End',
       date: { from: 'May 2015', until: 'May 2016', format: 'MMM YYYY' },

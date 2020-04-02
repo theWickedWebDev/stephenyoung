@@ -14,7 +14,7 @@ const EmploymentRoles = ({ roles, className }) => {
       { roles.map((role, i) => <EmploymentRole {...role} key={i}/> )}
     </div>
   );
-}
+};
 
 const EmploymentRole = ({ name, date: { from, until, format }}) => {
   const DEFAULT_FORMAT = 'MM/DD/YYYY';
@@ -27,10 +27,13 @@ const EmploymentRole = ({ name, date: { from, until, format }}) => {
       <strong>{ name }</strong>
       &nbsp;-&nbsp;
       <Date date={moment(from, dateFormat).format(DATE_DISPLAY_FORMAT)} /> -
-      <Date date={moment(until, dateFormat).format(DATE_DISPLAY_FORMAT)} />
+      { until
+        ? <Date date={moment(until, dateFormat).format(DATE_DISPLAY_FORMAT)}/>
+        : ' (Current)'
+      }
     </p>
   );
-}
+};
 
 const Date = ({ date }) => (
   <time
