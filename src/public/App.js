@@ -13,6 +13,7 @@ const Home = loadable(() => import(/* webpackChunkName: "home" */'pages/Home'));
 const About = loadable(() => import(/* webpackChunkName: "about" */'pages/About'));
 const OtherExperience = loadable(() => import(/* webpackChunkName: "other-experience" */'pages/OtherExperience'));
 const NoMatch = loadable(() => import(/* webpackChunkName: "404" */'pages/404'));
+const Dee = loadable(() => import(/* webpackChunkName: "dee" */'pages/Dee'));
 
 const routes = [
     { path: '/',
@@ -33,15 +34,19 @@ const routes = [
         </DefaultLayout>
       )
     },
-    { path: '/other-experience/',
-      exact: false,
-      render: (props) => (
-        <DefaultLayout>
-          <ScrollToTop/>
-          <OtherExperience {...props}/>
-        </DefaultLayout>
-      )
-    },
+  { path: '/other-experience/',
+    exact: false,
+    render: (props) => (
+      <DefaultLayout>
+        <ScrollToTop/>
+        <OtherExperience {...props}/>
+      </DefaultLayout>
+    )
+  },
+  { path: '/fun/',
+    exact: true,
+    render: (props) => (<Dee {...props}/>)
+  },
 
     { path: '*',
       exact: false,

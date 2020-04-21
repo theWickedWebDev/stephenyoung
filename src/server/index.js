@@ -73,12 +73,9 @@ app.get('/*', (req, res) => {
 
   const helmet = Helmet.renderStatic();
 
-  // You can now collect your script tags
-  const scriptTags = extractor.getScriptTags(); // or extractor.getScriptElements();
-  // You can also collect your "preload/prefetch" links
-  const linkTags = extractor.getLinkTags(); // or extractor.getLinkElements();
-  // And you can even collect your style tags (if you use "mini-css-extract-plugin")
-  const styleTags = extractor.getStyleTags(); // or extractor.getStyleElements();
+  const scriptTags = extractor.getScriptTags();
+  const linkTags = extractor.getLinkTags();
+  const styleTags = extractor.getStyleTags();
 
   const renderedHtml = html({
     url: url,

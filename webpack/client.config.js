@@ -1,8 +1,4 @@
-const config = require('config');
-const log = require('loglevel');
-const webpack = require('webpack')
-const nodeExternals = require('webpack-node-externals')
-const path = require('path')
+const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
@@ -20,7 +16,7 @@ const getConfig = env => {
       default:
         return '/static/';
     }
-  }
+  };
   const plugins = [
     new CleanObsoleteChunks(),
     new CopyPlugin([
@@ -77,7 +73,7 @@ const getConfig = env => {
       publicPath: getPublicPath(env),
     },
     plugins: plugins,
-  }
-}
+  };
+};
 
-module.exports = getConfig
+module.exports = getConfig;

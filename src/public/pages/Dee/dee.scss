@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap');
+
+.DeeFun {
+  background-image: url(https://cdn.thewickedweb.dev/fun/wallpaper.jpg);
+  cursor: url("https://cdn.thewickedweb.dev/fun/cursor.png"), auto;
+
+  .body {
+    width: 1000px;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 40px 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+  }
+
+  * {
+    cursor: url("https://cdn.thewickedweb.dev/fun/cursor.png"), auto;
+  }
+
+  button {
+    cursor: url("https://cdn.thewickedweb.dev/fun/cursor-worry.png"), auto;
+  }
+
+  .blinking {
+    animation:blinkingText 1.2s infinite;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .sidebar {
+    background-color: #9c57ce;
+    color: #fff;
+    font-size: 18px;
+    border-right: #000 9px double;
+    width: 200px;
+    padding: 24px;
+    vertical-align: top;
+
+    select {
+      height: 30px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      text-transform: capitalize;
+      margin-top: 20px;
+      font-size: 22px;
+    }
+
+    h3 {
+      color: #fff;
+      border: solid 1px #fff;
+      line-height: 33px;
+      margin: 0;
+      padding: 0 0 0 12px;
+    }
+  }
+
+  .error-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f00;
+    color: #fff;
+    padding: 300px;
+    text-align: center;
+    cursor: url("https://cdn.thewickedweb.dev/fun/cursor-angry.png"), auto;
+
+    h1 { font-size: 120px; }
+  }
+
+  .main-content {
+    padding: 60px;
+    background-image: url('https://cdn.thewickedweb.dev/fun/pink-tile.jpg');
+    background-size: 200px;
+    width: calc(100% - 200px);
+
+    h1 {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    .title-large-pink {
+      color: #e69fb6;
+      font-size: 160px;
+      line-height: 180px;
+      margin: 0;
+    }
+
+    .title-large-blue {
+      margin: 0;
+      color: #99b5e6;
+      font-size: 66px;
+      line-height: 80px;
+    }
+
+    .title-large-pink,
+    .title-large-blue {
+      font-family: 'Permanent Marker', cursive;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  @keyframes blinkingText{
+    0%{     color: #99b5e6;    }
+    49%{    color: #99b5e6; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #99b5e6;    }
+  }
+
+  marquee {
+    font-size: 30px;
+    line-height: 30px;
+    background-color: #fff;
+  }
+
+  .center {
+    text-align: center;
+  }
+}

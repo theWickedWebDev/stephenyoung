@@ -1,11 +1,7 @@
-const config = require('config');
-const webpack = require('webpack')
-const nodeExternals = require('webpack-node-externals')
-const path = require('path')
+const webpack = require('webpack');
+const path = require('path');
 const MiniCssExtractPlugin =  require("mini-css-extract-plugin");
 const ReplacePlugin = require('webpack-plugin-replace');
-
-const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const js = {
   test: /\.js$/,

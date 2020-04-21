@@ -5,3 +5,4 @@ dist/
 coverage
 *.dev
 storybook-build
+.idea
